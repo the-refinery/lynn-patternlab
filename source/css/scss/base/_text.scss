@@ -5,14 +5,17 @@ p {
 
 /* Blockquote */
 blockquote {
-    font-style:italic;
-    border-left: 1px solid $gray;
     color: $gray;
-	padding-left: $pad;
-	margin-bottom: $space;
+    margin: $space-double;
+	padding: $pad-double;
 
-    width: 33%;
+    >p:last-of-type {
+        margin-bottom: 0;
+    }
 }
+
+/* Quote */
+q {}
 
 /* Horizontal Rule */ 
 hr {
