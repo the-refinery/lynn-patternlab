@@ -1,5 +1,6 @@
 .DS_Store
 public/*
+source/*/*.css
 
 # SASS
 *.sass-cache/

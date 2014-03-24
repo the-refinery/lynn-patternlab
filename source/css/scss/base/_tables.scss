@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: $space 0;
+    width: 100%;
+}
+
+th {
+    font: {
+        family: $font-helveticaneue-bold;
+        weight: normal;
+    }
+    padding: $pad $pad-half;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+td {
+    padding: $pad $pad-half;
+}
+
+/* Grid */
+.grid {
+    &, th, td {
+        border: {
+            color: $gray;
+            style: solid;
+            width: 1px;
+        }
+    }
+}
+
+/* Zebra Stripes */
+.zebra {
+    th {
+        background-color: tint($gray, 50%);
+    }
+
+    .even {
+        background-color: tint($gray, 90%);
+    }
+}

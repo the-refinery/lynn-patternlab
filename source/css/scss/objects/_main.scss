@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+    padding: $pad-half $pad-half $pad-double;
+    overflow: hidden;
+    //@extend .lc;
+    @extend .cf;
+}
+
+[role=main].l-two-col {
+    padding: 0;
+    position: relative;
+    
+    @include bp-max(l) {
+        margin: 0 auto;
+        max-width: $w-main;
+    }
+    
+    @include bp-min(l) {
+        float: left;
+        left: 100% - $w-pct-m-l;
+        width: $w-pct-m-l;
+    }
+    
+    @include bp-min(xl) {
+        float: right;
+        left: 0;
+        width: $w-pct-l-xl;
+    }
+    
+    @include bp-min(xxl) {
+        width: $w-pct-xl-xxl;
+    }
+    
+    .l-main {
+        @extend %l-container;
+
+        width: $w-pct-full;
+        max-width: $w-main-max;
+        
+        @include bp-min(l) {
+            float: left;
+        }
+        
+        @include bp-max(xl) {
+            max-width: $w-main;
+        }
+        
+        @include bp-min(xl) {
+            width: $w-pct-m-l;
+        }
+        
+        @include bp-min(xxl) {
+            min-width: $w-main-max;
+        }
+    }
+    
+    .l-sidebar {
+        @extend %l-container;
+
+        @include bp-min(l) {
+            float: left;
+        }
+
+        @include bp-max(xl) {
+            max-width: $w-main;
+        }
+        
+        @include bp-min(xl) {
+            float: right;
+            width: 100% - $w-pct-m-l;
+        }
+        
+        @include bp-min(xxl) {
+            width: percentage(($w-xl - $w-main-max)/$w-xl);
+        }
+    }
+}

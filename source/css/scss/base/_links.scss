@@ -1,0 +1,10 @@
+/* Links */ 
+a {
+	color: $blue-lynn;
+	text-decoration: none;
+	outline: 0;
+	
+	&:hover, &:focus {
+		color: $green-accent;
+	}
+}

@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    $EXPANDABLE
+\*------------------------------------*/
+
+.ex-handle {
+    background: $blue-secondary;
+    color: $white;
+    cursor: pointer;
+    padding: $pad $pad-double $pad $pad;
+    position: relative;
+    z-index: 10;
+    
+    &:before {
+        @extend .triangle-down;
+        
+        right: 1em;
+        top: 1.433em;
+    }
+    
+    &:hover {
+        background: shade($blue-accent, 10%);
+    }
+}
+
+.ex-panel {
+    height: auto;
+    padding: $pad;
+}
+
+.is-closed {
+    .ex-handle {
+        &:before {          
+            @extend .triangle-right;
+            
+            right: 1.433em;
+            top: 1em;
+        }
+    }
+    
+    .ex-panel {
+        height: 0;    
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+/*--------------------*\
+    Modules
+\*--------------------*/
+
+.accordion {
+    .expandable {
+        margin-bottom: $space;
+    }
+}
+
+.block_listing {
+    .expandable {
+        margin-top: -2.25em;
+    }
+
+    // Components
+    .ex-handle {
+        background: $blue-accent;
+        border-radius: 1em;
+        height: 2em;
+        margin: -1em auto .25em;
+        padding: 0;
+        width: 2em;
+
+        &:before {
+            @extend .triangle-right;
+
+            left: .65em;
+            right: auto;
+            top: .156em;
+        }
+    }
+
+    .ex-panel {
+        @extend %inverted;
+
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 100;
+        width: 100%;
+    }
+
+    // States
+    &.is-open {
+        .ex-handle {
+            &:before {
+                @extend .triangle-up;
+
+                left: .156em;
+                top: .35em;
+            }
+        }
+        .ex-panel {
+            top: 0;
+        }
+    }
+}

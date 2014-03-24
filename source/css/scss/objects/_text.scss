@@ -1,0 +1,109 @@
+/*------------------------------------*\
+    $TEXT
+\*------------------------------------*/
+
+// Text Passages
+.text {
+    ol {
+        list-style: decimal;
+        margin: 0 0 $space $pad-double;
+        
+        ol {
+            margin-bottom: 0;
+        }
+    }
+    
+    ul {
+        list-style: disc;
+        margin: 0 0 $space $pad-double;
+        
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Intro Text
+.intro {
+	margin: $space-and-half 0;
+
+	@include font-size($font-rem-xl);
+}
+
+
+/*--------------------*\
+	Global Modifiers
+\*--------------------*/
+// Discrete Text
+.discrete {
+    color: $gray;
+
+    @include font-size($font-rem-xs);
+}
+
+// Oomph Text
+.oomph {
+	@include font-size($font-rem-l);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Pullquote
+.pullquote {
+	font-family: $font-secondary;
+	font-size: $font-size-l;
+}
+
+//Text Passages
+.text {
+	a {
+		text-decoration: underline;
+	}
+}
+
+/* Review Grade Tile */
+.grade {
+	display: block;
+	font-weight: bold;
+	background: $gray;
+	color: $white;
+	min-height: 4.5rem;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+/* Eyebrow */
+.eyebrow {
+	background: $gray-dark;
+	color: $white;
+	padding: 0.2em;
+	display: inline-block;
+	margin-bottom: $space-half;
+}
+
+.eyebrow-image {
+	position: relative;
+	
+	img {
+		position: relative;
+		z-index: 0;
+	}
+
+	.eyebrow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
