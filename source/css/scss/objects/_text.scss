@@ -30,6 +30,17 @@
 	@include font-size($font-rem-xl);
 }
 
+// Pulled Quote
+.pulledquote {
+	display: block;
+	float: right;
+	margin: 0 0 $space $space;
+	padding-left: $pad;
+	width: 40%;
+
+	@include font-size($font-rem-l);
+}
+
 
 /*--------------------*\
 	Global Modifiers
@@ -54,16 +65,6 @@
 
 
 
-
-
-
-
-
-//Pullquote
-.pullquote {
-	font-family: $font-secondary;
-	font-size: $font-size-l;
-}
 
 //Text Passages
 .text {
