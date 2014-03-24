@@ -1,0 +1,21 @@
+<section class="l-premiere">
+	{{> molecules-block-premiere }}
+	<div class="g g-2up">
+		<div class="gi">
+			{{> molecules-block-listing }}
+		</div>
+		<div class="gi">
+			{{> molecules-block-listing:is-closed(expandable:true) }}
+		</div>
+	</div>
+	<div class="text">
+        <p>
+            <a href="{{ url }}" class="oomph">{{ listing.link }}</a><br />
+            {{ listing.description }}
+        </p>
+        <p>
+            <a href="{{ url }}" class="oomph">{{ listing.link }}</a><br />
+            {{ listing.description }}
+        </p>
+    </div>
+</section>

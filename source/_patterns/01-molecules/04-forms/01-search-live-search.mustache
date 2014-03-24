@@ -1,0 +1,39 @@
+<form action="{{ url }}" name="searchform" class="inline-form search-form">
+    <fieldset class="livesearch">
+        <legend class="is-vishidden">Search</legend>
+        <label for="search-field" class="is-vishidden">Search</label>
+        <input type="search" placeholder="Search site" id="search-field" class="search-field" />
+        <button class="button">
+            <span class="icon-search" aria-hidden="true"></span>
+            <span class="">Search</span>
+        </button>
+    </fieldset>
+    <fieldset class="livesearch-container">
+        <legend class="is-vishidden">Live Search</legend>
+        <div class="results">
+            <ul class="livesearch-list">
+                <li>
+                    <a href="{{ url }}">
+                    <span class="link">Item 1</span>
+                    <span class="score">[100%]</span>
+                    <div class="description">Description of the search result item</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url }}">
+                    <span class="link">Item 2</span>
+                    <span class="score">[90%]</span>
+                    <div class="description">Description of the search result item</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url }}">
+                    <span class="link">Item 3</span>
+                    <span class="score">[90%]</span>
+                    <div class="description">Description of the search result item</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </filedset>
+</form>
