@@ -33,15 +33,22 @@
 // Pulled Quote
 .pulledquote {
 	display: block;
-	float: right;
-	margin: 0 0 $space $space;
-	padding-left: $pad;
-	width: 40%;
+	margin: $space-double;
 
 	@include font-size($font-rem-l);
 
 	&:first-letter {
 		text-transform: capitalize;
+	}
+
+	&.left, &.right {
+		width: 40%;
+	}
+	&.left {
+		margin: 0 $space $space 0;
+	}
+	&.right {
+		margin: 0 0 $space $space;
 	}
 }
 
