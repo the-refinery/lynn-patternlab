@@ -66,6 +66,14 @@
     $TEMPLATES
 \*------------------------------------*/
 
+#midsection {
+	position: relative;
+
+	@include bp-max(l) {
+		padding-top: 5em;
+	}
+}
+
 /* Two Column Layout */
 .l-two-col {
     .l-main {

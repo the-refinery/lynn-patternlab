@@ -44,7 +44,7 @@ $(document).ready(function(){
         */
         else if ( $(element).hasClass('nav-main') ) {
             // Begin closed
-            $(element).not('.is-closed').toggleClass('is-closed');
+            $(element).addClass('js-enabled').not('.is-closed').toggleClass('is-closed');
 
             // Click Event
             $(element).click(function(e) {
