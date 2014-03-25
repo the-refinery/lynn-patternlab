@@ -9,13 +9,13 @@ module.exports = function(grunt) {
                     'source/js/jquery-2.0.0b2.js',
                     'source/js/custom/*.js'
                 ],
-                dest: 'public/js/main.min.js'
+                dest: 'public/js/main.js'
             },
         },
         uglify: {
             options: {mangle: false},
             js: {
-                files: {'public/js/main.min.js': ['public/js/main.min.js']}
+                files: {'public/js/main.min.js': ['public/js/main.js']}
             }
         },
         compass: {
@@ -35,8 +35,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['source/js/**/*.js'],
-                //tasks: ['concat:js', 'uglify:js'],
-                tasks: ['concat:js']
+                tasks: ['concat:js', 'uglify:js']
             }
         }
     });
