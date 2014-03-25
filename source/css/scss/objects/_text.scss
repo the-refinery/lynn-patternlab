@@ -39,6 +39,10 @@
 	width: 40%;
 
 	@include font-size($font-rem-l);
+
+	&:first-letter {
+		text-transform: capitalize;
+	}
 }
 
 
