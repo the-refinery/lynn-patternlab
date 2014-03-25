@@ -5,6 +5,22 @@ var comments = {
         "title": "Time",
         "comment": "<p>Dates and times can be difficult for machines to understand. To make dates unambiguous, use the time tag along with the datetime attribute. The value of the datetime attribute is the date specified using the <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date/time standard</a>.</p>"
     },
+    {
+    	"el": ".pulledquote",
+    	"title": "Pullquote",
+    	"comment": "<p>To avoid content duplication, use the magic of javascript to create a pullquote by wrapping the text to be quoted in the following tag:<br /> &lt;span class=\"pullquote\"&gt;&hellip;&lt;\span&gt;</p><p>Or create the pulledquote tag manually:<br />&lt;span class=\"pulledquote <em>position</em>\"&gt;&hellip;&lt;\span&gt;"
+    },
+
+
+
+
+
+
+
+
+
+
+
 	{
 		"el": "header[role=banner]",
 		"title" : "Masthead",
