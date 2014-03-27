@@ -101,6 +101,7 @@
 
 	// Components
 	.block--link {
+		cursor: pointer;
 		color: $gray;
 		min-height: 20em;
 		padding: $pad $pad ($pad*2.5) $pad;
@@ -116,6 +117,27 @@
 
 	.level-1 {
 		font-size: 1.25em;
+	}
+
+	// Modifiers
+	&.person {
+		.block--link {
+			min-height: 24em;
+		}
+	}
+
+	&.image-crop {
+		.block--image {
+			margin: 0 auto;
+			max-height: 10rem;
+			max-width: 15rem;
+			overflow: hidden;
+
+			img {
+				height: auto;
+				margin-top: -2.5rem;
+			}
+		}
 	}
 
 	// States

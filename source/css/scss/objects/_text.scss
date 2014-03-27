@@ -52,6 +52,43 @@
 	}
 }
 
+// Person Passages
+.person {
+	.person--job {
+		margin: 1em 0;
+	}
+
+	.contact {
+		margin:
+		1em 0;
+	}
+
+	.contact--email, .contact--fax, .contact--phone {
+		&:before {
+			display: inline-block;
+			width: 4em;
+		}
+	}
+	
+	.contact--email {
+		&:before {
+			content: "Email";
+		}
+	}
+
+	.contact--fax {
+		&:before {
+			content: "Fax";
+		}
+	}
+
+	.contact--phone {
+		&:before {
+			content: "Phone";
+		}
+	}
+}
+
 
 /*--------------------*\
 	Global Modifiers

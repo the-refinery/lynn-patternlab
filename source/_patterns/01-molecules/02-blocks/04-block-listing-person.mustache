@@ -1,0 +1,20 @@
+<div class="block_listing person image-crop" onclick="location.href='{{ url }}'" itemtype="http://schema.org/Person" itemscope="" itemprop="employee">
+	<div class="block--link">
+        <div class="block--image">
+            <img src="{{ img.person.src }}" itemprop="image"/>
+        </div>
+        <div class="block--text text">
+            <h3 class="h4" itemprop="name">{{ block.heading }}</h3>
+            <div class="person--job">
+            	<span itemprop="jobTitle">Job Title</span>
+            </div>
+            <div class="contact" itemtype="http://schema.org/ContactPoint" itemscope="" itemprop="contactPoint">
+            	<div class="contact--phone" itemprop="telephone">123-456-7890</div>
+            	<div class="contact--email" itemprop="email"><a href="#">test@test.com</a></div>
+            </div>
+            <div class="moreInfo">
+            	<a href="{{ url }}" itemprop="url">Full profile&hellip;</a>
+            </div>
+        </div>
+    </div>
+</div>
