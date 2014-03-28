@@ -48,6 +48,11 @@
     padding: 0 0 $pad $pad;
 }
 
+/* Inverted */
+.inverted {
+    @extend %inverted;
+}
+
 /* Padding */
 .no-pad {
     padding: 0;
@@ -78,10 +83,6 @@
     padding: 0;
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
-}
-
-.is-inverted {
-    @extend %inverted;
 }
 
 
