@@ -1,0 +1,19 @@
+<div class="text">
+	<p>
+		A collection a set of common content. While collections can have introductory content, the emphasis will be on the list of items contained in the collection.
+	</p>
+	<table class="zebra">
+		<thead>
+			<tr>
+				<th>Item Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{# listItems.six }}
+			<tr>
+				<td><a href="{{ url }}">{{ headline.short }}</a></td>
+			</tr>
+			{{/ listItems.six }}
+		</tbody>
+	</table>
+</div>
