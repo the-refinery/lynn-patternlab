@@ -39,7 +39,7 @@ td {
         background-color: tint($gray, 50%);
     }
 
-    .even {
+    tr:nth-child(even) td {
         background-color: tint($gray, 90%);
     }
 }
