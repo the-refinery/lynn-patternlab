@@ -1,26 +1,12 @@
 <div class="accordion">
+    {{# listItems.three }}
     <section class="expandable">
         <header class="ex-handle">
-            Accordion 1
+            <h3 class="h3">{{ headline.short }}</h3>
         </header>
         <div class="ex-panel">
-            Some content here
+            {{ excerpt.short }}
         </div>
     </section>
-    <section class="expandable is-closed">
-        <header class="ex-handle">
-            Accordion 2
-        </header>
-        <div class="ex-panel">
-            Some content here
-        </div>
-    </section>
-    <section class="expandable">
-        <header class="ex-handle">
-            Accordion 3
-        </header>
-        <div class="ex-panel">
-            Some content here
-        </div>
-    </section>
+    {{/ listItems.three }}
 </div>
