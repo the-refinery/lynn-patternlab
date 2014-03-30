@@ -6,7 +6,7 @@
     background: $blue-secondary;
     color: $white;
     cursor: pointer;
-    padding: $pad $pad-double $pad $pad;
+    padding: $pad ($pad * 3) $pad $pad;
     position: relative;
     z-index: 10;
     
@@ -14,7 +14,7 @@
         @extend .triangle-down;
         
         right: 1em;
-        top: 1.433em;
+        top: 1.875em;
     }
     
     &:hover {
@@ -32,8 +32,8 @@
         &:before {          
             @extend .triangle-right;
             
-            right: 1.433em;
-            top: 1em;
+            right: 1.134em;
+            top: 1.509em;
         }
     }
     
