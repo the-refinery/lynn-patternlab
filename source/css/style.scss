@@ -70,7 +70,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "scss/base/global-classes";
 @import "scss/base/main";
 @import "scss/base/links";
 @import "scss/base/headings";
@@ -80,6 +79,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/base/forms";
 @import "scss/base/tables";
 @import "scss/base/animation";
+@import "scss/base/global-classes";
 
 
 

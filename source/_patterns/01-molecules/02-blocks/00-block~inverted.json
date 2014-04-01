@@ -1,3 +1,5 @@
 {
-	"styleModifier": "is-inverted"
+	"styleModifier": "inverted",
+	"styleModifier-block--text": "block_padded",
+	"isLink": false
 }

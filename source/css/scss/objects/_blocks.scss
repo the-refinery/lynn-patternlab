@@ -2,49 +2,32 @@
     $BLOCKS
 \*------------------------------------*/
 
+
 /*--------------------*\
-    Placeholders
+	Placeholders
 \*--------------------*/
 %block {
-	border: {
-		color: $gray;
-		style: solid;
-		width: 1px;
-	};
-    margin: 0 auto 2em;;
+	margin: 0 auto 2em;
 	max-width: $w-main-max;
-    overflow: hidden;
-    position: relative;
+	overflow: hidden;
+	position: relative;
 
-    // Components
-    .block--link {
-    	display: block;
-    }
+	.block--inner {}
 
-    .block--image {
-        img {
-            display: block;
-        }
-    }
-    
-    .block--text {
-        padding: $pad;
-    }
-
-    // Modifiers
-    // States
-}
-
-%block_padded {
-	@extend %block;
-
-	padding: $pad;
-
-	// Components
-	.block--text {
-		padding: $pad 0 0 0;
+	.block--link {
+		display: block;
 	}
+
+	.block--image {
+		margin: 0 auto $space auto;
+		img {
+			display: block;
+		}
+	}
+
+	.block--text {}
 }
+
 
 /*--------------------*\
 	Modules
@@ -53,37 +36,51 @@
 	@extend %block;
 }
 
+
 /*--------------------*\
 	Submodules
 \*--------------------*/
-/* Block with padding */
 .block_padded {
-	@extend %block_padded;
+	padding: $pad;
 }
 
-/* Premiere block */
-.block_premiere {
-	@extend %block;
+.block_thumb {
+	width: 100%;
 
-	border: none;
-    
-    // Components
-    .block--text {
-        @extend %inverted;
-        
-        margin-top: 1em;
+	.block--inner {
+		@include bp-min(m) {
+			@include flexbox;
+		}
+	}
 
-		@include bp-min(l){
-	        .block--link {
-	        	min-height: 10em;
-	        }
-    	}
-    }
+	.block--image {
+		@include bp-max(m) {
+			width: 100%;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		@include bp-min(m) {
+			margin-bottom: 0;
+			padding-left: $pad;
+			@include flex(1 0 35%);
+			@include order(2);
+		}
+	}
+
+	.block--text {
+		@include bp-min(m) {
+			@include flex(1 0 65%);
+			@include order(1);
+		}		
+	}
 }
 
-/* Block with optional expandable submenu */
+/* Special Uses */
 .block_listing {
-	@extend %block;
+	border: 1px solid $gray;
 
 	&:after {
 		bottom: 0;
@@ -111,33 +108,8 @@
 		}
 	}
 
-	.block--text {
-		padding: $pad 0 0 0;
-	}
-
 	.level-1 {
 		font-size: 1.25em;
-	}
-
-	// Modifiers
-	&.person {
-		.block--link {
-			min-height: 24em;
-		}
-	}
-
-	&.image-crop {
-		.block--image {
-			margin: 0 auto;
-			max-height: 10rem;
-			max-width: 15rem;
-			overflow: hidden;
-
-			img {
-				height: auto;
-				margin-top: -2.5rem;
-			}
-		}
 	}
 
 	// States
@@ -147,6 +119,49 @@
 		}
 	}
 }
+
+.block_listing.person {
+	.block--link {
+		min-height: 24em;
+	}
+
+	.block--image {
+		margin: 0 auto 1em;
+		max-height: 10rem;
+		max-width: 15rem;
+		overflow: hidden;
+
+		img {
+			height: auto;
+			margin-top: -2.5rem;
+		}
+	}
+
+	@media screen and (min-width: $bp-s) and (max-width: $bp-m - 1px) {
+		.block--link {
+			min-height: 0;
+
+			@include flexbox;
+		}
+
+		.block--image {
+			max-height: none;
+
+			@include flex(1 0 35%);
+			@include order(2);
+
+			img {
+				margin-top: 0;
+			}
+		}
+		.block--text {
+			@include flex(1 0 65%);
+			@include order(1);
+		}
+	}
+}
+
+
 
 
 
