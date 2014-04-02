@@ -3,16 +3,17 @@
         <div class="block--image">
             <img src="{{ img.person.src }}" itemprop="image"/>
         </div>
-        <div class="block--text text">
-            <h3 class="h4" itemprop="name">{{ block.heading }}</h3>
-            <div class="person--job">
-            	<span itemprop="jobTitle">Job Title</span>
+        <div class="block--text text g g-1up">
+            <div class="gi">
+                <h3 class="h4" itemprop="name">{{ name.first }} {{ name.last }}</h3>
+                <div class="person--job">
+                	<span itemprop="jobTitle">Job Title</span>
+                </div>
             </div>
-            <div class="contact" itemtype="http://schema.org/ContactPoint" itemscope="" itemprop="contactPoint">
-            	<div class="contact--phone" itemprop="telephone">123-456-7890</div>
-            	<div class="contact--email" itemprop="email"><a href="#">test@test.com</a></div>
+            <div class="gi">
+                {{> molecules-contact-point }}
             </div>
-            <div class="moreInfo">
+            <div class="gi">
             	<a href="{{ url }}" itemprop="url">Full profile&hellip;</a>
             </div>
         </div>
