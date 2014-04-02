@@ -49,6 +49,8 @@
 
 	.block--inner {
 		@include bp-min(m) {
+			align-items: stretch;
+
 			@include flexbox;
 		}
 	}

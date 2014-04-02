@@ -52,40 +52,42 @@
 	}
 }
 
-// Person Passages
-.person {
-	.person--job {
-		margin: 1em 0;
-	}
-
-	.contact {
-		margin:
-		1em 0;
-	}
-
-	.contact--email, .contact--fax, .contact--phone {
-		&:before {
-			display: inline-block;
-			width: 4em;
-		}
+// Contact Point
+.contact {
+	%contact-before {
+		display: inline-block;
+		width: 4em;
 	}
 	
-	.contact--email {
+	.contact-email {
 		&:before {
+			@extend %contact-before;
+
 			content: "Email";
 		}
 	}
 
-	.contact--fax {
+	.contact-fax {
 		&:before {
+			@extend %contact-before;
+
 			content: "Fax";
 		}
 	}
 
-	.contact--phone {
+	.contact-phone {
 		&:before {
+			@extend %contact-before;
+
 			content: "Phone";
 		}
+	}
+}
+
+// Person Passages
+.person {
+	&.block {
+		@include font-size($font-rem-s);
 	}
 }
 
