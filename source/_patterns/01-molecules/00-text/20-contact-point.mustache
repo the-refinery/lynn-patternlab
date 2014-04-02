@@ -1,0 +1,11 @@
+<div class="contact" itemtype="http://schema.org/ContactPoint" itemscope="" itemprop="contactPoint">
+	{{# contact.telephone}}
+	<div class="contact-phone" itemprop="telephone">{{ contact.telephone }}</div>
+	{{/ contact.telephone }}
+	{{# contact.email }}
+	<div class="contact-email" itemprop="email"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>
+	{{/ contact.email }}
+	{{# contact.fax }}
+	<div class="contact-fax" itemprop="faxNumber">{{ contact.fax }}</div>
+	{{/ contact.fax }}
+</div>
