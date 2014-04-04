@@ -1,11 +1,16 @@
 <header class="article-header">
 	<hgroup>
 		<h2 class="h2">
-			<span itemprop="name">{{ name.first }} {{ name.last }}</span>
+			<span itemprop="name">
+				{{ name.first }} {{ name.last }}
+				{{# name.suffix }}, {{ name.suffix }} {{/ name.suffix }}
+			</span>
+			{{# name.suffix-honorific }}
+				<span class="person-suffix-honorific" itemprop="honorificSuffix">{{ name.suffix-honorific }}</span>
+			{{/ name.suffix-honorific }}
 		</h2>
-		<h3 class="h6">B.S., MBA</h3>
 	</hgroup>
-	<div class="person-job">
-		<span itemprop="jobTitle">Job Title</span>
-	</div>
+	{{# job }}
+	<div class="person-job" itemprop="jobTitle">{{ job }}</div>
+	{{/ job }}
 </header>

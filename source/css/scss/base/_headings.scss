@@ -1,38 +1,50 @@
 %heading-default {
     font-weight: normal;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: $space-half;
 }
 
 h1, .h1 {
     @extend %heading-default;
-    font-family: $font-helveticaneue;
-    text-transform: uppercase;
-    @include font-size(2.5);
+    font: {
+        family: $font-helveticaneue-thin;
+        size: $font-size-xxl;
+    }
 }
 h2, .h2 {
     @extend %heading-default;
-    font-family: $font-helveticaneue-thin;
-    text-transform: uppercase;
-    @include font-size(2.25);
+    font: {
+        family: $font-helveticaneue-thin;
+        size: $font-size-xl;
+    }
 }
 h3, .h3 {
     @extend %heading-default;
-    font-family: $font-helveticaneue-thin;
-    @include font-size(2.25);
+    font: {
+        family: $font-helveticaneue-bold;
+        size: $font-size-l;
+    }
 }
 h4, .h4 {
     @extend %heading-default;
-    font-family: $font-helveticaneue-thin;
-    @include font-size(2);
+    font: {
+        family: $font-helveticaneue-thin;
+        size: $font-size-l;
+    }
 }
 h5, .h5 {
     @extend %heading-default;
-    font-family: $font-helveticaneue-thin;
-    @include font-size(1.75);
+    color: $blue-lynn;
+    font: {
+        family: $font-helveticaneue-bold;
+        size: $font-size-m;
+    }
 }
 h6, .h6 {
     @extend %heading-default;
-    font-family: $font-helveticaneue-thin;
-    @include font-size(1.5);
+    color: $blue-lynn;
+    font: {
+        family: $font-helveticaneue-thin;
+        size: $font-size-m;
+    }
 }

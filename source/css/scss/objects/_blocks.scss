@@ -14,18 +14,18 @@
 
 	.block--inner {}
 
-	.block--link {
+	.block-link {
 		display: block;
 	}
 
-	.block--image {
+	.block-image {
 		margin: 0 auto $space auto;
 		img {
 			display: block;
 		}
 	}
 
-	.block--text {}
+	.block-text {}
 }
 
 
@@ -47,7 +47,7 @@
 .block_thumb {
 	width: 100%;
 
-	.block--inner {
+	.block-inner {
 		@include bp-min(m) {
 			align-items: stretch;
 
@@ -55,7 +55,7 @@
 		}
 	}
 
-	.block--image {
+	.block-image {
 		@include bp-max(m) {
 			width: 100%;
 
@@ -72,7 +72,7 @@
 		}
 	}
 
-	.block--text {
+	.block-text {
 		@include bp-min(m) {
 			@include flex(1 0 65%);
 			@include order(1);
@@ -99,7 +99,7 @@
 	}
 
 	// Components
-	.block--link {
+	.block-link {
 		cursor: pointer;
 		color: $gray;
 		min-height: 20em;
@@ -123,11 +123,11 @@
 }
 
 .block_listing.person {
-	.block--link {
-		min-height: 24em;
+	.block-link {
+		min-height: 32em;
 	}
 
-	.block--image {
+	.block-image {
 		margin: 0 auto 1em;
 		max-height: 10rem;
 		max-width: 15rem;
@@ -140,13 +140,13 @@
 	}
 
 	@media screen and (min-width: $bp-s) and (max-width: $bp-m - 1px) {
-		.block--link {
+		.block-link {
 			min-height: 0;
 
 			@include flexbox;
 		}
 
-		.block--image {
+		.block-image {
 			max-height: none;
 
 			@include flex(1 0 35%);
@@ -156,7 +156,7 @@
 				margin-top: 0;
 			}
 		}
-		.block--text {
+		.block-text {
 			@include flex(1 0 65%);
 			@include order(1);
 		}

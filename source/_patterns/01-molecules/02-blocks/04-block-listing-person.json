@@ -1,5 +1,7 @@
 {
 	"contact": {
-		"fax": false
+		"show-email": true,
+		"show-fax": false,
+		"show-telephone": true
 	}
 }
