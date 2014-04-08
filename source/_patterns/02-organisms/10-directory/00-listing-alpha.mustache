@@ -1,0 +1,23 @@
+<div class="text">
+	<p>
+		Browse people by last name
+	</p>
+	<table class="grid zebra table-directory">
+		<thead>
+			<tr>
+				<th class="table-directory-name">Name</th>
+				<th class="table-directory-phone">Phone</th>
+				<th class="table-directory-department">Department</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{# listItems.six }}
+			<tr>
+				<td class="table-directory-name"><a href="{{ url }}">{{ name.last }}, {{ name.first }}</a></td>
+				<td class="table-directory-phone">{{ contact.telephone }}</td>
+				<td class="table-directory-department"><a href="{{ url }}">Department Name</a></td>
+			</tr>
+			{{/ listItems.six }}
+		</tbody>
+	</table>
+</div>
