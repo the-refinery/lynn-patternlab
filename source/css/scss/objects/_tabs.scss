@@ -1,15 +1,59 @@
 .tabs {
-	overflow: hidden;
+	border-bottom: 1px solid $gray;
+	margin: $space 0;
 
+	.tab-list {
+		display: table;
+    	margin-bottom: -1px;
+    	padding: 0 $pad;
+    	width: 100%;
+
+    	@include bp-max(m) {
+    		padding: 0 $pad-quarter;
+    	}
+	}
+
+	.tab-item {
+		display: table-cell;
+	    padding: 0 $pad;
+	    text-align: center;
+
+	    @include bp-max(m) {
+	    	font-size: $font-size-xs;
+    		padding: 0 $pad-quarter;
+    	}
+	}
+
+	.tab-link {
+		background: tint($gray, 90%);
+		border: 1px solid $gray;
+		color: $blue-lynn;
+	    display: block;
+	    padding: $pad-half;
+
+	    &:hover, &:focus {
+			background: $gray-light-3;
+		}
+
+		&.active {
+			background: $white;
+			border-bottom-color: $white;
+		}
+	}
+/*
 	ul {
 		display: table;
+		padding: 0 $pad;
 		width: 100%;
+		border-bottom: 1px solid $gray;
+		margin-bottom: -1px;
 	}
 	
 	li {
 		display: table-cell;
 		text-align: center;
-		border-right: 1px solid $gray-light-3;
+		
+		padding: 0 $pad;
 
 		&:last-child {
 			border-right: 0;
@@ -19,15 +63,12 @@
 	a {
 		display: block;
 		padding: $pad-half;
-		background: $gray;
+		
+		color: $blue-lynn;
 
-		&:hover, &:focus {
-			background: $gray-light-3;
-		}
+		
 
-		&.active {
-			background: $gray-dark;
-			color: $white;
-		}
+		
 	}
+*/
 }
