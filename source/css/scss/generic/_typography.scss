@@ -1,34 +1,13 @@
-@import url(//fast.fonts.net/cssapi/32fb538e-1721-4aff-bfbd-0f7d4e5892bd.css);
+@import url(//fast.fonts.net/cssapi/4502be6a-d4d2-41ad-988f-72e9420f9860.css);
 
 $font: Helvetica,​Arial,​sans-serif;
 
-$font-helveticaneue: 'HelveticaNeueW01-55Roma', Helvetica, Arial, sans-serif;
-$font-helveticaneue-italic: 'HelveticaNeueW01-56It', Helvetica, Arial, sans-serif;
-$font-helveticaneue-bold: 'HelveticaNeueW01-75Bold', Helvetica, Arial, sans-serif;
-$font-helveticaneue-thin: 'HelveticaNeueW01-Thin', Helvetica, Arial, sans-serif;
-$font-helveticaneue-ultlt: 'HelveticaNeueW01-UltLt', Helvetica, Arial, sans-serif;
-
-$font-adobegaramond: 'AdobeGaramondW01-Regula', Helvetica, Arial, sans-serif;
+$font-helveticaneue: 'Neue Helvetica W01',$font;
+$font-adobegaramond: 'Adobe Garamond W01';
 
 /* Font Classes */
 .font-helveticaneue {
 	font-family: $font-helveticaneue;
-}
-
-.font-helveticaneue-italic {
-	font-family: $font-helveticaneue-italic;
-}
-
-.font-helveticaneue-bold {
-	font-family: $font-helveticaneue-bold;
-}
-
-.font-helveticaneue-thin {
-	font-family: $font-helveticaneue-thin;
-}
-
-.font-helveticaneue-ultlt {
-	font-family: $font-helveticaneue-ultlt;
 }
 
 .font-adobegaramond {

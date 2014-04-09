@@ -10,10 +10,7 @@ table {
 }
 
 th {
-    font: {
-        family: $font-helveticaneue-bold;
-        weight: normal;
-    }
+    font-weight: bold;
     padding: $pad $pad-half;
     text-align: left;
 }
