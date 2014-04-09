@@ -4,6 +4,10 @@
 
 // Text Passages
 .text {
+	h3, .h3 {
+		color: $blue-lynn;
+	}
+
     ol {
         list-style: decimal;
         margin: 0 0 $space $pad-double;
