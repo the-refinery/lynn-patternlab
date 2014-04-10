@@ -9,12 +9,18 @@
     padding: $pad ($pad * 3) $pad $pad;
     position: relative;
     z-index: 10;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+    }
     
     &:before {
-        @extend .triangle-down;
+        @extend %triangle-down;
         
-        right: 1em;
-        top: 1.875em;
+        font-size: 2em;
+        position: absolute;
+        right: 1rem;
+        top: .75rem;
     }
     
     &:hover {
@@ -30,10 +36,7 @@
 .is-closed {
     .ex-handle {
         &:before {          
-            @extend .triangle-right;
-            
-            right: 1.134em;
-            top: 1.509em;
+            @extend %triangle-right;
         }
     }
     
@@ -70,11 +73,11 @@
         width: 2em;
 
         &:before {
-            @extend .triangle-right;
+            @extend %icon-menu;
 
-            left: .65em;
-            right: auto;
-            top: .156em;
+            font-size: 1em;
+            right: .5em;
+            top: .5em;
         }
     }
 
@@ -89,13 +92,23 @@
     }
 
     // States
+    &.is-closed {
+        .ex-handle {
+            &:before {
+                @extend %icon-menu;
+            }
+        }
+    }
+    
     &.is-open {
         .ex-handle {
             &:before {
-                @extend .triangle-up;
-
-                left: .156em;
-                top: .35em;
+                @extend %icon-menu;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
             }
         }
         .ex-panel {
