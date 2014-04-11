@@ -1,11 +1,11 @@
 <section class="l-premiere">
-	{{> molecules-block-premiere }}
+	{{> molecules-block-premiere(styleModifier.block.text:"blue") }}
 	<div class="g g-2up">
 		<div class="gi">
-			{{> molecules-block-listing }}
+			{{> molecules-block-listing(styleModifier.block.parent:"blue") }}
 		</div>
 		<div class="gi">
-			{{> molecules-block-listing:is-closed(expandable:true) }}
+			{{> molecules-block-listing(styleModifier.block.parent:"is-closed blue",expandable:true) }}
 		</div>
 	</div>
 	<div class="text">
