@@ -1,8 +1,8 @@
 {
 	"styleModifier": {
 		"block": {
-			"parent": "block_thumb"
+			"parent": "blue"
 		}
 	},
-	"isLink": false
+	"expandable": false
 }

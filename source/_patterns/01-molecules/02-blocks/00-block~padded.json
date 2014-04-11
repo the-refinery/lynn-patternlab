@@ -1,4 +1,8 @@
 {
-	"styleModifier": "block_padded",
+	"styleModifier": {
+		"block": {
+			"parent": "block_padded"
+		}
+	},
 	"isLink": false
 }
