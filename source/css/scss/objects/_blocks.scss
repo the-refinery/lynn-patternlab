@@ -80,7 +80,7 @@
 	}
 }
 
-/* Special Uses */
+/* Block with (hidden) nav content */
 .block_listing {
 	border: 1px solid $gray;
 
@@ -93,7 +93,7 @@
     	position: absolute;
     	width: 100%;
 
-		@include background-image(linear-gradient(bottom, color-stops(tint($blue-secondary, 50%) 50%, rgba($white, 0) 50%) ));
+		@include background-image(linear-gradient(bottom, color-stops(tint($gray, 50%) 50%, rgba($white, 0) 50%) ));
 
 		@include box-sizing(border-box);
 	}
@@ -105,8 +105,8 @@
 		min-height: 20em;
 		padding: $pad $pad ($pad*2.5) $pad;
 
-		&:hover{
-			background-color: tint($blue-secondary, 90%);
+		&:hover {
+			background-color: tint($gray, 90%);
 		}
 	}
 
@@ -117,11 +117,51 @@
 	// States
 	&.is-open {
 		&:after {
-			@include background-image(linear-gradient(top, color-stops(tint($blue-secondary, 50%) 50%, $white 50%) ));
+			@include background-image(linear-gradient(top, color-stops(tint($gray, 50%) 50%, $white 50%) ));
 		}
 	}
 }
 
+// Color Modifiers
+.block_listing.blue {
+	&:after {
+		@include background-image(linear-gradient(bottom, color-stops(tint($blue-secondary, 50%) 50%, rgba($white, 0) 50%) ));
+	}
+	&.is-open:after {
+		@include background-image(linear-gradient(top, color-stops(tint($blue-secondary, 50%) 50%, $white 50%) ));
+	}
+
+	.block-link:hover {
+		background-color: tint($blue-secondary, 90%);
+	}
+}
+
+.block_listing.green {
+	&:after {
+		@include background-image(linear-gradient(bottom, color-stops(tint($green-secondary, 50%) 50%, rgba($white, 0) 50%) ));
+	}	
+	&.is-open:after {
+		@include background-image(linear-gradient(top, color-stops(tint($green-secondary, 50%) 50%, $white 50%) ));
+	}
+	
+	.block-link:hover {
+		background-color: tint($green-secondary, 90%);
+	}
+}
+.block_listing.orange {
+	&:after {
+		@include background-image(linear-gradient(bottom, color-stops(tint($orange-secondary, 50%) 50%, rgba($white, 0) 50%) ));
+	}
+	&.is-open:after {
+		@include background-image(linear-gradient(top, color-stops(tint($orange-secondary, 50%) 50%, $white 50%) ));
+	}
+
+	.block-link:hover {
+		background-color: tint($orange-secondary, 90%);
+	}
+}
+
+/* Block with person contact */
 .block_listing.person {
 	.block-link {
 		min-height: 32em;
