@@ -6,7 +6,6 @@
 		display: table;
     	margin-bottom: -1px;
     	padding: 0 $pad;
-    	width: 100%;
 
     	@include bp-max(m) {
     		padding: 0 $pad-quarter;
@@ -29,7 +28,7 @@
 		border: 1px solid $gray;
 		color: $blue-lynn;
 	    display: block;
-	    padding: $pad-half;
+	    padding: $pad-half $pad-double;
 
 	    &:hover, &:focus {
 			background: $gray-light-3;
