@@ -1,3 +1,9 @@
 {
-	"styleModifier": "is-inverted"
+	"styleModifier": {
+		"block": {
+			"parent": "inverted blue",
+			"text": "block_padded"
+		}
+	},
+	"isLink": false
 }

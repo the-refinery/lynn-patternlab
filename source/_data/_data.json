@@ -1,4 +1,30 @@
 {
+	"headline" : {
+		"short" : "Lorem ipsum dolor sit (37 characters)",
+		"long" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+	},
+	"name" : {
+		"first": "Lacy",
+		"firsti": "L",
+		"middle": "Tommie",
+		"middlei": "T",
+		"last": "Way",
+		"lasti": "W",
+		"suffix": "",
+		"suffix-honorific": "B.S., MBA"
+	},
+	"contact": {
+		"telephone": "202-555-0197",
+		"email": "email@fakemail.com",
+		"fax": "202-555-0185",
+		"show-email": true,
+		"show-fax": true,
+		"show-telephone": true
+	},
+	"job": "Security Guard",
+
+
+
 	"title" : "Pattern Lab",
 	"htmlClass": "pl",
 	"bodyClass": "body",
@@ -27,15 +53,16 @@
 			"src" : "../../images/fpo_avatar.png",
 			"alt" : "Person Name"
 		},
+		"person": {
+			"src": "../../images/person-photo.gif",
+			"alt": "Person Name"
+		},
 		"rectangle": {
 			"src": "http://placeimg.com/400/300/tech",
 			"alt": "Rectangle"
 		}
 	},
-	"headline" : {
-		"short" : "Lorem ipsum dolor sit (37 characters)",
-		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
-	},
+	
 	"excerpt" : {
 		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -43,14 +70,7 @@
 	},
 	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
 	"url" : "#",
-	"name" : {
-		"first": "Lacy",
-		"firsti": "L",
-		"middle": "Tommie",
-		"middlei": "T",
-		"last": "Way",
-		"lasti": "W"
-	},
+	
 	"year" : {
 		"long": "2013",
 		"short": "13"
@@ -86,7 +106,7 @@
 	},
 
 
-
+	
 	"block": {
 		"heading": "Heading",
 		"text": "The body content of the block"
@@ -94,5 +114,10 @@
 	"listing": {
 		"link": "A listing link",
 		"description": "A plain listing link with optional description"
-	}
+	},
+
+	"itemlist": [{
+		"headline": "It's a headline",
+		"excerpt": "Here's a little bit of content, but not very much."
+	}]
 }

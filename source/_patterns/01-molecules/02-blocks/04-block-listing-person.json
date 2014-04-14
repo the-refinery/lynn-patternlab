@@ -1,0 +1,12 @@
+{
+	"styleModifier": {
+		"block": {
+			"parent": "blue"
+		}
+	},
+	"contact": {
+		"show-email": true,
+		"show-fax": false,
+		"show-telephone": true
+	}
+}

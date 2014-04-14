@@ -1,33 +1,42 @@
 .tabs {
-	overflow: hidden;
+	border-bottom: 1px solid $gray;
+	margin: $space 0;
 
-	ul {
+	.tab-list {
 		display: table;
-		width: 100%;
+    	margin-bottom: -1px;
+    	padding: 0 $pad;
+
+    	@include bp-max(m) {
+    		padding: 0 $pad-quarter;
+    	}
 	}
-	
-	li {
+
+	.tab-item {
 		display: table-cell;
-		text-align: center;
-		border-right: 1px solid $gray-light-3;
+	    padding: 0 $pad;
+	    text-align: center;
 
-		&:last-child {
-			border-right: 0;
-		}
+	    @include bp-max(m) {
+	    	font-size: $font-size-xs;
+    		padding: 0 $pad-quarter;
+    	}
 	}
 
-	a {
-		display: block;
-		padding: $pad-half;
-		background: $gray;
+	.tab-link {
+		background: tint($gray, 90%);
+		border: 1px solid $gray;
+		color: $blue-lynn;
+	    display: block;
+	    padding: $pad-half $pad-double;
 
-		&:hover, &:focus {
+	    &:hover, &:focus {
 			background: $gray-light-3;
 		}
 
 		&.active {
-			background: $gray-dark;
-			color: $white;
+			background: $white;
+			border-bottom-color: $white;
 		}
 	}
 }

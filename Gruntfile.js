@@ -47,5 +47,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Register the tasks
-    grunt.registerTask('default', ['compass','watch']);
+    grunt.registerTask('default', ['concat','uglify','watch']);
 };

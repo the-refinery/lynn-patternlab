@@ -4,18 +4,15 @@
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    font-size: $font-size-s;
     margin: $space 0;
     width: 100%;
 }
 
 th {
-    font: {
-        family: $font-helveticaneue-bold;
-        weight: normal;
-    }
+    font-weight: bold;
     padding: $pad $pad-half;
     text-align: left;
-    text-transform: uppercase;
 }
 
 td {
@@ -37,6 +34,7 @@ td {
 .zebra {
     th {
         background-color: tint($gray, 50%);
+        @extend %inverted;
     }
 
     tr:nth-child(even) td {

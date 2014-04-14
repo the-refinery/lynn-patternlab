@@ -4,6 +4,10 @@
 
 // Text Passages
 .text {
+	h3, .h3 {
+		color: $blue-lynn;
+	}
+
     ol {
         list-style: decimal;
         margin: 0 0 $space $pad-double;
@@ -25,17 +29,15 @@
 
 // Intro Text
 .intro {
+	font-size: $font-size-l;
 	margin: $space-and-half 0;
-
-	@include font-size($font-rem-xl);
 }
 
 // Pulled Quote
 .pulledquote {
 	display: block;
+	font-size: $font-size-l;
 	margin: $space-double;
-
-	@include font-size($font-rem-l);
 
 	&:first-letter {
 		text-transform: capitalize;
@@ -52,6 +54,50 @@
 	}
 }
 
+// Contact Point
+.contact {
+	%contact-before {
+		display: inline-block;
+		width: 4em;
+	}
+	
+	.contact-email {
+		&:before {
+			@extend %contact-before;
+
+			content: "Email";
+		}
+	}
+
+	.contact-fax {
+		&:before {
+			@extend %contact-before;
+
+			content: "Fax";
+		}
+	}
+
+	.contact-phone {
+		&:before {
+			@extend %contact-before;
+
+			content: "Phone";
+		}
+	}
+}
+
+// Person Passages
+.person {
+	&.block {
+		font-size: $font-size-s;
+	}
+}
+
+.person-suffix-honorific {
+	display: block;
+	font-size: $font-size-xs;
+}
+
 
 /*--------------------*\
 	Global Modifiers
@@ -59,13 +105,12 @@
 // Discrete Text
 .discrete {
     color: $gray;
-
-    @include font-size($font-rem-xs);
+    font-size: $font-size-xs;
 }
 
 // Oomph Text
 .oomph {
-	@include font-size($font-rem-l);
+	font-size: $font-size-l;
 }
 
 

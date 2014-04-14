@@ -1,4 +1,8 @@
 {
-	"styleModifier": "is-closed",
+	"styleModifier": {
+		"block": {
+			"parent": "is-closed blue"
+		}
+	},
 	"expandable": true
 }

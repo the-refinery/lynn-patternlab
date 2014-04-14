@@ -1,0 +1,27 @@
+<div class="block block_listing person {{ styleModifier.block.parent }}" onclick="location.href='{{ url }}'" itemtype="http://schema.org/Person" itemscope="" itemprop="employee">
+	<div class="block-link">
+        <div class="block-image">
+            <img src="{{ img.person.src }}" itemprop="image"/>
+        </div>
+        <div class="block-text text g g-1up">
+            <div class="gi">
+                <h3 class="h3">
+                    <span itemprop="name">
+                    {{ name.first }} {{ name.last }}{{# name.suffix }}, {{ name.suffix }} {{/ name.suffix }}</span>
+                    {{# name.suffix-honorific }}
+                    <span itemprop="honorificSuffix">{{ name.suffix-honorific }}</span>
+                    {{/ name.suffix-honorific }}
+                </h3>
+                {{# job }}
+                <div class="person-job" itemprop="jobTitle">{{ job }}</div>
+                {{/ job }}
+            </div>
+            <div class="gi">
+                {{> molecules-contact-point }}
+            </div>
+            <div class="gi">
+            	<a href="{{ url }}" itemprop="url">Full profile&hellip;</a>
+            </div>
+        </div>
+    </div>
+</div>

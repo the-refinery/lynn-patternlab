@@ -1,7 +1,7 @@
 {
 	"styleModifier": {
 		"block": {
-			"parent": "block_padded"
+			"parent": "block_thumb"
 		}
 	},
 	"isLink": false

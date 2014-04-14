@@ -12,6 +12,6 @@ $(function() {
 			.prependTo($parentObject);
 
 		// Remove any positioning from original span
-		$(this).removeClass('center left right');
+		$(this).removeClass().addClass('pullquote');
 	});
 });

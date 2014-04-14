@@ -3,22 +3,53 @@
 \*------------------------------------*/
 
 .ex-handle {
-    background: $blue-secondary;
-    color: $white;
+    @extend %inverted;
+
     cursor: pointer;
     padding: $pad ($pad * 3) $pad $pad;
     position: relative;
     z-index: 10;
-    
-    &:before {
-        @extend .triangle-down;
-        
-        right: 1em;
-        top: 1.875em;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
     }
     
+    &:before {
+        @extend %triangle-down;
+        
+        font-size: 2em;
+        position: absolute;
+        right: 1rem;
+        top: .75rem;
+    }
+
     &:hover {
-        background: shade($blue-accent, 10%);
+        background: shade($gray, 50%);
+    }
+
+    // Modifiers
+    &.blue {
+        @extend %inverted-blue;
+
+        &:hover {
+            background: $blue-accent;
+        }
+    }
+
+    &.green {
+        @extend %inverted-green;
+
+        &:hover {
+            background: $green-accent;
+        }
+    }
+
+    &.orange {
+        @extend %inverted-orange;
+
+        &:hover {
+            background: $orange-accent;
+        }
     }
 }
 
@@ -30,10 +61,7 @@
 .is-closed {
     .ex-handle {
         &:before {          
-            @extend .triangle-right;
-            
-            right: 1.134em;
-            top: 1.509em;
+            @extend %triangle-right;
         }
     }
     
@@ -62,7 +90,7 @@
 
     // Components
     .ex-handle {
-        background: $blue-accent;
+        background: $gray;
         border-radius: 1em;
         height: 2em;
         margin: -1em auto .25em;
@@ -70,11 +98,11 @@
         width: 2em;
 
         &:before {
-            @extend .triangle-right;
+            @extend %icon-menu;
 
-            left: .65em;
-            right: auto;
-            top: .156em;
+            font-size: 1em;
+            right: .5em;
+            top: .5em;
         }
     }
 
@@ -88,14 +116,50 @@
         width: 100%;
     }
 
+    // Modifiers
+    &.blue {
+        .ex-handle {
+            background: $blue-accent;
+        }
+        .ex-panel {
+            @extend %inverted-blue;
+        }
+    }
+    &.green {
+        .ex-handle {
+            background: $green-accent;
+        }
+        .ex-panel {
+            @extend %inverted-green;
+        }
+    }
+    &.orange {
+        .ex-handle {
+            background: $orange-accent;
+        }
+        .ex-panel {
+            @extend %inverted-orange;
+        }
+    }
+
     // States
+    &.is-closed {
+        .ex-handle {
+            &:before {
+                @extend %icon-menu;
+            }
+        }
+    }
+
     &.is-open {
         .ex-handle {
             &:before {
-                @extend .triangle-up;
-
-                left: .156em;
-                top: .35em;
+                @extend %icon-menu;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
             }
         }
         .ex-panel {

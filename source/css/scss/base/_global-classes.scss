@@ -6,12 +6,24 @@
     Placeholders
 \*--------------------*/
 %inverted {
-    background-color: $blue-secondary;
+    background-color: $gray;
     color: $white;
 
     a {
         color: $white;
     }
+}
+
+%inverted-blue {
+    background-color: $blue-secondary;
+}
+
+%inverted-green {
+    background-color: $green-secondary;
+}
+
+%inverted-orange {
+    background-color: $orange-secondary;
 }
 
 
@@ -37,6 +49,23 @@
     clear: right;
 }
 
+/* Colors */
+.color-blue-lynn {
+    color: $blue-lynn;
+}
+
+.color-blue {
+    color: $blue-accent;
+}
+
+.color-green {
+    color: $green-accent;
+}
+
+.color-orange {
+    color: $orange-accent;
+}
+
 /* Floats */
 .left {
     float: left;
@@ -46,6 +75,20 @@
 .right {
     float: right;
     padding: 0 0 $pad $pad;
+}
+
+/* Inverted */
+.inverted {
+    @extend %inverted;
+}
+.inverted.blue, .blue .inverted {
+    @extend %inverted-blue;
+}
+.inverted.green, .green .inverted {
+    @extend %inverted-green;
+}
+.inverted.orange, .orange .inverted {
+    @extend %inverted-orange;
 }
 
 /* Padding */
@@ -78,10 +121,6 @@
     padding: 0;
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
-}
-
-.is-inverted {
-    @extend %inverted;
 }
 
 

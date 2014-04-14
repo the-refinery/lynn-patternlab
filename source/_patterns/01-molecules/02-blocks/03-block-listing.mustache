@@ -1,10 +1,10 @@
-<div class="block_listing {{ styleModifier }}">
-	<a href="{{ url }}" class="block--link">
-        <div class="block--image">
+<div class="block block_listing {{ styleModifier.block.parent }}">
+	<a href="{{ url }}" class="block-link">
+        <div class="block-image">
             {{> atoms-spotlight-580x250 }}
         </div>
-        <div class="block--text text">
-            <h3 class="h3">{{ block.heading }}</h1>
+        <div class="block-text text">
+            <h3 class="h3">{{ block.heading }}</h3>
             {{ block.text }}
         </div>
     </a>
