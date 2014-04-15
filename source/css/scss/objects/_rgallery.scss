@@ -1,0 +1,81 @@
+/*--------------------*\
+	Responsive Gallery
+\*--------------------*/
+
+.rgallery {
+	@extend %l-container;
+
+	background-color: rgba($gray, .1);
+	overflow: hidden;
+	padding: $pad;
+
+	>.image-wrapper {
+		margin-bottom: 0;
+	}
+
+	.nav-next, .nav-prev {
+		color: $black;
+		cursor: pointer;
+		display: block;
+		height: 2em;
+		line-height: 0;
+		overflow: hidden;
+		position: absolute;
+		text-indent: -999999px;
+		top: 50%;
+		width: 2em;
+	}
+
+	.nav-prev {
+		left: 0;
+
+		&:before {
+			@extend %triangle-left;
+		}
+	}
+	.nav-next {
+		right: 0;
+
+		&:after {
+			@extend %triangle-right;
+		}
+	}
+
+	.nav-next:after, .nav-prev:before {
+		display: block;
+		font-size: 2em;
+		position: absolute;
+		text-indent: 0;
+		top: 0;
+	}
+
+	@include bp-max(l) {
+		.image-wrapper {
+			margin: 0 auto;
+			max-width: $w-main-max;
+		}
+	}
+}
+
+.rgallery.caption {
+	&.caption-right {
+		
+
+		@include bp-min(l) {
+			.image-wrapper {
+				@include flexbox;
+			}
+
+			.image {
+				@include flex(1 0 66.666666%);
+				@include order(1);
+			}
+			.image-caption {
+				padding: 0 $pad;
+
+				@include flex(1 0 33.333333%);
+				@include order(2);
+			}
+		}
+	}
+}

@@ -8,6 +8,9 @@ img, video, object {
 	height: auto;
 }
 
+figure {
+	margin-bottom: $space;
+}
 
 
 
@@ -20,14 +23,4 @@ img, video, object {
 \*------------------------------------*/
 iframe {
 	margin-bottom: $space;
-}
-
-figure {
-	margin-bottom: $space;
-	img {
-		margin-bottom: $space-half;
-	}
-}
-figcaption {
-	font-style: italic;
 }
