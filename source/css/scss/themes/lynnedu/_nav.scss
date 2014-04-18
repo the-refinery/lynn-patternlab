@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+// Main Navigation
+.nav-main {
+    background-color: tint($gray, 70%);
+
+    a {
+    	border-bottom-color: $gray;
+    	color: $blue-lynn;
+
+    	&:hover {
+    		color: $blue-accent;
+    	}
+    }
+
+    .submenu {
+    	& li:last-child a {
+    		border-bottom-color: $gray;
+    	}
+    }
+}

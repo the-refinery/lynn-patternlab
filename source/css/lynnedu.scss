@@ -1,0 +1,37 @@
+/*------------------------------*\
+	$TABLE OF CONTENTS
+\*------------------------------*/
+/*
+ * TOOLS
+ * .....Compass.................Compass support
+ * .....Mixins..................Sass mixins
+ * GENERIC
+ * .....Colors
+ * .....Typography
+ * .....Variables...............(Sass variables)
+ * .........Breakpoints
+ * .........Spacing
+ * .........Typography
+ * .........Widths
+ */
+
+
+/*------------------------------------*\
+    $TOOLS
+\*------------------------------------*/
+@import "compass";
+@import "scss/generic/mixins";
+
+
+/*------------------------------------*\
+    $GENERIC
+\*------------------------------------*/
+@import "scss/generic/colors";
+@import "scss/generic/typography";
+@import "scss/generic/variables";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "scss/themes/lynnedu/nav";

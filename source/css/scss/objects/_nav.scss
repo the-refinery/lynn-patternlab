@@ -10,16 +10,16 @@
     overflow: hidden;
 
     li {
-        @include font-size(1.5);
+        font-size: $font-size-l;
         
         li {
-            @include font-size(1.25);
+            font-size: $font-size-m;
             
             li {
-                @include font-size(1);
+                font-size: $font-size-s;
             }
         }
-        
+
         &:last-child a {
             border-bottom: none;
         }
@@ -37,7 +37,7 @@
         padding: $pad/4 0;
         
         &:hover {
-            color: tint($black, 75%);
+            color: $black;
         }
     }
     
@@ -53,9 +53,13 @@
     
     .submenu {
         padding-left: $pad;
-        
-        a {
-            border-bottom-color: tint($black, 75%);
+
+        & li:last-child a {
+            border-bottom: {
+                color: $white;
+                style: solid;
+                width: 1px;
+            }
         }
     }
     
@@ -82,7 +86,7 @@
             a {
                 margin: 0 $pad-half;
                 padding: $pad-half $pad-quarter;
-            }
+           border-bottom-color: $gray; }
         }
         
         &.is-closed li {
@@ -106,27 +110,6 @@
         }
     }
 }
-
-
-// Lynn.edu
-
-/*.nav-main {
-    background-color: tint($green, 90%);
-    
-    a {
-        border-bottom-color: tint($green, 50%);
-        color: $blue-lynn;
-        
-        &:hover {
-            background-color: tint($green, 75%);
-            color: tint($blue-lynn, 25%);
-        }
-    }
-    
-    .submenu a {
-        border-bottom-color: tint($green, 75%);
-    }
-}*/
 
 
 // Take Action
