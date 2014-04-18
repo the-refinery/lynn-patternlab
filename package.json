@@ -1,15 +1,14 @@
 {
   "name": "patternlab-php",
   "version": "0.0.1",
-  "dependencies": {
-    "grunt-cli": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-contrib-compass": "latest"
-  },
   "devDependencies": {
-    "grunt-contrib-compass": "~0.7.2"
+    "grunt-cli": "latest",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^0.6.4",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0"
   }
 }
