@@ -21,3 +21,60 @@
     	}
     }
 }
+
+// Take Action
+.take-action {
+    border-top: 1px solid $blue-lynn;
+    
+    li {
+        border-bottom: {
+            color: $blue-lynn;
+            style: solid;
+            width: 1px;
+        }
+        position: relative;
+        
+        &:hover {
+            background: tint($gray, 80%);
+            
+            a:after {
+                @include triangle(right, tint($gray, 80%));
+            }
+        }
+    }
+    
+    a {
+        color: $gray;
+        display: block;
+        padding: $pad $pad-half $pad $pad-double;
+        
+        strong {
+            color: $blue-lynn;
+            font: {
+                family: $font-helveticaneue;
+                weight: normal;
+            }
+            line-height: 1em;
+            
+            @include font-size(1.5);
+        }
+        
+        &:after, &:before {
+            content: "";
+            position: absolute;
+            top: $space-and-quarter;
+        }
+        
+        &:after {
+            left: .4em;
+            
+            @include triangle(right, $white);
+        }
+        
+        &:before {
+            left: .5em;
+            
+            @include triangle(right, $green-accent);
+        }
+    }
+}

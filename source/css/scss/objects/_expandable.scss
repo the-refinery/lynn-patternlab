@@ -26,31 +26,6 @@
     &:hover {
         background: shade($gray, 50%);
     }
-
-    // Modifiers
-    &.blue {
-        @extend %inverted-blue;
-
-        &:hover {
-            background: $blue-accent;
-        }
-    }
-
-    &.green {
-        @extend %inverted-green;
-
-        &:hover {
-            background: $green-accent;
-        }
-    }
-
-    &.orange {
-        @extend %inverted-orange;
-
-        &:hover {
-            background: $orange-accent;
-        }
-    }
 }
 
 .ex-panel {
@@ -114,32 +89,6 @@
         position: absolute;
         top: 100;
         width: 100%;
-    }
-
-    // Modifiers
-    &.blue {
-        .ex-handle {
-            background: $blue-accent;
-        }
-        .ex-panel {
-            @extend %inverted-blue;
-        }
-    }
-    &.green {
-        .ex-handle {
-            background: $green-accent;
-        }
-        .ex-panel {
-            @extend %inverted-green;
-        }
-    }
-    &.orange {
-        .ex-handle {
-            background: $orange-accent;
-        }
-        .ex-panel {
-            @extend %inverted-orange;
-        }
     }
 
     // States

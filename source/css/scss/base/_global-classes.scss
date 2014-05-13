@@ -14,18 +14,6 @@
     }
 }
 
-%inverted-blue {
-    background-color: $blue-secondary;
-}
-
-%inverted-green {
-    background-color: $green-secondary;
-}
-
-%inverted-orange {
-    background-color: $orange-secondary;
-}
-
 
 /*--------------------*\
     Modifiers
@@ -54,18 +42,6 @@
     color: $blue-lynn;
 }
 
-.color-blue {
-    color: $blue-accent;
-}
-
-.color-green {
-    color: $green-accent;
-}
-
-.color-orange {
-    color: $orange-accent;
-}
-
 /* Floats */
 .left {
     float: left;
@@ -80,15 +56,6 @@
 /* Inverted */
 .inverted {
     @extend %inverted;
-}
-.inverted.blue, .blue .inverted {
-    @extend %inverted-blue;
-}
-.inverted.green, .green .inverted {
-    @extend %inverted-green;
-}
-.inverted.orange, .orange .inverted {
-    @extend %inverted-orange;
 }
 
 /* Padding */

@@ -2,36 +2,41 @@
 	$TABLE OF CONTENTS
 \*------------------------------*/
 /*
- * TOOLS
- * .....Compass.................Compass support
- * .....Mixins..................Sass mixins
- * GENERIC
- * .....Colors
- * .....Typography
- * .....Variables...............(Sass variables)
- * .........Breakpoints
- * .........Spacing
- * .........Typography
- * .........Widths
+ * BASE STYLES..................Default styles
+ * GLOBAL CLASSES
+ * .....Global Classes
+ * .........Placeholders
+ * .........Modifiers
+ * .............Colors
+ * .............Inverted
+ * PAGE STRUCTURE
+ * COMPONENTS
+ * .....Blocks
+ * .........Color Modifiers
+ * .....Expandable
+ * .........Color Modifiers
  */
 
-
 /*------------------------------------*\
-    $TOOLS
+    $BASE STYLES
 \*------------------------------------*/
-@import "compass";
-@import "scss/generic/mixins";
+@import "style";
 
 
 /*------------------------------------*\
-    $GENERIC
+    $GLOBAL CLASSES
 \*------------------------------------*/
-@import "scss/generic/colors";
-@import "scss/generic/typography";
-@import "scss/generic/variables";
+@import "scss/themes/lynnedu/global-classes";
 
 
 /*------------------------------------*\
     $PAGE STRUCTURE
 \*------------------------------------*/
 @import "scss/themes/lynnedu/nav";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+@import "scss/themes/lynnedu/blocks";
+@import "scss/themes/lynnedu/expandable";
