@@ -41,9 +41,13 @@ module.exports = function(grunt) {
                     separator: ';'
                 },
                 src: [
-                    'source/js/jquery-2.0.0b2.js',
-                    'source/js/fitvids.js',
-                    'source/js/custom/*.js'
+                    'source/js/lib/jquery.flexslider.js',
+                    'source/js/lib/fitvids.js',
+                    'source/js/custom/expandable.js',
+                    'source/js/custom/pullqoute.js',
+                    'source/js/custom/sticky-nav.js',
+                    'source/js/custom/fitvid.js',
+                    'source/js/custom/flexslider.js'
                 ],
                 dest: 'source/js/main.js'
             }
@@ -51,24 +55,24 @@ module.exports = function(grunt) {
 
         // Minify Javascript
         uglify: {
-            js: {
-                development: {
-                    options: {
-                        mangle: false,
-                        beautify: true
-                    },
-                    files: {
-                        'source/js/main.min.js': ['source/js/main.js']
-                    }
+            development: {
+                options: {
+                    mangle: false,
+                    beautify: true
                 },
-                producction: {
-                    options: {
-                        mangle: false,
-                        beautify: false
-                    },
-                    files: {
-                        'source/js/main.min.js': ['source/js/main.js']
-                    }
+                files: {
+                    'source/js/min/jquery.min.js': ['source/js/jquery-2.0.0b2.js'],
+                    'source/js/min/main.min.js': ['source/js/main.js']
+                }
+            },
+            production: {
+                options: {
+                    mangle: false,
+                    beautify: false
+                },
+                files: {
+                    'source/js/min/jquery.min.js': ['source/js/jquery-2.0.0b2.js'],
+                    'source/js/min/main.min.js': ['source/js/main.js']
                 }
             }
         },
@@ -90,10 +94,10 @@ module.exports = function(grunt) {
         clean: {
             resources: {
                 css: {
-                    src: ['public/css/']
+                    src: ['public/css/**/*']
                 },
                 js: {
-                    src: ['public/js/']
+                    src: ['public/js/**/*']
                 }
             },
             all: ['public/**/*']
@@ -109,8 +113,8 @@ module.exports = function(grunt) {
             },
             js: {
                 expand: true,
-                cwd: 'source/js',
-                src: 'main.min.js',
+                cwd: 'source/js/min',
+                src: ['jquery.min.js','main.min.js'],
                 dest: 'public/js/'
             }
         },
@@ -126,8 +130,8 @@ module.exports = function(grunt) {
                tasks: ['copy:css']
             },
             js: {
-                files: ['source/js/**/*.js'],
-                tasks: ['concat:js', 'uglify:js'+env]
+                files: ['source/js/custom/**/*.js','source/js/lib/**/*.js'],
+                tasks: ['concat:js', 'uglify:'+env]
             },
             patterns: {
                 files: [
@@ -158,21 +162,21 @@ module.exports = function(grunt) {
     grunt.registerTask(
         'default',
         'Deploy Pattern Lab from source to public and watch for updates',
-        ['compass:'+env,'concat','uglify:js:'+env,'clean:resources','copy','watch']
+        ['compass:'+env,'concat','uglify:'+env,'clean:resources','copy','watch']
     );
 
     // Build Pattern Lab
     grunt.registerTask(
         'build-pl',
         'Build pattern lab in an unalterted state.',
-        ['clean:all','compass:'+env,'concat','uglify:js:'+env,'shell:pl']
+        ['clean:all','compass:'+env,'concat','uglify:'+env,'shell:pl']
     );
 
     // Build Pattern Lab and cleanup
     grunt.registerTask(
         'build-pl-clean',
         'Build pattern lab, cleaning up resources afterward.',
-        ['clean:all','compass:'+env,'concat','uglify:js:'+env,'shell:pl','clean:resources','copy']
+        ['clean:all','compass:'+env,'concat','uglify:'+env,'shell:pl','clean:resources','copy']
     );
 
     // Build only Pattern Lab patterns
