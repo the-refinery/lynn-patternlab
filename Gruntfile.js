@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                     'source/js/lib/jquery.flexslider.js',
                     'source/js/lib/fitvids.js',
                     'source/js/custom/expandable.js',
-                    'source/js/custom/pullqoute.js',
+                    'source/js/custom/pullquote.js',
                     'source/js/custom/sticky-nav.js',
                     'source/js/custom/fitvid.js',
                     'source/js/custom/flexslider.js'
