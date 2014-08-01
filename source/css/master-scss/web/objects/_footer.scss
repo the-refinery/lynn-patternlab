@@ -1,0 +1,66 @@
+.footer {
+	@extend %l-container;
+	@extend .cf;
+
+	max-width: $w-max;
+
+	.lynn-seal {
+		background: {
+			color: transparent;
+			image: url('http://static.lynn.edu/logos/lynn/web/lynn-seal-45.gif');
+			position: center top;
+			repeat: no-repeat;
+		}
+
+		.text {
+			font-size: $font-size-s;
+		}
+
+		@include bp-max(m) {
+			padding-top: 60px;
+			text-align: center;
+		}
+
+		@include bp-min(m) {
+			background-position: left 2px;
+			margin-right: $space-double;
+			padding-left: 60px;
+		}
+	}
+
+	.nav-footer {
+		font-family: $font;
+		font-size: $font-size-xxs;
+
+		a {
+			text-decoration: underline;
+		}
+
+		@include bp-max(m) {
+			margin: $space 0;
+		}
+	}
+
+	.apple {
+		background: {
+			color: transparent;
+			image: url('http://static.lynn.edu/logos/apple/web/apple-ds.gif');
+			position: center top;
+			repeat: no-repeat;
+		}
+		font-size: $font-size-xxs;
+		max-width: $w-s;
+		padding-top: 24px;
+
+		@include bp-max(m) {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		@include bp-min(m) {
+			background-position: right top;
+			float: right;
+			text-align: right;
+		}
+	}
+}

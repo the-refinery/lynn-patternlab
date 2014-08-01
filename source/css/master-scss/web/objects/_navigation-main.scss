@@ -1,0 +1,79 @@
+.nav-main {
+    @include bp-max(l) {
+        background-color: tint($lynn-gray, 90%);
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        z-index: 999;
+        
+        &:before {
+            background: transparent url(../images/menu.png) no-repeat 10px center;
+            content: "Menu";
+            cursor: pointer;
+            display: block;
+            padding: $space $pad $space $pad-double;
+        }
+        
+        li {
+            display: block;
+            
+            a {
+                margin: 0 $pad-half;
+                padding: $pad-half $pad-quarter;
+                border-bottom-color: tint($lynn-gray, 60%);
+            }
+        }
+        
+        &.is-open {
+            &:before {
+                border-bottom: {
+                    color: tint($lynn-gray, 60%);
+                    style: solid;
+                    width: 1px;
+                }
+            }
+        }
+
+        &.is-closed li {
+            display: none;
+        }
+        
+        .selected:before {
+            display: none;
+        }
+        
+        .submenu {
+            padding-left: $pad-half;
+        }
+
+        // Only reposition if javascript is enabled
+        &.js-enabled {
+            //left: 50%;
+            //margin-left: -120px;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        @include bp-min(l) {
+            background-color: $white;
+            border-bottom: 1px solid tint($lynn-gray, 60%);
+            .menu {
+                max-width: $w-max;
+                margin: $space auto;
+                text-align: right;
+                width: 90%;
+            }
+            .submenu {
+                text-align: left;
+            }
+        }
+    }
+}

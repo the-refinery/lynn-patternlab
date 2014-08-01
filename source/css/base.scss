@@ -1,0 +1,120 @@
+/*--------------------*\
+	brand.lynn.edu
+\*--------------------*/
+
+/** TABLE OF CONTENTS
+ *
+ *  TOOLS
+ *  ....Compass.........................Let compass help out
+ *  ....Mixins
+ *  ........Breakpoints
+ *  VARIABLES
+ *	....Colors
+ *  ....Breakpoints
+ *  ....Spacing
+ *  ........Global padding & spacing
+ *  ........Global spacing formulas
+ *	....Typography (Import and define font classes)
+ *  ........Global base font
+ *  ........Web specific font
+ *  ....Widths
+ *  BASE
+ *  ....Reset...........................Browser reset
+ *  ....Main
+ *  ....Headings
+ *  ....Text
+ *  ....Lists
+ *  ....Media
+ *  ....Links
+ *  ........Global
+ *  ........Web specific
+ *  ....Tables
+ *  ....Icons
+ *  MODIFIERS & STATES..................Global class modifiers & states
+ *  ....Modifiers
+ *  ....States
+ *  STRUCTURE
+ *  ....Layout..........................Layout containers and grids
+ *  ....Header
+ *  ....Navigation
+ *  ........Column
+ *  ........Dropdown
+ *  ........Main........................Collapse main nav for small screens
+ *  ........Take Action
+ *  ....Footer
+ *  OBJECTS
+ *  ....Text
+ *  ....Images..........................Image replacement
+ *  ....Buttons
+ *  ....Forms
+ *  ........Inline
+ *  ........Search
+ *  ....Lists
+ *  ....Tables
+ *  ........Grid........................Borders for the table cells
+ *  ........Zebra.......................Alternating stripes for rows
+ *  ....Blocks
+ *  ....Expandable
+ *  ....Directory
+ *  EXTENSIONS..........................Third party add-ons
+ *  ....Flexslider
+ *  THEME...............................Theme specific enhancements
+ *  OVERRIDES...........................Last chance overrides
+ **/
+
+/* TOOLS */
+@import "compass";
+@import "master-scss/global/mixins/breakpoints";
+@import "master-scss/global/mixins/flexbox";
+
+/* VARIABLES */
+@import "master-scss/global/variables/colors";
+@import "master-scss/web/variables/breakpoints";
+@import "master-scss/global/variables/spacing";
+@import "master-scss/global/variables/spacing-formulas";
+@import "master-scss/global/variables/typography";
+@import "master-scss/web/variables/typography";
+@import "master-scss/web/variables/widths";
+
+/* BASE */
+@import "master-scss/web/base/reset";
+@import "master-scss/global/base/main";
+@import "master-scss/global/base/headings";
+@import "master-scss/global/base/text";
+@import "master-scss/global/base/lists";
+@import "master-scss/global/base/media";
+@import "master-scss/global/base/links";
+@import "master-scss/web/base/links";
+@import "master-scss/web/base/forms";
+@import "master-scss/web/base/tables";
+@import "master-scss/web/base/icons";
+
+/* MODIFIERS & STATES */
+@import "master-scss/web/base/modifiers";
+@import "master-scss/web/base/states";
+
+/* STRUCTURE */
+@import "master-scss/web/objects/layout";
+@import "master-scss/web/objects/header";
+@import "master-scss/web/objects/navigation-column";
+@import "master-scss/web/objects/navigation-dropdown";
+@import "master-scss/web/objects/navigation-main";
+@import "master-scss/web/objects/navigation-take-action";
+@import "master-scss/web/objects/main";
+@import "master-scss/web/objects/footer";
+
+/* OBJECTS */
+@import "master-scss/web/objects/text";
+@import "master-scss/web/objects/images";
+@import "master-scss/web/objects/buttons";
+@import "master-scss/web/objects/forms-inline";
+@import "master-scss/web/objects/forms-search";
+@import "master-scss/web/objects/lists";
+@import "master-scss/web/objects/table-grid";
+@import "master-scss/web/objects/table-zebra";
+@import "master-scss/web/objects/blocks";
+@import "master-scss/web/objects/expandable";
+@import "master-scss/web/objects/directory";
+
+/* EXTENSIONS */
+@import "master-scss/web/extensions/flexslider";

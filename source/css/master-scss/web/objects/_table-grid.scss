@@ -1,0 +1,9 @@
+table.grid {
+	&, th, td {
+		border: {
+			color: tint($lynn-gray, 60%);
+			style: solid;
+			width: 1px;
+		}
+	}
+}

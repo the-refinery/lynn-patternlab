@@ -1,0 +1,20 @@
+// Base Colors
+$black:             rgb(0,0,0);
+$white:             rgb(255,255,255);
+$lynn-blue:         rgb(0,61,165);
+$lynn-gray:         rgb(117,120,123);
+$lynn-gray-web:		rgb(99,102,106);
+
+// Secondary Colors
+$secondary-blue:    rgb(139,211,230);
+$secondary-green:   rgb(183,221,121);
+$secondary-orange:  rgb(255,160,106);
+
+// Accent Colors
+$accent-blue:       rgb(0,175,215);
+$accent-green:      rgb(120,190,32);
+$accent-orange:     rgb(255,106,19);
+
+// Variable lists to let SASS make our life easier
+$color-classes: black, white, lynn-blue, lynn-gray, lynn-gray-web, secondary-blue, secondary-green, secondary-orange, accent-blue, accent-green, accent-orange;
+$color-list: $black, $white, $lynn-blue, $lynn-gray, $lynn-gray-web, $secondary-blue, $secondary-green, $secondary-orange, $accent-blue, $accent-green, $accent-orange;

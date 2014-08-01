@@ -1,0 +1,35 @@
+.nav-column {
+	clear: both;
+	cursor: pointer;
+	margin-bottom: $space;
+	overflow: hidden;
+
+	a {
+		color: $lynn-gray-web;
+		display: inline-block;
+		font: {
+			size: $font-size-s;
+			weight: 600;
+		}
+		line-height: $line-height-less;
+		padding: $space-half $space $space-half $space-quarter;
+
+		&:hover {
+			color: $lynn-blue;
+		}
+	}
+
+	.submenu {
+		padding-left: $space;
+
+		a {
+			font-size: $font-size-xs;
+		}
+
+		.submenu {
+			a {
+				font-weight: normal;
+			}
+		}
+	}
+}

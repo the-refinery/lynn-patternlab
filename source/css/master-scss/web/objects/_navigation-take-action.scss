@@ -1,0 +1,31 @@
+.take-action {
+    border-top: 1px solid tint($lynn-gray, 60%);
+    
+    li {
+        border-bottom: {
+            color: tint($lynn-gray, 60%);
+            style: solid;
+            width: 1px;
+        }
+        position: relative;
+        
+        &:hover {
+            background: tint($lynn-gray, 80%);
+        }
+    }
+    
+    a {
+        color: $lynn-gray-web;
+        display: block;
+        padding: $pad;
+        
+        strong {
+            color: $lynn-blue;
+            font: {
+                size: $font-size-l;
+                weight: normal;
+            }
+            line-height: $line-height-least;
+        }
+    }
+}
