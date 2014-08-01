@@ -1,0 +1,8 @@
+{
+	"styleModifier": {
+		"block": {
+			"parent": "block_nav"
+		}
+	},
+	"isLink": true
+}
