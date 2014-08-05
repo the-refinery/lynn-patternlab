@@ -10,6 +10,7 @@
 	a {
 		color: $lynn-gray-web;
 		font-size: $font-size-l;
+		line-height: $line-height-less;
 
 		&:hover {
 			color: $lynn-blue;
@@ -27,6 +28,8 @@
 
 
 	.submenu {
+		@include box-sizing(content-box);
+
 		display: block;
 		left: -999999px;
 		position: absolute;

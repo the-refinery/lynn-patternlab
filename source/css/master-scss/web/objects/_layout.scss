@@ -33,7 +33,7 @@
 }
 
 /* Main */
-.l-main {
+.l-content-max {
 	margin: 0 auto;
 	max-width: $w-main-max;
 }
@@ -41,6 +41,14 @@
 /* Row */
 .l-row {
 	margin: $space-quad 0;
+}
+
+.l-row-b {
+	margin: 0 0 $space-quad 0;
+}
+
+.l-row-t {
+	margin: $space-quad 0 0 0;
 }
 
 /* Navigation */
@@ -72,37 +80,44 @@
 /*----- Templates -----*/
 #midsection {
 	clear: both;
+	padding-top: $space*5;
 	position: relative;
-
-	//@include bp-max(l) {
-		padding-top: 5em;
-	//}
 }
 
 /* Two Column Layout */
 .l-two-col {
+	@extend .cf;
+
     .l-main {
     	@include bp-min(l) {
     		float: left;
-    		width: 70%;
+            padding: 0 $space 0 0;
+    		width: 66.66666%;
     	}
     }
     
     .l-sidebar {
     	@include bp-min(l) {
     		float: right;
-    		width: 30%;
+            padding: 0 0 0 $space;
+    		width: 33.33333%;
     	}
     }
 
-    .reversed {
-    	.l-main {
-    		float: right;
-    	}
+    &.reversed {
+    	@include bp-min(l) {
+            .l-main {
+                float: right;
+                padding: 0 0 0 $space;
+            }
+        }
     	
-    	.l-sidebar {
-    		float: left;
-    	}
+    	@include bp-min(l) {
+            .l-sidebar {
+                float: left;
+                padding: 0 $space 0 0;
+            }
+        }
     }
 }
 
@@ -116,13 +131,13 @@
 /*----- Grids -----*/
 /* Grid Containter */
 .g {
-	margin: 0 (-$pad-half);
+	margin: (-$pad);
 	overflow: hidden;
 }
 
 /* Grid Item */
 .gi {
-	padding: $pad-half;
+	padding: $pad;
 
 	img {
 		display: block;

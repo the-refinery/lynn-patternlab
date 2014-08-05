@@ -2,7 +2,22 @@
 	@extend %l-container;
 	@extend .cf;
 
+	margin-top: $space-double;
 	max-width: $w-max;
+
+	@include bp-min(m) {
+		.gi {
+			float: left;
+		}
+
+		.gi-2-3 {
+			width: 66.66666%;
+		}
+
+		.gi-1-3 {
+			width: 33.33333%;
+		}
+	}
 
 	.lynn-seal {
 		background: {

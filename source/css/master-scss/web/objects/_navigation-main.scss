@@ -19,9 +19,9 @@
             display: block;
             
             a {
-                margin: 0 $pad-half;
-                padding: $pad-half $pad-quarter;
                 border-bottom-color: tint($lynn-gray, 60%);
+                display: block;
+                margin: 0 $pad-half;
             }
         }
         

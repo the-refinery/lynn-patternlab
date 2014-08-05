@@ -28,6 +28,14 @@
 
 
 /*----- Submodules -----*/
+
+/* Display blocks side-by-side with same height */
+.block_group {
+	@include bp-min(m) {
+		min-height: $pad*10;
+	}
+}
+
 .block_padded {
 	padding: $pad;
 }

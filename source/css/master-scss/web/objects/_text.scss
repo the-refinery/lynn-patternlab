@@ -1,5 +1,16 @@
-/* Article Header */
+h1, .heading {
+	@include bp-max(m) {
+		font-size: $font-size-xxl;
+	}
+}
+
+/* Article Heading */
 .article-header {
+	margin-bottom: $space-double;
+}
+
+/* Heading Group(s) */
+.hgroup {
 	margin-bottom: $space-double;
 }
 
