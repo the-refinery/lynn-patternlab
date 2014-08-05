@@ -3,21 +3,23 @@
     
     <div id="midsection">
         <div role="main" class="l-two-col">
-            {{# article }}
-                {{> species-article }}
-            {{/ article }}
+            <div class="l-main">
+                {{# article }}
+                    {{> species-article }}
+                {{/ article }}
 
-            {{# collection }}
-                {{> species-collection }}
-            {{/ collection }}
+                {{# collection }}
+                    {{> species-collection }}
+                {{/ collection }}
 
-            {{# folder }}
-                {{> species-folder }}
-            {{/ folder }}
+                {{# folder }}
+                    {{> species-folder }}
+                {{/ folder }}
 
-            {{# directory.person }}
-                {{> species-person }}
-            {{/ directory.person }}
+                {{# directory.person }}
+                    {{> species-person }}
+                {{/ directory.person }}
+            </div>
             <div class="l-sidebar">
                 {{> molecules-action-list }}
             </div>
