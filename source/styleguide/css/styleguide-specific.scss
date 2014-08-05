@@ -9,7 +9,7 @@
  */
 
 
-@import '../../../source/css/scss/generic/colors';
+@import '../../../source/css/master-scss/global/variables/colors';
 
 
 /* Style Guide Interface Colors */ 
@@ -106,36 +106,51 @@ $animate-quick: 0.2s;
 
 // Style Guide color swatches
 .sg-colors {
-margin-bottom: 1em;
-	overflow: hidden;
+	margin-bottom: 1em !important;
+	overflow: hidden !important;
 
 	li {
-		overflow: hidden;
-		border: 1px solid $sg-tertiary;
-		padding: 0.3em;
-		margin: 0 0.2em 0.2em 0;
+		overflow: hidden !important;
+		border: none !important;
+		margin: 0 0 1rem 0 !important;
+		padding: 0 !important;
 
-		@media all and (min-width: $sg-bp-small-2) {
-			float: left;
-			width: 9em;
+		@media screen and (max-width: 240px - 1px) {
+			display: block !important;
+			width: 100% !important;
+		}
+
+		@media screen and (min-width: 240px) {
+			float: left !important;
+			margin-right: 1rem !important;
+			width: 9em !important;
+
+			&:last-of-type {
+				margin-right: 0 !important;
+			}
 		}
 	}
 }
 
 .sg-swatch {
-	display: block;
-	height: 1.5em;
-	width: 50%;
+	display: block !important;
 	
-	@media all and (max-width: $sg-bp-small-2) {
-		float: left;
-		margin-right: 0.3em;
+	border-radius: .5em;
+
+	@media screen and (max-width: 320px - 1px) {
+		height: 5em !important;
+		width: 100% !important;
 	}
 
-	@media all and (min-width: $sg-bp-small-2) {
-		width: 100%;
-		height: 5em;
-		margin-bottom: 0.2em;
+	@media screen and (min-width: 320px) {
+		float: left !important;
+		height: 8em !important;
+		width: 25% !important;
+	}
+
+	@media screen and (min-width: 480px) {
+		height: 6em !important;
+		width: 100% !important;
 	}
 	
 }

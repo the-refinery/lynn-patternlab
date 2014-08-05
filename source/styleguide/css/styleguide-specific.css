@@ -51,31 +51,41 @@
     margin-left: -20px; }
 
 .sg-colors {
-  margin-bottom: 1em;
-  overflow: hidden; }
+  margin-bottom: 1em !important;
+  overflow: hidden !important; }
   .sg-colors li {
-    overflow: hidden;
-    border: 1px solid #dddddd;
-    padding: 0.3em;
-    margin: 0 0.2em 0.2em 0; }
-    @media all and (min-width: 30em) {
+    overflow: hidden !important;
+    border: none !important;
+    margin: 0 0 1rem 0 !important;
+    padding: 0 !important; }
+    @media screen and (max-width: 239px) {
       .sg-colors li {
-        float: left;
-        width: 9em; } }
+        display: block !important;
+        width: 100% !important; } }
+    @media screen and (min-width: 240px) {
+      .sg-colors li {
+        float: left !important;
+        margin-right: 1rem !important;
+        width: 9em !important; }
+        .sg-colors li:last-of-type {
+          margin-right: 0 !important; } }
 
 .sg-swatch {
-  display: block;
-  height: 1.5em;
-  width: 50%; }
-  @media all and (max-width: 30em) {
+  display: block !important;
+  border-radius: .5em; }
+  @media screen and (max-width: 319px) {
     .sg-swatch {
-      float: left;
-      margin-right: 0.3em; } }
-  @media all and (min-width: 30em) {
+      height: 5em !important;
+      width: 100% !important; } }
+  @media screen and (min-width: 320px) {
     .sg-swatch {
-      width: 100%;
-      height: 5em;
-      margin-bottom: 0.2em; } }
+      float: left !important;
+      height: 8em !important;
+      width: 25% !important; } }
+  @media screen and (min-width: 480px) {
+    .sg-swatch {
+      height: 6em !important;
+      width: 100% !important; } }
 
 .sg-swatch.black {
   background: black; }
@@ -83,28 +93,31 @@
 .sg-swatch.white {
   background: white; }
 
-.sg-swatch.blue-lynn {
+.sg-swatch.lynn-blue {
   background: #003da5; }
 
-.sg-swatch.gray {
+.sg-swatch.lynn-gray {
   background: #75787b; }
 
-.sg-swatch.blue-secondary {
+.sg-swatch.lynn-gray-web {
+  background: #63666a; }
+
+.sg-swatch.secondary-blue {
   background: #8bd3e6; }
 
-.sg-swatch.green-secondary {
+.sg-swatch.secondary-green {
   background: #b7dd79; }
 
-.sg-swatch.orange-secondary {
+.sg-swatch.secondary-orange {
   background: #ffa06a; }
 
-.sg-swatch.blue-accent {
+.sg-swatch.accent-blue {
   background: #00afd7; }
 
-.sg-swatch.green-accent {
+.sg-swatch.accent-green {
   background: #78be20; }
 
-.sg-swatch.orange-accent {
+.sg-swatch.accent-orange {
   background: #ff6a13; }
 
 .sg-label {

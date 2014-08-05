@@ -4,3 +4,65 @@
 		padding: $space-double;
 	}
 }
+
+
+/* Color swatches */
+// Style Guide color swatches
+.sg-colors {
+	margin-bottom: 1em !important;
+	overflow: hidden !important;
+
+	li {
+		overflow: hidden !important;
+		border: none !important;
+		margin: 0 0 $space 0 !important;
+		padding: 0 !important;
+
+		@include bp-max(s) {
+			display: block !important;
+			width: 100% !important;
+		}
+
+		@include bp-min(s) {
+			float: left !important;
+			margin-right: $space !important;
+			width: 9em !important;
+
+			&:last-of-type {
+				margin-right: 0 !important;
+			}
+		}
+	}
+}
+
+.sg-swatch {
+	display: block !important;
+	
+	@include border-radius($pad-half);
+
+	@include bp-max(319px) {
+		height: 5em !important;
+		width: 100% !important;
+	}
+
+	@include bp-min(320px) {
+		float: left !important;
+		height: 8em !important;
+		width: 25% !important;
+	}
+
+	@include bp-min(s) {
+		height: 6em !important;
+		width: 100% !important;
+	}
+	
+}
+
+@for $i from 1 through length($color-classes){
+    .sg-swatch.#{nth($color-classes, $i)} {background: nth($color-list, $i);}
+}
+
+.sg-label {
+    font-size: $font-size-s;
+	line-height: $line-height-least;
+}
