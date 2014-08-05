@@ -91,7 +91,7 @@
 
 /* Inversion */
 .inverted {
-	//@extend %inverted;
+	@extend %inverted;
 
 	&.blue {
 		@extend %inverted-blue;
@@ -114,6 +114,11 @@
 /* Padding */
 .no-pad {
 	padding: 0;
+}
+
+/* Tint (background) */
+.tint {
+	background-color: tint($lynn-gray, 90%);
 }
 
 /* Widths */
