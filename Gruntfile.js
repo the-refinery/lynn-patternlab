@@ -92,14 +92,13 @@ module.exports = function(grunt) {
 
         // Clean public folder
         clean: {
-            resources: {
-                css: {
-                    src: ['public/css/**/*']
-                },
-                js: {
-                    src: ['public/js/**/*']
-                }
+            css: {
+                src: ['public/css/**/*']
             },
+            js: {
+                src: ['public/js/**/*']
+            },
+            resources: ['public/css/**/*', 'public/js/**/*'],
             all: ['public/**/*']
         },
 
