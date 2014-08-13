@@ -40,15 +40,16 @@
 
 /* Row */
 .l-row {
-	margin: $space-quad 0;
+	margin-bottom: $space-quad;
+	margin-top: $space-quad;
 }
 
 .l-row-b {
-	margin: 0 0 $space-quad 0;
+	margin-bottom: $space-quad;
 }
 
 .l-row-t {
-	margin: $space-quad 0 0 0;
+	margin-top: $space-quad;
 }
 
 /* Navigation */
