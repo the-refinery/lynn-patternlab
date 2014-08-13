@@ -4,6 +4,7 @@ public/*
 # Compiled Files
 source/*/*.css
 source/js/main*.js
+source/js/min/
 
 # SASS
 *.sass-cache/
