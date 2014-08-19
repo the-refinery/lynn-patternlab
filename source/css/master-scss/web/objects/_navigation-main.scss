@@ -1,4 +1,8 @@
 .nav-main {
+    &:before {
+        @extend %icon-menu;
+    }
+
     @include bp-max(l) {
         background-color: tint($lynn-gray, 90%);
         float: none;
@@ -8,11 +12,17 @@
         z-index: 999;
         
         &:before {
-            background: transparent url(../images/menu.png) no-repeat 10px center;
-            content: "Menu";
             cursor: pointer;
             display: block;
-            padding: $space $pad $space $pad-double;
+            padding: $space $pad;
+        }
+
+        &:after {
+            content: "Menu";
+            left: $pad * 2.5;
+            line-height: 1;
+            position: absolute;
+            top: $space;
         }
         
         li {
@@ -62,6 +72,14 @@
         left: 0;
         width: 100%;
         z-index: 999;
+
+        @include bp-max(l) {
+            border-bottom: {
+                color: tint($lynn-gray, 60%);
+                style: solid;
+                width: 1px;
+            }
+        }
 
         @include bp-min(l) {
             background-color: $white;
