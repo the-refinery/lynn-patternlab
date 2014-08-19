@@ -26,6 +26,12 @@
 /*----- Modifiers -----*/
 
 /* Border */
+.border {
+	color: tint($lynn-gray, 60%);
+    style: solid;
+    width: 1px;
+}
+
 .no-border {
 	border: none;
 }
@@ -87,6 +93,55 @@
 .right {
 	float: right;
 	padding: 0 0 $pad $pad;
+}
+
+/* Hide */
+.hide-max-s {
+	@include bp-max(s) {
+		display: none;
+	}
+}
+
+.hide-max-m {
+	@include bp-max(m) {
+		display: none;
+	}
+}
+
+.hide-max-l {
+	@include bp-max(l) {
+		display: none;
+	}
+}
+
+.hide-max-xl {
+	@include bp-max(xl) {
+		display: none;
+	}
+}
+
+.hide-min-s {
+	@include bp-min(s) {
+		display: none;
+	}
+}
+
+.hide-min-m {
+	@include bp-min(m) {
+		display: none;
+	}
+}
+
+.hide-min-l {
+	@include bp-min(l) {
+		display: none;
+	}
+}
+
+.hide-min-xl {
+	@include bp-min(xl) {
+		display: none;
+	}
 }
 
 /* Inversion */
