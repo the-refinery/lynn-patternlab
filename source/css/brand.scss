@@ -30,6 +30,7 @@
  *  ........Web specific
  *  ....Tables
  *  ....Icons
+ *  ....Typography
  *  MODIFIERS & STATES..................Global class modifiers & states
  *  ....Modifiers
  *  ....States
@@ -51,6 +52,7 @@
  *  ........Search
  *  ....Lists
  *  ....Tables
+ *  ........Compact.....................No padding
  *  ........Grid........................Borders for the table cells
  *  ........Zebra.......................Alternating stripes for rows
  *  ....Blocks
@@ -89,6 +91,7 @@
 @import "master-scss/web/base/forms";
 @import "master-scss/web/base/tables";
 @import "master-scss/web/base/icons";
+@import "master-scss/web/base/typography";
 
 /* MODIFIERS & STATES */
 @import "master-scss/web/base/modifiers";
@@ -111,6 +114,7 @@
 @import "master-scss/web/objects/forms-inline";
 @import "master-scss/web/objects/forms-search";
 @import "master-scss/web/objects/lists";
+@import "master-scss/web/objects/table-compact";
 @import "master-scss/web/objects/table-grid";
 @import "master-scss/web/objects/table-zebra";
 @import "master-scss/web/objects/blocks";
