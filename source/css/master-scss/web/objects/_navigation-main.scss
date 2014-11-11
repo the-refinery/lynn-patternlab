@@ -3,6 +3,10 @@
         @extend %icon-menu;
     }
 
+    @include bp-min(l) {
+        &:before {display: none;}
+    }
+
     @include bp-max(l) {
         background-color: tint($lynn-gray, 90%);
         float: none;
