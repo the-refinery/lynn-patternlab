@@ -1,16 +1,16 @@
 .take-action {
-    border-top: 1px solid tint($lynn-gray, 60%);
+    border-top: 1px solid $lynn-gray-40;
     
     li {
         border-bottom: {
-            color: tint($lynn-gray, 60%);
+            color: $lynn-gray-40;
             style: solid;
             width: 1px;
         }
         position: relative;
         
         &:hover {
-            background: tint($lynn-gray, 80%);
+            background: $lynn-gray-10;
         }
     }
     
