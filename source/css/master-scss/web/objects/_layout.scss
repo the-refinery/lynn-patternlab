@@ -1,18 +1,11 @@
 %l-container {
 	margin: 0 auto;
-	// padding: $pad;
 }
 
-/* Layout Container */
-.l-container {
+%l-page-container {
 	@extend %l-container;
-	max-width: $w-max;
-}
 
-/* Page Wrapper */
-.l-page {
     background-color: $white;
-    margin: $space auto;
     position: relative;
     width: 90%;
     
@@ -31,6 +24,25 @@
         min-width: $w-xxl;
     }
 }
+
+/* Layout Container */
+.l-container {
+	@extend %l-container;
+	max-width: $w-max;
+}
+
+.l-page-container {
+	@extend %l-page-container;
+}
+
+/* Page Wrapper */
+.l-page {
+    @extend %l-page-container;
+
+    margin: $space auto $space-double;
+}
+
+
 
 /* Main */
 .l-content-max {
@@ -81,8 +93,11 @@
 /*----- Templates -----*/
 #midsection {
 	clear: both;
-	padding-top: $space*5;
 	position: relative;
+
+	@include bp-min(l) {
+		padding-top: $space*5;
+	}
 }
 
 /* Two Column Layout */

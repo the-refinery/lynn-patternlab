@@ -2,7 +2,7 @@
 	@extend %l-container;
 	@extend .cf;
 
-	margin-top: $space-double;
+	margin: $space-double 0;
 	max-width: $w-max;
 
 	@include bp-min(m) {
