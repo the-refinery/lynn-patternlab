@@ -1,0 +1,23 @@
+/* Import spacing variables from gloabl or section */
+
+// Line height
+$line-height-least:	1;
+$line-height-less:	1.2;
+$line-height-base:	1.5;
+$line-height-more:	2;
+$line-height-most:	3;
+
+// Padding
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
+
+// Space (margin)
+$space-and-half: $space*1.5;
+$space-and-quarter: $space*1.25;
+$space-double: $space*2;
+$space-triple: $space*3;
+$space-quad: $space*4;
+$space-half: $space/2;
+$space-quarter: $space/4;

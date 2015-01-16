@@ -1,0 +1,18 @@
+/*--------------------*\
+	Main
+\*--------------------*/
+
+.body {
+	background: {
+		color: $white;
+		image: none;
+		repeat: no-repeat;
+	}
+	color: $lynn-gray-web;
+	font: 100%/#{$line-height-base} $font-helveticaneue;
+	margin: 0;
+	padding: 0;
+
+	-webkit-font-smooting: antialiased;
+	-webkit-text-size-adjust: 100%;
+}

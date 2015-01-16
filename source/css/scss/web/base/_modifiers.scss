@@ -1,0 +1,182 @@
+%inverted {
+	background-color: $lynn-gray;
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
+
+%inverted-blue {
+	@extend %inverted;
+	background-color: $secondary-blue;
+}
+
+%inverted-green {
+	@extend %inverted;
+	background-color: $secondary-green;
+}
+
+%inverted-orange {
+	@extend %inverted;
+	background-color: $secondary-orange;
+}
+
+
+/*----- Modifiers -----*/
+
+/* Border */
+.border {
+	color: tint($lynn-gray, 60%);
+    style: solid;
+    width: 1px;
+}
+
+.no-border {
+	border: none;
+}
+
+/* Clear */
+.clear-both {
+	clear: both;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+/* Clearfix */
+.cf {
+    *zoom: 1;
+}
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* Colors */
+.color-lynn-blue {
+    color: $lynn-blue;
+}
+
+.color-blue {
+    color: $accent-blue;
+}
+
+.color-green {
+    color: $accent-green;
+}
+
+.color-orange {
+    color: $accent-orange;
+}
+
+/* Discrete */
+.discrete {
+    font-size: $font-size-xs;
+}
+
+/* Floats */
+.left {
+	float: left;
+	padding: 0 $pad $pad 0;
+}
+
+.right {
+	float: right;
+	padding: 0 0 $pad $pad;
+}
+
+/* Hide */
+.hide-max-s {
+	@include bp-max(s) {
+		display: none;
+	}
+}
+
+.hide-max-m {
+	@include bp-max(m) {
+		display: none;
+	}
+}
+
+.hide-max-l {
+	@include bp-max(l) {
+		display: none;
+	}
+}
+
+.hide-max-xl {
+	@include bp-max(xl) {
+		display: none;
+	}
+}
+
+.hide-min-s {
+	@include bp-min(s) {
+		display: none;
+	}
+}
+
+.hide-min-m {
+	@include bp-min(m) {
+		display: none;
+	}
+}
+
+.hide-min-l {
+	@include bp-min(l) {
+		display: none;
+	}
+}
+
+.hide-min-xl {
+	@include bp-min(xl) {
+		display: none;
+	}
+}
+
+/* Inversion */
+.inverted {
+	@extend %inverted;
+
+	&.blue {
+		@extend %inverted-blue;
+	}
+
+	&.green {
+		@extend %inverted-green;
+	}
+
+	&.orange {
+		@extend %inverted-orange;
+	}
+}
+
+/* Oomph Text */
+.oomph {
+	font-size: $font-size-l;
+}
+
+/* Padding */
+.no-pad {
+	padding: 0;
+}
+
+/* Tint (background) */
+.tint {
+	background-color: tint($lynn-gray, 90%);
+}
+
+/* Widths */
+.full-width {
+	width: 100%;
+}

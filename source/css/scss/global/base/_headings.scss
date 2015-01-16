@@ -1,0 +1,38 @@
+%heading {
+	font-family: $font-helveticaneue;
+	font-weight: normal;
+	line-height: $line-height-less;
+	margin-bottom: $space-half;
+}
+
+h1, .headline {
+	@extend %heading;
+	font-size: $font-size-jumbo;
+}
+
+h2, .subhead {
+	@extend %heading;
+	font-size: $font-size-xl;
+}
+
+h3, .sectionhead-1 {
+	@extend %heading;
+	color: $lynn-blue;
+	font-size: $font-size-l;
+	font-weight: 600;
+	margin-bottom: $space-quarter;
+}
+
+h4, .sectionhead-2 {
+	@extend %heading;
+	color: $lynn-blue;
+	font-size: $font-size-l;
+	margin-bottom: $space-quarter;
+}
+
+h5, .sectionsubhead {
+	@extend %heading;
+	font-size: $font-size-m;
+	font-weight: 600;
+	margin-bottom: $space-quarter;
+}

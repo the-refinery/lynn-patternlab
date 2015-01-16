@@ -1,0 +1,16 @@
+// Widths - Fixed
+$w-s:           240px;  // 15rem
+$w-m:           480px;  // 30rem
+$w-l:           720px;  // 45rem
+$w-xl:          960px;  // 60rem
+$w-xxl:         1200px; // 75rem
+$w-main:        520px;
+$w-main-max:    580px;
+$w-max:         $w-xxl;
+
+//Widths - Percentages
+$w-pct-full:    100%;
+$w-pct-s-m:     percentage($w-s/$w-m);
+$w-pct-m-l:     percentage($w-m/$w-l);
+$w-pct-l-xl:    percentage($w-l/$w-xl);
+$w-pct-xl-xxl:  percentage($w-xl/$w-xxl);

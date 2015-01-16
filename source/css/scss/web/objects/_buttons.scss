@@ -1,0 +1,23 @@
+.button,
+a.button {
+    background: $accent-orange;
+    border: 0;
+    color: $white;
+    display: inline-block;
+    font-weight: 600;
+    padding: $pad-quarter $pad;
+    text-align: center;
+
+    @include border-radius(3px);
+    
+    &:active, &:hover, &:focus {
+        background: $secondary-orange;
+        color: $white;
+    }
+}
+
+.button-large,
+a.button-large {
+    font-size: $font-size-l;
+    padding: $pad-half $pad-double;
+}

@@ -1,0 +1,166 @@
+.ex-handle {
+    @extend %inverted;
+
+    cursor: pointer;
+    padding: $pad ($pad * 3) $pad $pad;
+    position: relative;
+    z-index: 10;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+        margin-bottom: 0;
+    }
+    
+    &:before {
+        @extend %triangle-down;
+        
+        font-size: 2em;
+        position: absolute;
+        right: 1rem;
+        top: .75rem;
+    }
+
+    &:hover {
+        background: $lynn-gray;
+    }
+
+    // Color Modifiers
+    &.blue {
+        @extend %inverted-blue;
+
+        &:hover {
+            background: $accent-blue;
+        }
+    }
+
+    &.green {
+        @extend %inverted-green;
+
+        &:hover {
+            background: $accent-green;
+        }
+    }
+
+    &.orange {
+        @extend %inverted-orange;
+
+        &:hover {
+            background: $accent-orange;
+        }
+    }
+}
+
+.ex-panel {
+    height: auto;
+    padding: $pad;
+}
+
+.is-closed {
+    .ex-handle {
+        &:before {          
+            @extend %triangle-right;
+        }
+    }
+    
+    .ex-panel {
+        height: 0;    
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+/*--------------------*\
+    Modules
+\*--------------------*/
+
+.accordion {
+    .expandable {
+        margin-bottom: $space;
+    }
+}
+
+.block_listing {
+    .expandable {
+        margin-top: -2.25em;
+    }
+
+    // Components
+    .ex-handle {
+        background: $lynn-gray;
+        border-radius: 1em;
+        height: 2em;
+        margin: -1em auto .25em;
+        padding: 0;
+        width: 2em;
+
+        &:before {
+            @extend %icon-menu;
+
+            font-size: 1em;
+            right: .5em;
+            top: .5em;
+        }
+    }
+
+    .ex-panel {
+        @extend %inverted;
+
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 100;
+        width: 100%;
+    }
+
+    // Modifiers
+    &.blue {
+        .ex-handle {
+            background: $accent-blue;
+        }
+        .ex-panel {
+            @extend %inverted-blue;
+        }
+    }
+    &.green {
+        .ex-handle {
+            background: $accent-green;
+        }
+        .ex-panel {
+            @extend %inverted-green;
+        }
+    }
+    &.orange {
+        .ex-handle {
+            background: $accent-orange;
+        }
+        .ex-panel {
+            @extend %inverted-orange;
+        }
+    }
+
+    // States
+    &.is-closed {
+        .ex-handle {
+            &:before {
+                @extend %icon-menu;
+            }
+        }
+    }
+
+    &.is-open {
+        .ex-handle {
+            &:before {
+                @extend %icon-menu;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            }
+        }
+        .ex-panel {
+            top: 0;
+        }
+    }
+}
