@@ -7,6 +7,7 @@ config/
 core/
 extras/
 public/
+source/_patterns/**/_01-foot.mustache
 CHANGELOG
 
 ####################
