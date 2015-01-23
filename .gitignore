@@ -1,13 +1,32 @@
-*.DS_Store
-public/*
+secret.json
 
-# Compiled Files
-source/*/*.css
-source/js/main*.js
-source/js/min/
+####################
+# Pattern Lab
+####################
+config/
+core/
+extras/
+public/
+CHANGELOG
 
+####################
+# Grunt
+####################
+node_modules/
+
+####################
 # SASS
-*.sass-cache/
+####################
+*.sass-cache
 
-#Temporary Files
+####################
+# Compiled Files
+####################
+*.css
+source/js/dist/
+
+####################
+# Misc.
+####################
 *~
+*.DS_Store
