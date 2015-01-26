@@ -66,59 +66,59 @@
 
 /* TOOLS */
 @import "compass";
-@import "master-scss/global/mixins/breakpoints";
-@import "master-scss/global/mixins/flexbox";
+@import "scss/global/mixins/breakpoints";
+@import "scss/global/mixins/flexbox";
 
 /* VARIABLES */
-@import "master-scss/global/variables/colors";
-@import "master-scss/web/variables/breakpoints";
-@import "master-scss/global/variables/spacing";
-@import "master-scss/global/variables/spacing-formulas";
-@import "master-scss/global/variables/typography";
-@import "master-scss/web/variables/typography";
-@import "master-scss/web/variables/widths";
+@import "scss/global/variables/colors";
+@import "scss/web/variables/breakpoints";
+@import "scss/global/variables/spacing";
+@import "scss/global/variables/spacing-formulas";
+@import "scss/global/variables/typography";
+@import "scss/web/variables/typography";
+@import "scss/web/variables/widths";
 
 /* BASE */
-@import "master-scss/web/base/reset";
-@import "master-scss/global/base/main";
-@import "master-scss/global/base/headings";
-@import "master-scss/global/base/text";
-@import "master-scss/global/base/lists";
-@import "master-scss/global/base/media";
-@import "master-scss/global/base/links";
-@import "master-scss/web/base/links";
-@import "master-scss/web/base/forms";
-@import "master-scss/web/base/tables";
-@import "master-scss/web/base/icons";
-@import "master-scss/web/base/typography";
+@import "scss/web/base/reset";
+@import "scss/global/base/main";
+@import "scss/global/base/headings";
+@import "scss/global/base/text";
+@import "scss/global/base/lists";
+@import "scss/global/base/media";
+@import "scss/global/base/links";
+@import "scss/web/base/links";
+@import "scss/web/base/forms";
+@import "scss/web/base/tables";
+@import "scss/web/base/icons";
+@import "scss/web/base/typography";
 
 /* MODIFIERS & STATES */
-@import "master-scss/web/base/modifiers";
-@import "master-scss/web/base/states";
+@import "scss/web/base/modifiers";
+@import "scss/web/base/states";
 
 /* STRUCTURE */
-@import "master-scss/web/objects/layout";
-@import "master-scss/web/objects/header";
-@import "master-scss/web/objects/navigation-column";
-@import "master-scss/web/objects/navigation-dropdown";
-@import "master-scss/web/objects/navigation-main";
-@import "master-scss/web/objects/navigation-take-action";
-@import "master-scss/web/objects/main";
-@import "master-scss/web/objects/footer";
+@import "scss/web/objects/layout";
+@import "scss/web/objects/header";
+@import "scss/web/objects/navigation-column";
+@import "scss/web/objects/navigation-dropdown";
+@import "scss/web/objects/navigation-main";
+@import "scss/web/objects/navigation-take-action";
+@import "scss/web/objects/main";
+@import "scss/web/objects/footer";
 
 /* OBJECTS */
-@import "master-scss/web/objects/text";
-@import "master-scss/web/objects/images";
-@import "master-scss/web/objects/buttons";
-@import "master-scss/web/objects/forms-inline";
-@import "master-scss/web/objects/forms-search";
-@import "master-scss/web/objects/lists";
-@import "master-scss/web/objects/table-compact";
-@import "master-scss/web/objects/table-grid";
-@import "master-scss/web/objects/table-zebra";
-@import "master-scss/web/objects/blocks";
-@import "master-scss/web/objects/expandable";
-@import "master-scss/web/objects/directory";
+@import "scss/web/objects/text";
+@import "scss/web/objects/images";
+@import "scss/web/objects/buttons";
+@import "scss/web/objects/forms-inline";
+@import "scss/web/objects/forms-search";
+@import "scss/web/objects/lists";
+@import "scss/web/objects/table-compact";
+@import "scss/web/objects/table-grid";
+@import "scss/web/objects/table-zebra";
+@import "scss/web/objects/blocks";
+@import "scss/web/objects/expandable";
+@import "scss/web/objects/directory";
 
 /* EXTENSIONS */
-@import "master-scss/web/extensions/flexslider";
+@import "scss/web/extensions/flexslider";

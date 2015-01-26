@@ -1,0 +1,120 @@
+#navbar-navigation {
+    position: absolute;
+    top: -2.25rem;
+    width: 100%;
+    z-index: 980;
+
+    .menu {
+        @extend .cf;
+
+        position: relative;
+    }
+
+    .menu-button, .search-button {
+        background: {
+            color: transparent;
+            repeat: no-repeat;
+            position: $space-half $space-half
+        }
+        cursor: pointer;
+        height: $space-double;
+        width: $space-double;
+        z-index: 990;
+
+        &.is-open {
+            background-color: $lynn-gray-10;
+            height: $space-triple;
+        }
+    }
+
+    .menu-button {
+        background-image: url(++resource++pinetree.theme_main.images/menu.png);
+    }
+
+    .search-button {
+        background-image: url(++resource++pinetree.theme_main.images/search.png);
+    }
+
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    &.fixed {
+        border-bottom: {
+            color: $lynn-gray-40;
+            style: solid;
+            width: 1px;
+        }
+        background-color: $white;
+        height: 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 990;
+
+        .nav-wrapper {width: 90%}
+    }
+
+
+    @include bp-max(l) {
+        .menu {
+            background-color: $lynn-gray-10;
+            position: fixed;
+            left: 5%;
+            top: 5rem;
+            width: 90%;
+        }
+
+        .menu-button, .search-button {
+            position: fixed;
+            right: 5%;
+            top: 2.25rem;
+        }
+
+        .menu-button {
+            margin-right: $space-triple;
+        }
+
+        &.js-enabled {
+            background-color: $white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 990; 
+        }
+
+        &.is-closed li {
+            display: none;
+        }
+    }
+
+    @include bp-min(l) {
+        .menu {
+            text-align: right;
+            top: $space * 2.5;
+        }
+
+        .submenu {
+            text-align: left;
+        }
+
+        .menu-button {
+            display: none;
+        }
+
+        .search-button {
+            display: inline;
+            float: right;
+            margin-left: $space;
+            position: relative;
+            top: 2.25rem;
+        }
+    }
+
+    @include bp-max(xl) {
+        a {
+            font-size: $font-size-s;
+        }
+    }
+}

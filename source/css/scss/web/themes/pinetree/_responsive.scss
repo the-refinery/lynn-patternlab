@@ -1,0 +1,1075 @@
+/*~~~~~~~~~~ PAGE SECTION CONTSTRAINTS ~~~~~~~~~~*/
+
+    @media screen and (min-width: 320px) {
+            /*---------- Testimonials ----------*/
+                .testimonial .photo {
+                        text-align: center;
+                        width: 100%;
+                    }
+                .testimonial .text {
+                        clear: both;
+                    }
+            
+            
+            #page {
+                    min-width: 300px;
+                    padding: 0 3.3333333333333333333333333333333%; /* 10px / 300px */
+                }
+
+            /*---------- Masthead ----------*/
+                #masthead {
+                        height: 240px;
+                    }
+                #masthead h1 {
+                        border: none;
+                        margin: 0 auto;
+                    }
+
+                /*----- Masthead Tools -----*/                        
+                    .livesearchContainer {display: none;}
+
+            /*---------- Midsection ----------*/
+                #page-content {
+                        margin: 0 auto 0 auto;
+                        max-width: 520px;
+                        min-width: 280px;
+                        width: 93.333333333333333333333333333333%;
+                    }
+                    
+                /*----- Homepage Content -----*/
+                    #homepage-content {position: relative;}
+                    #homepage-content #tabber-wrapper {margin-bottom: 4em; /* 48px / 12 px */}
+                    
+                    #homepage-banner #portlet-site-links li {
+                            min-width: 100px;
+                            text-align: left;
+                        }
+                    
+                    /*--- News ---*/
+                    #portlet-news #news-spotlights,
+                    #portlet-news #news-more {margin-left: -10px;}
+                    
+                    #portlet-news #news-spotlights .hp-column {
+                            display: inline-block;
+                            margin-bottom: 2em;
+                            max-width: 240px;
+                            vertical-align: top;
+                        }
+                    #portlet-news .hp-column .wrapper-content {padding: 0 10px;}
+                
+                /*----- Main -----*/
+                    #main {width: 100%;}
+
+                    .boxed {width: 100%;}
+			        
+			        .boxed .content {
+			                float: none;
+			                min-width: 0;
+			            }
+                    
+                    /*--- Callout ---*/
+                        .callout.float-left,
+                        .callout.float-right {
+                                float: none;
+                                margin: 0 0 18px 0;
+                            }
+                    
+                    /*--- Events ---*/
+                        .calList-date {width: 100%;}
+
+                        .calList-event {margin: 9px 30px;}
+                        
+                        .calinfo {display: none;}
+                        
+                    /*--- FSD ---*/
+                        .facultyStaffDirectory table.listing .personEmail {display: none;}
+                        .facultyStaffDirectory table.listing .personDepartment {display: none;}
+
+                        
+                    /*--- News ---*/
+                        #news-nav {}
+
+                /*----- Supplement -----*/
+            /*---------- Navigation ----------*/
+                /*----- Global Nav -----*/
+                    #navbar {
+                            left: 0;
+                            position: absolute;
+                            text-align: center;
+                            top: 162px;
+                            width: 100%;
+                        }
+                    #navbar ul.menu-horizontal {
+                            width: 100%;
+                        }
+                    #navbar ul.menu-horizontal li {
+                            float: none;
+                            padding: 0;
+                            position: relative;
+                        }
+                    #navbar ul.menu-horizontal li a {
+                            display: inline-block;
+                            line-height: 1.5em;
+                            margin: 0 20px;
+                        }
+                    
+                    #navbar ul.menu-horizontal li a:hover {color: rgb(0,61,165);}
+
+
+                    #navbar ul.menu-horizontal ul {display: none;}
+
+
+
+                    
+
+                /*----- Navcolumn-----*/
+                    .navigation-menu {
+                            display: none;
+
+                        }
+            /*---------- Footer ----------*/
+                #footer-main {text-align: center;}
+                #footer #footer-portlets {display: block;
+                    background: transparent url('++resource++lynnedu.theme_responsive.images/lynn-seal-45x45.gif') no-repeat top center;
+                    padding-top: 60px;
+                    
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                }
+                #apple {
+                    background: transparent url('++resource++lynnedu.theme_responsive.images/apple-ds.gif') no-repeat top center;
+                    font-size: $font-size-xxs;
+                    line-height: 1.2;
+                    margin: 0 auto;
+                    max-width: 280px;
+                    padding-top: 3em;
+                    text-align: center;
+                }
+                #footer .list-horizontal {
+                        clear: both;
+                        margin: 3em 0;
+                    }
+        }
+        
+        
+    @media screen and (max-width: 480px) {
+        #premiere-listing.department .blox.full .image-wrapper {
+            height: 104px;
+            width: 78px;
+        }
+        #person .blox .image-wrapper {
+            background-color: rgb(255,255,255);    
+            border: none;
+            float: none;
+            margin-bottom: 1em;
+        }
+        #person .blox .image-wrapper img {margin: 0 auto;}
+    }
+
+    @media screen and (min-width: 420px) and (max-width: 559px) {
+        #premiere-listing.department .blox {max-width: none;}
+        #premiere-listing.department .image-wrapper {
+            float: right;
+            margin-left: 10px;
+            height: 120px;
+            width: 90px;
+        }
+        #premiere-listing.department .image-wrapper img {margin-top: 0;}
+        #premiere-listing.department .container {padding: 0;}
+    }
+    
+
+    @media screen and (max-width: 559px) {
+        h2 {font-size: 2em;}
+        #premiere-listing .column {
+            float: none;
+            width: 100%;
+        }
+
+        #premiere-listing .left .blox {margin: 0 auto 3em auto;}
+        #premiere-listing .right .blox {margin: 0 auto 3em auto;}
+
+        .blox.premiere .container {min-height: 0;}
+        
+        .blox.premiere p {margin-bottom: 0;}
+
+        .blox.premiere .itemlist {
+            position: relative;
+            width: 100%;
+        }
+        
+        #person .blox h3 {font-size: 1.75em;}
+	        /*
+	        #pt-department-staff.blox-small .column,
+	        #pt-premiere-listing .column {
+	            float: none;
+		        width: 100%;
+	        }
+	        */
+    }
+
+    @media screen and (min-width: 560px) {
+			.split-column {margin: 2em 0; width: 44%; float: left;}
+			.split-column:nth-of-type(odd) {
+			        border-right: 1px solid $lynn-gray-40;
+			        padding-right: 5%;
+			    }
+			.split-column:nth-of-type(even) {
+			        border-left: 1px solid $lynn-gray-40;
+			        left: -1px;
+			        padding-left: 5%;
+			        position: relative;
+			    }
+			    
+			/* Fallback for older browsers :: IE8 */
+			.split-column.left {
+			        border-right: 1px solid $lynn-gray-40;
+			        padding-right: 5%;
+			    }
+			.split-column.right {
+			        border-left: 1px solid $lynn-gray-40;
+			        left: -1px;
+			        padding-left: 5%;
+			        position: relative;
+			    }
+			
+			.split-column > h2:first-child,
+			.split-column > h3:first-child,
+			.split-column > h4:first-child {margin-top: 0}
+			
+			.split-column .button {display: block;}
+			
+        /*~~~~~~~~~~ PAGE SECTIONS ~~~~~~~~~~*/
+            /*---------- Header ----------*/
+            /*---------- Midsection ----------*/
+                #content-body {
+			        float: left;
+			        margin-bottom: 2em;
+			        min-width: 240px;
+			        max-width: 58.69565217391304%; /* 270 / 460 */
+			        padding-right: 10px;
+		        }
+
+                /*----- Main -----*/
+                    /*--- Callout ---*/
+                        #category-nav,
+			            #map,
+			            #place-callout,
+			            .callout {
+					            clear: right;
+					            float: right;
+                                margin-left: .5em;
+					            max-width: 39.1304347826087%; /* 180px / 460px */
+					        }
+                        .callout.float-left {float: left; margin-right: 1em;}
+                        .callout.float-right {float: right;}
+			        
+
+            /*---------- Page Templates ----------*/ 
+                /*----- Marketing (landing pages) -----*/
+                    #pt-marketing #main {
+                            float: left;
+                            padding: 0.5em 2em 0.5em 0;
+                            width: 68.05555555555556%;
+                        }
+
+                    #pt-marketing #supplement {
+                            float: left;
+                            width: 31.94444444444444%;
+                        }
+
+                    #pt-marketing #wordmark {
+                            border-right: 2px solid #6EB43F;
+                            float: left;
+                            margin-bottom: 0;
+                        }
+
+                    #pt-marketing #footer-contact {
+                            float: left;
+                            text-align: left;
+                        }
+
+                /*----- Premiere Listing -----*/
+                    #premiere-listing.department .blox .main {min-height: 380px;}
+                    #premiere-listing.folder .blox .main {min-height: 324px;}
+		}
+
+    @media screen and (max-width: 767px) {
+        #navbar {
+            top: 180px;
+        }
+        #navbar ul.menu-horizontal {
+            background-color: $lynn-gray-10;
+            cursor: pointer;
+            margin: 0 auto;
+            text-align: left;
+            width: 240px;
+
+            li {
+                display: none;
+                border-bottom: 1px solid $lynn-gray-40;
+            }
+            li:hover {
+                background-color: $lynn-gray-10;
+            }
+            li a {
+                font-size: 1em;
+                margin-right: 30px;
+                padding: .5em;
+            }
+        }
+        #navbar .on ul.menu-horizontal {
+            li {
+                display: block;
+            }
+
+            &:first-of-type:before {
+                border-bottom: 1px solid $lynn-gray-40;
+            }
+        }
+        #navbar ul.menu-horizontal:first-of-type:before {
+            background: transparent url(++resource++lynnedu.theme_responsive.images/icon-menu.png) no-repeat 10px center;
+            
+            color: $lynn-gray-web;
+            content: 'Menu';
+            display: block;
+            padding: .5em 10px .5em 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+            /*---------- Testimonials ----------*/
+                .testimonial .photo {
+                        float: right;
+                        padding-left: 10px;
+                        text-align: right;
+                        width: 200px;;
+                    }
+                .testimonial .text {
+                        clear: none;
+                    }
+                    
+                    
+            #page {
+                    min-width: 720px;
+                    padding: 0 1.3888888888888888888888888888889%; /* 10px / 720px */
+                }
+            /*---------- Masthead ----------*/
+                #masthead {
+                        height: 162px;
+                    }
+                #masthead h1 {
+                        float: left;
+                        margin: 0 0 0 10px;
+                    }
+                /*----- Masthead Tools -----*/
+                    .livesearchContainer {display: block;}
+                    
+            /*---------- Midsection ----------*/
+                #page-content {
+                        float: left;
+                        left: 34.722222222222222222222222222222%; /* 250px / 720px */
+                        margin: 0;
+                        min-width: none;
+                        position: relative;
+                        width: 63.888888888888888888888888888889%; /* 460px / 720px */
+                        max-width: 63.888888888888888888888888888889%; /* 460px / 720px */
+                    }
+                    
+                /*----- Homepage Content -----*/
+                    #homepage-content #tabber-wrapper {margin-bottom: 0;}
+                    
+                    #homepage-banner {clear: both;}
+                    
+                    #homepage-banner .banner {
+                            margin: 0 auto;
+                            width: 720px;
+                        }
+                        
+                    #homepage-banner #portlet-site-links {margin: 0 1.3888888888888888888888888888889%; /* 10px / 720px */}
+                    #homepage-banner #portlet-site-links li {min-width: 0;}
+
+                    /*--- Events ---*/
+                        #banner-portlets .hp-column {
+                                float: left;
+                                margin-left: 0;
+                                margin-right: 0;
+                                width: 33.333333333333333333333333333333%; /* 240px / 720px */
+                            }
+                        #banner-portlets .hp-column .wrapper-content {padding: 0 4.1666666666666666666666666666667%; /* 10px / 240px */}
+                        
+                        
+                        #banner-portlets #portlet-inside-look {
+                                clear: both;
+                                width: 100%;
+                            }
+
+                    /*--- News ---*/
+                        #portlet-news #news-spotlights,
+                        #portlet-news #news-more {margin-left: 0;}
+                    
+                        #portlet-news h4 {padding-left: 1.2755102040816326530612244897959%; /* 12.5px / 980px */}
+    
+                        #portlet-news #news-spotlights {
+                                float: left;
+                                width: 100%; /* 720px */
+                            }
+                        #portlet-news #news-spotlights .hp-column {
+                                float: left;
+                                margin-left: 0;
+                                margin-right: 0;
+                                width: 33.333333333333333333333333333333%; /* 240px / 720px */
+                            }
+                        #portlet-news .hp-column .wrapper-content {padding: 0 4.1666666666666666666666666666667%; /* 10px / 240px */}
+
+                        #portlet-news #news-more {
+                                clear: both;
+                                float: left;
+                                padding-top: 3em; /* 36px / 12px */
+                                width: 100%; /* 700px */
+                            }
+                        #portlet-news #news-more .wrapper-content {padding: 0 1.3888888888888888888888888888889%; /* 10px / 720px */;}
+                        #portlet-news #news-more p {
+                                float: left;
+                                margin-right: 2.8571428571428571428571428571429%; /* 20px / 700px */
+                                width: 31.428571428571428571428571428571%; /* 220px / 700px */
+                            }
+                        #portlet-news #news-more p.spacer-top {margin-right: 0;}
+                    
+
+
+                /*----- Main -----*/
+                    #main {}
+                        
+                    .content {
+                            min-width: 460px;
+                            max-width: 520px;
+                        }
+                        
+                        
+                    /*--- Events ---*/
+                        .calList-date {
+                                float: left;
+                                padding-right: 2.1739130434782608695652173913043%; /* 10px / 460px */
+                                text-align: right;
+                                width: 30%; /* 138px / 460px */
+                            }
+
+                        .calList-event {
+                                margin: 0;
+                                float: right;
+                                padding-left: 2.1739130434782608695652173913043%; /* 10px / 460px */
+                                width: 65.21739130434782608695652173913%; /* 300px / 460px */
+                            }
+                            
+                        .calinfo {
+                                display: block;
+                                padding: 2.1739130434782608695652173913043%; /* 10px / 460px */
+                                right:  2.1739130434782608695652173913043%; /* 10px / 460px */
+                                width: 60.869565217391304347826086956522%; /* 280px / 460px */
+                            }
+                            
+                        /*- Category Menu -*/
+                            #events-list.categories .calList-date {
+                                    float: left;
+                                    font-size: $font-size-s;
+                                    padding-right: 3.846153846153846%; /* 10px / 260px */
+                                    text-align: right;
+                                    width: 30.38461538461538%; /* 79px / 260px */
+                                }
+
+                            #events-list.categories .calList-event {
+                                    margin: 0;
+                                    float: right;
+                                    font-size: $font-size-s;
+                                    padding-left: 3.846153846153846%; /* 10px / 260px */
+                                    width: 61.53846153846154%; /* 160px / 260px */
+                                }
+                                
+                            #events-list.categories .calinfo {
+                                    display: block;
+                                    padding: 3.846153846153846%; /* 10px / 460px */
+                                    right:  3.846153846153846%; /* 10px / 460px */
+                                    width: 60.869565217391304347826086956522%; /* 280px / 460px */
+                                }                      
+                    
+                    /*--- FSD ---*/
+                        .facultyStaffDirectory table.listing .personEmail   {display: none;}
+                        .facultyStaffDirectory table.listing .personDepartment {display: table-cell;}
+                            
+                    /*--- List Views ---*/
+                        #events-list.categories,
+                        #news-listing {
+                                float: left;
+                                width: 56.521739130434782608695652173913%; /* 260px / 460px */}
+                        #category-nav,
+                        #news-nav {
+                                float: right;
+                                margin-left: 2.1739130434782608695652173913043%; /* 10px / 460px */;
+                                width: 36.521739130434782608695652173913%; /* 168px / 460px */
+                            }
+
+                /*----- Supplement -----*/
+                    #supplement {
+                            min-width: 460px;
+                            max-width: 520px;
+                        }
+            /*---------- Navigation ----------*/
+                /*----- Global Nav -----*/
+                    #navbar {
+                            position: absolute;
+                            top: 112px;
+                        }
+                        
+                    #navbar ul.menu-horizontal {
+                            height: 36px;
+                        }
+                    #navbar ul.menu-horizontal li {
+                            display: inline-block;
+                            padding: 0 0px 0 0px;
+                            position: relative;
+                            text-align: left;
+                        }
+        
+                    #navbar ul.menu-horizontal li a {
+                            display: inline-block;
+                            line-height: 18px;
+                            margin: 0 1.2em 0 6px;
+                            padding-bottom: 2px;
+                        }
+
+                    #navbar ul.menu-horizontal ul {
+                            background-color: $lynn-gray-10;
+                            border: 1px solid $lynn-gray-40;
+                            display: block;
+                            margin-top: -2px;
+                            width: 190px;
+                        }
+
+                    #navbar ul.menu-horizontal .submenu li {
+                            border-bottom: 1px solid $lynn-gray-40;
+                            float: left;
+                            width: 100%;
+
+                            &:last-of-type {border-bottom: none;}
+                        }
+
+                    #navbar ul.menu-horizontal .submenu li:hover {background-color: $lynn-gray-10}
+
+                    #navbar ul.menu-horizontal .submenu a,
+                    #navbar ul.menu-horizontal li.selected .submenu a {
+                            border-bottom: none;
+                            display: block;
+                            font-size: $font-size-s;
+                            font-weight: normal;
+                            line-height: 1.2em;
+                            margin: 0;
+                            padding: .5em 1.25em .5em .5em;
+                            width: auto;
+                        }
+
+                    #navbar ul.menu-horizontal .submenu :hover ul {
+                        background-color: $lynn-gray-10;
+    			            left: 190px;
+                            top: 1px;
+    			            width: 170px;
+
+                            li a {
+                                padding-right: .5em;
+                            }
+                        }
+                    #navbar .more:after {
+                        content: ">";
+                        position: absolute;
+                        right: 0.5em;
+                        top: .5em;
+                    }
+
+                /*----- Navcolumn-----*/
+                    #navcolumn {
+                            display: block;
+                            float: left;
+                            left: -63.888888888888888888888888888889%; /* -460px / 720px */
+                            position: relative;
+                            width: 240px;
+                        }
+                    .navigation-menu {display: block;}
+
+            /*---------- Footer ----------*/
+                #footer-main {text-align: left;}
+                #footer #footer-portlets {float: left; width: 60%;
+                background-position: left 3px;
+                    padding: 0 0 0 55px;}
+                #portlet-address {
+                    
+                }
+                #footer .list-horizontal {
+                        clear: none;
+                        margin: 0;
+                    }
+                #apple {
+                    background-position: right top;
+                    float: right;
+                    width: 40%;
+                    text-align: right;
+                }
+                #apple img {margin: 0 0 1em auto;}
+
+
+        .wrapper {padding: 0 0.52083333333333333333333333333333% 0 31.770833333333333333333333333333%;}
+        
+            
+            /*---------- Styles ----------*/
+            #tabber-wrapper{
+                font-size: .875em;
+        padding: 10px 0;
+        height: 460px;
+        background: url('++resource++lynnedu.theme_responsive.images/water.jpg') no-repeat;
+    }
+
+    #tabber, #tabber-intro {
+        width: 63.333333333333333%; /* 760px/1200px */
+        margin: 0 auto;
+    }
+
+    #tabber-nav {
+        width: 100%;
+        height: 2em;
+        margin-left: 2.631578947368421%; /* 20px/760px */
+    }
+    
+    #tabber-nav li {
+        float: left;
+        width: 21.710526315789474%; /* 165px/760px */
+        margin-right: 2.631578947368421%; /* 20px/760px */
+    }
+    
+    #tabber-nav li span {
+        display: block;
+        width: 100%;
+        height: 2em;
+        text-align: center;
+        background-color: #fff;
+        color: #00447C;
+        text-decoration: none;
+        font-family: 'HelveticaNeueW02-75Bold', Helvetica, Arial, sans-serif;
+        font-size: 1.2em;
+        line-height: 2em;
+        cursor: pointer;
+    }
+
+    #tabber-panes {
+        background-color: #fff;        
+        position: relative;
+        height: 410px;
+    }
+    
+    .tabber-pane {
+        background-color: #fff;
+        padding: 1.923076923076923%; /* 10px/520px */
+        z-index: 0;
+        position: absolute;
+        width: 96.153846153846154%; /* 500px / 520px */
+    }
+    
+    .tabber-pane.current {
+        z-index: 10;
+    }
+ 
+    #content-wrapper h3 {
+       margin-top: .75em;
+    }
+   
+    #welcome {
+        width: 100%;
+    }
+    
+    #welcome ul {
+        display: none;
+    }
+    
+    #feature1 {
+        width: 45%;
+        padding-right: 5%;
+        float: left;
+    }
+    
+    #feature2 {
+        width: 45%;
+        padding-left: 5%;
+        float: right;
+    }
+    
+    #homepage-content #supplement {margin: 0 auto; padding-top: 0; position: static;}
+
+
+            /*---------- Page Templates ----------*/
+                /*----- Marketing (landing pages) -----*/
+                    #pt-marketing #spotlight .image-caption {
+                            border-left: 10px solid rgb(255, 255, 255);
+                            border-top: none;
+                            display: table;
+                            height: 225px;
+                            position: absolute;
+                            text-align: left;
+                            top: 0;
+                            width: 240px;
+                        }
+
+                    #pt-marketing #spotlight {max-width: none;}
+
+                    #pt-marketing #spotlight .image-caption .caption-wrapper {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+
+                    #pt-marketing #spotlight .caption-wrapper strong {font-size: 30px;}
+
+                    #pt-marketing #midsection {
+                            margin: 0 auto;
+                            max-width: none;
+                        }
+
+        }
+        
+
+    @media screen and (min-width: 1024px) {
+            /*---------- Testimonials ----------*/
+                .testimonial .photo {
+                        float: none;
+                        padding-left: 0;
+                        text-align: center;
+                        width: 100%;
+                    }
+                .testimonial .text {
+                        clear: both;
+                    }
+                    
+                    
+            #page {
+                    min-width: 980px;
+                    padding: 0 1.0204081632653061224489795918367%; /* 10px /980px */
+                }
+            /*---------- Masthead ----------*/
+                #masthead {
+                        height: 126px;
+                    }
+                /*----- Masthead Tools -----*/
+            /*---------- Midsection ----------*/
+                #page-content {
+                        left: 25.510204081632653061224489795918%; /* 250px / 980px */
+                        width: 74.489795918367346938775510204082%; /* 730px / 980px */
+                        max-width: 74.489795918367346938775510204082%; /* 730px / 980px */
+                    }
+                    
+                /*----- Homepage Content -----*/
+                    #homepage-banner {clear: both;}
+                    
+                    #homepage-banner .banner {
+                            margin: 0 auto;
+                            width: 980px;
+                        }
+                        
+                    #homepage-banner #portlet-site-links {margin: 0 1.0204081632653061224489795918367%; /* 10px / 980px */}
+                        
+                    /*--- News ---*/
+                        #portlet-news h4 {padding-left: 1.2755102040816326530612244897959%; /* 12.5px / 980px */}
+    
+                        #portlet-news #news-spotlights {
+                                width: 75%; /* 735px / 980px */
+                            }
+                        #portlet-news #news-spotlights .hp-column {
+                                margin-left: 0.34013605442176870748299319727891%; /* 2.5px / 735px */
+                                margin-right: 0.34013605442176870748299319727891%; /* 2.5px / 735px */
+                                width: 32.653061224489795918367346938776%; /* 240px / 735px */
+                            }
+                        
+                        #portlet-news #news-more {
+                                clear: none;
+                                padding-top: 0;
+                                width: 24.489795918367346938775510204082%; /* 240px / 980px */
+                            }
+                        #portlet-news #news-more .wrapper-content {padding: 0 4.1666666666666666666666666666667%; /* 10px / 240px */}
+                        #portlet-news #news-more p {
+                                float: none;
+                                margin-right: 0;
+                                width: auto;
+                            }
+                    
+                    /*--- Portlets ---*/
+                        #banner-portlets .hp-column {
+                                float: left;
+                                margin-left: 0.25510204081632653061224489795918%; /* 2.5px / 980px; */
+                                margin-right: 0.25510204081632653061224489795918%; /* 2.5px / 980px; */
+                                width: 24.489795918367346938775510204082%; /* 240px / 980px */
+                            }
+                            
+                        #banner-portlets #portlet-inside-look {
+                                clear: none;
+                                width: 24.489795918367346938775510204082%; /* 240px / 980px */
+                            }
+
+
+                /*----- Main -----*/
+                    #main {}
+
+                    .content {
+                            float: left;
+                            margin: 0;
+                            min-width: 520px;
+                            max-width: 520px;
+                        }
+                        
+                    /*--- Callout ---*/
+                        .callout {max-width: 34.615384615384615384615384615385%; /* 180px / 520px */}
+                        
+                    /*--- Events ---*/
+                        .calList-date {
+                                padding-right: 1.9230769230769230769230769230769%; /* 10px / 520px */
+                                width: 26.538461538461538461538461538462%; /* 138px / 520px */
+                            }
+
+                        .calList-event {
+                                padding-left: 1.9230769230769230769230769230769%; /* 10px / 520px */
+                                width: 69.230769230769230769230769230769%; /* 360px / 520px */
+                            }
+                            
+                        .calinfo {
+                                display: block;
+                                padding: 1.9230769230769230769230769230769%; /* 10px / 520px */
+                                right: 1.9230769230769230769230769230769%; /* 10px / 520px */
+                                width: 65.384615384615384615384615384615%; /* 340px / 520px */
+                            }
+                            
+                        /*- Category Menu -*/
+                            #events-list.categories .calList-date {
+                                    float: left;
+                                    padding-right: 3.125%; /* 10px / 320px */
+                                    text-align: right;
+                                    width: 24.6875%; /* 79px / 320px */
+                                }
+
+                            #events-list.categories .calList-event {
+                                    border-left: 1px solid rgb(127, 186, 0);
+                                    margin: 0;
+                                    float: right;
+                                    padding-left: 3.125%; /* 10px / 320px */
+                                    width: 68.75%; /* 220px / 320px */
+                                }
+                                
+                            #events-list.categories .calinfo {
+                                    display: block;
+                                    padding: 3.125%; /* 10px / 320px */
+                                    right:  3.125%; /* 10px / 320px */
+                                    width: 60.869565217391304347826086956522%; /* 280px / 460px */
+                                }                      
+                            
+                    /*--- List Views ---*/
+                        #events-list.categories,
+                        #news-listing {
+                                float: left;
+                                width: 61.538461538461538461538461538462%; /* 320px / 520px */}
+                        #category-nav,
+                        #news-nav {
+                                float: right;
+                                margin-left: 1.9230769230769230769230769230769%; /* 10px / 520px */;
+                                width: 32.307692307692307692307692307692%; /* 168px / 520px */
+                            }
+
+                /*----- Supplement -----*/
+                    #supplement {
+                            float: right;
+                            max-width: none;
+                            min-width: 200px;
+                            // padding-top: 560px;
+                            position: relative;
+                            width: 27.39726027397260273972602739726%; /* 200px / 730px */
+                        }
+                    #portlet-take-action {
+                        // position: absolute;
+                        // top: 0;
+                        // width: 100%;
+                    }
+                    #homepage-content #portlet-take-action {
+                        position: relative;
+                        width: auto;
+                    }
+            /*---------- Navigation ----------*/
+                /*----- Global Nav -----*/
+                    #navbar {
+                            left: 25.510204081632653061224489795918%; /* 250px / 980px */
+                            text-align: left;
+                            top: 74px;
+                            width: auto;
+                        }
+
+                /*----- Navcolumn-----*/
+                    #navcolumn {
+                            left: -74.489795918367346938775510204082%; /* -730px / 980px */
+                        }
+            /*---------- Footer ----------*/
+            
+        .wrapper {padding: 0 2.5% 0 32.5%;}
+        .action {width: 100%;}
+        
+            /*---------- Styles ----------*/
+        #tabber-wrapper {
+        font-size: 1em;
+        padding: 0 0 0 0;
+        height: 460px;
+        background: url('++resource++lynnedu.theme_responsive.images/water.jpg') no-repeat 0 0;
+    }
+    
+    #tabber, #tabber-intro {
+        position: absolute;
+        top: 40px;
+        left: 4%;
+    }
+
+    #tabber-panes {
+        position: relative;
+        height: 346px;
+    }
+       
+    .tabber-pane img {
+        width: 68.421052631578947%; /* 520px/760px */
+        float: right;
+        margin-left: 1.315789473684211%; /* 10px/760px */
+    }
+        
+    #welcome {
+        width: 50%;
+        float: left;
+        padding: 0;
+    }
+            
+    #welcome img {
+        width: 100%;
+    }
+    
+    #feature1, #feature2 {
+        width: 21%;
+        padding: 0 2%;
+        float: left;
+    }
+        
+    #rich-wrapper {
+        position: relative;
+    }
+
+    #rich-wrapper .portletWrapper {
+        position: absolute;
+        top: 20px;
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,.85);
+        width: 25%;
+        left: 71%;
+    }
+        }
+    
+    
+    @media screen and (min-width: 1280px) {
+            /*---------- Testimonials ----------*/
+                .testimonial .photo {
+                        float: right;
+                        padding-left: 10px;
+                        text-align: right;
+                        width: 200px;
+                    }
+                .testimonial .text {
+                        clear: none;
+                    }
+                    
+                    
+            #page {
+                    min-width: 1200px;
+                    max-width: 1200px;
+                    padding: 0 0.83333333333333333333333333333333%; /* 10px / 1200px */
+                }
+            /*---------- Masthead ----------*/
+                /*----- Masthead Tools -----*/
+            /*---------- Midsection ----------*/
+                #homepage-content {
+                        margin: 0 auto;
+                        width: 1200px;
+                    }
+                #page-content {
+                        left: 20%;
+                        width: 80%;
+                        max-width: 960px;
+                    }
+
+                /*----- Homepage Content -----*/
+                    #homepage-banner .banner {width: 1040px;}
+                    
+                    #homepage-banner #portlet-site-links {margin: 0 1.9230769230769230769230769230769%; /* 20px / 1040px */}
+
+                    /*--- News --- */
+                        #portlet-news h4 {padding-left: 1.9230769230769230769230769230769%; /* 20px / 1040px */}
+    
+                        #portlet-news #news-spotlights .hp-column {
+                                margin-left: 1.2820512820512820512820512820513%; /* 10px / 780px */
+                                margin-right: 1.2820512820512820512820512820513%; /* 10px / 780px */
+                                width: 30.769230769230769230769230769231%; /* 240px / 780px */
+                            }
+                        
+                        #portlet-news #news-more {
+                                margin-left: 0.96153846153846153846153846153846%; /* 10px / 1040px */
+                                margin-right: 0.96153846153846153846153846153846%; /* 10px / 1040px */
+                                width: 23.076923076923076923076923076923%; /* 240px / 1040px */
+                            }
+                        #portlet-news #news-more .wrapper-content {padding: 0 4.1666666666666666666666666666667%; /* 10px / 240px */}
+
+                    /*--- Portlets ---*/
+                        #banner-portlets .hp-column {
+                                margin-left: 0.96153846153846153846153846153846%; /* 10px / 1040px */
+                                margin-right: 0.96153846153846153846153846153846%; /* 10px / 1040px */
+                                width: 23.076923076923076923076923076923%; /* 240px / 1040px */
+                            }
+
+                        #banner-portlets #portlet-inside-look {width: 23.076923076923076923076923076923%; /* 240px / 1040px */}
+
+
+            /*---------- Main ----------*/
+                #main {}
+
+                .content {
+                        margin: 0 0 0 70px;
+                        min-width: 580px;
+                        max-width: 580px;
+                    }
+            /*---------- Supplement ----------*/
+                #supplement {
+                        // padding-top: 340px;
+                        width: 240px;
+                    }
+            /*---------- Navigation ----------*/
+                /*----- Global Nav -----*/
+                    #navbar {
+                            left: 21.666666666666666666666666666667%; /* 260px / 1200px */
+                        }
+                /*----- Navcolumn-----*/
+                    #navcolumn {
+                            left: -80%;
+                        }
+
+            /*---------- Footer ----------*/
+            
+        .wrapper {padding: 0;}
+        .action {width: 100%;}
+            
+            /*---------- Styles ----------*/
+            #rich-wrapper .portletWrapper {
+                top: 40px;
+            }
+        }
+
+
+    /*---------- Masthead ----------*/
+        /*----- Masthead Tools -----*/
+    /*---------- Main ----------*/
+    /*---------- Supplement ----------*/
+    /*---------- Navigation ----------*/
+        /*----- Global Nav -----*/
+        /*----- Navcolumn-----*/
+    /*---------- Footer ----------*/

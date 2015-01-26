@@ -1,0 +1,349 @@
+label {
+	display: inline-block;
+}
+
+header.header {
+	height: 100px;
+	width: 100%;
+	z-index: auto;
+
+	h1 {font-size: $font-size-m; margin-bottom: 0;}
+}
+
+.pinetree-logo {
+	z-index: 999;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    .logo {
+    	background-size: contain !important;
+    }
+
+	@include bp-max(l) {
+		height: 60px;
+		position: fixed;
+		width: 140px;
+
+		.logo {
+			background: transparent url('http://static.lynn.edu/logos/pinetree/pine-tree-logo-140x60h.png') no-repeat left top;
+		}
+	}
+
+	@include bp-min(l) {
+		height: 100px;
+		width: 230px;
+
+		.logo {
+			background: transparent url('http://static.lynn.edu/logos/pinetree/pine-tree-logo-230x100h.png') no-repeat left top;
+		}
+
+		&.fixed {
+            height: 60px;
+            width: 140px;
+            position: fixed;
+
+            .logo {
+                background: url("http://static.lynn.edu/logos/pinetree/pine-tree-logo-140x60h.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+            }
+        }
+	}
+}
+
+.pinetree-logo-sm {
+	height: 60px;
+	width: 140px;
+
+	.logo {
+		background: url("http://static.lynn.edu/logos/pinetree/pine-tree-logo-140x60h.png") no-repeat left top;
+	}
+}
+
+
+
+h1, h2 {
+	border-bottom: none;
+}
+
+.documentFirstHeading {
+	@extend %heading;
+	font-size: $font-size-jumbo;
+}
+
+#content > h1, .content h1, .headline, .subhead, .documentFirstHeading, .sectionsubhead {
+	color: $lynn-gray-web;
+}
+
+#supplement h1, .portlet-headline {
+	@extend %heading;
+	color: $lynn-blue;
+	font-size: $font-size-l;
+	font-weight: 600;
+	margin-bottom: $space-quarter;
+}
+
+#navbar-navigation {
+	.more:after {
+		content: ">";
+	    position: absolute;
+	    right: 0.5em;
+	    top: 0.5em;
+	}
+
+	.nav-home {
+		float: left;
+		z-index: 990;
+	}
+}
+
+.actionMenu {overflow: visible;}
+
+.responsive-gallery {
+	background-color: transparent;
+	margin: 0 0 $space 0;
+
+	.image-wrapper {
+		padding: 0;
+	}
+
+	img {
+		max-width: $w-max;
+		width: 100%;
+	}
+
+	.nav-next, .nav-prev {
+		background-color: $lynn-blue;
+		background-image: none;
+		border-radius: $font-size-m;
+		cursor: pointer;
+		height: $font-size-m * 2;
+		line-height: 0;
+		top: 45%;
+		width: $font-size-m * 2;
+
+		&:after {
+			color: $white;
+			display: block;
+			font-size: $font-size-xl;
+			font-weight: 600;
+			line-height: 1em;
+			text-align: center;
+			text-indent: 0;
+		}
+	}
+
+	.nav-next {
+		right: $pad-quarter;
+
+		&:after {
+			content: ">";
+		}
+	}
+
+	.nav-prev {
+		left: $pad-quarter;
+
+		&:after {
+			content: "<";
+		}
+	}
+}
+
+.shaded-columns {
+	th, td {
+		vertical-align: top;
+	}
+
+	.campfolder {
+		font-weight: 600;
+	}
+
+	@include bp-max(s) {
+		.day, .night {
+			display: none;
+		}
+
+		.camp, .day, .night {
+			padding: $pad-quarter 0;
+		}
+
+		.campfolder {
+			padding: $pad 0 $pad-quarter;
+		}
+	}
+
+	@include bp-min(s) {
+		td {
+			border-top: 1px solid $lynn-gray-40;
+		}
+	}
+}
+
+.portlet {
+	border: none;
+
+	.container {
+		padding: 0 $pad;
+	}
+}
+
+#supplement .managePortletsLink{
+	display: none;
+}
+
+#portlet-video .container {padding: 0;}
+
+.article-header {
+	clear: both;
+}
+
+#navcolumn {
+	@include bp-min(m) {
+		padding-right: $space;
+	}
+}
+
+.homepage .l-sidebar, #supplement, #navcolumn {
+	@include bp-max(l) {
+		margin-left: -1rem;
+		.block {
+			margin: 0 auto;
+		    max-width: 520px;
+		    min-width: 280px;
+		    overflow: visible;
+		    width: 93.3333%;
+		}
+
+		.portlet {
+			float: left;
+			width: 50%;
+		}
+		#portlet-links {
+			clear: both;
+			margin-top: 0;
+		}
+
+		.managePortletsLink {
+			bottom: 0;
+			position: absolute;
+		}
+	}
+
+	@include bp-max(s) {
+		margin-left: 0;
+
+		.portlet {
+			float: none;
+			width: 100%;
+
+			.container {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.pullquote {
+	background-color: transparent;
+	border: none;
+	clear: none;
+	color: $lynn-gray-web;
+	float: none;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.email-signup {
+	.field {
+		margin: 0 0 $space 0;
+	}
+}
+
+ul.take-action {
+	list-style: none;
+	margin: $space-double -#{$pad};
+
+	li {
+		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+#portlet-links {
+	margin: $space-double 0;
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		margin: 0;
+	}
+ 
+	a {
+		display: inline-block;
+		font-size: $font-size-s;
+		line-height: $line-height-less;
+		padding: $pad-half $pad $pad-half 0;
+		text-decoration: none;
+	}
+}
+
+footer.footer {
+	.text {
+		font-size: $font-size-s;
+	}
+
+	.aca {
+		float: right;
+
+		img {display: inline-block;}
+	}
+
+	@include bp-max(m) {
+		.aca, .footer-main {
+			float: none;
+			text-align: center;
+		}
+	}
+}
+
+.documentActions {
+	border: none;
+}
+
+dl {
+	margin: $pad 0;
+}
+
+.formid-email-signup .fieldRequired {
+	display: none;
+}
+
+#portal-personaltools {
+	background-color: $lynn-gray-50;
+	border: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+
+	li a {
+		color: $lynn-blue;
+
+		img {display: none;}
+	}
+}
+
+table .night {
+	background-color: $lynn-gray-10;
+}
