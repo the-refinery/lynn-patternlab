@@ -1,0 +1,125 @@
+/*------------------------------------*\
+    $PATTERN LAB-SPECIFIC STYLES
+\*------------------------------------*/
+/**
+ * This stylesheet is for styles you want to include only when the interface is being viewed within Pattern Lab.
+ * This is helpful for displaying demo styles for grids, animations, color swatches, etc
+ * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
+ * These styles will not be your production CSS.
+ */
+/* Style Guide Interface Colors */
+/* Typography */
+/* Defaults */
+/* Dimensions */
+/* Breakpoints */
+.demo {
+  overflow: hidden;
+  margin-bottom: 1rem; }
+
+.demo .gi, .demo .demo-block {
+  background: #dddddd;
+  color: gray;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 1em !important; }
+  .demo .gi:nth-of-type(2n), .demo .demo-block:nth-of-type(2n) {
+    color: #dddddd;
+    background: gray; }
+  .demo .gi .gi, .demo .demo-block .gi {
+    background: rgba(0, 0, 0, 0.1);
+    color: #dddddd; }
+    .demo .gi .gi:nth-of-type(2n), .demo .demo-block .gi:nth-of-type(2n) {
+      background: rgba(0, 0, 0, 0.3); }
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center; }
+
+.animate-move {
+  position: relative; }
+  .animate-move .demo-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    background: gray; }
+  .animate-move:hover > .demo-shape {
+    left: 100%;
+    margin-left: -20px; }
+
+.sg-colors {
+  margin-bottom: 1em !important;
+  overflow: hidden !important; }
+  .sg-colors li {
+    overflow: hidden !important;
+    border: none !important;
+    margin: 0 0 1rem 0 !important;
+    padding: 0 !important; }
+    @media screen and (max-width: 239px) {
+      .sg-colors li {
+        display: block !important;
+        width: 100% !important; } }
+    @media screen and (min-width: 240px) {
+      .sg-colors li {
+        float: left !important;
+        margin-right: 1rem !important;
+        width: 9em !important; }
+        .sg-colors li:last-of-type {
+          margin-right: 0 !important; } }
+
+.sg-swatch {
+  display: block !important;
+  border-radius: .5em; }
+  @media screen and (max-width: 319px) {
+    .sg-swatch {
+      height: 5em !important;
+      width: 100% !important; } }
+  @media screen and (min-width: 320px) {
+    .sg-swatch {
+      float: left !important;
+      height: 8em !important;
+      width: 25% !important; } }
+  @media screen and (min-width: 480px) {
+    .sg-swatch {
+      height: 6em !important;
+      width: 100% !important; } }
+
+.sg-swatch.black {
+  background: black; }
+
+.sg-swatch.white {
+  background: white; }
+
+.sg-swatch.lynn-blue {
+  background: #003da5; }
+
+.sg-swatch.lynn-gray {
+  background: #75787b; }
+
+.sg-swatch.lynn-gray-web {
+  background: #63666a; }
+
+.sg-swatch.secondary-blue {
+  background: #8bd3e6; }
+
+.sg-swatch.secondary-green {
+  background: #b7dd79; }
+
+.sg-swatch.secondary-orange {
+  background: #ffa06a; }
+
+.sg-swatch.accent-blue {
+  background: #00afd7; }
+
+.sg-swatch.accent-green {
+  background: #78be20; }
+
+.sg-swatch.accent-orange {
+  background: #ff6a13; }
+
+.sg-label {
+  font-size: .75em;
+  line-height: 1; }

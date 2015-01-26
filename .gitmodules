@@ -1,0 +1,6 @@
+[submodule "grunt/base"]
+	path = grunt/base
+	url = https://github.com/raptureaid/grunt-base-tasks.git
+[submodule "grunt/patternlab"]
+	path = grunt/patternlab
+	url = https://github.com/raptureaid/grunt-patternlab-tasks.git

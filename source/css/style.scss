@@ -1,124 +1,130 @@
-/*                                                                                                                                         
-                                                ,,            ,,                          ,,                                             
- .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO 
-,MI    "Y MM                                                  MM        MM         MM     MM                                    88 88 88 
-`MMb.   mmMMmm ,pW"Wq.`7MMpdMAo.     `7Mb,od8 `7MM  .P"Ybmmm  MMpMMMb.mmMMmm     mmMMmm   MMpMMMb.  .gP"Ya `7Mb,od8 .gP"Ya      || || || 
-  `YMMNq. MM  6W'   `Wb MM   `Wb       MM' "'   MM :MI  I8    MM    MM  MM         MM     MM    MM ,M'   Yb  MM' "',M'   Yb     || || || 
-.     `MM MM  8M     M8 MM    M8       MM       MM  WmmmP"    MM    MM  MM         MM     MM    MM 8M""""""  MM    8M""""""     `' `' `' 
-Mb     dM MM  YA.   ,A9 MM   ,AP       MM       MM 8M         MM    MM  MM         MM     MM    MM YM.    ,  MM    YM.    ,     ,, ,, ,, 
-P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo      `Mbmo.JMML  JMML.`Mbmmd'.JMML.   `Mbmmd'     db db db 
-                        MM                         6'     dP                                                                             
-                      .JMML.                       Ybmmmd'                                                                               
+/*--------------------*\
+    pattern lab
+\*--------------------*/
 
-Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
-You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
-So please don't use these styles. They're just here to put together the demo, and nothing more.
-They're intentionally gray, boring, and crappy because you're supposed to do this stuff yourself.
+/** TABLE OF CONTENTS
+ *
+ *  TOOLS
+ *  ....Compass.........................Let compass help out
+ *  ....Mixins
+ *  ........Breakpoints
+ *  ........Flexbox
+ *  VARIABLES
+ *  ....Colors
+ *  ....Web Breakpoints
+ *  ....Spacing
+ *  ........Global padding & spacing
+ *  ........Global spacing formulas
+ *  ....Typography......................Import and define font(s)
+ *  ........Global base font
+ *  ........Web specific font
+ *  ....Widths..........................Common fixed and percentage widths
+ *  BASE
+ *  ....Reset...........................Browser reset
+ *  ....Main............................Default body class
+ *  ....Headings
+ *  ....Text............................Text tags (p, em, strong, etc.)
+ *  ....Lists...........................List tags (ol, ul, dl, etc.)
+ *  ....Media...........................Media tags (img, object, etc.)
+ *  ....Links...........................Link tags
+ *  ........Global
+ *  ........Web
+ *  ....Forms...........................Form tags (input, label, etc.)
+ *  ....Tables..........................Table tags (table, td, th, etc.)
+ *  ....Icons...........................Icon classes
+ *  ....Typography......................Font classes
+ *  MODIFIERS & STATES..................Global class modifiers and states
+ *  ....Modifiers.......................Alternative object style(s)
+ *  ....States..........................Javascript state style(s)
+ *  STRUCTURE
+ *  ....Layout..........................Layout containers and grids
+ *  ....Header..........................Page header
+ *  ....Navigation
+ *  ........Column
+ *  ........Dropdown
+ *  ........Main
+ *  ........Take Action
+ *  ....Main............................Main content area
+ *  ....Footer..........................Page footer
+ *  OBJECTS
+ *  ....Text............................Modules containing text
+ *  ....Images..........................Image replacement
+ *  ....Buttons
+ *  ....Forms
+ *  ........Inline......................Display forms inline
+ *  ........Search
+ *  ....Lists...........................List submodules
+ *  ....Tables
+ *  ........Compact.....................No padding
+ *  ........Grid........................Borders on cells
+ *  ........Zebra.......................Alternative stripes
+ *  ....Blocks
+ *  ....Expandable
+ *  ....Directory
+ *  EXTENSIONS..........................Third party add-ons
+ *  THEME...............................Theme or site specific styles
+ *  OVERRIDES...........................Last chance overrides
+ **/
 
-Atomic design is philosophically complimentary with these CSS approaches:
-
-* SMACSS by Jonathan Snook http://smacss.com/
-* OOCSS by Nicole Sullivan http://oocss.org/
-* BEM CSS Methology : http://bem.info/method/
-* CSS Guidelines by Harry Roberts : https://github.com/csswizardry/CSS-Guidelines
-
-So feel free to use any of these approaches. Or don't. It's totally up to you.
-
-*/
-
-/*------------------------------------*\
-    $TABLE OF CONTENTS 
-    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
-\*------------------------------------*/
-/**
- * VARIABLES..............................Declarations of Sass variables 
- * .....Colors
- * .....Typography
- * .....Layout
- * .....Defaults
- * .....Breakpoints
- * MIXINS.................................Sass mixins 
- * RESET..................................Set reset defaults
- * GLOBAL CLASSES.........................Set reset defaults
- * GLOBAL ELEMENTS........................Establish global styles
- * .....Main
- * .....Headings
- * .....Text-related elements (p, blockquote, lists)
- * .....Defaults
- * .....Breakpoints
- * TYPOGRAPHY------------------------------
- * MEDIA------------------------------
- * LAYOUT------------------------------
- * NAVIGATION------------------------------
- * TOC To Be Continued
- */
-
-/*##########*/
+/* TOOLS */
 @import "compass";
-@import "scss/generic/colors";
-@import "scss/generic/typography";
+@import "scss/global/mixins/breakpoints";
+@import "scss/global/mixins/flexbox";
 
+/* VARIABLES */
+@import "scss/global/variables/colors";
+@import "scss/web/variables/breakpoints";
+@import "scss/global/variables/spacing";
+@import "scss/global/variables/spacing-formulas";
+@import "scss/global/variables/typography";
+@import "scss/web/variables/typography";
+@import "scss/web/variables/widths";
 
-@import "scss/generic/variables";
-@import "scss/generic/mixins";
-@import "scss/generic/reset";
+/* BASE */
+@import "scss/web/base/reset";
+@import "scss/global/base/main";
+@import "scss/global/base/headings";
+@import "scss/global/base/text";
+@import "scss/global/base/lists";
+@import "scss/global/base/media";
+@import "scss/global/base/links";
+@import "scss/web/base/links";
+@import "scss/web/base/forms";
+@import "scss/web/base/tables";
+@import "scss/web/base/icons";
+@import "scss/web/base/typography";
 
+/* MODIFIERS & STATES */
+@import "scss/web/base/modifiers";
+@import "scss/web/base/states";
 
+/* STRUCTURE */
+@import "scss/web/objects/layout";
+@import "scss/web/objects/header";
+@import "scss/web/objects/navigation-column";
+@import "scss/web/objects/navigation-dropdown";
+@import "scss/web/objects/navigation-main";
+@import "scss/web/objects/navigation-take-action";
+@import "scss/web/objects/main";
+@import "scss/web/objects/footer";
 
+/* OBJECTS */
+@import "scss/web/objects/text";
+@import "scss/web/objects/images";
+@import "scss/web/objects/buttons";
+@import "scss/web/objects/forms-inline";
+@import "scss/web/objects/forms-search";
+@import "scss/web/objects/lists";
+@import "scss/web/objects/table-compact";
+@import "scss/web/objects/table-grid";
+@import "scss/web/objects/table-zebra";
+@import "scss/web/objects/blocks";
+@import "scss/web/objects/expandable";
+@import "scss/web/objects/directory";
 
+/* EXTENSIONS */
+@import "scss/web/extensions/flexslider";
 
-/*------------------------------------*\
-    $GLOBAL ELEMENTS
-\*------------------------------------*/
-@import "scss/base/main";
-@import "scss/base/links";
-@import "scss/base/headings";
-@import "scss/base/text";
-@import "scss/base/lists";
-@import "scss/base/media";
-@import "scss/base/forms";
-@import "scss/base/tables";
-@import "scss/base/animation";
-@import "scss/base/global-classes";
+/* THEME */
 
-
-
-
-
-/*------------------------------------*\
-    $LAYOUT
-\*------------------------------------*/
-@import "scss/objects/layout";
-
-
-/*------------------------------------*\
-    $PAGE STRUCTURE
-\*------------------------------------*/
-@import "scss/objects/header";
-@import "scss/objects/nav";
-@import "scss/objects/main";
-@import "scss/objects/footer";
-
-
-
-/*------------------------------------*\
-    $TEXT Styles
-\*------------------------------------*/
-@import "scss/objects/text";
-
-
-/*------------------------------------*\
-    $COMPONENTS
-\*------------------------------------*/
-@import "scss/objects/images";
-@import "scss/objects/icons";
-@import "scss/objects/buttons";
-@import "scss/objects/blocks";
-@import "scss/objects/lists";
-@import "scss/objects/tooltip";
-@import "scss/objects/expandable";
-@import "scss/objects/tabs";
-@import "scss/objects/sections";
-@import "scss/objects/article";
-@import "scss/objects/comments";
-@import "scss/objects/directory";
+/* OVERRIDES */

@@ -48,7 +48,6 @@ $(document).ready(function(){
 
             // Click Event
             $(element).click(function(e) {
-                e.preventDefault();
                 $(this).toggleClass('is-closed is-open');
             });
         }

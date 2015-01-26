@@ -1,0 +1,57 @@
+/*  Break Points
+    Provide either a variable size or specific width to set a 
+    max/min break point.
+    Usage: @include bp-min(width);
+*/
+
+@mixin bp-min($point) {
+    @if $point == s {
+        @media screen and (min-width: $bp-s) { @content; }
+    }
+    
+    @else if $point == m {
+        @media screen and (min-width: $bp-m) { @content; }
+    }
+    
+    @else if $point == l {
+        @media screen and (min-width: $bp-l) { @content; }
+    }
+    
+    @else if $point == xl {
+        @media screen and (min-width: $bp-xl) { @content; }
+    }
+    
+    @else if $point == xxl {
+        @media screen and (min-width: $bp-xxl) { @content; }
+    }
+    
+    @else {
+        @media screen and (min-width: $point) { @content; }
+    }
+}
+
+@mixin bp-max($point) {
+    @if $point == s {
+        @media screen and (max-width: $bp-s - 1px) { @content; }
+    }
+    
+    @else if $point == m {
+        @media screen and (max-width: $bp-m - 1px) { @content; }
+    }
+    
+    @else if $point == l {
+        @media screen and (max-width: $bp-l - 1px) { @content; }
+    }
+    
+    @else if $point == xl {
+        @media screen and (max-width: $bp-xl - 1px) { @content; }
+    }
+    
+    @else if $point == xxl {
+        @media screen and (max-width: $bp-xxl - 1px) { @content; }
+    }
+    
+    @else {
+        @media screen and (max-width: $point) { @content; }
+    }
+}

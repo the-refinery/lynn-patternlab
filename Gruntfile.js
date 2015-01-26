@@ -1,51 +1,22 @@
 module.exports = function(grunt) {
-    
-    // Project configuration
-    grunt.initConfig({
-        concat: {
-            js: {
-                options: {separator: ';'},
-                src: [
-                    'source/js/jquery-2.0.0b2.js',
-                    'source/js/custom/*.js'
-                ],
-                dest: 'public/js/main.js'
-            },
-        },
-        uglify: {
-            options: {mangle: false},
-            js: {
-                files: {'public/js/main.min.js': ['public/js/main.js']}
-            }
-        },
-        compass: {
-            dist: {
-                options: {
-                    sassDir: 'source/css',
-                    cssDir: 'source/css',
-                    cacheDir: 'source/.sass-cache',
-                    outputStyle: 'compressed'
-                }
-            }
-        },
-        watch: {
-            css: {
-                files: 'source/css/**/*.scss',
-                tasks: ['compass']
-            },
-            js: {
-                files: ['source/js/**/*.js'],
-                tasks: ['concat:js', 'uglify:js']
-            }
-        }
-    });
-    
-    // Load the plugins
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    var path = require('path');
 
-    // Register the tasks
-    grunt.registerTask('default', ['concat','uglify','watch']);
+    require('load-grunt-config')(grunt, {
+        configPath: [
+            path.join(process.cwd(), 'grunt/base/options'),
+            path.join(process.cwd(), 'grunt/patternlab/options')
+        ],
+
+        overridePath: [
+            path.join(process.cwd(), 'grunt/custom/overrides')
+        ],
+
+        data: {
+            config: require(path.join(process.cwd(), 'config.js')),
+        },
+
+        loadGruntTasks: {
+            config: require('./package.json'),
+        },
+    });
 };

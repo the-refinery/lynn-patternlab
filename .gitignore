@@ -1,9 +1,33 @@
-.DS_Store
-public/*
-source/*/*.css
+secret.json
 
+####################
+# Pattern Lab
+####################
+config/
+core/
+extras/
+public/
+source/_patterns/**/_01-foot.mustache
+CHANGELOG
+
+####################
+# Grunt
+####################
+node_modules/
+
+####################
 # SASS
-*.sass-cache/
+####################
+*.sass-cache
 
-#Temporary Files
+####################
+# Compiled Files
+####################
+*.css
+source/js/dist/
+
+####################
+# Misc.
+####################
 *~
+*.DS_Store

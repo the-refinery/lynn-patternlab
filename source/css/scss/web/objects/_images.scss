@@ -1,0 +1,20 @@
+/* Image replacement */
+.image-replace {
+    background-size: contain;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    
+    span {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/* Spotlight */
+.spotlight {
+    display: block;
+}

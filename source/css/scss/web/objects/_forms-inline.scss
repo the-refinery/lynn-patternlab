@@ -1,0 +1,13 @@
+.inline-form {
+	fieldset {
+		position: relative;
+	}
+
+	input[type=submit], button, .button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: auto;
+		z-index: 1
+	}
+}
