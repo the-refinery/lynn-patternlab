@@ -1,8 +1,0 @@
-/* Tables */
-.table-directory-name {}
-.table-directory-phone {}
-.table-directory-department {
-	@include bp-max(s) {
-		display: none;
-	}
-}
