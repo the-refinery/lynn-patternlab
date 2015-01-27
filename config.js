@@ -1,9 +1,22 @@
+// Dynamic IP address
+var os = require('os'),
+	interfaces = os.networkInterfaces(),
+	addresses = [];
+for (var k in interfaces) {
+    for (var k2 in interfaces[k]) {
+        var address = interfaces[k][k2];
+        if (address.family === 'IPv4' && !address.internal) {
+            addresses.push(address.address);
+        }
+    }
+}
+
 // Default variables
 var path = require('path'),
 	sourcePath = path.normalize('./source'),
 	publicPath = path.normalize('./public'),
 	distPath = path.normalize('./dist'),
-	lrServer = 'localhost',
+	lrServer = addresses[0] || 'localhost',
 	lrPort = '35729';
 
 // Use secret information instead
