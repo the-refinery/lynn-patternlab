@@ -1,16 +1,3 @@
 <header class="article-header">
-	<hgroup>
-		<h2 class="h2">
-			<span itemprop="name">
-				{{ name.first }} {{ name.last }}
-				{{# name.suffix }}, {{ name.suffix }} {{/ name.suffix }}
-			</span>
-			{{# name.suffix-honorific }}
-				<span class="person-suffix-honorific" itemprop="honorificSuffix">{{ name.suffix-honorific }}</span>
-			{{/ name.suffix-honorific }}
-		</h2>
-	</hgroup>
-	{{# job }}
-	<div class="person-job" itemprop="jobTitle">{{ job }}</div>
-	{{/ job }}
+	{{> molecules-heading-person }}
 </header>

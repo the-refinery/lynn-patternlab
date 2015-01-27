@@ -165,25 +165,22 @@
 /* Block with person contact */
 .block_listing.person {
 	.block-link {
-		min-height: 32em;
+		min-height: 0;
 	}
 
 	.block-image {
 		margin: 0 auto $space;
-		max-height: 10rem;
-		max-width: 15rem;
+		max-width: 6rem;
 		overflow: hidden;
 
 		img {
 			height: auto;
-			margin-top: -2.5rem;
 		}
 	}
 
-	@media screen and (min-width: $bp-s) and (max-width: $bp-m - 1px) {
+	//@media screen and (min-width: $bp-s) and (max-width: $bp-m - 1px) {
+	@include bp-min(400px) {
 		.block-link {
-			min-height: 0;
-
 			@include flexbox;
 		}
 
@@ -192,11 +189,8 @@
 
 			@include flex(1 0 35%);
 			@include order(2);
-
-			img {
-				margin-top: 0;
-			}
 		}
+
 		.block-text {
 			@include flex(1 0 65%);
 			@include order(1);

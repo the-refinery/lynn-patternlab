@@ -5,17 +5,9 @@
         </div>
         <div class="block-text text g g-1up">
             <div class="gi">
-                <h3 class="h3">
-                    <span itemprop="name">
-                    {{ name.first }} {{ name.last }}{{# name.suffix }}, {{ name.suffix }} {{/ name.suffix }}</span>
-                    {{# name.suffix-honorific }}
-                    <span itemprop="honorificSuffix">{{ name.suffix-honorific }}</span>
-                    {{/ name.suffix-honorific }}
-                </h3>
-                {{# job }}
-                <div class="person-job" itemprop="jobTitle">{{ job }}</div>
-                {{/ job }}
+                {{> molecules-heading-person }}
             </div>
+            
             <div class="gi">
                 {{> molecules-contact-point }}
             </div>
