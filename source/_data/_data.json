@@ -16,7 +16,7 @@
 	"contact": {
 		"telephone": "+1 202-555-0197",
 		"email": "email@fakemail.com",
-		"fax": "202-555-0185",
+		"fax": "+1 202-555-0185",
 		"show-email": true,
 		"show-fax": true,
 		"show-telephone": true
