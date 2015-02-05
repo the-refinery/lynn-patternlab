@@ -1,3 +1,4 @@
+/* Placeholders */
 %heading {
 	font-family: $font-helveticaneue;
 	font-weight: normal;
@@ -5,17 +6,17 @@
 	margin-bottom: $space-half;
 }
 
-h1, .headline {
+%headline {
 	@extend %heading;
 	font-size: $font-size-jumbo;
 }
 
-h2, .subhead {
+%subhead {
 	@extend %heading;
 	font-size: $font-size-xl;
 }
 
-h3, .sectionhead-1 {
+%sectionhead-1 {
 	@extend %heading;
 	color: $lynn-blue;
 	font-size: $font-size-l;
@@ -23,16 +24,38 @@ h3, .sectionhead-1 {
 	margin-bottom: $space-quarter;
 }
 
-h4, .sectionhead-2 {
+%sectionhead-2 {
 	@extend %heading;
 	color: $lynn-blue;
 	font-size: $font-size-l;
 	margin-bottom: $space-quarter;
 }
 
-h5, .sectionsubhead {
+%sectionsubhead {
 	@extend %heading;
 	font-size: $font-size-m;
 	font-weight: 600;
 	margin-bottom: $space-quarter;
+}
+
+
+/* Styles */
+h1, .headline {
+	@extend %headline;
+}
+
+h2, .subhead {
+	@extend %subhead;
+}
+
+h3, .sectionhead-1 {
+	@extend %sectionhead-1;
+}
+
+h4, .sectionhead-2 {
+	@extend %sectionhead-2;
+}
+
+h5, .sectionsubhead {
+	@extend %sectionsubhead;
 }

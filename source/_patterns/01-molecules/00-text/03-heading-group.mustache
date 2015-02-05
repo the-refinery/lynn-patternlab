@@ -1,4 +1,13 @@
 <div class="hgroup">
-	<h1 itemprop="name">Main Heading</h1>
-	<h2>Subheading</h2>
+	<h1 class="headline" itemprop="name">
+		{{# headline.islink }}
+			<a href="{{ url }}">{{ headline.text }}</a>
+		{{/ headline.islink }}
+		{{^ headline.islink }}
+			{{ headline.text }}
+		{{/ headline.islink }}
+	</h1>
+	{{# subhead.visible }}
+	<h2 class="subhead">{{ subhead.text }}</h2>
+	{{/ subhead.visible }}
 </div>
