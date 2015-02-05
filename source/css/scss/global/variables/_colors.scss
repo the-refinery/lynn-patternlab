@@ -2,8 +2,8 @@
 $black:             rgb(0,0,0);
 $white:             rgb(255,255,255);
 $lynn-blue:         rgb(0,61,165);
-$lynn-gray:         rgb(117,120,123);
 $lynn-gray-web:		rgb(99,102,106);
+$lynn-gray:         $lynn-gray-web;
 $fk-gray:			rgb(177,179,179);
 
 // Gray Tints
@@ -28,5 +28,5 @@ $accent-green:      rgb(120,190,32);
 $accent-orange:     rgb(232,119,34);
 
 // Variable lists to let SASS make our life easier
-$color-classes: "black", "white", "lynn-blue", "lynn-gray", "lynn-gray-web", "secondary-blue", "secondary-green", "secondary-orange", "accent-blue", "accent-green", "accent-orange", "lynn-gray-90", "lynn-gray-80", "lynn-gray-70", "lynn-gray-60", "lynn-gray-50", "lynn-gray-40", "lynn-gray-30", "lynn-gray-20", "lynn-gray-10", "fk-gray";
-$color-list: $black, $white, $lynn-blue, $lynn-gray, $lynn-gray-web, $secondary-blue, $secondary-green, $secondary-orange, $accent-blue, $accent-green, $accent-orange, $lynn-gray-90, $lynn-gray-80, $lynn-gray-70, $lynn-gray-60, $lynn-gray-50, $lynn-gray-40, $lynn-gray-30, $lynn-gray-20, $lynn-gray-10, $fk-gray;
+$color-classes: "black", "white", "lynn-blue", "lynn-gray-web", "secondary-blue", "secondary-green", "secondary-orange", "accent-blue", "accent-green", "accent-orange", "lynn-gray-90", "lynn-gray-80", "lynn-gray-70", "lynn-gray-60", "lynn-gray-50", "lynn-gray-40", "lynn-gray-30", "lynn-gray-20", "lynn-gray-10", "fk-gray";
+$color-list: $black, $white, $lynn-blue, $lynn-gray-web, $secondary-blue, $secondary-green, $secondary-orange, $accent-blue, $accent-green, $accent-orange, $lynn-gray-90, $lynn-gray-80, $lynn-gray-70, $lynn-gray-60, $lynn-gray-50, $lynn-gray-40, $lynn-gray-30, $lynn-gray-20, $lynn-gray-10, $fk-gray;
