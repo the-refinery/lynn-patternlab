@@ -1,7 +1,7 @@
 <div class="hgroup">
 	<h1 class="headline" itemprop="name">
 		{{# headline.islink }}
-			<a href="{{ url }}">{{ headline.text }}</a>
+			<a href="{{ url }}" itemprop="url">{{ headline.text }}</a>
 		{{/ headline.islink }}
 		{{^ headline.islink }}
 			{{ headline.text }}
