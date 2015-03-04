@@ -1,0 +1,18 @@
+{
+	"card": {
+		"styleModifier": "card_priority_1 datestamp",
+		"dateline": {
+			"hasTime": true
+		},
+		"action": {
+			"isButton": true
+		}
+	},
+	"datetime": {
+		"itemprop": "startDate",
+		"separator": {
+			"dy": ",",
+			"dt": ""
+		}
+	}
+}

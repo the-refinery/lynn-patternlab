@@ -1,0 +1,14 @@
+{
+	"card": {
+		"styleModifier": "l-row datestamp",
+		"dateline": {
+			"hasTime": true
+		}
+	},
+	"datetime": {
+		"itemprop": "startDate",
+		"separator": {
+			"dy": ","
+		}
+	}
+}

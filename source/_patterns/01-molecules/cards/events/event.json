@@ -1,0 +1,13 @@
+{
+	"card": {
+		"dateline": {
+			"hasTime": true
+		}
+	},
+	"datetime": {
+		"itemprop": "startDate"
+	},
+	"headline": {
+		"islink": true
+	}
+}

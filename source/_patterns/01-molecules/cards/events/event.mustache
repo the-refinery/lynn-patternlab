@@ -1,0 +1,42 @@
+<div class="card card_event {{ card.styleModifier }}" itemscope itemtype="http://schema.org/Event" itemprop="event">
+	<div class="card-content">
+		{{# card.image }}
+		<div class="card-image">
+			<a href="{{ url }}" itemprop="url">{{> atoms-landscape }}</a>
+		</div>
+		{{/ card.image }}
+		<div class="card-details">
+			<div class="card-text">
+				{{> molecules-heading-group }}
+				{{# card.description }}
+				<div class="description" itemprop="description">
+					{{{ card.description }}}
+					<span class="paragraph-end"></span>
+				</div>
+				{{/ card.description }}
+			</div>
+			{{# card.dateline }}
+			<div class="card-dateline">
+				{{^ card.dateline.hasTime }}
+				{{> atoms-date }}
+				{{/ card.dateline.hasTime }}
+				{{# card.dateline.hasTime }}
+				{{> atoms-date-time }}
+				{{/ card.dateline.hasTime }}
+			</div>
+			{{/ card.dateline }}
+
+			{{# card.action }}
+			<div class="card-action">
+				{{^ card.action.isButton }}
+				{{> atoms-text-link }}
+				{{/ card.action.isButton }}
+				{{# card.action.isButton }}
+				{{> atoms-button }}
+				{{/ card.action.isButton }}
+			</div>
+			{{/ card.action }}
+		</div>
+
+	</div>
+</div>
