@@ -1,8 +1,67 @@
 {
 	"headline" : {
-		"short" : "Lorem ipsum dolor sit (37 characters)",
-		"long" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+		"islink": false,
+		"text": "The best headlines are short and quick"
 	},
+	"subhead": {
+		"visible": true,
+		"text": "You shouldn't have a problem creating a subhead that explains the headline and is no longer than this sentence (which is exactly 150 characters long)."
+	},
+	"datetime": {
+		"itemprop": "",
+		"separator": {
+			"dy": ",",
+			"dt": "|"
+		}
+	},
+	"year": {
+		"long": "2015",
+		"short": "15"
+	},
+	"month": {
+		"long": "February",
+		"short": "Feb.",
+		"digit": "02"
+	},
+	"day": {
+		"digit": "10",
+		"ofweek": "Tuesday"
+	},
+	"hour": {
+		"long": "01",
+		"short": "1",
+		"military": "13",
+		"ampm": "p.m."
+	},
+	"minute": "20",
+	"seconds": "30",
+	"iso": {
+		"date": "2015-02-10",
+		"datetime": "2015-02-10T13:20:30-05:00",
+		"time": "13:20:30-05:00"
+	},
+	"img": {
+		"headshot": {
+			"src": "http://placehold.it/900x1200",
+			"alt": "Person's name"
+		},
+		"landscape": {
+			"src": "http://placehold.it/1160x500",
+	        "alt": "This is a rather large image"
+		}
+	},
+	"button": {
+		"text": "Button",
+		"url": "#"
+	},
+
+
+
+
+
+
+
+
 	"name" : {
 		"first": "Lacy",
 		"firsti": "L",
@@ -28,40 +87,7 @@
 	"title" : "Pattern Lab",
 	"htmlClass": "pl",
 	"bodyClass": "body",
-	"img": {
-	    "spotlight": {
-	        "src": "../../images/fpo_580x250.png",
-	        "alt": "580x250 Image"
-	    },
-	    "spotlight-2x": {
-	        "src": "../../images/fpo_1160x500.png",
-	        "alt": "1160x500 Image"
-	    },
-		"landscape-4x3": {
-			"src": "../../images/fpo_4x3.png",
-			"alt": "4x3 Image"
-		},
-		"landscape-16x9": {
-			"src": "../../images/fpo_16x9.png",
-			"alt": "16x9 Image"
-		},
-		"square": {
-			"src": "../../images/fpo_square.png",
-			"alt": "Square Thumbnail"
-		},
-		"avatar" : {
-			"src" : "../../images/fpo_avatar.png",
-			"alt" : "Person Name"
-		},
-		"person": {
-			"src": "../../images/person-photo.gif",
-			"alt": "Person Name"
-		},
-		"rectangle": {
-			"src": "http://placeimg.com/400/300/tech",
-			"alt": "Rectangle"
-		}
-	},
+
 	
 	"excerpt" : {
 		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
@@ -71,35 +97,7 @@
 	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
 	"url" : "#",
 	
-	"year" : {
-		"long": "2013",
-		"short": "13"
-	},
-	"month" : {
-		"long": "February",
-		"short": "Feb",
-		"digit": "02"
-	},
-	"dayofweek" : {
-		"long": "Monday",
-		"short": "Mon"
-	},
-	"day" : {
-		"long": "10",
-		"short": "10",
-		"ordinal": "th"
-	},
-	"hour" : {
-		"long": "01",
-		"short": "1",
-		"military": "13",
-		"ampm": "pm"
-	},
-	"minute" : {
-		"long": "20",
-		"short": "20"
-	},
-	"seconds" : "31",
+	
 	"author" : {
 		"first-name": "Author",
 		"last-name": "Name"
