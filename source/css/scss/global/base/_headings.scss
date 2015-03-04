@@ -3,7 +3,7 @@
 	font-family: $font-helveticaneue;
 	font-weight: normal;
 	line-height: $line-height-less;
-	margin-bottom: $space-half;
+	margin-bottom: $pad-half;
 }
 
 %headline {
@@ -21,21 +21,22 @@
 	color: $lynn-blue;
 	font-size: $font-size-l;
 	font-weight: 600;
-	margin-bottom: $space-quarter;
+	margin-bottom: $pad-quarter;
 }
 
 %sectionhead-2 {
 	@extend %heading;
 	color: $lynn-blue;
 	font-size: $font-size-l;
-	margin-bottom: $space-quarter;
+	margin-bottom: $pad-quarter;
 }
 
 %sectionsubhead {
 	@extend %heading;
 	font-size: $font-size-m;
 	font-weight: 600;
-	margin-bottom: $space-quarter;
+	line-height: $line-height-base;
+	margin-bottom: $pad-quarter;
 }
 
 
