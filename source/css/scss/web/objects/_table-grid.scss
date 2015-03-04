@@ -1,7 +1,7 @@
 table.grid {
 	&, th, td {
 		border: {
-			color: tint($lynn-gray, 60%);
+			color: $lynn-gray-20;
 			style: solid;
 			width: 1px;
 		}

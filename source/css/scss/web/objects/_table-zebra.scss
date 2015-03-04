@@ -1,10 +1,10 @@
 table.zebra {
 	th {
 		@extend %inverted !optional;
-		background-color: tint($lynn-gray, 60%);
+		background-color: $lynn-gray-40;
 	}
 
 	tr:nth-child(even) td {
-		background-color: tint($lynn-gray, 90%);
+		background-color: $lynn-gray-10;
 	}
 }
