@@ -1,3 +1,13 @@
+%font-base {
+	font-size: $font-size-base;
+	font-weight: normal;
+	line-height: $line-height-base;
+}
+
+.font-base {
+	@extend	 %font-base;
+}
+
 .font-size-xxs {
 	font-size: $font-size-xxs;
 }
@@ -5,6 +15,7 @@
 .font-size-xs {
 	font-size: $font-size-xs;
 }
+
 .font-size-s {
 	font-size: $font-size-s;
 }
