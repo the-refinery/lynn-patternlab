@@ -1,0 +1,18 @@
+{
+	"card": {
+		"styleModifier": "card_thumb card_priority_2",
+		"image": {
+			"landscape": true
+		},
+		"dateline": {
+			"hasTime": true
+		}
+	},
+	"datetime": {
+		"itemprop": "startDate",
+		"separator": {
+			"dy": ",",
+			"dt": ""
+		}
+	}
+}
