@@ -1,0 +1,12 @@
+{
+	"card": {
+		"styleModifier": "card_priority_1",
+		"image": true,
+		"dateline": true,
+		"action": true,
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit repellendus nulla accusantium deserunt sed explicabo voluptate sapiente ratione inventore molestiae nihil earum repellat quia odit vitae perspiciatis aliquam amet?"
+	},
+	"button": {
+		"text": "Read more"
+	}
+}
