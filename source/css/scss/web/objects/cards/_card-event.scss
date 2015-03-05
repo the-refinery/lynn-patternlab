@@ -1,0 +1,90 @@
+/*
+ *	card_event
+ *
+ *	Event specific layout and style options for cards
+ *
+ */
+
+ $datestamp-width: $pad * 9;
+
+.card_event {
+	.card-action{
+		order: 3;
+	}
+	
+	.card-dateline {
+		font-weight: 600;
+	}
+
+	&.datestamp {
+		@include bp-min($bp-s) {
+			.card-details {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-end;
+
+				@include flexbox;
+			}
+
+			.card-dateline {
+				flex: {
+					grow: 0;
+					shrink: 0;
+					basis: $datestamp-width;
+				}
+
+				padding-right: $space-double;
+				order: 1;
+			}
+
+			.card-text {
+				flex: {
+					grow: 1;
+					shrink: 0;
+					basis: 0;
+				}
+				order: 2;
+			}
+
+			.card-action {
+				order: 3;
+			}
+
+			[itemprop="startDate"] {
+				display: block;
+			}
+
+			.time {
+				display: block;
+			}
+		}
+	}
+
+	&.l-row {
+		.card-action {
+			margin: 0;
+			padding-left: $space-double;
+		}
+	}
+
+	&.card_priority_1 {
+		@include bp-min($bp-s) {
+			.card-dateline {
+				margin-top: $pad-half;
+			}
+
+			.card-action,
+			.card-text {
+				flex: {
+					basis: calc(100% - #{$datestamp-width});
+				}
+			}
+
+			&.flipped {
+				.card-details {
+					flex-direction: row-reverse;
+				}
+			}
+		}
+	}
+}

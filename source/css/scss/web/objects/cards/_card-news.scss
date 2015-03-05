@@ -1,0 +1,51 @@
+/*
+ *	card_news
+ *
+ *	News specific layout and style options for cards
+ *
+ */
+
+.card_news {
+	.card-dateline {
+		color: $lynn-gray-60;
+		font-size: $font-size-xs;
+	}
+
+	.description,
+	.card-action {
+		display: none;
+	}
+
+	&.card_priority_1 {
+		.card-details {
+			flex-direction: column;
+
+			@include flexbox;
+		}
+
+		.card-dateline {
+			@include order(1);
+		}
+
+		.card-text {
+			@include order(2);
+		}
+
+		.card-action {
+			display: block;
+
+			@include order(3);
+		}
+
+		.hgroup {
+			margin-bottom: $space;
+		}
+		
+		.description {
+			display: block;
+			max-height: $line-height-base * $space-triple;
+			overflow: hidden;
+			position: relative;
+		}
+	}
+}

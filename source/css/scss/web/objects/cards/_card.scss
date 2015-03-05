@@ -1,0 +1,103 @@
+.card {
+//display: inline-block;
+	margin: $space;
+	position: relative;
+	text-align: left;
+	vertical-align: top;
+	white-space: normal;
+
+	.hgroup {
+		margin-bottom: 0;
+	}
+
+	.headline {
+		@extend %sectionhead-2;
+	}
+
+	.subhead {
+		@extend %font-base;
+
+		line-height: $line-height-base
+	}
+}
+
+
+// Card elements
+.card-content {
+	@extend %border;
+
+	height: 100%;
+	margin: 0 auto;
+	max-width: $w-main-max;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.card-image {
+	img {
+		display: block; width: 100%;
+	}
+}
+
+.card-details {
+	overflow: hidden;
+    padding: $pad-half $pad;
+    position: relative;
+
+    @include box-sizing(border-box);
+}
+
+.card-text {
+    a:hover {
+    	text-decoration: underline;
+    }
+}
+
+.card-action {
+	display: block;
+	margin: $pad-half 0;
+
+	.action {
+		text-decoration: underline;
+
+		&:after {
+			content: "...";
+		}
+	}
+
+	.expandable {
+		margin: 0 -#{$pad};
+	}
+}
+
+
+// Modifiers
+.border-off {
+	.card-content {
+		border: none;
+	}
+}
+
+.card_priority_2 {
+	.headline {
+		@extend %sectionhead-2;
+
+		font-size: $font-size-xl;
+	}
+
+	.subhead {
+		font-size: $font-size-l;
+	}
+}
+
+.card_priority_1 {
+	.headline {
+		font-size: $font-size-xxl;
+		line-height: $line-height-less;
+	}
+	.subhead {
+		@extend %subhead;
+	}
+}

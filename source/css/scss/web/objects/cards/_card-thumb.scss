@@ -1,0 +1,41 @@
+/*
+ *	card-thumb
+ *
+ *	Left or right aligned thumbnail cards
+ *
+ */
+
+.card_thumb {
+	@include bp-min($bp-s) {
+		.card-content {
+			flex-flow: row wrap;
+			@include flexbox;
+		}
+
+		.card-image {
+			margin: $space-half $space;
+			max-width: calc(40% - #{$space-double});
+			@include flex(1 1 40%);
+			@include order(2);
+		}
+
+		.card-details {
+			@include flex(1 1 60%);
+			@include order(1);
+		}
+
+		.card-action {
+			@include order(3);
+		}
+
+		&.flipped {
+			.card-image {
+				@include order(1);
+			}
+
+			.card-details {
+				@include order(2);
+			}
+		}
+	}
+}
