@@ -1,6 +1,9 @@
 {
 	"card": {
 		"styleModifier": "card_priority_1 datestamp",
+		"image": {
+			"landscape": true
+		},
 		"dateline": {
 			"hasTime": true
 		},
