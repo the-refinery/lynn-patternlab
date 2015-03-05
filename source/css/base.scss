@@ -20,6 +20,7 @@
  *  ....Widths
  *  BASE
  *  ....Reset...........................Browser reset
+ *  ....Typography......................Specific font size classes
  *  ....Main
  *  ....Headings
  *  ....Text
@@ -30,7 +31,7 @@
  *  ........Web specific
  *  ....Tables
  *  ....Icons
- *  ....Typography......................Specific font size classes
+ *	....Animation
  *  MODIFIERS & STATES..................Global class modifiers & states
  *  ....Modifiers
  *  ....States
@@ -51,13 +52,14 @@
  *  ........Inline
  *  ........Search
  *  ....Lists
+ *  ....Blocks
+ *  ....Expandable
+ *  ....Directory
  *  ....Tables
  *  ........Compact.....................No padding
  *  ........Grid........................Borders for the table cells
  *  ........Zebra.......................Alternating stripes for rows
- *  ....Blocks
- *  ....Expandable
- *  ....Directory
+ *	....Cards
  *  EXTENSIONS..........................Third party add-ons
  *  ....Flexslider
  *  THEME...............................Theme specific enhancements
@@ -80,6 +82,7 @@
 
 /* BASE */
 @import "scss/web/base/reset";
+@import "scss/web/base/typography";
 @import "scss/global/base/main";
 @import "scss/global/base/headings";
 @import "scss/global/base/text";
@@ -90,11 +93,7 @@
 @import "scss/web/base/forms";
 @import "scss/web/base/tables";
 @import "scss/web/base/icons";
-@import "scss/web/base/typography";
-
-/* MODIFIERS & STATES */
-@import "scss/web/base/modifiers";
-@import "scss/web/base/states";
+@import "scss/web/base/animation";
 
 /* STRUCTURE */
 @import "scss/web/objects/layout";
@@ -113,12 +112,25 @@
 @import "scss/web/objects/forms-inline";
 @import "scss/web/objects/forms-search";
 @import "scss/web/objects/lists";
-@import "scss/web/objects/table-compact";
-@import "scss/web/objects/table-grid";
-@import "scss/web/objects/table-zebra";
 @import "scss/web/objects/blocks";
 @import "scss/web/objects/expandable";
 @import "scss/web/objects/directory";
 
+/*~ Tables ~*/
+@import "scss/web/objects/table-compact";
+@import "scss/web/objects/table-grid";
+@import "scss/web/objects/table-zebra";
+
+/*~ Cards ~*/
+@import "scss/web/objects/cards/card";
+@import "scss/web/objects/cards/card-event";
+@import "scss/web/objects/cards/card-news";
+@import "scss/web/objects/cards/card-person";
+@import "scss/web/objects/cards/card-thumb";
+
 /* EXTENSIONS */
 @import "scss/web/extensions/flexslider";
+
+/* MODIFIERS & STATES */
+@import "scss/web/base/modifiers";
+@import "scss/web/base/states";
