@@ -1,0 +1,9 @@
+%animate-move {
+	@include transition-property(all);
+	@include transition-duration(0.4s);
+	@include transition-timing-function(ease-in);
+}
+
+.animate-move {
+	@extend %animate-move;
+}
