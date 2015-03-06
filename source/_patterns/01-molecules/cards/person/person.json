@@ -1,0 +1,11 @@
+{
+	"card": {
+		"image": true
+	},
+	"headline": {
+		"islink": true
+	},
+	"button": {
+		"text": "Full profile"
+	}
+}

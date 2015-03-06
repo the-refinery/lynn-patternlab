@@ -1,0 +1,43 @@
+/*
+ *	card-person
+ *
+ *	Person card
+ *
+ */
+
+.card_person {
+	.headline {
+		font-size: $font-size-xl;
+		margin: 0;
+	}
+
+	.card-image {
+		margin: $space auto;
+		max-width: 8rem;
+	}
+
+	.person-job {
+		margin-bottom: $pad;
+	}
+
+	@include bp-min(400px) {
+		.card-content {
+			flex-flow: row wrap;
+
+			@include flexbox;
+		}
+
+		.card-image {
+			margin: $space;
+			max-width: 20%;
+
+			@include flex(1 0 35%);
+			@include order(2);
+		}
+
+		.card-details {
+			@include flex(1 0 65%);
+			@include order(1);
+		}
+	}
+}
