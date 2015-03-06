@@ -12,7 +12,7 @@
 		"itemprop": "startDate",
 		"separator": {
 			"dy": ",",
-			"dt": ""
+			"dt": "|"
 		}
 	}
 }
