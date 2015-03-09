@@ -1,7 +1,7 @@
 {
 	"card": {
 		"styleModifier": "card_thumb card_priority_2",
-		"image": true,
+		"hasImage": true,
 		"dateline": true
 	}
 }

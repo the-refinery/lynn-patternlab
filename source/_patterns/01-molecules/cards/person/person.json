@@ -1,6 +1,6 @@
 {
 	"card": {
-		"image": true
+		"hasImage": true
 	},
 	"headline": {
 		"islink": true
