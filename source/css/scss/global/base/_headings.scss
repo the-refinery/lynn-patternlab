@@ -1,62 +1,19 @@
-/* Placeholders */
-%heading {
-	font-family: $font-helveticaneue;
-	font-weight: normal;
-	line-height: $line-height-less;
-	margin-bottom: $pad-half;
-}
-
-%headline {
-	@extend %heading;
-	font-size: $font-size-jumbo;
-}
-
-%subhead {
-	@extend %heading;
-	font-size: $font-size-xl;
-}
-
-%sectionhead-1 {
-	@extend %heading;
-	color: $lynn-blue;
-	font-size: $font-size-l;
-	font-weight: 600;
-	margin-bottom: $pad-quarter;
-}
-
-%sectionhead-2 {
-	@extend %heading;
-	color: $lynn-blue;
-	font-size: $font-size-l;
-	margin-bottom: $pad-quarter;
-}
-
-%sectionsubhead {
-	@extend %heading;
-	font-size: $font-size-m;
-	font-weight: 600;
-	line-height: $line-height-base;
-	margin-bottom: $pad-quarter;
-}
-
-
-/* Styles */
 h1, .headline {
-	@extend %headline;
+	@include headline;
 }
 
 h2, .subhead {
-	@extend %subhead;
+	@include subhead;
 }
 
 h3, .sectionhead-1 {
-	@extend %sectionhead-1;
+	@include sectionhead-1;
 }
 
 h4, .sectionhead-2 {
-	@extend %sectionhead-2;
+	@include sectionhead-2;
 }
 
 h5, .sectionsubhead {
-	@extend %sectionsubhead;
+	@include sectionsubhead;
 }
