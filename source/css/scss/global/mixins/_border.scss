@@ -1,0 +1,7 @@
+@mixin border {
+	border: {
+		color: $lynn-gray-20;
+		style: solid;
+		width: 1px;
+	}
+}

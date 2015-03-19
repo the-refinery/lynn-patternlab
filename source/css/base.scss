@@ -7,7 +7,12 @@
  *  TOOLS
  *  ....Compass.........................Let compass help out
  *  ....Mixins
- *  ........Breakpoints
+ *	........Global
+ *	............Borders
+ *  ............Breakpoints
+ *	............Headings
+ *	........Web
+ *	............Flexbox
  *  VARIABLES
  *	....Colors
  *  ....Breakpoints
@@ -68,8 +73,10 @@
 
 /* TOOLS */
 @import "compass";
+@import "scss/global/mixins/border";
 @import "scss/global/mixins/breakpoints";
-@import "scss/global/mixins/flexbox";
+@import "scss/global/mixins/headings";
+@import "scss/web/mixins/flexbox";
 
 /* VARIABLES */
 @import "scss/global/variables/colors";
@@ -124,6 +131,7 @@
 /*~ Cards ~*/
 @import "scss/web/objects/cards/card";
 @import "scss/web/objects/cards/card-event";
+@import "scss/web/objects/cards/card-expand";
 @import "scss/web/objects/cards/card-news";
 @import "scss/web/objects/cards/card-person";
 @import "scss/web/objects/cards/card-thumb";

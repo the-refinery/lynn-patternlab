@@ -11,7 +11,7 @@
 	}
 
 	.headline {
-		@extend %sectionhead-2;
+		@include sectionhead-2;
 	}
 
 	.subhead {
@@ -24,7 +24,7 @@
 
 // Card elements
 .card-content {
-	@extend %border;
+	@include border;
 
 	height: 100%;
 	margin: 0 auto;
@@ -82,7 +82,7 @@
 
 .card_priority_2 {
 	.headline {
-		@extend %sectionhead-2;
+		@include sectionhead-2;
 
 		font-size: $font-size-xl;
 	}
@@ -98,6 +98,6 @@
 		line-height: $line-height-less;
 	}
 	.subhead {
-		@extend %subhead;
+		@include subhead;
 	}
 }

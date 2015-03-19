@@ -1,0 +1,24 @@
+/*
+ *	card_expand
+ *
+ *	Adds expandable functionality to cards.
+ *
+ */
+
+.card {
+	.ex-panel {
+		@extend %animate-move !optional;
+
+		background-color: $lynn-gray-10;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+	
+	.is-open {
+		.ex-panel {
+			height: 100%;
+			top: 0;
+		}
+	}
+}
