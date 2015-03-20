@@ -1,0 +1,17 @@
+{
+	"card": {
+		"styleModifier": "",
+		"schema": {
+			"itemprop": "",
+			"itemtype": ""
+		},
+		"hasImage": {
+			"landscape": true
+		},
+		"hasContact": false,
+		"description": "",
+		"dateline": false,
+		"action": false,
+		"hasExpand": true
+	}
+}
