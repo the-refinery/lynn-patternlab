@@ -1,7 +1,7 @@
 {
-	"styleModifier": {
-		"accordion": {
-			"header": "blue"
+	"accordion": {
+		"styleModifier": {
+			"header": "triangle"
 		}
 	}
 }
