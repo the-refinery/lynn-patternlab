@@ -1,19 +1,65 @@
+/*
+ *	headings
+ */
+
+// Shared heading styles
+%heading {
+	font-family: $font-helveticaneue;
+	font-weight: normal;
+	line-height: $line-height-less;
+	margin-bottom: $pad-half;
+}
+
+// Heading placeholders
+%headline {
+	@include heading($font-size-jumbo);
+}
+
+%subhead {
+	@include heading($font-size-xl);
+}
+
+%sectionhead-1 {
+	@extend %sectionhead;
+
+	@include heading($font-size-l, 600, $lynn-blue);
+}
+
+%sectionhead-2 {
+	@extend %sectionhead;
+
+	@include heading($font-size-l, normal, $lynn-blue);
+}
+
+%sectionsubhead {
+	@extend %sectionhead;
+
+	@include heading($font-size-m, 600);
+
+	line-height: $line-height-base;
+}
+
+// Shared sectionhead styles
+%sectionhead {
+	margin-bottom: $pad-quarter;
+}
+
 h1, .headline {
-	@include headline;
+	@extend %headline;
 }
 
 h2, .subhead {
-	@include subhead;
+	@extend %subhead;
 }
 
 h3, .sectionhead-1 {
-	@include sectionhead-1;
+	@extend %sectionhead-1;
 }
 
 h4, .sectionhead-2 {
-	@include sectionhead-2;
+	@extend %sectionhead-2;
 }
 
 h5, .sectionsubhead {
-	@include sectionsubhead;
+	@extend %sectionsubhead;
 }

@@ -1,40 +1,12 @@
-/**/
-@mixin heading {
-	font-family: $font-helveticaneue;
-	font-weight: normal;
-	line-height: $line-height-less;
-	margin-bottom: $pad-half;
-}
+/*
+ *	Heading mixin
+ *	Usage: @include heading(size, weight, color);
+ */
 
-@mixin headline {
-	@include heading;
-	font-size: $font-size-jumbo;
-}
+@mixin heading($size, $weight: normal, $color: $lynn-gray) {
+	@extend %heading;
 
-@mixin subhead {
-	@include heading;
-	font-size: $font-size-xl;
-}
-
-@mixin sectionhead-1 {
-	@include heading;
-	color: $lynn-blue;
-	font-size: $font-size-l;
-	font-weight: 600;
-	margin-bottom: $pad-quarter;
-}
-
-@mixin sectionhead-2 {
-	@include heading;
-	color: $lynn-blue;
-	font-size: $font-size-l;
-	margin-bottom: $pad-quarter;
-}
-
-@mixin sectionsubhead {
-	@include heading;
-	font-size: $font-size-m;
-	font-weight: 600;
-	line-height: $line-height-base;
-	margin-bottom: $pad-quarter;
+	color: $color;
+	font-size: $size;
+	font-weight: $weight;
 }
