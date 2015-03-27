@@ -6,13 +6,14 @@
  *
  *  TOOLS
  *  ....Compass.........................Let compass help out
- *  ....Mixins
- *	........Global
- *	............Borders
- *  ............Breakpoints
- *	............Headings
- *	........Web
- *	............Flexbox
+ *  MIXINS
+ *	....Global
+ *	........Borders
+ *  ........Breakpoints
+ *	........Headings
+ *	........Inverted
+ *	....Web
+ *	........Flexbox
  *  VARIABLES
  *	....Colors
  *  ....Breakpoints
@@ -73,9 +74,12 @@
 
 /* TOOLS */
 @import "compass";
+
+/* MIXINS */
 @import "scss/global/mixins/border";
 @import "scss/global/mixins/breakpoints";
 @import "scss/global/mixins/headings";
+@import "scss/global/mixins/inverted";
 @import "scss/web/mixins/flexbox";
 
 /* VARIABLES */

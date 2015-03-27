@@ -30,3 +30,30 @@ $accent-orange:     rgb(232,119,34);
 // Variable lists to let SASS make our life easier
 $color-classes: "black", "white", "lynn-blue", "lynn-gray-web", "secondary-blue", "secondary-green", "secondary-orange", "accent-blue", "accent-green", "accent-orange", "lynn-gray-90", "lynn-gray-80", "lynn-gray-70", "lynn-gray-60", "lynn-gray-50", "lynn-gray-40", "lynn-gray-30", "lynn-gray-20", "lynn-gray-10", "fk-gray";
 $color-list: $black, $white, $lynn-blue, $lynn-gray-web, $secondary-blue, $secondary-green, $secondary-orange, $accent-blue, $accent-green, $accent-orange, $lynn-gray-90, $lynn-gray-80, $lynn-gray-70, $lynn-gray-60, $lynn-gray-50, $lynn-gray-40, $lynn-gray-30, $lynn-gray-20, $lynn-gray-10, $fk-gray;
+
+// Inverted color 
+$inverted-default-bg: $lynn-gray-60;
+$inverted-default-hover: $lynn-gray;
+
+$inverted-color-map: (
+	"default": (
+		"background": $inverted-default-bg,
+		"color": $white,
+		"hover": $inverted-default-hover
+	),
+	"blue": (
+		"background": $secondary-blue,
+		"color": $white,
+		"hover": $accent-blue
+	),
+	"green": (
+		"background": $secondary-green,
+		"color": $white,
+		"hover": $accent-green
+	),
+	"orange": (
+		"background": $secondary-orange,
+		"color": $white,
+		"hover": $accent-orange
+	)
+);

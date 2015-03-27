@@ -1,28 +1,3 @@
-%inverted {
-	background-color: $lynn-gray;
-	color: $white;
-
-	a {
-		color: $white;
-	}
-}
-
-%inverted-blue {
-	@extend %inverted;
-	background-color: $secondary-blue;
-}
-
-%inverted-green {
-	@extend %inverted;
-	background-color: $secondary-green;
-}
-
-%inverted-orange {
-	@extend %inverted;
-	background-color: $secondary-orange;
-}
-
-
 /*----- Modifiers -----*/
 
 /* Border */
@@ -143,20 +118,25 @@
 }
 
 /* Inversion */
+@each $key in map_keys($inverted-color-map) {
+	$bg: map-get(map-get($inverted-color-map, $key), "background");
+	$color: map-get(map-get($inverted-color-map, $key), "color");
+	$hover: map-get(map-get($inverted-color-map, $key), "hover");
+
+	@if $key == "default" {
+		@at-root %inverted {
+			@include inverted($bg, $color, $hover);
+		}
+	}
+
+	@else {
+		@at-root %inverted-#{$key} {
+			@include inverted($bg, $color, $hover);
+		}
+	}
+}
 .inverted {
-	@extend %inverted;
-
-	&.blue {
-		@extend %inverted-blue;
-	}
-
-	&.green {
-		@extend %inverted-green;
-	}
-
-	&.orange {
-		@extend %inverted-orange;
-	}
+	@include inverted-all;
 }
 
 /* Oomph Text */
