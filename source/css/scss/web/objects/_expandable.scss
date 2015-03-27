@@ -1,5 +1,9 @@
+/*--------------------*\
+    Expandable
+\*--------------------*/
+
 .ex-handle {
-    @extend %inverted;
+    @include inverted-all;
 
     cursor: pointer;
     padding: $pad ($pad * 3) $pad $pad;
@@ -10,42 +14,34 @@
         color: $white;
         margin-bottom: 0;
     }
-    
-    &:before {
-        @extend %triangle-down;
-        
-        font-size: 2em;
-        position: absolute;
-        right: 1rem;
-        top: .75rem;
-    }
 
-    &:hover {
-        background: $lynn-gray;
-    }
+    // Modifiers
+    &.menu {
+        border-radius: 1em;
+        height: $pad-double;
+        margin: $space-half auto;
+        padding: 0;
+        width: $pad-double;
 
-    // Color Modifiers
-    &.blue {
-        @extend %inverted-blue;
-
-        &:hover {
-            background: $accent-blue;
+        &:before {
+            @extend %icon-menu;
+            content: "!";
+            font-size: $font-size-base;
+            position: absolute;
+            right: $pad-half;
+            top: $pad-half;
         }
     }
 
-    &.green {
-        @extend %inverted-green;
-
-        &:hover {
-            background: $accent-green;
-        }
-    }
-
-    &.orange {
-        @extend %inverted-orange;
-
-        &:hover {
-            background: $accent-orange;
+    &.triangle {
+        &:before {
+            @extend %triangle-down;
+            
+            color: $white;
+            font-size: 2em;
+            position: absolute;
+            right: 1rem;
+            top: .75rem;
         }
     }
 }
@@ -55,8 +51,9 @@
     padding: $pad;
 }
 
+// States
 .is-closed {
-    .ex-handle {
+    .triangle {
         &:before {          
             @extend %triangle-right;
         }
@@ -70,97 +67,9 @@
     }
 }
 
-/*--------------------*\
-    Modules
-\*--------------------*/
-
+// Modules
 .accordion {
-    .expandable {
+    .ex-content {
         margin-bottom: $space;
-    }
-}
-
-.block_listing {
-    .expandable {
-        margin-top: -2.25em;
-    }
-
-    // Components
-    .ex-handle {
-        background: $lynn-gray;
-        border-radius: 1em;
-        height: 2em;
-        margin: -1em auto .25em;
-        padding: 0;
-        width: 2em;
-
-        &:before {
-            @extend %icon-menu;
-
-            font-size: 1em;
-            right: .5em;
-            top: .5em;
-        }
-    }
-
-    .ex-panel {
-        @extend %inverted;
-
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 100;
-        width: 100%;
-    }
-
-    // Modifiers
-    &.blue {
-        .ex-handle {
-            background: $accent-blue;
-        }
-        .ex-panel {
-            @extend %inverted-blue;
-        }
-    }
-    &.green {
-        .ex-handle {
-            background: $accent-green;
-        }
-        .ex-panel {
-            @extend %inverted-green;
-        }
-    }
-    &.orange {
-        .ex-handle {
-            background: $accent-orange;
-        }
-        .ex-panel {
-            @extend %inverted-orange;
-        }
-    }
-
-    // States
-    &.is-closed {
-        .ex-handle {
-            &:before {
-                @extend %icon-menu;
-            }
-        }
-    }
-
-    &.is-open {
-        .ex-handle {
-            &:before {
-                @extend %icon-menu;
-                -webkit-transform: none;
-                -moz-transform: none;
-                -ms-transform: none;
-                -o-transform: none;
-                transform: none;
-            }
-        }
-        .ex-panel {
-            top: 0;
-        }
     }
 }
