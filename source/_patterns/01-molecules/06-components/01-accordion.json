@@ -1,7 +1,7 @@
 {
 	"accordion": {
 		"styleModifier": {
-			"header": "triangle"
+			"header": "hasHover triangle"
 		}
 	}
 }
