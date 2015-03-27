@@ -11,7 +11,7 @@
 	}
 
 	.headline {
-		@include sectionhead-2;
+		@extend %sectionhead-2;
 	}
 
 	.subhead {
@@ -82,7 +82,7 @@
 
 .card_priority_2 {
 	.headline {
-		@include sectionhead-2;
+		@extend %sectionhead-2;
 
 		font-size: $font-size-xl;
 	}
@@ -98,6 +98,6 @@
 		line-height: $line-height-less;
 	}
 	.subhead {
-		@include subhead;
+		@extend %subhead;
 	}
 }
