@@ -2,7 +2,7 @@
 .table-directory-name {}
 .table-directory-phone {}
 .table-directory-department {
-	@include bp-max(s) {
+	@include bp-max($bp-s) {
 		display: none;
 	}
 }

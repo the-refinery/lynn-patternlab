@@ -12,7 +12,7 @@
 		}
 	}
 
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		>h1 {
 			float: left;
 		}
@@ -31,7 +31,7 @@
 		}
 	}
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		.l-resp-right {
 			height: 78px;
 			max-width: 380px;
@@ -41,7 +41,7 @@
 }
 
 .site-logo {
-	@include bp-max(l) {
+	@include bp-max($bp-l) {
 		height: 55px;
 		width: 130px;
 
@@ -50,7 +50,7 @@
 		}
 	}
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		height: 78px;
 		width: 188px;
 
@@ -60,17 +60,27 @@
 	}
 }
 
+
+.ilynn-logo {
+	height: 54px;
+	width: 212px;
+
+	span {
+		background: transparent url('//www.lynn.edu/ilynn/ilynn-logo-hinted-212x50.png') no-repeat left top;
+	}
+}
+
 .search-form {
 	font-size: $font-size-xs;
     overflow: hidden;
     padding: $pad-quarter;
     width: $w-s;
     
-    @include bp-max(l) {
+    @include bp-max($bp-l) {
         margin: 0 auto;
     }
     
-    @include bp-min(l) {
+    @include bp-min($bp-l) {
         float: right;
         margin: 0;
     }

@@ -70,49 +70,49 @@
 
 /* Hide */
 .hide-max-s {
-	@include bp-max(s) {
+	@include bp-max($bp-s) {
 		display: none;
 	}
 }
 
 .hide-max-m {
-	@include bp-max(m) {
+	@include bp-max($bp-m) {
 		display: none;
 	}
 }
 
 .hide-max-l {
-	@include bp-max(l) {
+	@include bp-max($bp-l) {
 		display: none;
 	}
 }
 
 .hide-max-xl {
-	@include bp-max(xl) {
+	@include bp-max($bp-xl) {
 		display: none;
 	}
 }
 
 .hide-min-s {
-	@include bp-min(s) {
+	@include bp-min($bp-s) {
 		display: none;
 	}
 }
 
 .hide-min-m {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		display: none;
 	}
 }
 
 .hide-min-l {
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		display: none;
 	}
 }
 
 .hide-min-xl {
-	@include bp-min(xl) {
+	@include bp-min($bp-xl) {
 		display: none;
 	}
 }

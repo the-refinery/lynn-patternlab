@@ -1,5 +1,14 @@
-$bp-s:      480px;      // 30rem 
-$bp-m:      560px;      // 35rem
-$bp-l:      768px;      // 48rem
-$bp-xl:     1024px;     // 64rem
-$bp-xxl:    1280px;     // 80rem
+$breakpoints: (
+	s: 		480px,		// 30rem
+	m: 		560px,		// 35rem
+	l: 		768px,		// 48rem
+	xl: 	1024px,		// 64rem
+	xxl: 	1280px,		// 80rem
+);
+
+// Shorthand (single usage)
+$bp-s: map-get($breakpoints, s);
+$bp-m: map-get($breakpoints, m);
+$bp-l: map-get($breakpoints, l);
+$bp-xl: map-get($breakpoints, xl);
+$bp-xxl: map-get($breakpoints, xxl);

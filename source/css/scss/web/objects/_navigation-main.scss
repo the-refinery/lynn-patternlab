@@ -3,11 +3,11 @@
         @extend %icon-menu;
     }
 
-    @include bp-min(l) {
+    @include bp-min($bp-l) {
         &:before {display: none;}
     }
 
-    @include bp-max(l) {
+    @include bp-max($bp-l) {
         background-color: tint($lynn-gray, 90%);
         float: none;
         margin: 0 auto;
@@ -77,7 +77,7 @@
         width: 100%;
         z-index: 999;
 
-        @include bp-max(l) {
+        @include bp-max($bp-l) {
             border-bottom: {
                 color: tint($lynn-gray, 60%);
                 style: solid;
@@ -85,7 +85,7 @@
             }
         }
 
-        @include bp-min(l) {
+        @include bp-min($bp-l) {
             background-color: $white;
             border-bottom: 1px solid tint($lynn-gray, 60%);
             .menu {

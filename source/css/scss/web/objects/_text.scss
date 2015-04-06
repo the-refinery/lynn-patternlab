@@ -1,5 +1,5 @@
 h1, .heading {
-	@include bp-max(m) {
+	@include bp-max($bp-m) {
 		font-size: $font-size-xxl;
 	}
 }
@@ -102,13 +102,12 @@ h1, .heading {
 }
 
 /* Person */
-.person {
-	&.block {
-		//font-size: $font-size-s;
-	}
+.person-job {
+	margin: $pad 0;
 }
 
 .person-suffix-honorific {
+	color: $lynn-gray;
 	display: block;
-	font-size: $font-size-xs;
+	font-size: $font-size-xxs;
 }

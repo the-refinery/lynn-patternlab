@@ -21,7 +21,7 @@
     top: -$pad-half;
     z-index: 999;
     
-    @include bp-max(l) {
+    @include bp-max($bp-l) {
         display: none;
     }
 }

@@ -57,7 +57,7 @@
     }
 
 
-    @include bp-max(l) {
+    @include bp-max($bp-l) {
         .menu {
             background-color: $lynn-gray-10;
             position: fixed;
@@ -89,7 +89,7 @@
         }
     }
 
-    @include bp-min(l) {
+    @include bp-min($bp-l) {
         .menu {
             text-align: right;
             top: $space * 2.5;
@@ -112,7 +112,7 @@
         }
     }
 
-    @include bp-max(xl) {
+    @include bp-max($bp-xl) {
         a {
             font-size: $font-size-s;
         }

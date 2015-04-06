@@ -23,7 +23,7 @@ header.header {
     	background-size: contain !important;
     }
 
-	@include bp-max(l) {
+	@include bp-max($bp-l) {
 		height: 60px;
 		position: fixed;
 		width: 140px;
@@ -33,7 +33,7 @@ header.header {
 		}
 	}
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		height: 100px;
 		width: 230px;
 
@@ -161,7 +161,7 @@ h1, h2 {
 		font-weight: 600;
 	}
 
-	@include bp-max(s) {
+	@include bp-max($bp-s) {
 		.day, .night {
 			display: none;
 		}
@@ -175,7 +175,7 @@ h1, h2 {
 		}
 	}
 
-	@include bp-min(s) {
+	@include bp-min($bp-s) {
 		td {
 			border-top: 1px solid $lynn-gray-40;
 		}
@@ -201,13 +201,13 @@ h1, h2 {
 }
 
 #navcolumn {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		padding-right: $space;
 	}
 }
 
 .homepage .l-sidebar, #supplement, #navcolumn {
-	@include bp-max(l) {
+	@include bp-max($bp-l) {
 		margin-left: -1rem;
 		.block {
 			margin: 0 auto;
@@ -232,7 +232,7 @@ h1, h2 {
 		}
 	}
 
-	@include bp-max(s) {
+	@include bp-max($bp-s) {
 		margin-left: 0;
 
 		.portlet {
@@ -308,7 +308,7 @@ footer.footer {
 		img {display: inline-block;}
 	}
 
-	@include bp-max(m) {
+	@include bp-max($bp-m) {
 		.aca, .footer-main {
 			float: none;
 			text-align: center;

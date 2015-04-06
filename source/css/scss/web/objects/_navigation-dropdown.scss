@@ -1,5 +1,5 @@
 .l-nav--dropdown {
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -36,7 +36,7 @@
 		z-index: 999;
 	}
 
-	@include bp-max(l) {
+	@include bp-max($bp-l) {
 		.menu-item {
 			border-bottom: 1px solid tint($lynn-gray, 60%);
 			padding: $space-half;
@@ -58,7 +58,7 @@
 			display: none;
 		}
 	}
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		.menu-item {
 			display: inline-block;
 			padding: 0 $space-half;

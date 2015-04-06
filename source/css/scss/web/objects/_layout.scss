@@ -5,21 +5,20 @@
 %l-page-container {
 	@extend %l-container;
 
-    background-color: $white;
     position: relative;
     width: 90%;
     
     @include box-sizing(content-box);
     
-    @include bp-min(l) {
+    @include bp-min($bp-l) {
         min-width: $w-l;
     }
     
-    @include bp-min(xl) {
+    @include bp-min($bp-xl) {
         min-width: $w-xl;
     }
     
-    @include bp-min(xxl) {
+    @include bp-min($bp-xxl) {
         max-width: $w-xxl;
         min-width: $w-xxl;
     }
@@ -68,14 +67,14 @@
 .l-nav--column{
 	@extend %l-container;
 
-    @include bp-min(l) {
+    @include bp-min($bp-l) {
         position: relative;
         width: $w-s;
         float: left;
         left: -($w-pct-m-l);
     }
     
-    @include bp-min(xl) {
+    @include bp-min($bp-xl) {
         left: 0;
     }
 }
@@ -84,7 +83,7 @@
 
 /*----- Responsive Adjustments -----*/
 .l-resp-right {
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		float: right;
 	}
 }
@@ -95,7 +94,7 @@
 	clear: both;
 	position: relative;
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		padding-top: $space*5;
 	}
 }
@@ -105,7 +104,7 @@
 	@extend .cf;
 
     .l-main {
-    	@include bp-min(l) {
+    	@include bp-min($bp-l) {
     		float: left;
             padding: 0 $space 0 0;
     		width: 66.66666%;
@@ -113,7 +112,7 @@
     }
     
     .l-sidebar {
-    	@include bp-min(l) {
+    	@include bp-min($bp-l) {
     		float: right;
             padding: 0 0 0 $space;
     		width: 33.33333%;
@@ -121,14 +120,14 @@
     }
 
     &.reversed {
-    	@include bp-min(l) {
+    	@include bp-min($bp-l) {
             .l-main {
                 float: right;
                 padding: 0 0 0 $space;
             }
         }
     	
-    	@include bp-min(l) {
+    	@include bp-min($bp-l) {
             .l-sidebar {
                 float: left;
                 padding: 0 $space 0 0;
@@ -159,7 +158,7 @@
 		display: block;
 	}
 
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		float: left;
 	}
 }
@@ -173,7 +172,7 @@
 
 /* Grid 2up */
 .g-2up {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		>.gi {
 			width: 50%;
 
@@ -198,7 +197,7 @@
 
 /* Grid 3up */
 .g-3up {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		>.gi {
 			width: 33.3333333%;
 
@@ -215,7 +214,7 @@
 
 /* Grid 4up */
 .g-4up {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		>.gi {
 			width: 50%;
 
@@ -225,7 +224,7 @@
 		}
 	}
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		>.gi {
 			width: 25%;
 
@@ -254,7 +253,7 @@
 
 /* Grid 5up */
 .g-5up {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		>.gi {
 			width: 50%;
 
@@ -264,7 +263,7 @@
 		}
 	}
 
-	@include bp-min(l) {
+	@include bp-min($bp-l) {
 		>.gi {
 			width: 33.3333333%;
 		
@@ -278,7 +277,7 @@
 		}
 	}
 
-	@include bp-min(xl) {
+	@include bp-min($bp-xl) {
 		>.gi {
 			width: 20%;
 
@@ -295,13 +294,13 @@
 
 /* Grid 2/3 */
 .gi-2-3 {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		width: 66.666666%;
 	}
 }
 
 .gi-1-3 {
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		width: 33.333333%;
 	}
 }

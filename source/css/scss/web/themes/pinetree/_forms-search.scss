@@ -14,7 +14,7 @@
     }
 
     &.js-enabled.is-open {
-        @include bp-max(m) {
+        @include bp-max($bp-m) {
             .LSBox {
                 width: 100%;
             }
@@ -26,20 +26,20 @@
             }
         }
 
-        @include bp-min(m) {
+        @include bp-min($bp-m) {
             .LSBox {
                 float: right;
             }
         }
 
-        @include bp-max(l) {
+        @include bp-max($bp-l) {
             position: fixed;
             left: 0;
             top: 5rem;
             width: 100%;
         }        
 
-        @include bp-min(l) {
+        @include bp-min($bp-l) {
             position: absolute;
             right: 0;
             top: 3rem;

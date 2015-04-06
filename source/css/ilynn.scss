@@ -1,0 +1,390 @@
+/* TOOLS */
+@import "compass";
+
+/* MIXINS */
+@import "scss/global/mixins/border";
+@import "scss/global/mixins/breakpoints";
+@import "scss/global/mixins/headings";
+@import "scss/global/mixins/inverted";
+@import "scss/web/mixins/flexbox";
+
+/* VARIABLES */
+@import "scss/global/variables/colors";
+@import "scss/web/variables/breakpoints";
+@import "scss/global/variables/spacing";
+@import "scss/global/variables/spacing-formulas";
+@import "scss/global/variables/typography";
+@import "scss/web/variables/typography";
+@import "scss/web/variables/widths";
+
+/* BASE */
+@import "scss/web/base/reset";
+@import "scss/web/base/typography";
+@import "scss/global/base/main";
+@import "scss/global/base/headings";
+@import "scss/global/base/text";
+@import "scss/global/base/lists";
+@import "scss/global/base/media";
+@import "scss/global/base/links";
+@import "scss/web/base/links";
+//@import "scss/web/base/forms";
+@import "scss/web/base/tables";
+@import "scss/web/base/icons";
+//@import "scss/web/base/animation";
+
+/* STRUCTURE */
+@import "scss/web/objects/layout";
+@import "scss/web/objects/header";
+//@import "scss/web/objects/navigation-column";
+//@import "scss/web/objects/navigation-dropdown";
+//@import "scss/web/objects/navigation-main";
+//@import "scss/web/objects/navigation-take-action";
+@import "scss/web/objects/main";
+@import "scss/web/objects/footer";
+
+/* OBJECTS */
+@import "scss/web/objects/text";
+@import "scss/web/objects/images";
+@import "scss/web/objects/buttons";
+//@import "scss/web/objects/forms-inline";
+//@import "scss/web/objects/forms-search";
+@import "scss/web/objects/lists";
+//@import "scss/web/objects/blocks";
+@import "scss/web/objects/expandable";
+//@import "scss/web/objects/directory";
+
+/*~ Tables ~*/
+@import "scss/web/objects/table-compact";
+@import "scss/web/objects/table-grid";
+@import "scss/web/objects/table-zebra";
+
+/*~ Cards ~*/
+//@import "scss/web/objects/cards/card";
+//@import "scss/web/objects/cards/card-event";
+//@import "scss/web/objects/cards/card-expand";
+//@import "scss/web/objects/cards/card-news";
+//@import "scss/web/objects/cards/card-person";
+//@import "scss/web/objects/cards/card-thumb";
+
+/* EXTENSIONS */
+//@import "scss/web/extensions/flexslider";
+
+/* MODIFIERS & STATES */
+@import "scss/web/base/modifiers";
+@import "scss/web/base/states";
+
+$h-hero: 659px;
+$w-hero: 1200px;
+$hero-ratio: $h-hero/$w-hero;
+
+$h-hero-s: $bp-s * $hero-ratio;
+$h-hero-m: $bp-m * $hero-ratio;
+$h-hero-l: $bp-l * $hero-ratio;
+$h-hero-xl: $bp-xl * $hero-ratio;
+$h-hero-xxl: $bp-xxl * $hero-ratio;
+
+.max-w {
+	max-width: 720px;
+	min-width: 0;
+}
+
+/* Hero Container */
+.l-hero {
+	background: {
+		position: center center;
+		repeat: no-repeat;
+		size: cover;
+	}
+
+    height: 100%;
+    
+    top: 0;
+    width: 100%;
+
+    @include bp-max($bp-s) {
+    	height: 200px;
+	    position: relative;
+	    width: 100%;
+    }
+
+    @include bp-min($bp-s) {
+    	height: $h-hero-m;
+	    position: relative;
+	    width: 100%;
+    }
+
+    @include bp-min($bp-m) {
+    	height: $h-hero-m;
+    	position: absolute;
+    }
+
+    @include bp-min($bp-l) {
+    	height: $h-hero-l;
+    }
+
+    @include bp-min($bp-xl) {
+    	height: $h-hero-xl;
+    	
+    }
+
+    @include bp-min($bp-xxl) {
+    	height: 100%;
+    }
+
+	&.innovative {
+		background-image: url('http://www.lynn.edu/ilynn/innovative-head-480x264.jpg');
+		@include bp-min($bp-s) {
+			background-image: url('http://www.lynn.edu/ilynn/innovative-head-768x422.jpg');
+		}
+		@include bp-min($bp-l) {
+			background-image: url('http://www.lynn.edu/ilynn/innovative-head-1024x562.jpg');
+		}
+		@include bp-min($bp-xl) {
+			background-image: url('http://www.lynn.edu/ilynn/innovative-head-1280x703.jpg');
+		}
+		@include bp-min($bp-xxl) {
+			background-image: url('http://www.lynn.edu/ilynn/innovative-head-2184x1200.jpg');
+		}
+	}
+	&.motivated {
+		background-image: url('http://www.lynn.edu/ilynn/motivated-head-480x264.jpg');
+		@include bp-min($bp-s) {
+			background-image: url('http://www.lynn.edu/ilynn/motivated-head-768x422.jpg');
+		}
+		@include bp-min($bp-l) {
+			background-image: url('http://www.lynn.edu/ilynn/motivated-head-1024x562.jpg');
+		}
+		@include bp-min($bp-xl) {
+			background-image: url('http://www.lynn.edu/ilynn/motivated-head-1280x703.jpg');
+		}
+		@include bp-min($bp-xxl) {
+			background-image: url('http://www.lynn.edu/ilynn/motivated-head-2184x1200.jpg');
+		}
+	}
+}
+
+.header[role="banner"] {
+	z-index: 999;
+
+	h1 {
+		margin: 0;
+	}
+
+	@include bp-max($bp-m) {
+		margin: $space 0;
+		text-align: center;
+	}
+
+	@include bp-min($bp-m) {
+		height: calc(#{$h-hero-m} - #{$space-triple});
+		padding-top: $pad-double;
+	}
+
+	@include bp-min($bp-l) {
+		height: calc(#{$h-hero-l} - #{$space-triple});
+	}
+
+	@include bp-min($bp-xl) {
+		height: calc(#{$h-hero-xl} - #{$space-triple});
+	}
+
+	@include bp-min($bp-xxl) {
+		height: calc(100vh - #{$space-triple});
+	}
+}
+
+.nav-container {
+	margin: 0 auto;
+}
+
+.nav-sticky {
+	position: absolute;
+	right: 0;
+	width: 100%;
+
+	.nav-wrapper {
+		text-align: right;
+		width: 100%;
+	}
+
+	@include bp-max($bp-m) {
+		position: relative;
+		.menu-item {
+			margin: $space auto;
+			width: calc(100% - #{$space-double} * 2);
+
+			.button {
+				display: block;
+			}
+		}
+	}
+
+	@include bp-min($bp-m) {
+		.menu-item {
+			display: inline-block;
+	    	padding: 0 0.5rem;
+	    	position: relative;
+	    }
+
+	    &.fixed {
+	    	background-color: $white;
+	    	border-bottom: 1px solid $lynn-gray-20;
+	    	left: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+
+			.nav-wrapper {
+				margin: $space auto;
+				width: 90%;
+			}
+	    }
+	}
+}
+
+[role="main"] {
+	padding: $space 0 $space-double;
+
+	@include bp-min($bp-m) {
+		margin-top: $space-quad;
+	}
+}
+
+.l-row-tout {
+	font-size: $font-size-l;
+	margin-bottom: $space-double;
+
+	.l-sidebar {
+		@include flex(1 1);
+		@include order(1);
+	}
+
+	.l-main {
+		@include flex(1 1);
+		@include order(2);
+		.inner {
+			@include flexbox;
+		}
+	}
+
+	@include bp-max(660px) {
+		margin: 0 auto $space-double;
+		width: 90%;
+
+		.l-row-inner {
+			@include flex-flow(column, nowrap);
+
+			width: 100%;
+		}
+
+		.l-sidebar .inner {
+			border-bottom: $space solid $white;
+			padding: $pad;
+		}
+
+		.l-main .text {
+			padding: $pad;
+		}
+	}
+
+	@include bp-min(660px) {
+		.l-row-inner {
+			@include flexbox;
+			@include flex-flow(row, wrap);
+		}
+
+		.l-sidebar {
+			@include flex(1 1 30%);
+			.inner{
+				
+				padding: $pad $pad-double $pad 0;
+			}
+		}
+
+		.l-main {
+			@include flex(1 1 70%);
+			.inner {
+				border-left: $space solid $white;
+				padding: $pad 0 $pad $pad-double;
+			}
+		}
+	}
+
+	@include bp-max($bp-l) {
+		.l-main .inner {
+			@include flex-flow(column, nowrap);
+
+			.text {
+				@include flex(2 1 1);
+				@include order(2);
+			}
+			.video-container {
+				@include flex(1 1 1);
+				@include order(1);
+
+				margin-bottom: $space;
+			}
+		}
+	}
+
+	@include bp-min($bp-l) {
+		.l-main .inner {
+			@include flex-flow(row, wrap);
+
+			.text {
+				@include flex(2 1 60%);
+				@include order(1);
+
+				.text-inner {
+					padding-right: $pad-double;
+				}
+			}
+			.video-container {
+				@include flex(1 1 40%);
+				@include order(2);
+			}
+		}
+	}
+
+	@include bp-max($bp-xl) {
+		.l-main .inner {
+			.text {
+				font-size: $font-size-base;
+			}
+		}
+	}
+
+	@include bp-min($bp-xxl) {
+		.l-main .inner {
+			.text {
+				@include flex(2 1 70%);
+			}
+			.video-container {
+				@include flex(1 1 30%);
+			}
+		}
+	}
+}
+
+.accordion {
+	margin-bottom: $space-double;
+	.ex-handle {
+		&.triangle:before {
+			color: $lynn-gray-40;
+		}
+
+		h1, h2, h3, h4, h5 {
+			color: $lynn-blue;
+		}
+	}
+
+	.is-open .ex-panel {
+		@include border;
+		border-color: $lynn-gray-10;
+	}
+}
+
+.footer {
+	margin: $space-double auto;
+}

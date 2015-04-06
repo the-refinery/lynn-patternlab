@@ -5,7 +5,7 @@
 	margin: $space-double 0;
 	max-width: $w-max;
 
-	@include bp-min(m) {
+	@include bp-min($bp-m) {
 		.gi {
 			float: left;
 		}
@@ -31,12 +31,12 @@
 			font-size: $font-size-s;
 		}
 
-		@include bp-max(m) {
+		@include bp-max($bp-m) {
 			padding-top: 60px;
 			text-align: center;
 		}
 
-		@include bp-min(m) {
+		@include bp-min($bp-m) {
 			background-position: left 2px;
 			margin-right: $space-double;
 			padding-left: 60px;
@@ -51,7 +51,7 @@
 			text-decoration: underline;
 		}
 
-		@include bp-max(m) {
+		@include bp-max($bp-m) {
 			margin: $space 0;
 		}
 	}
@@ -67,12 +67,12 @@
 		max-width: $w-s;
 		padding-top: 24px;
 
-		@include bp-max(m) {
+		@include bp-max($bp-m) {
 			margin: 0 auto;
 			text-align: center;
 		}
 
-		@include bp-min(m) {
+		@include bp-min($bp-m) {
 			background-position: right top;
 			float: right;
 			text-align: right;
