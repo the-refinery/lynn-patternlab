@@ -68,6 +68,7 @@
 
 /* EXTENSIONS */
 //@import "scss/web/extensions/flexslider";
+@import "scss/web/extensions/featherlight";
 
 /* MODIFIERS & STATES */
 @import "scss/web/base/modifiers";
@@ -161,6 +162,13 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 			background-image: url('http://www.lynn.edu/ilynn/motivated-head-2184x1200.jpg');
 		}
 	}
+}
+
+.ilynn-logo {
+	color: $lynn-gray;
+	font-size: $font-size-base * 1.5;
+	padding: 54px $pad-quarter 0;
+	overflow: visible;
 }
 
 .header[role="banner"] {
