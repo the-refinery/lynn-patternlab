@@ -206,9 +206,11 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 }
 
 .nav-sticky {
+	margin-top: -#{$space};
 	position: absolute;
 	right: 0;
 	width: 100%;
+	z-index: 999;
 
 	.nav-wrapper {
 		text-align: right;
@@ -230,7 +232,7 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 	@include bp-min($bp-m) {
 		.menu-item {
 			display: inline-block;
-	    	padding: 0 0.5rem;
+	    	padding: 0 $space-half;
 	    	position: relative;
 	    }
 
@@ -238,14 +240,15 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 	    	background-color: $white;
 	    	border-bottom: 1px solid $lynn-gray-20;
 	    	left: 0;
+	    	margin-top: 0;
 			position: fixed;
 			top: 0;
 			width: 100%;
 			z-index: 999;
 
 			.nav-wrapper {
-				margin: $space auto;
-				width: 90%;
+				padding: $space 0;
+				text-align: right;
 			}
 	    }
 	}
