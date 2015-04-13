@@ -1,3 +1,9 @@
+/**
+ *  Featherlight
+ *
+ *  Custom script to enable featherlight.js lightbox
+**/
+
 $(document).ready(function(){
 
     // function to swap content based on body size
@@ -11,22 +17,7 @@ $(document).ready(function(){
             // replace the image with the iframe of the video
             $('.video-container').toggleClass('fitvidsignore');
             $('.video-container').html('<iframe frameborder="0" src="http://www.youtube-nocookie.com/embed/80RERWJImIM?rel=0&amp;theme=light&amp;showinfo=0&amp;vq=hd1080" id="fitvid103554"></iframe>');
-            console.log('blarg!');
         }
-    }
-
-
-    // function to keep check from firing for every single pixel change in width
-    // waits half a second
-    function debounce(fn, delay) {
-      var timer = null;
-      return function () {
-        var context = this, args = arguments;
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          fn.apply(context, args);
-        }, delay);
-      };
     }
 
 
