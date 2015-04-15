@@ -1,11 +1,9 @@
-/*--------------------*\
-	INVERTED MIXINS
-\*--------------------*/
+/*~ Inverted mixins ~*/
 
-/*
+/*~
  *	Single color inversion
  *	Usage: @include inverted(background, text color, hover background);
- */
+~*/
 @mixin inverted($bg: $inverted-default-bg, $color: $white, $hover: $inverted-default-hover) {
  	background-color: $bg;
 
@@ -22,19 +20,19 @@
 	}
 }
 
-/*
+/*~
  *	All inverted classes
  *	Usage: @include inverted-all;
- */
+~*/
 @mixin inverted-all {
  	@each $key in map_keys($inverted-color-map) {
 		@if $key == "default" {
-			@extend %inverted;
+			@extend %inverted !optional;
 		}
 
 		@else {
 			&.#{$key} {
-				@extend %inverted-#{$key}
+				@extend %inverted-#{$key} !optional;
 			}
 		}
 	}

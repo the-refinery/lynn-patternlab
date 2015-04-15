@@ -1,13 +1,11 @@
-/*--------------------*\
-	HEADING MIXIN
-\*--------------------*/
-
-/*
- *	Heading
+/*~
+ *	Heading Mixin
+ *
  *	Usage: @include heading(size, weight, color);
- */
+~*/
+
 @mixin heading($size, $weight: normal, $color: $lynn-gray) {
-	@extend %heading;
+	@extend %heading !optional;
 
 	color: $color;
 	font-size: $size;
