@@ -1,10 +1,13 @@
-/*
- *	headings
- */
+/*~
+ *	Headings
+ *
+ *	Global base heading styles.
+ *	Placeholders allow for easy extension of styles.
+~*/
 
 // Shared heading styles
 %heading {
-	font-family: $font-helveticaneue;
+	font-family: $font;
 	font-weight: normal;
 	line-height: $line-height-less;
 	margin-bottom: $pad-half;
