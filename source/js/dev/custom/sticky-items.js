@@ -12,16 +12,13 @@ $(document).ready(function() {
 
     // Function to get original position of items
     function origOffset(items) {
-console.log('origOffset: ' + origOffsetY);
         items.each(function(index, element) {
             origOffsetY[index] = $(this).offset().top;
-console.log('origOffset: ' + origOffsetY);
         });
     }
 
     // Function to toggle sticky class
     function stickEm(items) {
-console.log('Stick Em!');
         // Run once to get initial values
         if (!origOffsetY[0]) {
             origOffset(items);  
@@ -42,7 +39,6 @@ console.log('Stick Em!');
     // Scroll should trigger sticky check
     $(window).scroll(
         debounce(function(e) {
-console.log('Scrolling...');
             stickEm(stickyItems);
         }, 10)
     );
