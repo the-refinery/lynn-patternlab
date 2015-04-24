@@ -7,7 +7,7 @@
 $(document).ready(function(){
 
     // function to swap content based on body size
-    function checkForSizeAdjustments(width) {
+    function featherlightSwitcher(width) {
         if ((width >= 768) && ($('.video-container iframe').length == 1)) {
             // replace the html chunk for the video iframe with an image
             $('.video-container').toggleClass('fitvidsignore');
@@ -22,12 +22,12 @@ $(document).ready(function(){
 
 
     // initial size check
-    checkForSizeAdjustments($("body").width());
+    featherlightSwitcher(window.innerWidth);
 
 
     // if window is resized, check for changes
     $(window).resize(debounce(function (event) {
-            checkForSizeAdjustments($("body").width());
+            featherlightSwitcher(window.innerWidth);
     }, 500));
 
 });
