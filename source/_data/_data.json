@@ -48,11 +48,18 @@
 		"landscape": {
 			"src": "http://placehold.it/1160x500",
 	        "alt": "This is a rather large image"
+		},
+		"video": {
+			"src": "http://placehold.it/640x360&text=Play+video",
+			"alt": "Play video"
 		}
 	},
 	"button": {
 		"text": "Button",
 		"url": "#"
+	},
+	"video": {
+		"url": "https://www.youtube.com/embed/dFoAG9ZyZ7g"
 	},
 
 
