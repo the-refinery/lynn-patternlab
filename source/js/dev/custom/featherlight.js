@@ -31,7 +31,7 @@ $(document).ready(function(){
         if (width >= 768) {
             $featherlightItems.each(function(index, element) {
                 // Create the html for the featherlight trigger
-                this.featherlightHTML = '<span data-featherlight=\".js-featherlight-switch\" class=\"js-featherlight-switch full-width\"><img src=\"' + this.videoImage + '\" alt=\"Play video\" /></span>';
+                this.featherlightHTML = '<span data-featherlight=\".js-featherlight-switch\" class=\"js-featherlight-switch\"><img src=\"' + this.videoImage + '\" class=\"full-width\" alt=\"Play video\" /></span>';
 
                 // Initiate featherlight
                 $(this).html(this.featherlightHTML).featherlight({
