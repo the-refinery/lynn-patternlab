@@ -10,8 +10,9 @@ $(document).ready(function(){
     // Find all featherlight objects and store basic info
     $featherlightItems.each(function(index, element) {
         var videoSources = [
-            "iframe[src*='player.vimeo.com']",
-            "iframe[src*='www.youtube.com']"
+            'iframe[src*="player.vimeo.com"]',
+            'iframe[src*="www.youtube.com"]',
+            'iframe[src*="youtube-nocookie.com"]'
         ];
 
         var $videoObj = $(this).find(videoSources.join(','));
@@ -31,10 +32,11 @@ $(document).ready(function(){
         if (width >= 768) {
             $featherlightItems.each(function(index, element) {
                 // Create the html for the featherlight trigger
-                this.featherlightHTML = '<span data-featherlight=\".js-featherlight-switch\" class=\"js-featherlight-switch\"><img src=\"' + this.videoImage + '\" class=\"full-width\" alt=\"Play video\" /></span>';
+                this.featherlightHTML = '<span data-featherlight=".js-featherlight-switch" class="js-featherlight-switch"><img src="' + this.videoImage + '" class="full-width" alt="Play video" /></span>';
 
                 // Initiate featherlight
-                $(this).html(this.featherlightHTML).featherlight({
+                $(this).html(this.featherlightHTML);
+                $(this).featherlight({
                     iframe: this.videoSrc,
                     root: this,
                     iframeWidth: 700,
