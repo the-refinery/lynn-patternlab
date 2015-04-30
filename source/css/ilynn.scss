@@ -236,6 +236,11 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 	    	position: relative;
 	    }
 
+	    .nav-wrapper {
+			padding: $space 0;
+			text-align: right;
+		}
+
 	    &.fixed {
 	    	background-color: $white;
 	    	border-bottom: 1px solid $lynn-gray-20;
@@ -247,8 +252,7 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 			z-index: 999;
 
 			.nav-wrapper {
-				padding: $space 0;
-				text-align: right;
+				width: 90%;
 			}
 	    }
 	}
@@ -262,6 +266,7 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 	}
 }
 
+// for browsers that support flexbox
 .l-row-tout {
 	font-size: $font-size-l;
 	margin-bottom: $space-double;
@@ -378,11 +383,104 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 	}
 }
 
+// for browsers that don't support flexbox
+.no-flexbox .l-row-tout {
+	font-size: $font-size-l;
+	margin-bottom: $space-double;
+
+	@include bp-max(660px) {
+		margin: 0 auto $space-double;
+		width: 90%;
+
+		.l-row-inner {
+			width: 100%;
+		}
+
+		.l-sidebar .inner {
+			border-bottom: $space solid $white;
+			padding: $pad;
+		}
+
+		.l-main .text {
+			padding: $pad;
+		}
+	}
+
+	@include bp-min(660px) {
+		.l-sidebar {
+			display: table-cell;
+			vertical-align: top;
+			width: 30%;
+			.inner{
+				
+				padding: $pad $pad-double $pad 0;
+			}
+		}
+
+		.l-main {
+			display: table-cell;
+			vertical-align: top;
+			width: 70%;
+			.inner {
+				border-left: $space solid $white;
+				padding: $pad 0 $pad $pad-double;
+			}
+		}
+	}
+
+	@include bp-max($bp-l) {
+		.l-main .inner {
+			.text {
+				display: table-row;
+				vertical-align: top;
+				width: 100%;
+			}
+			.video-container {
+				display: table-row;
+				vertical-align: top;
+				width: 100%;
+				z-index: 99;
+
+				margin-bottom: $space;
+			}
+		}
+	}
+
+	@include bp-min($bp-l) {
+		.l-main .inner {
+
+			.text {
+				display: table-cell;
+				vertical-align: top;
+				width: 60%;
+
+				.text-inner {
+					padding-right: $pad-double;
+				}
+			}
+			.video-container {
+				display: table-cell;
+				vertical-align: top;
+				width: 40%;
+			}
+		}
+	}
+
+	@include bp-max($bp-xl) {
+		.l-main .inner {
+			.text {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+
 .accordion {
 	margin-bottom: $space-double;
 	.ex-handle {
 		&.triangle:before {
 			color: $lynn-gray-40;
+			font-size: $space-double;
 		}
 
 		h1, h2, h3, h4, h5 {
