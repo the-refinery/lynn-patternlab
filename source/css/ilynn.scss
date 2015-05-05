@@ -165,7 +165,9 @@ $h-hero-xxl: $bp-xxl * $hero-ratio;
 }
 
 .ilynn-logo {
-	color: $lynn-gray;
+	&, &:hover {
+		color: $lynn-blue;
+	}
 	font-size: $font-size-base * 1.5;
 	padding: 54px $pad-quarter 0;
 	overflow: visible;
