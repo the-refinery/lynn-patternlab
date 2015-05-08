@@ -1,0 +1,11 @@
+<picture>
+    <!--[if IE 9]><video style="display:none"><![endif]-->
+    {{# pic-sources }}
+    <source
+        media="{{ picture.media }}"
+        srcset="{{ picture.srcset }}"
+        sizes="{{ picture.sizes }}" />
+    {{/ pic-sources }}
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="{{ img.landscape.src.s }}" alt="{{ img.landscape.alt }}" />
+</picture>
