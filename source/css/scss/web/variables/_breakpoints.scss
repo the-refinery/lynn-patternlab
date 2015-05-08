@@ -1,9 +1,10 @@
 $breakpoints: (
-	s: 		480px,		// 30rem
-	m: 		560px,		// 35rem
-	l: 		768px,		// 48rem
-	xl: 	1024px,		// 64rem
-	xxl: 	1280px,		// 80rem
+    s:      480px,      // 30rem
+    m:      560px,      // 35rem
+    l:      768px,      // 48rem
+    xl:     1024px,     // 64rem
+    xxl:    1280px,     // 80rem
+    jumbo:  2560px,     // 160rem
 );
 
 // Shorthand (single usage)
@@ -12,3 +13,4 @@ $bp-m: map-get($breakpoints, m);
 $bp-l: map-get($breakpoints, l);
 $bp-xl: map-get($breakpoints, xl);
 $bp-xxl: map-get($breakpoints, xxl);
+$bp-jumbo: map-get($breakpoints, jumbo);
