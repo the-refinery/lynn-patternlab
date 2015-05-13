@@ -1,6 +1,41 @@
 var comments = {
 "comments" : [
 	{
+        "el": ".hgroup .headline",
+        "title": "Headline",
+        "comment": "<p>Web and email headings are to be no more than <strong>40 characters</strong>.</p>"
+	},
+	{
+        "el": ".hgroup .subhead",
+        "title": "Subhead",
+        "comment": "<p>Subheadings may be used for emails and news stories only, and are to be no more than <strong>150 characters</strong>.</p>"
+	},
+	{
+        "el": "time",
+        "title": "Dates and times",
+        "comment": "<h5>Days</h5><p>Don't abbreviate the days of the week.</p><h5>Dates</h5><p>Abbreviate the following months when used with dates:<br />Jan., Feb., Aug., Sept., Oct., Nov. and Dec.</p><pre>The event will be held on March 23.<br />The event will be held on Aug. 23.<br />The event will be held in September.</pre><h5>Times</h5><p>Write a.m. and p.m. in lowercase, with periods</p><pre>11 a.m., 1 p.m., 5:30 p.m.</pre><p>Use 12 a.m./12 p.m. or midnight/noon, but never together</p><p>Time precedes day and date.</p><pre>The event will be held at 11:30 a.m., Friday, Oct. 13.</pre><h5>HTML</h5><p>Dates and times can be difficult for machines to understand. To make dates unambiguous, use the time tag along with the datetime attribute. The value of the datetime attribute is the date specified using the <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date/time standard</a>.</p>"
+    },
+    {
+        "el": ".card",
+        "title": "Card",
+        "comment": "<p>Cards present snippets of information from parent content types. The default card appearance can be altered adding a class modifier:</p><h5>.border-off</h5><p>Removes the border wrapping the card.</p><h5>.card_priority_1</h5><p>A premiere card with increased text and altered layout for top visual priority.</p><h5>.card_priority_2</h5><p>Increase text size for slightly more priority.</p>"
+    },
+    {
+        "el": ".card_thumb",
+        "title": "Card: Thumb",
+        "comment": "<p>Thumbnails can be displayed to the right (default) or left (.flipped) of the card content.</p>"
+    },
+    {
+        "el": "picture",
+        "title": "Picture",
+        "picture": "<p>This is best used for art direction or type-switching of images where multiple sources and media queries are required. Basic image switching can be accomplished by adding srcset and sizes attributes to an image tag.</p>"
+    },
+
+
+
+
+
+	{
 		"el": "header[role=banner]",
 		"title": "Masthead",
 		"comment": "<p>The main header of the site doesn't take up too much screen real estate in order to allow the user to quickly focus on the core content.</p>"
@@ -28,11 +63,7 @@ var comments = {
 		"comment": "<p>The article header should be no more than 140 characters. </p>"
 	},
 
-	{
-        "el": "time",
-        "title": "Time",
-        "comment": "<p>Dates and times can be difficult for machines to understand. To make dates unambiguous, use the time tag along with the datetime attribute. The value of the datetime attribute is the date specified using the <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date/time standard</a>.</p>"
-    },
+	
     {
     	"el": ".pulledquote",
     	"title": "Pullquote",
