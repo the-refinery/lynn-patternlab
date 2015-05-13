@@ -7,5 +7,5 @@
         sizes="{{ picture.sizes }}" />
     {{/ pic-sources }}
     <!--[if IE 9]></video><![endif]-->
-    <img srcset="{{ img.landscape.src.s }}" alt="{{ img.landscape.alt }}" />
+    <img srcset="{{ img.landscape.src.s }}" alt="{{ img.landscape.alt }}" {{# image.schema.itemprop }}itemprop="{{ image.schema.itemprop }}"{{/ image.schema.itemprop }} />
 </picture>
