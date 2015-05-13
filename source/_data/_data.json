@@ -1,82 +1,91 @@
 {
-	"bp": {
-		"s": "480",
-		"m": "560",
-		"l": "768",
-		"xl": "1024",
-		"xxl": "1280",
-		"jumbo": "2560"
-	},
-	"headline" : {
-		"islink": false,
-		"text": "The best headlines are short and quick"
-	},
-	"subhead": {
-		"visible": true,
-		"text": "You shouldn't have a problem creating a subhead that explains the headline and is no longer than this sentence (which is exactly 150 characters long)."
-	},
-	"datetime": {
-		"itemprop": "",
-		"separator": {
-			"dy": ",",
-			"dt": "|"
-		}
-	},
-	"year": {
-		"long": "2015",
-		"short": "15"
-	},
-	"month": {
-		"long": "February",
-		"short": "Feb.",
-		"digit": "02"
-	},
-	"day": {
-		"digit": "10",
-		"ofweek": "Tuesday"
-	},
-	"hour": {
-		"long": "01",
-		"short": "1",
-		"military": "13",
-		"ampm": "p.m."
-	},
-	"minute": "20",
-	"seconds": "30",
-	"iso": {
-		"date": "2015-02-10",
-		"datetime": "2015-02-10T13:20:30-05:00",
-		"time": "13:20:30-05:00"
-	},
-	"img": {
-		"headshot": {
-			"src": "http://placehold.it/900x1200",
-			"alt": "Person's name"
-		},
-		"landscape": {
-			"src": {
-				"s": "http://placehold.it/480x206",
-				"m": "http://placehold.it/560x242",
-				"l": "http://placehold.it/768x331",
-				"xl": "http://placehold.it/1024x441",
-				"xxl": "http://placehold.it/1280x551",
-				"jumbo": "http://placehold.it/2560x1103"
-			},
-	        "alt": "This is a rather large image"
-		},
-		"video": {
-			"src": "http://placehold.it/640x360&text=Play+video",
-			"alt": "Play video"
-		}
-	},
-	"button": {
-		"text": "Button",
-		"url": "#"
-	},
-	"video": {
-		"url": "https://www.youtube.com/embed/dFoAG9ZyZ7g"
-	},
-	"pic-sources": [
+    "bp": {
+        "s": "480",
+        "m": "560",
+        "l": "768",
+        "xl": "1024",
+        "xxl": "1280",
+        "jumbo": "2560"
+    },
+    "headline" : {
+        "islink": false,
+        "text": "The best headlines are short and quick"
+    },
+    "subhead": {
+        "visible": true,
+        "text": "You shouldn't have a problem creating a subhead that explains the headline and is no longer than this sentence (which is exactly 150 characters long)."
+    },
+    "datetime": {
+        "itemprop": "",
+        "separator": {
+            "dy": ",",
+            "dt": "|"
+        }
+    },
+    "year": {
+        "long": "2015",
+        "short": "15"
+    },
+    "month": {
+        "long": "February",
+        "short": "Feb.",
+        "digit": "02"
+    },
+    "day": {
+        "digit": "10",
+        "ofweek": "Tuesday"
+    },
+    "hour": {
+        "long": "01",
+        "short": "1",
+        "military": "13",
+        "ampm": "p.m."
+    },
+    "minute": "20",
+    "seconds": "30",
+    "iso": {
+        "date": "2015-02-10",
+        "datetime": "2015-02-10T13:20:30-05:00",
+        "time": "13:20:30-05:00"
+    },
+    "img": {
+        "headshot": {
+            "src": "http://placehold.it/900x1200",
+            "alt": "Person's name"
+        },
+        "landscape": {
+            "src": {
+                "s": "http://placehold.it/480x206",
+                "m": "http://placehold.it/560x242",
+                "l": "http://placehold.it/768x331",
+                "xl": "http://placehold.it/1024x441",
+                "xxl": "http://placehold.it/1280x551",
+                "jumbo": "http://placehold.it/2560x1103"
+            },
+            "alt": "This is a rather large image"
+        },
+        "video": {
+            "src": "http://placehold.it/640x360&text=Play+video",
+            "alt": "Play video"
+        }
+    },
+    "button": {
+        "text": "Button",
+        "url": "#"
+    },
+    "video": {
+        "url": "https://www.youtube.com/embed/dFoAG9ZyZ7g"
+    },
+    "picture": {
+        "srcset": "http://placehold.it/480x206 480w,
+            http://placehold.it/560x242 560w,
+            http://placehold.it/768x331 768w,
+            http://placehold.it/1024x441 1024w,
+            http://placehold.it/1280x551 1280w,
+            http://placehold.it/2560x1103 2560w",
+        "sizes": "(min-width: 768px) 50vw, 100%"
+    },
+    "pic-sources": [
         {
             "picture": {
                 "media": "(min-width: 768px)",
@@ -103,60 +112,60 @@
 
 
 
-	"name" : {
-		"first": "Lacy",
-		"firsti": "L",
-		"middle": "Tommie",
-		"middlei": "T",
-		"last": "Way",
-		"lasti": "W",
-		"suffix": "",
-		"suffix-honorific": "B.S., MBA"
-	},
-	"contact": {
-		"telephone": "+1 202-555-0197",
-		"email": "email@fakemail.com",
-		"fax": "+1 202-555-0185",
-		"show-email": true,
-		"show-fax": true,
-		"show-telephone": true
-	},
-	"job": "Security Guard",
+    "name" : {
+        "first": "Lacy",
+        "firsti": "L",
+        "middle": "Tommie",
+        "middlei": "T",
+        "last": "Way",
+        "lasti": "W",
+        "suffix": "",
+        "suffix-honorific": "B.S., MBA"
+    },
+    "contact": {
+        "telephone": "+1 202-555-0197",
+        "email": "email@fakemail.com",
+        "fax": "+1 202-555-0185",
+        "show-email": true,
+        "show-fax": true,
+        "show-telephone": true
+    },
+    "job": "Security Guard",
 
 
 
-	"title" : "Pattern Lab",
-	"htmlClass": "pl",
-	"bodyClass": "body",
+    "title" : "Pattern Lab",
+    "htmlClass": "pl",
+    "bodyClass": "body",
 
-	
-	"excerpt" : {
-		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-		"medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-		"long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-	},
-	"description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
-	"url" : "#",
-	
-	
-	"author" : {
-		"first-name": "Author",
-		"last-name": "Name"
-	},
+    
+    "excerpt" : {
+        "short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+    "url" : "#",
+    
+    
+    "author" : {
+        "first-name": "Author",
+        "last-name": "Name"
+    },
 
 
-	
-	"block": {
-		"heading": "Heading",
-		"text": "The body content of the block"
-	},
-	"listing": {
-		"link": "A listing link",
-		"description": "A plain listing link with optional description"
-	},
+    
+    "block": {
+        "heading": "Heading",
+        "text": "The body content of the block"
+    },
+    "listing": {
+        "link": "A listing link",
+        "description": "A plain listing link with optional description"
+    },
 
-	"itemlist": [{
-		"headline": "It's a headline",
-		"excerpt": "Here's a little bit of content, but not very much."
-	}]
+    "itemlist": [{
+        "headline": "It's a headline",
+        "excerpt": "Here's a little bit of content, but not very much."
+    }]
 }
