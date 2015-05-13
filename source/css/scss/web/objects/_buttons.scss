@@ -3,6 +3,7 @@ a.button {
     background: $accent-orange;
     border: 0;
     color: $white;
+    cursor: pointer;
     display: inline-block;
     font-weight: 600;
     padding: $pad-quarter $pad;
@@ -13,6 +14,14 @@ a.button {
     &:active, &:hover, &:focus {
         background: $secondary-orange;
         color: $white;
+    }
+}
+
+.button-secondary {
+    background: $secondary-blue;
+
+    &:active, &:hover, &:focus {
+        background: $accent-blue;
     }
 }
 
