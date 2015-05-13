@@ -1,1 +1,6 @@
-<img class="landscape" src="{{ img.landscape.src }}" alt="{{ img.landscape.alt }}" {{# image.schema.itemprop }}itemprop="{{ image.schema.itemprop }}"{{/ image.schema.itemprop }} />
+<img class="landscape"
+    src="{{ img.landscape.src.s }}"
+    alt="{{ img.landscape.alt }}"
+    srcset="{{ picture.srcset }}"
+    sizes="{{ picture.sizes }}"
+    {{# image.schema.itemprop }}itemprop="{{ image.schema.itemprop }}"{{/ image.schema.itemprop }} />
