@@ -26,9 +26,14 @@ var comments = {
         "comment": "<p>Thumbnails can be displayed to the right (default) or left (.flipped) of the card content.</p>"
     },
     {
+        "el": "img[srcset]",
+        "title": "Image",
+        "comment": "<p>The responsive image element provides an array of image urls and their inherent sizes (srcset) as well as defines the size of the image across various breakpoints (sizes).</p><h5>srcset</h5><p>The image size can be provided as either a fixed width (480w) or a resolution descriptor (2x). <b>Do not mix</b> the formats.<h5>sizes</h5>Pair media queries with lengths. A length can be absolute (480px, 16em) or relative (33.3vw).</p>"
+    },
+    {
         "el": "picture",
         "title": "Picture",
-        "picture": "<p>This is best used for art direction or type-switching of images where multiple sources and media queries are required. Basic image switching can be accomplished by adding srcset and sizes attributes to an image tag.</p>"
+        "comment": "<p>This is best used for art direction or type-switching of images where multiple sources and media queries are required. Basic image switching can be accomplished by adding srcset and sizes attributes to an image tag.</p>"
     },
 
 
