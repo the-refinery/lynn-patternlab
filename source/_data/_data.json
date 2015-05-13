@@ -1,4 +1,12 @@
 {
+	"bp": {
+		"s": "480",
+		"m": "560",
+		"l": "768",
+		"xl": "1024",
+		"xxl": "1280",
+		"jumbo": "2560"
+	},
 	"headline" : {
 		"islink": false,
 		"text": "The best headlines are short and quick"
@@ -46,7 +54,14 @@
 			"alt": "Person's name"
 		},
 		"landscape": {
-			"src": "http://placehold.it/1160x500",
+			"src": {
+				"s": "http://placehold.it/480x206",
+				"m": "http://placehold.it/560x242",
+				"l": "http://placehold.it/768x331",
+				"xl": "http://placehold.it/1024x441",
+				"xxl": "http://placehold.it/1280x551",
+				"jumbo": "http://placehold.it/2560x1103"
+			},
 	        "alt": "This is a rather large image"
 		},
 		"video": {
@@ -61,6 +76,25 @@
 	"video": {
 		"url": "https://www.youtube.com/embed/dFoAG9ZyZ7g"
 	},
+	"pic-sources": [
+        {
+            "picture": {
+                "media": "(min-width: 768px)",
+                "srcset": "http://placehold.it/2560x1406 2560w,
+                    http://placehold.it/1280x703 1280w,
+                    http://placehold.it/1024x562 1024w",
+                "sizes": "100%"
+            }
+        },
+        {
+            "picture": {
+                "media": "(max-width: 767px)",
+                "srcset": "http://placehold.it/480x480 768w,
+                    http://placehold.it/240x240 480w",
+                "sizes": "100%"
+            }
+        }
+    ],
 
 
 
