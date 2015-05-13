@@ -1,0 +1,100 @@
+/* TOOLS */
+@import "compass";
+
+/* MIXINS */
+@import "scss/global/mixins/border";
+@import "scss/global/mixins/breakpoints";
+@import "scss/global/mixins/headings";
+@import "scss/global/mixins/inverted";
+@import "scss/web/mixins/flexbox";
+
+/* VARIABLES */
+@import "scss/global/variables/colors";
+@import "scss/web/variables/breakpoints";
+@import "scss/global/variables/spacing";
+@import "scss/global/variables/spacing-formulas";
+@import "scss/global/variables/typography";
+@import "scss/web/variables/typography";
+@import "scss/web/variables/widths";
+
+/* BASE */
+@import "scss/web/base/reset";
+@import "scss/web/base/typography";
+@import "scss/global/base/main";
+@import "scss/global/base/headings";
+@import "scss/global/base/text";
+@import "scss/global/base/lists";
+//@import "scss/global/base/media";
+@import "scss/global/base/links";
+@import "scss/web/base/links";
+@import "scss/web/base/forms";
+//@import "scss/web/base/tables";
+//@import "scss/web/base/icons";
+//@import "scss/web/base/animation";
+
+/* STRUCTURE */
+@import "scss/web/objects/layout";
+@import "scss/web/objects/header";
+//@import "scss/web/objects/navigation-column";
+//@import "scss/web/objects/navigation-dropdown";
+//@import "scss/web/objects/navigation-main";
+//@import "scss/web/objects/navigation-take-action";
+@import "scss/web/objects/main";
+@import "scss/web/objects/footer";
+
+/* OBJECTS */
+@import "scss/web/objects/text";
+@import "scss/web/objects/images";
+@import "scss/web/objects/buttons";
+//@import "scss/web/objects/forms-inline";
+//@import "scss/web/objects/forms-search";
+@import "scss/web/objects/lists";
+//@import "scss/web/objects/blocks";
+//@import "scss/web/objects/expandable";
+//@import "scss/web/objects/directory";
+
+/*~ Tables ~*/
+//@import "scss/web/objects/table-compact";
+//@import "scss/web/objects/table-grid";
+//@import "scss/web/objects/table-zebra";
+
+/*~ Cards ~*/
+@import "scss/web/objects/cards/card";
+//@import "scss/web/objects/cards/card-event";
+//@import "scss/web/objects/cards/card-expand";
+//@import "scss/web/objects/cards/card-news";
+//@import "scss/web/objects/cards/card-person";
+//@import "scss/web/objects/cards/card-thumb";
+
+/* EXTENSIONS */
+//@import "scss/web/extensions/flexslider";
+//@import "scss/web/extensions/featherlight";
+
+/* MODIFIERS & STATES */
+@import "scss/web/base/modifiers";
+@import "scss/web/base/states";
+
+.l-content-max {
+    max-width: 720px;
+    min-width: 0;
+}
+
+.card {
+    margin: 0;
+}
+
+.card-content {
+    min-height: $pad * 8;
+}
+
+.text-right {
+    font-size: $font-size-xxs;
+    text-align: right;
+
+    @include bp-max($bp-m) {
+        text-align: center;
+    }
+}
+
+input.button {max-width: 120px;}
+input.submit {padding: $pad-quarter $pad;}
