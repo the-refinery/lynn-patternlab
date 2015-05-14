@@ -74,8 +74,18 @@
         "url": "#"
     },
     "video": {
+        "class": "",
+        "options": "controls",
         "url": "https://www.youtube.com/embed/dFoAG9ZyZ7g"
     },
+    "video-sources": [
+        {
+            "video": {
+                "src": "../../media/flags.mp4",
+                "type": "video/mp4"
+            }
+        }
+    ],
     "picture": {
         "srcset": "http://placehold.it/480x206 480w,
             http://placehold.it/560x242 560w,
