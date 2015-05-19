@@ -2,5 +2,9 @@
     "bg": {
         "styleModifier": "bg bg-billboard bg-flags",
         "isVideo": true
+    },
+    "video": {
+        "class": "",
+        "options": "autoplay loop"
     }
 }

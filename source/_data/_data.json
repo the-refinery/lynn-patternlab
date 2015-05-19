@@ -7,6 +7,10 @@
         "xxl": "1280",
         "jumbo": "2560"
     },
+    "bg": {
+        "styleModifier": "bg",
+        "isVideo": false
+    },
     "headline" : {
         "islink": false,
         "text": "The best headlines are short and quick"
