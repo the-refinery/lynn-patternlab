@@ -1,0 +1,10 @@
+// Fixed Background Ratio
+$hero-ratio: 16/9;
+
+// Heights
+$h-hero-min: 200px;
+$h-hero-s: $bp-s / $hero-ratio;
+$h-hero-m: $bp-m / $hero-ratio;
+$h-hero-l: $bp-l / $hero-ratio;
+$h-hero-xl: $bp-xl / $hero-ratio;
+$h-hero-xxl: $bp-xxl / $hero-ratio;

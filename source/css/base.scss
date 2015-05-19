@@ -24,6 +24,7 @@
  *  ........Global base font
  *  ........Web specific font
  *  ....Widths
+ *  ....Heights
  *  BASE
  *  ....Reset...........................Browser reset
  *  ....Typography......................Specific font size classes
@@ -51,6 +52,7 @@
  *  ........Take Action
  *  ....Footer
  *  OBJECTS
+ *  ....Backgrounds
  *  ....Text
  *  ....Images..........................Image replacement
  *  ....Buttons
@@ -69,6 +71,8 @@
  *  EXTENSIONS..........................Third party add-ons
  *  ....Flexslider
  *  THEME...............................Theme specific enhancements
+ *  ....Backgrounds
+ *  ........Flags
  *  OVERRIDES...........................Last chance overrides
  **/
 
@@ -90,6 +94,7 @@
 @import "scss/global/variables/typography";
 @import "scss/web/variables/typography";
 @import "scss/web/variables/widths";
+@import "scss/web/variables/heights";
 
 /* BASE */
 @import "scss/web/base/reset";
@@ -117,6 +122,7 @@
 @import "scss/web/objects/footer";
 
 /* OBJECTS */
+@import "scss/web/objects/backgrounds";
 @import "scss/web/objects/text";
 @import "scss/web/objects/images";
 @import "scss/web/objects/buttons";
@@ -142,6 +148,10 @@
 
 /* EXTENSIONS */
 @import "scss/web/extensions/flexslider";
+
+/* THEME */
+/*~ Backgrounds ~*/
+@import "scss/web/themes/lynnedu/objects/backgrounds/flags";
 
 /* MODIFIERS & STATES */
 @import "scss/web/base/modifiers";

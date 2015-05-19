@@ -1,0 +1,114 @@
+/*
+ *  backgrounds
+ *
+ *  Define how to handle background images and videos
+ *
+ */
+
+%bg {
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+/* Standard background will scroll off the page */
+.bg {
+    @extend %bg;
+
+    position: absolute;
+}
+
+/* Fixed background remains behind page at all times */
+.bg-fixed {
+    @extend %bg;
+
+    position: fixed;
+}
+
+/* Billboard backgrounds are height restrained */
+.bg-billboard {
+    @extend %bg;
+
+    @include bp-max($bp-s) {
+        height: $h-hero-min;
+    }
+
+    @include bp-min($bp-s) {
+        height: $h-hero-m;
+    }
+
+    @include bp-min($bp-l) {
+        height: $h-hero-l;
+    }
+
+    @include bp-min($bp-xl) {
+        height: $h-hero-xl;
+    }
+
+    @include bp-min($bp-xxl) {
+        height: 100%;
+    }
+}
+
+
+/* Background videos */
+%bg-video {
+    left: 0;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    /* Don't display on mobile/tablets */
+    @include bp-max($bp-l) {
+        display: none;
+    }
+}
+
+
+.bg > video,
+.bg-fixed > video {
+    @extend %bg-video;
+    
+    height: 100%;
+
+    /* Extend video beyond screen to maintain aspect ratio */
+    @media (min-aspect-ratio: 16/9) {
+        height: 300%;
+        top: -100%;
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        left: -100%;
+        width: 300%;
+    }
+}
+
+.bg-billboard > video {
+    @extend %bg-video;
+    height: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    /* Extend video beyond screen to maintain aspect ratio */
+    @media screen and (min-width: $bp-xxl) and (min-aspect-ratio: 16/9) {
+        height: 300%;
+        top: -100%;
+    }
+
+    @media screen and (min-width: $bp-xxl) and (max-aspect-ratio: 16/9) {
+        height: 100%;
+        left: -100%;
+        width: 300%;
+    }
+}

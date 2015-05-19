@@ -1,0 +1,17 @@
+.bg-flags {
+    background-image: url('../images/sample/flags_480x270.jpg');
+
+    @include bp-min($bp-s) {
+        background-image: url('../images/sample/flags_560x315.jpg');
+    }
+    @include bp-min($bp-m) {
+        background-image: url('../images/sample/flags_768x432.jpg');
+    }
+    @include bp-min($bp-l) {
+        background-image: url('../images/sample/flags_1024x576.jpg');
+    }
+    @include bp-min($bp-xl) {
+        background-image: url('../images/sample/flags_1280x720.jpg');
+    }
+    @include bp-min($bp-xxl) {}
+}
