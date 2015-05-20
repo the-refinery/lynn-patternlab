@@ -38,7 +38,7 @@ var comments = {
     {
         "el": ".bg",
         "title": "Background",
-        "comment": "<p>A background image can be added with the <i>bg</i> class and a corresponding class defining the image size(s). A video object can be placed within the background container to allow for video backgrounds.</p><h5>.bg</h5><p>The default background class. Fills the page width and height. Will scroll off the screen as if part of normal page content.</p><h5>.bg-fixed</h5><p>Will not scroll, instead the position remains fixed and content will scroll over top the background.</p><h5>.bg-billboard</h5><p>This sets a fixed height for the background.</p>"
+        "comment": "<p>A background image can be added with the <i>bg</i> class and a corresponding class defining the image size(s). A video object can be placed within the background container to allow for video backgrounds.</p><h5>.bg</h5><p>The default background class. Centers the image within the container. Will scroll off the screen as if part of normal page content.</p><h5>.bg-fullpage</h5><p>Fills the page width and height. Centers the image within the page. Will scroll off the screen as if part of normal page content.</p><h5>.bg-fixed</h5><p>Will not scroll, instead the position remains fixed and content will scroll over top the background.</p><h5>.bg-billboard</h5><p>This sets a fixed height for the background.</p>"
     },
 
 
