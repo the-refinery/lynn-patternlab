@@ -12,31 +12,39 @@
         size: cover;
     }
 
+    overflow: hidden;
+    z-index: -100;
+}
+
+%bg-fullpage {
+    @extend %bg;
+
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
-    overflow: hidden;
-    z-index: -100;
 }
 
 /* Standard background will scroll off the page */
 .bg {
     @extend %bg;
+}
 
-    position: absolute;
+.bg-fullpage {
+    @extend %bg-fullpage;
 }
 
 /* Fixed background remains behind page at all times */
 .bg-fixed {
-    @extend %bg;
+    @extend %bg-fullpage;
 
     position: fixed;
 }
 
-/* Billboard backgrounds are height restrained */
-.bg-billboard {
-    @extend %bg;
+/* Restricted backgrounds are height restrained */
+.bg-restricted {
+    @extend %bg-fullpage;
 
     @include bp-max($bp-s) {
         height: $h-hero-min;
@@ -75,7 +83,7 @@
 }
 
 
-.bg > video,
+.bg-fullpage > video,
 .bg-fixed > video {
     @extend %bg-video;
     
@@ -93,7 +101,7 @@
     }
 }
 
-.bg-billboard > video {
+.bg-restricted > video {
     @extend %bg-video;
     height: auto;
     left: 0;

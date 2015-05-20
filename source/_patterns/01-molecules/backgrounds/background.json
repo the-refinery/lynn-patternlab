@@ -1,5 +1,5 @@
 {
     "bg": {
-        "styleModifier": "bg bg-flags"
+        "styleModifier": "bg-fullpage bg-flags"
     }
 }

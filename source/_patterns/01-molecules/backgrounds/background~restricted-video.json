@@ -1,6 +1,6 @@
 {
     "bg": {
-        "styleModifier": "bg bg-billboard bg-flags",
+        "styleModifier": "bg-restricted bg-flags",
         "isVideo": true
     },
     "video": {
