@@ -52,9 +52,7 @@
  *  ........Take Action
  *  ....Footer
  *  OBJECTS
- *  ....Backgrounds
  *  ....Text
- *  ....Images..........................Image replacement
  *  ....Buttons
  *  ....Forms
  *  ........Inline
@@ -68,6 +66,15 @@
  *  ........Grid........................Borders for the table cells
  *  ........Zebra.......................Alternating stripes for rows
  *	....Cards
+ *  ........Card
+ *  ........Banner
+ *  ........Event
+ *  ........Expand
+ *  ........News
+ *  ........Person
+ *  ........Thumb
+ *  ....Images..........................Image replacement
+ *  ....Backgrounds
  *  EXTENSIONS..........................Third party add-ons
  *  ....Flexslider
  *  THEME...............................Theme specific enhancements
@@ -122,9 +129,8 @@
 @import "scss/web/objects/footer";
 
 /* OBJECTS */
-@import "scss/web/objects/backgrounds";
+
 @import "scss/web/objects/text";
-@import "scss/web/objects/images";
 @import "scss/web/objects/buttons";
 @import "scss/web/objects/forms-inline";
 @import "scss/web/objects/forms-search";
@@ -140,11 +146,15 @@
 
 /*~ Cards ~*/
 @import "scss/web/objects/cards/card";
+@import "scss/web/objects/cards/card-banner";
 @import "scss/web/objects/cards/card-event";
 @import "scss/web/objects/cards/card-expand";
 @import "scss/web/objects/cards/card-news";
 @import "scss/web/objects/cards/card-person";
 @import "scss/web/objects/cards/card-thumb";
+
+@import "scss/web/objects/images";
+@import "scss/web/objects/backgrounds";
 
 /* EXTENSIONS */
 @import "scss/web/extensions/flexslider";

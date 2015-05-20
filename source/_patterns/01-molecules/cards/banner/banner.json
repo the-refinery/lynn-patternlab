@@ -1,0 +1,28 @@
+{
+    "card": {
+        "styleModifier": "card_banner inverted blue",
+        "schema": {
+            "itemprop": "",
+            "itemtype": ""
+        },
+        "hasImage": {
+            "landscape": true
+        },
+        "hasContact": false,
+        "description": "",
+        "dateline": false,
+        "action": {
+            "isButton": true
+        },
+        "hasExpand": false
+    },
+    "picture": {
+        "srcset": "http://placehold.it/480x206 480w,
+            http://placehold.it/560x242 560w,
+            http://placehold.it/768x331 768w,
+            http://placehold.it/1024x441 1024w,
+            http://placehold.it/1280x551 1280w,
+            http://placehold.it/2560x1103 2560w",
+        "sizes": "100%"
+    }
+}
