@@ -1,9 +1,6 @@
-@import url(//fast.fonts.net/cssapi/4502be6a-d4d2-41ad-988f-72e9420f9860.css);
-
-// Family
-$font-helveticaneue: 'Neue Helvetica W01',$font;
-$font: $font-helveticaneue;
-
+/*
+ *  Variables: Typography
+ */
 
 // Sizes
 $font-size-base:	1rem;
@@ -15,11 +12,3 @@ $font-size-l:		1.2em;
 $font-size-xl:		1.5em;
 $font-size-xxl:		2.25em;
 $font-size-jumbo:	3em;
-
-
-// Move this
-
-/* Font Classes */
-.font-helveticaneue {
-	font-family: $font-helveticaneue;
-}

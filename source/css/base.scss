@@ -1,5 +1,5 @@
 /*--------------------*\
-	brand.lynn.edu
+    Base styles
 \*--------------------*/
 
 /** TABLE OF CONTENTS
@@ -7,22 +7,25 @@
  *  TOOLS
  *  ....Compass.........................Let compass help out
  *  MIXINS
- *	....Global
- *	........Borders
+ *  ....Global
+ *  ........Borders
  *  ........Breakpoints
- *	........Headings
- *	........Inverted
- *	....Web
- *	........Flexbox
+ *  ........Headings
+ *  ........Inverted
+ *  ....Web
+ *  ........Flexbox
  *  VARIABLES
- *	....Colors
+ *  ....Colors
  *  ....Breakpoints
  *  ....Spacing
  *  ........Global padding & spacing
  *  ........Global spacing formulas
- *	....Typography (Import and define font classes)
+ *  ....Fonts...........................Import fonts
  *  ........Global base font
  *  ........Web specific font
+ *  ....Typography......................Sizes, spacing, etc.
+ *  ........Global settings
+ *  ........Web settings
  *  ....Widths
  *  ....Heights
  *  BASE
@@ -38,7 +41,7 @@
  *  ........Web specific
  *  ....Tables
  *  ....Icons
- *	....Animation
+ *  ....Animation
  *  MODIFIERS & STATES..................Global class modifiers & states
  *  ....Modifiers
  *  ....States
@@ -65,7 +68,7 @@
  *  ........Compact.....................No padding
  *  ........Grid........................Borders for the table cells
  *  ........Zebra.......................Alternating stripes for rows
- *	....Cards
+ *  ....Cards
  *  ........Card
  *  ........Banner
  *  ........Event
@@ -98,6 +101,8 @@
 @import "scss/web/variables/breakpoints";
 @import "scss/global/variables/spacing";
 @import "scss/global/variables/spacing-formulas";
+@import "scss/global/variables/fonts";
+@import "scss/web/variables/fonts";
 @import "scss/global/variables/typography";
 @import "scss/web/variables/typography";
 @import "scss/web/variables/widths";
