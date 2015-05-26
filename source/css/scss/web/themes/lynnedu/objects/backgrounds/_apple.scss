@@ -1,0 +1,22 @@
+.apple-ds {
+    background: {
+        color: transparent;
+        image: url('http://static.lynn.edu/logos/apple/web/apple-ds.gif');
+        position: center top;
+        repeat: no-repeat;
+    }
+
+    font-size: $font-size-xxs;
+    max-width: $w-s;
+    padding-top: 24px;
+
+    @include bp-max($bp-m) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @include bp-min($bp-m) {
+        background-position: left top;
+        text-align: left;
+    }
+}
