@@ -118,6 +118,70 @@
             }
         }
     ],
+    "socialIcons": [
+        {
+            "title": "twitter",
+            "url": "http://twitter.com/LynnUniversity"
+        },
+        {
+            "title": "facebook",
+            "url": "http://www.facebook.com/LynnUniversity"
+        },
+        {
+            "title": "instagram",
+            "url": "http://instagram.com/lynnuniversity"
+        },
+        {
+            "title": "linkedin",
+            "url": "http://www.linkedin.com/edu/school?id=18104&amp;trk=tyah&amp;trkInfo=tas%3Alynn%20university%2Cidx%3A2-1-3"
+        },
+        {
+            "title": "youtube",
+            "url": "http://www.youtube.com/LynnUni"
+        }
+    ],
+    "footerLinks": [
+        {
+            "title": "About",
+            "url": "#"
+        },
+        {
+            "title": "Campus",
+            "url": "#"
+        },
+        {
+            "title": "Jobs",
+            "url": "#"
+        },
+        {
+            "title": "Contact us",
+            "url": "#"
+        },
+        {
+            "title": "Policies",
+            "url": "#"
+        },
+        {
+            "title": "Library",
+            "url": "#"
+        },
+        {
+            "title": "myLynn",
+            "url": "#"
+        },
+        {
+            "title": "Campus store",
+            "url" :"#"
+        },
+        {
+            "title": "Accreditation",
+            "url": "#"
+        },
+        {
+            "title": "Equal opportunity",
+            "url": "#"
+        }
+    ],
 
 
 

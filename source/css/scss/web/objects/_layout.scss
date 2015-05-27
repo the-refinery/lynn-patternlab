@@ -51,16 +51,42 @@
 
 /* Row */
 .l-row {
-	margin-bottom: $space-quad;
-	margin-top: $space-quad;
+	margin-bottom: $space;
+	margin-top: $space;
 }
 
 .l-row-b {
-	margin-bottom: $space-quad;
+	margin-bottom: $space;
 }
 
 .l-row-t {
-	margin-top: $space-quad;
+	margin-top: $space;
+}
+
+.l-row-double {
+    margin-bottom: $space-double;
+    margin-top: $space-double;
+}
+
+.l-row-double-b {
+    margin-bottom: $space-double;
+}
+
+.l-row-double-t {
+    margin-top: $space-double;
+}
+
+.l-row-quad {
+    margin-bottom: $space-quad;
+    margin-top: $space-quad;
+}
+
+.l-row-quad-b {
+    margin-bottom: $space-quad;
+}
+
+.l-row-quad-t {
+    margin-top: $space-quad;
 }
 
 /* Navigation */
@@ -154,13 +180,19 @@
 .gi {
 	padding: $pad;
 
-	img {
+	> img {
 		display: block;
 	}
 
 	@include bp-min($bp-m) {
 		float: left;
 	}
+}
+
+.g-reversed .gi {
+    @include bp-min($bp-m) {
+        float: right;
+    }
 }
 
 /* Grid 1up */

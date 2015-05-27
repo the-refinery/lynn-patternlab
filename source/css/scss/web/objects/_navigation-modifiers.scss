@@ -1,0 +1,14 @@
+/*
+ *  Navigation Modifiers
+ */
+
+/* Color */
+.nav_grey {
+    a {
+        color: $lynn-gray;
+
+        &:hover {
+            color: $lynn-blue;
+        }
+    }
+}

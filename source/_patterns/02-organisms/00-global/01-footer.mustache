@@ -1,24 +1,16 @@
 <footer class="footer">
-    <div class="g">
-        <div class="gi gi-2-3">
-            <div class="lynn-seal">
-                <div class="text">
-                    <a href="#" title="Map and Directions">3601 N. Military Trail, Boca Raton, FL 33431</a><br />1-561-237-7000 or 1-800-888-5966
-                </div>
-                <nav class="nav-footer">
-                    <ul class="inline-list">
-                        <li><a href="{{ url }}">Item 1</a></li>
-                        <li><a href="{{ url }}">Item 2</a></li>
-                        <li><a href="{{ url }}">Item 3</a></li>
-                        <li><a href="{{ url }}">Item 4</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="l-page-container">
+        <div class="l-row-quad-b">
+            {{> molecules-footer-nav }}
         </div>
-        <div class="gi gi-1-3">
-            <div class="apple">
-                <div class="text">
-                    Recognized by Apple as a distinguished school for innovation, leadership, and educational excellence.
+        <div class="l-row">
+            <div class="g g-2up">
+                <div class="gi align-m-center-left">
+                    {{> molecules-apple-distinguished-school }}
+                </div>
+                <div class="gi align-m-center-right">
+                    {{> molecules-social }}
+                    {{> molecules-copyright }}
                 </div>
             </div>
         </div>

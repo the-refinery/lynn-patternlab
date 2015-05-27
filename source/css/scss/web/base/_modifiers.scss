@@ -149,6 +149,90 @@
 	padding: 0;
 }
 
+/* Text Alignment */
+%text-center {
+	text-align: center;
+}
+
+%text-left {
+	text-align: left;
+}
+
+%text-right {
+	text-align: right;
+}
+
+.text-center {
+	@extend %text-center;
+}
+
+.text-left {
+	@extend %text-left;
+}
+
+.text-right {
+	@extend %text-right;
+}
+
+/* Alignment shift (bp-mobile-desktop) */
+@each $key in map_keys($breakpoints) {
+	$bp: map-get($breakpoints, $key);
+
+	.align-#{$key}-center-left {
+		@include bp-max($bp){
+			text-align: center;
+		}
+		@include bp-min($bp){
+			text-align: left;
+		}
+	}
+
+	.align-#{$key}-center-right {
+		@include bp-max($bp){
+			text-align: center;
+		}
+		@include bp-min($bp){
+			text-align: right;
+		}
+	}
+
+	.align-#{$key}-left-center {
+		@include bp-max($bp){
+			text-align: left;
+		}
+		@include bp-min($bp){
+			text-align: center;
+		}
+	}
+
+	.align-#{$key}-left-right {
+		@include bp-max($bp){
+			text-align: left;
+		}
+		@include bp-min($bp){
+			text-align: right;
+		}
+	}
+
+	.align-#{$key}-right-center {
+		@include bp-max($bp){
+			text-align: right;
+		}
+		@include bp-min($bp){
+			text-align: center;
+		}
+	}
+
+	.align-#{$key}-right-left {
+		@include bp-max($bp){
+			text-align: right;
+		}
+		@include bp-min($bp){
+			text-align: left;
+		}
+	}
+}
+
 /* Tint (background) */
 .tint {
 	background-color: tint($lynn-gray, 90%);
