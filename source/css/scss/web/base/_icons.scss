@@ -15,7 +15,7 @@
 }
 
 
-/* Placeholders */
+/* Font replacement icons */
 %icon {
     font-family: 'icons';
     speak: none;
@@ -26,6 +26,57 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+
+/* Background replacement icons */
+/*~ Social Media ~*/
+%icon-social {
+    background-image: url('../images/social-icons-36px.png');
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: 36px;
+
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
+        background-image: url('../images/social-icons-72px.png');
+    }
+}
+
+%icon-facebook {
+    @extend %icon-social;
+    background-position: -45px 0;
+    width: 36px;
+}
+
+%icon-instagram {
+    @extend %icon-social;
+    background-position: -82px 0;
+    width: 36px;
+}
+
+%icon-linkedin {
+    @extend %icon-social;
+    background-position: -119px 0;
+    width: 36px;
+}
+
+%icon-twitter {
+    @extend %icon-social;
+    background-position: 0 0;
+    width: 44px;
+}
+
+%icon-youtube {
+    @extend %icon-social;
+    background-position: -156px 0;
+    width: 51px;
+}
+
+
+
+
+
 
 %icon-android {
     @extend %icon;
@@ -51,10 +102,7 @@
     @extend %icon;
     content: "\2b";
 }
-%icon-facebook {
-    @extend %icon;
-    content: "\66";
-}
+
 %icon-feed {
     @extend %icon;
     content: "\27";
@@ -63,14 +111,7 @@
     @extend %icon;
     content: "\67";
 }
-%icon-instagram {
-    @extend %icon;
-    content: "\22";
-}
-%icon-linkedin {
-    @extend %icon;
-    content: "\69";
-}
+
 %icon-menu {
     @extend %icon;
     content: "\21";
@@ -103,14 +144,7 @@
     @extend %icon;
     content: "\6d";
 }
-%icon-twitter {
-    @extend %icon;
-    content: "\74";
-}
-%icon-youtube {
-    @extend %icon;
-    content: "\79";
-}
+
 
 %triangle {
     @extend %icon;
@@ -239,6 +273,8 @@
 .icon-youtube:before {
     @extend %icon-youtube;
 }
+
+
 
 
 /* Treatments */
