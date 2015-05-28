@@ -1,3 +1,10 @@
+/* Image wrapper */
+.image-wrapper {
+    > img {
+        display: block;
+    }
+}
+
 /* Image replacement */
 .image-replace {
     background-size: contain;
