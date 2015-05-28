@@ -41,6 +41,59 @@
     margin: $space auto $space-double;
 }
 
+/* Position */
+%l-pos {
+    position: absolute;
+}
+
+.l-pos-tl {
+    @extend %l-pos;
+    left: 0;
+    top: 0;
+}
+
+.l-pos-tr {
+    @extend %l-pos;
+    right: 0;
+    top: 0;
+}
+
+.l-pos-br {
+    @extend %l-pos;
+    bottom: 0;
+    right: 0;
+}
+
+.l-pos-bl {
+    @extend %l-pos;
+    bottom: 0;
+    left: 0;
+}
+
+.l-pos-vcenter {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+/* Panel */
+%l-panel {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.l-panel {
+    @extend %l-panel;
+}
+
+.l-panel_hero {
+    @extend %l-panel;
+    height: 100vh;
+}
+
 
 
 /* Main */
