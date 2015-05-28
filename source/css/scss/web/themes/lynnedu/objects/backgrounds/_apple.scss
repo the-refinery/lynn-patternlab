@@ -1,14 +1,28 @@
 .apple-ds {
-    background: {
-        color: transparent;
-        image: url('http://static.lynn.edu/logos/apple/web/apple-ds.gif');
-        position: center top;
-        repeat: no-repeat;
+    &:before{
+        background: {
+            color: transparent;
+            image: url('http://static.lynn.edu/logos/apple/web/apple-ds-135x22.png');
+            position: center top;
+            repeat: no-repeat;
+            size: cover;
+        }
+        content: "";
+        display: inline-block;
+        height: 22px;
+        width: 135px;
+
+        @media 
+        (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) {
+            background-image: url('http://static.lynn.edu/logos/apple/web/apple-ds-270x44.png');
+        }
     }
 
     font-size: $font-size-xs;
     max-width: $w-s;
-    padding-top: 24px;
+
+    
 
     @include bp-max($bp-m) {
         margin: 0 auto;
