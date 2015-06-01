@@ -1,7 +1,19 @@
 {
 	"card": {
-		"styleModifier": "card_thumb card_priority_2",
+		"styleModifier": "card_thumb",
 		"hasImage": true,
 		"dateline": true
-	}
+	},
+    "subhead": {
+        "visible": false
+    },
+    "picture": {
+        "src": "http://placehold.it/240x240",
+        "srcset": "http://placehold.it/240x240 240w,
+            http://placehold.it/320x320 320w,
+            http://placehold.it/480x480 480w,
+            http://placehold.it/640x640 640w",
+        "sizes": "(min-width: 768px) 33vw, 100%",
+        "alt": "A picture"
+    }
 }

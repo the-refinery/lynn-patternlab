@@ -6,36 +6,77 @@
  */
 
 .card_thumb {
-	@include bp-min($bp-s) {
-		.card-content {
-			flex-flow: row wrap;
-			@include flexbox;
-		}
+    max-width: $w-m;
 
-		.card-image {
-			margin: $space-half $space;
-			max-width: calc(40% - #{$space-double});
-			@include flex(1 1 40%);
-			@include order(2);
-		}
+    .card-content {
+        border-width: 7px;
+    }
 
-		.card-details {
-			@include flex(1 1 60%);
-			@include order(1);
-		}
+    .card-image {
+        border: {
+            color: $white;
+            style: solid;
+            width: 5px;
+        }
+    }
 
-		.card-action {
-			@include order(3);
-		}
+    .card-details {
+        background-color: rgba($white, .85);
+        height: 5.75em;
+        padding: $pad;
+        width: $w-pct-full;
 
-		&.flipped {
-			.card-image {
-				@include order(1);
-			}
+        @include bp-min($bp-s) {
+            position: absolute;
+            bottom: 0;
+        }
+    }
 
-			.card-details {
-				@include order(2);
-			}
-		}
-	}
+    .headline {
+        font-size: $font-size-base;
+        height: $line-height-less * 2em;
+        overflow: hidden;
+        position: relative;
+
+        a {
+            color: $lynn-gray;
+
+            &:hover {
+                color: $lynn-blue;
+            }
+        }
+
+        @include bp-min($bp-s) {
+            font-weight: 600;
+        }
+    }
+
+    .card-dateline {
+        color: $lynn-blue;
+        font-size: $font-size-s;
+    }
+}
+
+.flexbox .card_thumb {
+    .card-details {
+        flex-direction: column;
+
+        @include flexbox;
+    }
+
+    .card-text {
+        @include order(2);
+    }
+}
+
+.g-3up .card_thumb {
+    .headline {
+        @include bp-min($bp-l) {
+            font-weight: normal;
+        }
+
+        @include bp-min($bp-xl) {
+            font-weight: 600;
+        }
+    }
 }

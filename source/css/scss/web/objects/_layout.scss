@@ -8,7 +8,7 @@
     position: relative;
     width: 90%;
     
-    @include box-sizing(content-box);
+    @include box-sizing(border-box);
     
     @include bp-min($bp-l) {
         min-width: $w-l;
@@ -36,9 +36,7 @@
 
 /* Page Wrapper */
 .l-page {
-    @extend %l-page-container;
-
-    margin: $space auto $space-double;
+    background-color: $lynn-gray-20;
 }
 
 /* Position */
@@ -79,19 +77,17 @@
 
 /* Panel */
 %l-panel {
-    max-height: 100vh;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+    background-color: $white;
+    padding: $space-double;
 }
 
 .l-panel {
     @extend %l-panel;
 }
 
-.l-panel_hero {
-    @extend %l-panel;
-    height: 100vh;
+.l-panel-inset {
+    @extend %l-page-container;
+    @extend %l-panel 
 }
 
 
@@ -282,7 +278,13 @@
 
 /* Grid 3up */
 .g-3up {
-	@include bp-min($bp-m) {
+    @include bp-max($bp-l) {
+        >.gi {
+            float: none;
+        }
+    }
+
+	@include bp-min($bp-l) {
 		>.gi {
 			width: 33.3333333%;
 

@@ -1,0 +1,127 @@
+{
+    "news-items": [
+        {
+            "card": {
+                "type": true,
+                "styleModifier": "card_thumb",
+                "schema": {
+                    "itemtype": "http://schema.org/NewsArticle"
+                },
+                "hasImage": true,
+                "dateline": {"date":true},
+                "action": false
+            },
+            "headline": {
+                "islink": true,
+                "text": "The best headlines are short and quick"
+            },
+            "subhead": {
+                "visible": false
+            },
+            "picture": {
+                "src": "http://placehold.it/240x240",
+                "srcset": "http://placehold.it/240x240 240w,
+                    http://placehold.it/320x320 320w,
+                    http://placehold.it/480x480 480w,
+                    http://placehold.it/640x640 640w",
+                "sizes": "(min-width: 768px) 33vw, 100%",
+                "alt": "A thumbnail of a news image"
+            },
+            "year": {
+                "long": "2015",
+                "short": "15"
+            },
+            "month": {
+                "long": "May",
+                "short": "May",
+                "digit": "05"
+            },
+            "day": {
+                "digit": "12",
+                "ofweek": "Tuesday"
+            }
+        },
+        {
+            "card": {
+                "type": true,
+                "styleModifier": "card_thumb",
+                "schema": {
+                    "itemtype": "http://schema.org/NewsArticle"
+                },
+                "hasImage": true,
+                "dateline": {"date":true},
+                "action": false
+            },
+            "headline": {
+                "islink": true,
+                "text": "The best headlines are short and quick"
+            },
+            "subhead": {
+                "visible": false
+            },
+            "picture": {
+                "src": "http://placehold.it/240x240",
+                "srcset": "http://placehold.it/240x240 240w,
+                    http://placehold.it/320x320 320w,
+                    http://placehold.it/480x480 480w,
+                    http://placehold.it/640x640 640w",
+                "sizes": "(min-width: 768px) 33vw, 100%",
+                "alt": "A thumbnail of a news image"
+            },
+            "year": {
+                "long": "2015",
+                "short": "15"
+            },
+            "month": {
+                "long": "May",
+                "short": "May",
+                "digit": "05"
+            },
+            "day": {
+                "digit": "12",
+                "ofweek": "Tuesday"
+            }
+        },
+        {
+            "card": {
+                "type": true,
+                "styleModifier": "card_thumb",
+                "schema": {
+                    "itemtype": "http://schema.org/NewsArticle"
+                },
+                "hasImage": true,
+                "dateline": {"date":true},
+                "action": false
+            },
+            "headline": {
+                "islink": true,
+                "text": "The best headlines are short and quick"
+            },
+            "subhead": {
+                "visible": false
+            },
+            "picture": {
+                "src": "http://placehold.it/240x240",
+                "srcset": "http://placehold.it/240x240 240w,
+                    http://placehold.it/320x320 320w,
+                    http://placehold.it/480x480 480w,
+                    http://placehold.it/640x640 640w",
+                "sizes": "(min-width: 768px) 33vw, 100%",
+                "alt": "A thumbnail of a news image"
+            },
+            "year": {
+                "long": "2015",
+                "short": "15"
+            },
+            "month": {
+                "long": "May",
+                "short": "May",
+                "digit": "05"
+            },
+            "day": {
+                "digit": "12",
+                "ofweek": "Tuesday"
+            }
+        }
+    ]
+}
