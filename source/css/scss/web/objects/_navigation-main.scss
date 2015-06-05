@@ -1,102 +1,60 @@
-.nav-main {
-    &:before {
-        @extend %icon-menu;
-    }
-
-    @include bp-min($bp-l) {
-        &:before {display: none;}
-    }
-
-    @include bp-max($bp-l) {
-        background-color: tint($lynn-gray, 90%);
-        float: none;
-        margin: 0 auto;
-        padding: 0;
+.nav-flyout {
+    &.js-enabled {
+        background-color: rgba($lynn-gray-20, .98);
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: $space-double;
+        right: -100%;
         width: 100%;
         z-index: 999;
-        
-        &:before {
-            cursor: pointer;
-            display: block;
-            padding: $space $pad;
-        }
 
-        &:after {
-            content: "Menu";
-            left: $pad * 2.5;
-            line-height: 1;
-            position: absolute;
-            top: $space;
-        }
+
+        display: none;
+        position: fixed;
+        top: 0;
         
-        li {
-            display: block;
-            
-            a {
-                border-bottom-color: tint($lynn-gray, 60%);
-                display: block;
-                margin: 0 $pad-half;
-            }
+
+        @include bp-min($bp-l) {
+            right: -#{$w-s};
+            width: $w-s;
         }
         
         &.is-open {
-            &:before {
-                border-bottom: {
-                    color: tint($lynn-gray, 60%);
-                    style: solid;
-                    width: 1px;
-                }
-            }
+            display: block;
+            right: 0;
         }
 
-        &.is-closed li {
-            display: none;
-        }
-        
-        .selected:before {
-            display: none;
-        }
-        
-        .submenu {
-            padding-left: $pad-half;
+        > ul {margin: $space-triple 0;}
+
+        .menu-item {
+            font-size: $font-size-xl;
+            line-height: $line-height-base;
         }
 
-        // Only reposition if javascript is enabled
-        &.js-enabled {
-            //left: 50%;
-            //margin-left: -120px;
-            position: absolute;
-            top: 0;
-        }
-    }
-
-    &.fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-
-        @include bp-max($bp-l) {
-            border-bottom: {
-                color: tint($lynn-gray, 60%);
-                style: solid;
-                width: 1px;
-            }
-        }
-
-        @include bp-min($bp-l) {
-            background-color: $white;
-            border-bottom: 1px solid tint($lynn-gray, 60%);
-            .menu {
-                max-width: $w-max;
-                margin: $space auto;
-                text-align: right;
-                width: 90%;
-            }
-            .submenu {
-                text-align: left;
+        .social-icons {
+            @include bp-min($bp-l) {
+                bottom: $space-double;
+                position: absolute;
             }
         }
     }
+}
+
+.js-button-close-flyout:before {
+    @include border-radius($font-size-base);
+
+    background-color: $lynn-gray-40;
+    color: $lynn-gray-10;
+    content: "X";
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    height: $font-size-base * 2;
+    line-height: $font-size-base * 2;
+    position: absolute;
+    right: $space;
+    text-align: center;
+    top: $space;
+    width: $font-size-base * 2;
 }

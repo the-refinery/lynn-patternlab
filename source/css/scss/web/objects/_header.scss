@@ -1,93 +1,83 @@
 .header {
-	@extend %l-container;
-	@extend .cf;
+    background-color: $white;
+    padding: $pad 0;
+    width: $w-pct-full;
+    z-index: 950;
 
-	position: relative;
+    h1 {
+        font-size: $font-size-m;
+        line-height: $line-height-least;
+        margin: 0;
+    }
 
-	.l-resp-right {
-		font-size: $font-size-xs;
+    a {
+        color: $lynn-gray-60;
+    }
 
-		.discrete {
-			display: block;
-		}
-	}
-
-	@include bp-min($bp-m) {
-		>h1 {
-			float: left;
-		}
-
-		.l-resp-right {
-			display: table;
-			float: right;
-			height: 55px;
-			max-width: 340px;
-			text-align: right;
-
-			.subhead {
-				display: table-cell;
-				vertical-align: bottom;
-			}
-		}
-	}
-
-	@include bp-min($bp-l) {
-		.l-resp-right {
-			height: 78px;
-			max-width: 380px;
-			font-size: $font-size-s;
-		}
-	}
+    &.fixed {
+        bottom: auto;
+        position: fixed;
+        top: 0;
+        
+    }
 }
 
 .site-logo {
-	@include bp-max($bp-l) {
-		height: 55px;
-		width: 130px;
+    height: 55px;
+    width: 130px;
+    z-index: 950;
 
-		span {
-			background: transparent url('http://static.lynn.edu/logos/lynn/web/lynn-logotype-130.gif') no-repeat left top;
-		}
-	}
-
-	@include bp-min($bp-l) {
-		height: 78px;
-		width: 188px;
-
-		span {
-			background: transparent url('http://static.lynn.edu/logos/lynn/web/lynn-logotype-188.gif') no-repeat left top;
-		}
-	}
+    span {
+        background: transparent url('http://static.lynn.edu/logos/lynn/web/lynn-logotype-130.gif') no-repeat left top;
+    }
 }
-
 
 .ilynn-logo {
-	height: 54px;
-	width: 212px;
+    height: 54px;
+    width: 212px;
+    z-index: 950;
 
-	span {
-		background: transparent url('//www.lynn.edu/ilynn/ilynn-logo-hinted-212x50.png') no-repeat left top;
-	}
+    span {
+        background: transparent url('//www.lynn.edu/ilynn/ilynn-logo-hinted-212x50.png') no-repeat left top;
+    }
 }
 
-.search-form {
-	font-size: $font-size-xs;
-    overflow: hidden;
+.button-menu,
+.button-search {
+    cursor: pointer;
+    display: block;
+    line-height: $line-height-least;
     padding: $pad-quarter;
-    width: $w-s;
-    
-    @include bp-max($bp-l) {
-        margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.button-menu:before,
+.button-search:before {
+    background: {
+        color: transparent;
+        image: url("../images/icons-16px.png");
+        repeat: no-repeat;
     }
-    
-    @include bp-min($bp-l) {
-        float: right;
-        margin: 0;
-    }
-    
-    input[type=submit], button, .button {
-        height: 100%;
-        margin: 0;
-        padding: $pad-half $pad;
-    }
+    content: "";
+    display: inline-block;
+    height: $space;
+    vertical-align: bottom;
+    width: $space;
+}
+
+.button-menu {
+    @include border;
+    right: calc(#{$space} + 1em);
+}
+.button-search {
+    right: 0;
+}
+
+.button-menu:before {
+    margin-right: $pad-quarter;
+}
+.button-search:before {
+    background-position: -18px 0;
 }

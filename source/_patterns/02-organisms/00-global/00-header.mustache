@@ -1,4 +1,9 @@
-<header class="header" role="banner">
-    <h1>{{> atoms-logo }}</h1>
-    {{> molecules-search }}
+<header class="header js-sticky" role="banner">
+    <div class="l-page-container">
+        <h1>{{> atoms-logo }}</h1>
+        <div class="nav-main">
+            <a href="#nav-main" class="button-menu js-expand is-closed">Menu</a>
+            <div class="button-search js-expand is-closed"> </div>
+        </div>
+    </div>
 </header>

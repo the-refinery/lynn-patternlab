@@ -56,6 +56,31 @@ $(document).ready(function(){
             });
         }
 
+        else if (
+            $(element).hasClass('button-menu')
+        ) {
+            $nav = $("#nav-main.nav-flyout");
+            $buttonMenu = $(element);
+            $buttonSearch = $('.button-search');
+
+            // Start state
+            $(element).addClass('js-enabled').not('.is-closed').toggleClass('is-closed');
+            $nav.addClass('js-enabled').not('.is-closed').toggleClass('is-closed').prepend('<div class="js-button-close-flyout"> </div>');
+            $('.social-icons').clone().appendTo($nav);
+
+            // Click event
+            $(element).click(function(e) {
+                e.preventDefault();
+                $(this).toggleClass('is-closed is-open');
+                $nav.toggleClass('is-closed is-open');
+            });
+
+            $('.js-button-close-flyout').click(function(e) {
+                $buttonMenu.toggleClass('is-closed is-open');
+                $nav.toggleClass('is-closed is-open');
+            });
+        }
+
         /*
             Default
         */
