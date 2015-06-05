@@ -5,47 +5,86 @@
  *
  */
 
+$datestamp-width: $space * 9;
+
 .card_news {
-	.card-dateline {
-		color: $lynn-gray-60;
-		font-size: $font-size-xs;
-	}
+    &.card_priority_1 {
+        .card-content {
+            border: none;
+            max-width: none;
+            overflow: visible;
+        }
 
-	.description,
-	.card-action {
-		display: none;
-	}
+        .card-image {
+            border: {
+                color: $lynn-gray-30;
+                style: solid;
+                width: 7px;
+            }
+            display: inline-block;
 
-	&.card_priority_1 {
-		.card-details {
-			flex-direction: column;
+            img {
+                border: {
+                    color: $white;
+                    style: solid;
+                    width: 5px;
+                }
+            }
 
-			@include flexbox;
-		}
+            @include bp-max($bp-l) {
+                margin: $space-triple calc((#{$space} + 4%) * -1) 0;
+            }
 
-		.card-dateline {
-			@include order(1);
-		}
+            @include bp-min($bp-l) {
+                float: left;
+                margin-left: $datestamp-width;
+                width: calc(100% - #{$datestamp-width});
+            }
+        }
 
-		.card-text {
-			@include order(2);
-		}
+        .card-details {
+            clear: both;
+            padding: $pad-half;
+            position: initial;
 
-		.card-action {
-			display: block;
+            @include bp-min($bp-l) {
+                margin-left: $datestamp-width;
+            }
+        }
 
-			@include order(3);
-		}
+        .card-dateline {
+            position: absolute;
+            top: 0;
 
-		.hgroup {
-			margin-bottom: $space;
-		}
-		
-		.description {
-			display: block;
-			max-height: $line-height-base * $space-triple;
-			overflow: hidden;
-			position: relative;
-		}
-	}
+            @include bp-min($bp-l) {
+                left: -#{$space};
+                padding: 0 $pad;
+                width: $datestamp-width;
+            }
+        }
+        
+        .date-m,
+        .date-d {
+            color: $lynn-gray-60;
+            font-size: $font-size-xxl;
+            line-height: $line-height-less;
+
+            @include bp-min($bp-l) {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .date-m {
+            @include bp-min($bp-l) {
+                font-size: $font-size-xxl;
+            }
+        }
+
+        .date-d {
+            @include bp-min($bp-l) {
+                font-size: $font-size-jumbo;
+            }
+        }
+    }
 }
