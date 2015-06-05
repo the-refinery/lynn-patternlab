@@ -46,11 +46,12 @@
 
 
     .card-details {
-        background-color: rgba($white, .85);
+        background-color: $white;
 
         &.overlay {
             @include bp-min($bp-l) {
                 background-color: transparent;
+                text-shadow: 1px 1px 3px $lynn-gray;
 
                 .headline {
                     color: $white;
@@ -72,11 +73,12 @@
         &.l-pos-br {
             @include bp-max($bp-l) {
                 margin: 0 auto;
-                padding: $pad-half 0;
-                width: 90%;
+                padding: $pad 5%;
+                width: $w-pct-full;
             }
 
             @include bp-min($bp-l) {
+                padding: $pad-double $pad;
                 position: absolute;
             }
         }
@@ -84,23 +86,35 @@
         &.l-pos-tl,
         &.l-pos-bl {
             @include bp-min($bp-l) {
-                left: 5%;
+                left: calc(5% - #{$pad});
             }
 
             @include bp-min($bp-xxl) {
-                left: calc((100% - #{$w-xxl})/2);
+                left: calc((100% - #{$w-xxl} - #{$pad-double})/2);
             }
         }
 
         &.l-pos-tr,
         &.l-pos-br {
             @include bp-max($bp-xxl) {
-                right: 5%;
+                right: calc(5% - #{$pad});
             }
 
             @include bp-min($bp-xxl) {
-                right: calc((100% - #{$w-xxl})/2);
+                right: calc((100% - #{$w-xxl} - #{$pad-double})/2);
             }
+        }
+    }
+
+    .card-action {
+        text-shadow: none;
+    }
+}
+
+.header + .card_banner {
+    @include bp-min($bp-l) {
+        .card-details {
+            top: 89px;
         }
     }
 }
