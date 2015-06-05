@@ -1,1 +1,1 @@
-<time datetime="{{ iso.date }}" {{# datetime.itemprop }}itemprop="{{ datetime.itemprop }}"{{/ datetime.itemprop }}>{{ day.ofweek }}, {{ month.short }} {{ day.digit }}, {{ year.long }}</time>
+<time datetime="{{ iso.date }}" {{# datetime.itemprop }}itemprop="{{ datetime.itemprop }}"{{/ datetime.itemprop }}><span class="date-dow">{{ day.ofweek }}</span>, <span class="date-m">{{ month.short }}</span> <span class="date-d">{{ day.digit }}</span>, <span class="date-y">{{ year.long }}</span></time>
