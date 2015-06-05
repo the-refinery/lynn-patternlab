@@ -1,19 +1,18 @@
 .nav-flyout {
     &.js-enabled {
+        @extend %animate-move !optional;
+
         background-color: rgba($lynn-gray-20, .98);
+        display: block;
         height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
         padding: $space-double;
-        right: -100%;
-        width: 100%;
-        z-index: 999;
-
-
-        display: none;
         position: fixed;
+        right: -100%;
         top: 0;
-        
+        width: 100%;
+        z-index: 999;        
 
         @include bp-min($bp-l) {
             right: -#{$w-s};
@@ -21,7 +20,6 @@
         }
         
         &.is-open {
-            display: block;
             right: 0;
         }
 
