@@ -10,14 +10,6 @@
     
     @include box-sizing(border-box);
     
-    @include bp-min($bp-l) {
-        min-width: $w-l;
-    }
-    
-    @include bp-min($bp-xl) {
-        min-width: $w-xl;
-    }
-    
     @include bp-min($bp-xxl) {
         max-width: $w-xxl;
         min-width: $w-xxl;
@@ -36,7 +28,8 @@
 
 /* Page Wrapper */
 .l-page {
-    background-color: $lynn-gray-20;
+    background-color: $lynn-gray-10;
+    overflow: hidden;
 }
 
 /* Position */
@@ -78,19 +71,27 @@
 /* Panel */
 %l-panel {
     background-color: $white;
-    padding: $space-double;
+    padding: $space;
+
+    @include bp-min($bp-l) {
+        padding: $space-double;
+    }
 }
 
 .l-panel {
     @extend %l-panel;
 }
 
-.l-panel-inset {
+.l-panel_inset {
     @extend %l-page-container;
-    @extend %l-panel 
+
+    background-color: transparent;
+    margin: $space-double auto;
+
+    .l-panel-inner {
+        @extend %l-panel;
+    }
 }
-
-
 
 /* Main */
 .l-content-max {
@@ -100,42 +101,42 @@
 
 /* Row */
 .l-row {
-	margin-bottom: $space;
-	margin-top: $space;
+	padding-bottom: $space;
+	padding-top: $space;
 }
 
 .l-row-b {
-	margin-bottom: $space;
+	padding-bottom: $space;
 }
 
 .l-row-t {
-	margin-top: $space;
+	padding-top: $space;
 }
 
 .l-row-double {
-    margin-bottom: $space-double;
-    margin-top: $space-double;
+    padding-bottom: $space-double;
+    padding-top: $space-double;
 }
 
 .l-row-double-b {
-    margin-bottom: $space-double;
+    padding-bottom: $space-double;
 }
 
 .l-row-double-t {
-    margin-top: $space-double;
+    padding-top: $space-double;
 }
 
 .l-row-quad {
-    margin-bottom: $space-quad;
-    margin-top: $space-quad;
+    padding-bottom: $space-quad;
+    padding-top: $space-quad;
 }
 
 .l-row-quad-b {
-    margin-bottom: $space-quad;
+    padding-bottom: $space-quad;
 }
 
 .l-row-quad-t {
-    margin-top: $space-quad;
+    padding-top: $space-quad;
 }
 
 /* Navigation */
