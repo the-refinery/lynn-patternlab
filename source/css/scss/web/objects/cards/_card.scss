@@ -60,10 +60,10 @@
 	margin: $pad-half 0;
 
 	.action {
-		text-decoration: underline;
+		text-decoration: none;
 
-		&:after {
-			content: "...";
+		&:before {
+			content: "> ";
 		}
 	}
 
@@ -96,6 +96,10 @@
 	.headline {
 		font-size: $font-size-xxl;
 		line-height: $line-height-less;
+
+		@include bp-max($bp-s) {
+			font-size: $font-size-xl;
+		}
 	}
 	.subhead {
 		@extend %subhead;
