@@ -20,13 +20,13 @@ $(document).ready(function() {
     // Function to toggle sticky class
     function stickEm(items) {
         // Run once to get initial values
-        if (!origOffsetY[0]) {
-            origOffset(items);  
+        if (origOffsetY[0] == null) {
+            origOffset(items);
         }
 
         // Loop the sticky items to determine when to stick
         return items.each(function(index, element) {
-            $(window).scrollTop() > origOffsetY[index] ?
+            $(window).scrollTop() >= origOffsetY[index] ?
                 $(this).addClass('fixed') :
                 $(this).removeClass('fixed');
         });
