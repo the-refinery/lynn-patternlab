@@ -27,6 +27,9 @@ $accent-blue:       rgb(0,175,215);
 $accent-green:      rgb(120,190,32);
 $accent-orange:     rgb(232,119,34);
 
+// Default border color
+$border-color:      $lynn-gray-20;
+
 // Variable lists to let SASS make our life easier
 $color-classes: "black", "white", "lynn-blue", "lynn-gray-web", "secondary-blue", "secondary-green", "secondary-orange", "accent-blue", "accent-green", "accent-orange", "lynn-gray-90", "lynn-gray-80", "lynn-gray-70", "lynn-gray-60", "lynn-gray-50", "lynn-gray-40", "lynn-gray-30", "lynn-gray-20", "lynn-gray-10", "fk-gray";
 $color-list: $black, $white, $lynn-blue, $lynn-gray-web, $secondary-blue, $secondary-green, $secondary-orange, $accent-blue, $accent-green, $accent-orange, $lynn-gray-90, $lynn-gray-80, $lynn-gray-70, $lynn-gray-60, $lynn-gray-50, $lynn-gray-40, $lynn-gray-30, $lynn-gray-20, $lynn-gray-10, $fk-gray;
