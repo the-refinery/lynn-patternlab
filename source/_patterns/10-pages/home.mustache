@@ -1,0 +1,32 @@
+<div class="l-page">
+    {{> organisms-header }}
+{{# banner }}
+    {{> molecules-banner }}
+{{/ banner }}
+
+<div class="l-panel_inset">
+    <h1 class="headline">Top news</h1>
+    <div class="l-panel-inner">
+
+        <div class="l-row border-bottom">
+            {{# news-priority }}
+            {{> molecules-news }}
+            {{/ news-priority }}
+        </div>
+        {{> organisms-news-strip-thumbnails }}
+    </div>
+</div>
+<nav id="nav-main" class="nav-flyout nav_gray js-fitwindow">
+    <ul>
+        <li><a href="#" class="menu-item">Apply</a></li>
+        <li><a href="#" class="menu-item">Learn</a></li>
+        <li><a href="#" class="menu-item">Live</a></li>
+        <li><a href="#" class="menu-item">Work</a></li>
+        <li><a href="#" class="menu-item">Engage</a></li>
+        <li><a href="#" class="menu-item">Connect</a></li>
+        <li><a href="#" class="menu-item">Give</a></li>
+        <li><a href="#" class="menu-item">Partner</a></li>
+    </ul>
+</nav>
+{{> organisms-footer }}
+</div>
