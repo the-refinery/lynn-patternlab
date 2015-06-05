@@ -123,3 +123,12 @@
 .sg-label {
   font-size: .75em;
   line-height: 1; }
+
+.sg-pattern-body .bg {
+  position: relative;
+}
+
+.body > .card_news,
+.sg-pattern-body > .card_news {
+  margin: 3rem;
+}

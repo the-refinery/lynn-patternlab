@@ -163,3 +163,13 @@ $animate-quick: 0.2s;
     font-size: .75em;
 	line-height: 1;
 }
+
+.sg-pattern-body .bg {
+	height: 100vh;
+	position: relative;
+}
+
+.body > .card_news,
+.sg-pattern-body > .card_news {
+  margin: 3rem;
+}
