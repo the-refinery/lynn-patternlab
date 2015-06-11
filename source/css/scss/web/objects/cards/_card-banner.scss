@@ -25,6 +25,7 @@
     }
 
     .subhead,
+    .description,
     .card-dateline {
         @extend %subhead;
 
@@ -53,14 +54,9 @@
                 background-color: transparent;
                 text-shadow: 1px 1px 3px $lynn-gray;
 
-                .headline {
-                    color: $white;
-                }
-
-                .subhead {
-                    color: $white;
-                }
-
+                .headline,
+                .subhead,
+                .description,
                 .card-dateline {
                     color: $white;
                 }
@@ -112,9 +108,12 @@
 }
 
 .header + .card_banner {
-    @include bp-min($bp-l) {
-        .card-details {
-            top: 89px;
+    .l-pos-tl,
+    .l-pos-tr {
+        @include bp-min($bp-l) {
+            &.card-details {
+                top: 89px;
+            }
         }
     }
 }
