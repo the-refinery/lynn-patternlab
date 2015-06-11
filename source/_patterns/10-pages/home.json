@@ -46,179 +46,384 @@
         }
     ],
 
-    "news-priority": [
+    "panels": [
         {
-            "card": {
-                "type": true,
-                "styleModifier": "card_priority_1",
-                "schema": {
-                    "itemtype": "http://schema.org/NewsArticle"
-                },
-                "hasImage": true,
-                "dateline": {
-                    "date": true
-                },
-                "description": "The week started with 20 teams and it came down to a pair of familiar faces as Lynn University's top-seeded men's golf team took on Nova Southeastern. In the end, the Fighting Knights could not overcome a couple of tough holes and finished as the 2015 NCAA Division II National Runners-up. This is the third runner-up finish for Lynn in the last five years.",
-                "action": true
-            },
-            "picture": {
-                "src": "../../images/sample/golf-m_480x206.jpg",
-                "srcset": "../../images/sample/golf-m_480x206.jpg 480w,
-                    ../../images/sample/golf-m_560x242 560w,
-                    ../../images/sample/golf-m_768x331 768w,
-                    ../../images/sample/golf-m_1024x441 1024w,
-                    ../../images/sample/golf-m_1280x551 1280w",
-                "sizes": "(min-width: 560px) calc(100% - 9rem), 100%",
-                "alt": "Lynn University Men's Golf team"
-            },
-            "button": {
-                "text": "Full story"
-            },
-            "headline": {
-                "islink": true,
-                "text": "Men's Golf finishes as national runner-up"
-            },
-            "subhead": {
-                "visible": false
-            },
-            "year": false,
-            "month": {
-                "long": "May",
-                "short": "May",
-                "digit": "05"
-            },
-            "day": {
-                "digit": "23",
-                "ofweek": "Saturday"
-            }
-        }
-    ],
-
-    "news-items": [
-        {
-            "card": {
-                "type": true,
-                "styleModifier": "card_thumb",
-                "schema": {
-                    "itemtype": "http://schema.org/NewsArticle"
-                },
-                "hasImage": true,
-                "dateline": {"date":true},
-                "action": false
-                
-            },
-            "headline": {
-                "islink": true,
-                "text": "Lynn University hires athletic director for national champion Fighting Knights"
-            },
-            "subhead": {
-                "visible": false
-            },
-            "picture": {
-                "src": "../../images/sample/mascot_240x240.jpg",
-                "srcset": "../../images/sample/mascot_240x240.jpg 240w,
-                    ../../images/sample/mascot_320x320.jpg 320w,
-                    ../../images/sample/mascot_480x480.jpg 480w,
-                    ../../images/sample/mascot_640x640.jpg 640w",
-                "sizes": "(min-width: 768px) 33vw, 100%",
-                "alt": "Lynn University Fighting Knights"
-            },
-            "year": {
-                "long": "2015",
-                "short": "15"
-            },
-            "month": {
-                "long": "May",
-                "short": "May",
-                "digit": "05"
-            },
-            "day": {
-                "digit": "12",
-                "ofweek": "Tuesday"
+            "label": "Top News",
+            "styleModifier": "l-panel_inset lynn-gray-10",
+            "news": {
+                "items": [
+                    {
+                        "isFeature": true,
+                        "styleModifier": "l-row border-bottom",
+                        "card": {
+                            "type": true,
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemtype": "http://schema.org/NewsArticle"
+                            },
+                            "hasImage": true,
+                            "dateline": {
+                                "date": true
+                            },
+                            "description": "The week started with 20 teams and it came down to a pair of familiar faces as Lynn University's top-seeded men's golf team took on Nova Southeastern. In the end, the Fighting Knights could not overcome a couple of tough holes and finished as the 2015 NCAA Division II National Runners-up. This is the third runner-up finish for Lynn in the last five years.",
+                            "action": true
+                        },
+                        "picture": {
+                            "src": "../../images/sample/golf-m_480x206.jpg",
+                            "srcset": "../../images/sample/golf-m_480x206.jpg 480w,
+                                ../../images/sample/golf-m_560x242 560w,
+                                ../../images/sample/golf-m_768x331 768w,
+                                ../../images/sample/golf-m_1024x441 1024w,
+                                ../../images/sample/golf-m_1280x551 1280w",
+                            "sizes": "(min-width: 560px) calc(100% - 9rem), 100%",
+                            "alt": "Lynn University Men's Golf team"
+                        },
+                        "button": {
+                            "text": "Full story"
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Men's Golf finishes as national runner-up"
+                        },
+                        "subhead": {
+                            "visible": false
+                        },
+                        "year": false,
+                        "month": {
+                            "long": "May",
+                            "short": "May",
+                            "digit": "05"
+                        },
+                        "day": {
+                            "digit": "23",
+                            "ofweek": "Saturday"
+                        }
+                    },
+                    {
+                        "isFeature": false,
+                        "isThumbs": true,
+                        "styleModifier": "l-row-double-t",
+                        "items": [
+                            {
+                                "card": {
+                                    "type": true,
+                                    "styleModifier": "card_thumb",
+                                    "schema": {
+                                        "itemtype": "http://schema.org/NewsArticle"
+                                    },
+                                    "hasImage": true,
+                                    "dateline": {"date":true},
+                                    "action": false
+                                    
+                                },
+                                "headline": {
+                                    "islink": true,
+                                    "text": "Lynn University hires athletic director for national champion Fighting Knights"
+                                },
+                                "subhead": {
+                                    "visible": false
+                                },
+                                "picture": {
+                                    "src": "../../images/sample/mascot_240x240.jpg",
+                                    "srcset": "../../images/sample/mascot_240x240.jpg 240w,
+                                        ../../images/sample/mascot_320x320.jpg 320w,
+                                        ../../images/sample/mascot_480x480.jpg 480w,
+                                        ../../images/sample/mascot_640x640.jpg 640w",
+                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "alt": "Lynn University Fighting Knights"
+                                },
+                                "year": {
+                                    "long": "2015",
+                                    "short": "15"
+                                },
+                                "month": {
+                                    "long": "May",
+                                    "short": "May",
+                                    "digit": "05"
+                                },
+                                "day": {
+                                    "digit": "12",
+                                    "ofweek": "Tuesday"
+                                }
+                            },
+                            {
+                                "card": {
+                                    "type": true,
+                                    "styleModifier": "card_thumb",
+                                    "schema": {
+                                        "itemtype": "http://schema.org/NewsArticle"
+                                    },
+                                    "hasImage": true,
+                                    "dateline": {"date":true},
+                                    "action": false
+                                    
+                                },
+                                "headline": {
+                                    "islink": true,
+                                    "text": "Lynn University and American College Dublin partner to offer iPad-powered online MBA in Ireland"
+                                },
+                                "subhead": {
+                                    "visible": false
+                                },
+                                "picture": {
+                                    "src": "../../images/sample/ipad_240x240.jpg",
+                                    "srcset": "../../images/sample/ipad_240x240.jpg 240w,
+                                        ../../images/sample/ipad_320x320.jpg 320w,
+                                        ../../images/sample/ipad_480x480.jpg 480w,
+                                        ../../images/sample/ipad_640x640.jpg 640w",
+                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "alt": "iPad powered learning"
+                                },
+                                "year": {
+                                    "long": "2015",
+                                    "short": "15"
+                                },
+                                "month": {
+                                    "long": "May",
+                                    "short": "May",
+                                    "digit": "05"
+                                },
+                                "day": {
+                                    "digit": "06",
+                                    "ofweek": "Wednesday"
+                                }
+                            },
+                            {
+                                "card": {
+                                    "type": true,
+                                    "styleModifier": "card_thumb",
+                                    "schema": {
+                                        "itemtype": "http://schema.org/NewsArticle"
+                                    },
+                                    "hasImage": true,
+                                    "dateline": {"date":true},
+                                    "action": false
+                                    
+                                },
+                                "headline": {
+                                    "islink": true,
+                                    "text": "A new headquarters for business innovation"
+                                },
+                                "subhead": {
+                                    "visible": false
+                                },
+                                "picture": {
+                                    "src": "../../images/sample/ibc_240x240.jpg",
+                                    "srcset": "../../images/sample/ibc_240x240.jpg 240w,
+                                        ../../images/sample/ibc_320x320.jpg 320w,
+                                        ../../images/sample/ibc_480x480.jpg 480w,
+                                        ../../images/sample/ibc_640x640.jpg 640w",
+                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "alt": "Mohammed Indimi International Business Center"
+                                },
+                                "year": {
+                                    "long": "2014",
+                                    "short": "14"
+                                },
+                                "month": {
+                                    "long": "November",
+                                    "short": "Nov.",
+                                    "digit": "11"
+                                },
+                                "day": {
+                                    "digit": "03",
+                                    "ofweek": "Monday"
+                                }
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
-            "card": {
-                "type": true,
-                "styleModifier": "card_thumb",
-                "schema": {
-                    "itemtype": "http://schema.org/NewsArticle"
-                },
-                "hasImage": true,
-                "dateline": {"date":true},
-                "action": false
-                
-            },
-            "headline": {
-                "islink": true,
-                "text": "Lynn University and American College Dublin partner to offer iPad-powered online MBA in Ireland"
-            },
-            "subhead": {
-                "visible": false
-            },
-            "picture": {
-                "src": "../../images/sample/ipad_240x240.jpg",
-                "srcset": "../../images/sample/ipad_240x240.jpg 240w,
-                    ../../images/sample/ipad_320x320.jpg 320w,
-                    ../../images/sample/ipad_480x480.jpg 480w,
-                    ../../images/sample/ipad_640x640.jpg 640w",
-                "sizes": "(min-width: 768px) 33vw, 100%",
-                "alt": "iPad powered learning"
-            },
-            "year": {
-                "long": "2015",
-                "short": "15"
-            },
-            "month": {
-                "long": "May",
-                "short": "May",
-                "digit": "05"
-            },
-            "day": {
-                "digit": "06",
-                "ofweek": "Wednesday"
+            "label": "",
+            "styleModifier": "",
+            "snippets": {
+                "items": [
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Apply"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Learn"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "All styles welcome. Lynn's beautiful campus is located in the heart of one of the most strategic, international gateways to America. South Florida is a center of finance, culture and international trade. And it also just happens to be a tropical paradise. Learn more about life at Lynn.",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Live"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "We do career preparation differently. We work with students one-on-one and early on to find the right opportunities, experiences, internships, jobs and careers. And we do it one connection at a time.",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Work"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "<p><b>May 30</b><br /><a href=\"#\">Undergraduate open house</a></p><p><b>June 3</b><br /><a href=\"#\">iLynn and graduate open house</a></p><p><b>Oct. 4</b><br /><a href=\"#\">Undergraduate open house</p>",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Engage"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Connect"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "When you give to Lynn, you become our partner in reimagining the future. With your help, Lynn's talented students, employees and community are empowered to advance ideas, make new connections and build a better world.",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Give"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    },
+                    {
+                        "card": {
+                            "styleModifier": "card_priority_1",
+                            "schema": {
+                                "itemprop": "",
+                                "itemtype": ""
+                            },
+                            "hasImage": false,
+                            "hasContact": false,
+                            "description": "Lynn University's partners gain resources, enhance skills and get in the game with our national champs. Learn more about tuition benefits, intern programs, athletic sponsorships and other mutually beneficial initiatives for your organization.",
+                            "dateline": false,
+                            "action": false,
+                            "hasExpand": false
+                        },
+                        "headline": {
+                            "islink": true,
+                            "text": "Partner"
+                        },
+                        "subhead": {
+                            "visible": false
+                        }
+                    }
+                ]
             }
         },
         {
-            "card": {
-                "type": true,
-                "styleModifier": "card_thumb",
-                "schema": {
-                    "itemtype": "http://schema.org/NewsArticle"
-                },
-                "hasImage": true,
-                "dateline": {"date":true},
-                "action": false
-                
-            },
-            "headline": {
-                "islink": true,
-                "text": "A new headquarters for business innovation"
-            },
-            "subhead": {
-                "visible": false
-            },
-            "picture": {
-                "src": "../../images/sample/ibc_240x240.jpg",
-                "srcset": "../../images/sample/ibc_240x240.jpg 240w,
-                    ../../images/sample/ibc_320x320.jpg 320w,
-                    ../../images/sample/ibc_480x480.jpg 480w,
-                    ../../images/sample/ibc_640x640.jpg 640w",
-                "sizes": "(min-width: 768px) 33vw, 100%",
-                "alt": "Mohammed Indimi International Business Center"
-            },
-            "year": {
-                "long": "2014",
-                "short": "14"
-            },
-            "month": {
-                "long": "November",
-                "short": "Nov.",
-                "digit": "11"
-            },
-            "day": {
-                "digit": "03",
-                "ofweek": "Monday"
+            "label": "What's happenning now",
+            "styleModifier": "social-panel blue",
+            "social": {
+                "items": [{}]
             }
         }
     ]

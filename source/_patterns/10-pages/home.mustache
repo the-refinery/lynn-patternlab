@@ -4,18 +4,45 @@
     {{> molecules-banner }}
 {{/ banner }}
 
-<div class="l-panel_inset">
-    <h1 class="headline">Top news</h1>
-    <div class="l-panel-inner">
+{{# panels }}
+    <div class="l-panel {{ styleModifier }}">
+        <div class="l-page-container">
+            {{# label }}
+            <h1 class="panel-title headline">{{.}}</h1>
+            {{/ label }}
+    
+            {{# news }}
+            <div class="l-panel-inner">
+                {{# items }}
+                    {{# isFeature }}
+                    <div class="{{ styleModifier }}">{{> molecules-news }}</div>
+                    {{/ isFeature }}
+                    {{# isThumbs }}
+                    {{> organisms-news-strip-thumbnails }}
+                    {{/ isThumbs }}
+                {{/ items }}
+            </div>
+            {{/ news }}
 
-        <div class="l-row border-bottom">
-            {{# news-priority }}
-            {{> molecules-news }}
-            {{/ news-priority }}
+            {{# snippets }}
+            <div class="g g-4up">
+                {{# items }}
+                <div class="gi">
+                    {{> molecules-card }}
+                </div>
+                {{/ items }}
+            </div>
+            {{/ snippets }}
+
+            {{# social }}
+            {{> molecules-social }}
+            {{/ social }}
+
         </div>
-        {{> organisms-news-strip-thumbnails }}
     </div>
-</div>
+{{/ panels }}
+
+
 <nav id="nav-main" class="nav-flyout nav_gray js-fitwindow">
     <ul>
         <li><a href="#" class="menu-item">Apply</a></li>
