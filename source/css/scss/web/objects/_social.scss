@@ -1,0 +1,13 @@
+/**
+ *  Social media
+**/
+
+.social-panel {
+    .social-icons {
+        @include bp-min($bp-xl) {
+            position: absolute;
+            right: 0;
+            top: $space;
+        }
+    }
+}
