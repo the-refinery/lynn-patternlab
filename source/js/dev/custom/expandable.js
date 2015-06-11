@@ -66,7 +66,7 @@ $(document).ready(function(){
             // Start state
             $(element).addClass('js-enabled').not('.is-closed').toggleClass('is-closed');
             $nav.addClass('js-enabled').not('.is-closed').toggleClass('is-closed').prepend('<div class="js-button-close-flyout"> </div>');
-            $('.social-icons').clone().appendTo($nav);
+            $('.social-icons').first().clone().appendTo($nav);
 
             // Click event
             $(element).click(function(e) {
