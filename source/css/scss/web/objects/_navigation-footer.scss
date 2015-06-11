@@ -1,0 +1,11 @@
+.nav-footer {
+    @include bp-min($bp-s) {
+        text-align: center;
+    }
+
+    .inline-list li {
+        @include bp-max($bp-s) {
+            display: block;
+        }
+    }
+}
