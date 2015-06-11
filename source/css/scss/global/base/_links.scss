@@ -1,7 +1,11 @@
-a {
-	color: $lynn-blue;
+%defaultLink {
+    color: $lynn-blue;
 
-	&:active, &:focus, &:hover {
-		color: $lynn-gray-web;
-	}
+    &:active, &:focus, &:hover {
+        color: $lynn-gray-web;
+    } 
+}
+
+a {
+	@extend %defaultLink;
 }
