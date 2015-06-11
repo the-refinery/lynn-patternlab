@@ -1,5 +1,12 @@
 /*----- Modifiers -----*/
 
+/* Background colors */
+@for $i from 1 through length($color-classes) {
+	.bg-#{nth($color-classes, $i)} {
+		background-color: nth($color-list, $i);
+	}
+}
+
 /* Border */
 .border {
 	@include border;
@@ -249,10 +256,6 @@
 	}
 }
 
-/* Tint (background) */
-.tint {
-	background-color: tint($lynn-gray, 90%);
-}
 
 /* Widths */
 .full-width {
