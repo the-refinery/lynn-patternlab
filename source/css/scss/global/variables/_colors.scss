@@ -58,5 +58,10 @@ $inverted-color-map: (
 		"background": $secondary-orange,
 		"color": $white,
 		"hover": $accent-orange
-	)
+	),
+    "lynn-gray-10": (
+        "background": $lynn-gray-10,
+        "color": $lynn-gray,
+        "hover": $inverted-default-hover
+    )
 );

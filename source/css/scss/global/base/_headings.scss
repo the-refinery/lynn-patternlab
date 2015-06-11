@@ -66,3 +66,13 @@ h4, .sectionhead-2 {
 h5, .sectionsubhead {
 	@extend %sectionsubhead;
 }
+
+.inverted {
+	h1, .headline,
+	h2, .subhead,
+	h3, .sectionhead-1,
+	h4, .sectionhead-2,
+	h5, .sectionsubhead {
+		color: $white;
+	}
+}

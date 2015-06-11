@@ -71,25 +71,39 @@
 /* Panel */
 %l-panel {
     background-color: $white;
-    padding: $space;
-
-    @include bp-min($bp-l) {
-        padding: $space-double;
-    }
+    padding: $space; 
 }
 
 .l-panel {
     @extend %l-panel;
+
+    @include bp-min($bp-l) {
+        padding: $space-double 0;
+    }
+
+    @each $key in map_keys($inverted-color-map) {
+        $bg: map-get(map-get($inverted-color-map, $key), "background");
+        $color: map-get(map-get($inverted-color-map, $key), "color");
+
+        &.#{$key} {
+            background-color: $bg;
+            color: $color;
+
+            .panel-title {
+                color: $color;
+            }
+        }
+    }
 }
 
 .l-panel_inset {
-    @extend %l-page-container;
-
-    background-color: transparent;
-    margin: $space-double auto;
-
     .l-panel-inner {
+        @extend %defaultBody;
         @extend %l-panel;
+
+        @include bp-min($bp-l) {
+            padding: $space-double;
+        }
     }
 }
 
