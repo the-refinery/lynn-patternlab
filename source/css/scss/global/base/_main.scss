@@ -2,7 +2,7 @@
 	Main
 \*--------------------*/
 
-.body {
+%defaultBody {
 	background: {
 		color: $white;
 		image: none;
@@ -12,6 +12,10 @@
 	font: 100%/#{$line-height-base} $font;
 	margin: 0;
 	padding: 0;
+}
+
+.body {
+	@extend %defaultBody;
 
 	-webkit-font-smooting: antialiased;
 	-webkit-text-size-adjust: 100%;
