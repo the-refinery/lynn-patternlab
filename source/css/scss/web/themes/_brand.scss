@@ -8,14 +8,14 @@
 
 /* Mobile labels */
 .label-tone {
-	@include bp-max(m) {
+	@include bp-max($bp-m) {
 		content: "Tone of voice";
 		font-weight: 600;
 	}
 }
 
 .label-visual {
-	@include bp-max(m) {
+	@include bp-max($bp-m) {
 		content: "Visual translation";
 		font-weight: 600;
 	}
@@ -34,12 +34,12 @@
 		margin: 0 0 $space 0 !important;
 		padding: 0 !important;
 
-		@include bp-max(s) {
+		@include bp-max($bp-s) {
 			display: block !important;
 			width: 100% !important;
 		}
 
-		@include bp-min(s) {
+		@include bp-min($bp-s) {
 			float: left !important;
 			margin-right: $space !important;
 			width: 9em !important;
@@ -68,7 +68,7 @@
 		width: 25% !important;
 	}
 
-	@include bp-min(s) {
+	@include bp-min($bp-s) {
 		height: 6em !important;
 		margin-right: 0 !important;
 		width: 100% !important;

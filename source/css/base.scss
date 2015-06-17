@@ -51,6 +51,7 @@
  *  ....Navigation
  *  ........Column
  *  ........Dropdown
+ *  ........Footer
  *  ........Main........................Collapse main nav for small screens
  *  ........Take Action
  *  ........Modifiers
@@ -65,6 +66,7 @@
  *  ....Blocks
  *  ....Expandable
  *  ....Directory
+ *  ....Social
  *  ....Tables
  *  ........Compact.....................No padding
  *  ........Grid........................Borders for the table cells
@@ -128,6 +130,7 @@
 @import "scss/web/objects/header";
 @import "scss/web/objects/navigation-column";
 @import "scss/web/objects/navigation-dropdown";
+@import "scss/web/objects/navigation-footer";
 @import "scss/web/objects/navigation-main";
 @import "scss/web/objects/navigation-take-action";
 @import "scss/web/objects/navigation-modifiers";
@@ -145,6 +148,7 @@
 @import "scss/web/objects/blocks";
 @import "scss/web/objects/expandable";
 @import "scss/web/objects/directory";
+@import "scss/web/objects/social";
 
 /*~ Tables ~*/
 @import "scss/web/objects/table-compact";
