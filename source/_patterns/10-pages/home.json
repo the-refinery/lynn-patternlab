@@ -28,7 +28,7 @@
                     ../../images/sample/students-sign_1024x640.jpg 1024w,
                     ../../images/sample/students-sign_1280x800.jpg 1280w,
                     ../../images/sample/students-sign_2560x1600.jpg 2560w",
-                "sizes": "100%",
+                "sizes": "100vw",
                 "alt": "Lynn University: All styles welcome"
             },
             "headline" : {
@@ -75,7 +75,7 @@
                                 ../../images/sample/golf-m_768x331 768w,
                                 ../../images/sample/golf-m_1024x441 1024w,
                                 ../../images/sample/golf-m_1280x551 1280w",
-                            "sizes": "(min-width: 560px) calc(100% - 9rem), 100%",
+                            "sizes": "(min-width: 560px) calc(100vw - 9rem), 100vw",
                             "alt": "Lynn University Men's Golf team"
                         },
                         "button": {
@@ -129,7 +129,7 @@
                                         ../../images/sample/mascot_320x320.jpg 320w,
                                         ../../images/sample/mascot_480x480.jpg 480w,
                                         ../../images/sample/mascot_640x640.jpg 640w",
-                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "sizes": "(min-width: 768px) 33vw, 100vw",
                                     "alt": "Lynn University Fighting Knights"
                                 },
                                 "year": {
@@ -171,7 +171,7 @@
                                         ../../images/sample/ipad_320x320.jpg 320w,
                                         ../../images/sample/ipad_480x480.jpg 480w,
                                         ../../images/sample/ipad_640x640.jpg 640w",
-                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "sizes": "(min-width: 768px) 33vw, 100vw",
                                     "alt": "iPad powered learning"
                                 },
                                 "year": {
@@ -213,7 +213,7 @@
                                         ../../images/sample/ibc_320x320.jpg 320w,
                                         ../../images/sample/ibc_480x480.jpg 480w,
                                         ../../images/sample/ibc_640x640.jpg 640w",
-                                    "sizes": "(min-width: 768px) 33vw, 100%",
+                                    "sizes": "(min-width: 768px) 33vw, 100vw",
                                     "alt": "Mohammed Indimi International Business Center"
                                 },
                                 "year": {
@@ -420,7 +420,7 @@
             }
         },
         {
-            "label": "What's happenning now",
+            "label": "What's happening now",
             "styleModifier": "social-panel blue",
             "social": {
                 "items": [{}]
