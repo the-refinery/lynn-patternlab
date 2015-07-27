@@ -1,6 +1,6 @@
-/*--------------------*\
-    brand.lynn.edu
-\*--------------------*/
+/*------------------------------*\
+    One campus styleheet
+\*------------------------------*/
 
 /** TABLE OF CONTENTS
  *
@@ -170,6 +170,7 @@
 @import "scss/web/base/modifiers";
 //@import "scss/web/base/states";
 
+/* OVERRIDES */
 body.gray-bg {
     background-color: $white;
 }
