@@ -10,6 +10,7 @@
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-embed": "^0.2.1",
+    "grunt-env": "^0.4.4",
     "grunt-newer": "^0.7.0",
     "grunt-premailer": "^0.2.7",
     "grunt-preprocess": "^4.1.0",
