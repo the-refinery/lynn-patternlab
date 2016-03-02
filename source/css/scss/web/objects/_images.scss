@@ -1,23 +1,30 @@
-/* Image wrapper */
-.image-wrapper {
-    > img {
-        display: block;
-    }
-}
+/**~
+ *  _images.scss
+ *
+~**/
 
-/* Image replacement */
-.image-replace {
+/** Image replacement **/
+.#{$css-prefix}image-replace {
     background-size: contain;
     display: inline-block;
     overflow: hidden;
     position: relative;
     
     span {
+        background: transparent no-repeat left top;
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
+    }
+}
+
+
+/* Image wrapper */
+.image-wrapper {
+    > img {
+        display: block;
     }
 }
 

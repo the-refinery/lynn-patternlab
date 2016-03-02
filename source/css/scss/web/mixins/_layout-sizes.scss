@@ -1,0 +1,37 @@
+/**~
+ *  _layout-sizes.scss
+ *
+ *  Mixin helper for building layout size classes.
+ *
+~**/
+
+@mixin l-width($columns, $breakpoint: null, $max: false) {
+    $bp-string: null;
+
+    // Loop through the columns
+    @each $column in $columns {
+        // Check for breakpoints
+        @if ($breakpoint != null) {
+            $bp-string: '-' + $breakpoint + if($max, '-max', '');
+        }
+
+        // A single column
+        @if ($column == 1) {
+            .#{$css-prefix}l-size#{$bp-string}--1-of-#{$column} {
+                width: 100%;
+            }
+        }
+
+        @else {
+            @for $item from 1 through $column {
+                @for $i from 1 through $item {
+                    @if $item <=6 or $item == 8 or $item == 12 {
+                        .#{$css-prefix}l-size#{$bp-string}--#{$i}-of-#{$item} {
+                            width: ($i / $item) * 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

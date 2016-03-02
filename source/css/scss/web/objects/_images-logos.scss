@@ -1,0 +1,35 @@
+/**~
+ *  _images-logos.scss
+~**/
+
+/** Lynn **/
+.#{$css-prefix}logo {
+    height: 55px;
+    width: 130px;
+
+    /* Transparent */
+    span {
+        background-image: url('#');
+    }
+
+    /* Non-transparent */
+    &.#{$css-prefix}image-replace span {
+        background-image: url('//static.lynn.edu/logos/lynn/web/lynn-logotype-130.gif');
+    }
+}
+
+/** iLynn **/
+.#{$css-prefix}ilynn-logo {
+    height: 54px;
+    width: 212px;
+
+    /* Transparent */
+    span {
+        background-image: url('//www.lynn.edu/ilynn/ilynn-logo-hinted-212x50.png');
+    }
+
+    /* Non-transparent */
+    &.#{$css-prefix}image-replace span {
+        background-image: url('#');
+    }
+}

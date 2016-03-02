@@ -1,3 +1,10 @@
+/**~
+ *  _breakpoints.scss
+ *
+ *  Web specific breakpoint variables
+ *
+~**/
+
 $breakpoints: (
     s:      480px,      // 30rem
     m:      560px,      // 35rem
@@ -8,9 +15,37 @@ $breakpoints: (
 );
 
 // Shorthand (single usage)
-$bp-s: map-get($breakpoints, s);
-$bp-m: map-get($breakpoints, m);
-$bp-l: map-get($breakpoints, l);
-$bp-xl: map-get($breakpoints, xl);
-$bp-xxl: map-get($breakpoints, xxl);
-$bp-jumbo: map-get($breakpoints, jumbo);
+$bp-s:      map-get($breakpoints, s);
+$bp-m:      map-get($breakpoints, m);
+$bp-l:      map-get($breakpoints, l);
+$bp-xl:     map-get($breakpoints, xl);
+$bp-xxl:    map-get($breakpoints, xxl);
+$bp-jumbo:  map-get($breakpoints, jumbo);
+
+// Max column widths per breakpoint
+$layout: (
+    "s": (
+        "breakpoint": $bp-s,
+        "columns": 2,
+    ),
+    "m": (
+        "breakpoint": $bp-m,
+        "columns": 2,
+    ),
+    "l": (
+        "breakpoint": $bp-l,
+        "columns": 4,
+    ),
+    "xl": (
+        "breakpoint": $bp-xl,
+        "columns": 6,
+    ),
+    "xxl": (
+        "breakpoint": $bp-xxl,
+        "columns": 8,
+    ),
+    "jumbo": (
+        "breakpoint": $bp-jumbo,
+        "columns": 16,
+    ),
+);

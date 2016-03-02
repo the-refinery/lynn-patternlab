@@ -1,0 +1,64 @@
+/**~
+ *  master-web.scss
+ *
+ *  The master stylesheet for the web site. This file will likely be rather 
+ *  large as it contains all layout and style settings for every element. This 
+ *  should be used for development purposes. Smaller and lighter stylesheets 
+ *  should be developed with selected elements for productions.
+ *
+~**/
+
+/**
+ *  Table of Contents
+ *
+ *  TOOLS
+ *      Add-ons
+ *          Compass
+ *      Mixins
+ *          Breakpoints
+ *          Layout - sizes
+ *      Variables
+ *          Globals
+ *          Colors
+ *          Breakpoints
+ *  STRUCTURE
+ *      Page layout
+ *  OBJECTS
+ *      Images
+ *          Image containers
+ *          Logos
+**/
+
+/*****************************************************************************\
+    TOOLS
+\*****************************************************************************/
+
+/** Add-ons **/
+@import "compass";
+
+/** Mixins **/
+@import "scss/global/mixins/breakpoints";
+@import "scss/web/mixins/layout-sizes";
+
+/** Variables **/
+@import "scss/global/variables/globals";
+@import "scss/global/variables/colors";
+
+@import "scss/web/variables/breakpoints";
+
+
+/*****************************************************************************\
+    STRUCTURE
+\*****************************************************************************/
+
+/** Page header **/
+@import "scss/web/objects/page-layout";
+
+
+/*****************************************************************************\
+    OBJECTS
+\*****************************************************************************/
+
+/** Images **/
+@import "scss/web/objects/images";
+@import "scss/web/objects/images-logos";

@@ -1,0 +1,19 @@
+/**~
+ *  _page-layout.scss
+~**/
+
+@include l-width(12);
+
+@each $point in map-keys($layout) {
+
+    $breakpoint: map-get(map-get($layout, $point), 'breakpoint');
+    $columns: map-get(map-get($layout, $point), 'columns');
+
+    @include bp-max($breakpoint) {
+        @include l-width($columns, #{$point}, true);
+    }
+
+    @include bp-min($breakpoint) {
+        @include l-width($columns, #{$point});
+    }
+}
