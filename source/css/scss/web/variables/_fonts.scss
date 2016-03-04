@@ -1,12 +1,42 @@
-/*
- *  Variables: Fonts
+/**~
+ *  _font.scss
  *
- *  Define and set variables for custom fonts
- */
+ *  Font variables
+ *
+~**/
 
-// Helvetica Neue
+
 @import url(//fast.fonts.net/cssapi/4502be6a-d4d2-41ad-988f-72e9420f9860.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
-// Family
-$font-helveticaneue: 'Neue Helvetica W01',$font;
-$font: $font-helveticaneue;
+
+/** Base **/
+$font-family-base: 'Neue Helvetica W01',Helvetica,Arial,sans-serif;
+$font-size-base: 16px;
+
+
+/** Fonts **/
+$font: $font-family-base;
+
+
+/** Sizes **/
+$fontsizes: (
+    base:   1,
+    s:      .75,
+);
+
+/** REM - Use for modules on the page **/
+$font-size--rem:        map-get($fontsizes, base) + rem;
+$font-size-s--rem:      map-get($fontsizes, s) + rem;
+
+/** EM - Use for text elements on the page **/
+$font-size--em:         map-get($fontsizes, base) + em;
+$font-size-s--em:       map-get($fontsizes, s) + em;
+                        
+/** PX - Fallback **/
+$font-size--px:         (map-get($fontsizes, base)  * $font-size-base);
+$font-size-s--px:       (map-get($fontsizes, s)  * $font-size-base);
+
+
+/** Weight **/
+$font-weight-bold:      700;
