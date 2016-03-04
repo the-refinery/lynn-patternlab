@@ -21,6 +21,16 @@ $secondary-green:   rgb(179,213,125);
 $secondary-orange:  rgb(253,170,99);
 
 /** Tints **/
+$lynn-blue-90:  tint($lynn-blue, 10%);
+$lynn-blue-80:  tint($lynn-blue, 20%);
+$lynn-blue-70:  tint($lynn-blue, 30%);
+$lynn-blue-60:  tint($lynn-blue, 40%);
+$lynn-blue-50:  tint($lynn-blue, 50%);
+$lynn-blue-40:  tint($lynn-blue, 60%);
+$lynn-blue-30:  tint($lynn-blue, 70%);
+$lynn-blue-20:  tint($lynn-blue, 80%);
+$lynn-blue-10:  tint($lynn-blue, 90%);
+
 $lynn-gray-web-90:  tint($lynn-gray-web, 10%);
 $lynn-gray-web-80:  tint($lynn-gray-web, 20%);
 $lynn-gray-web-70:  tint($lynn-gray-web, 30%);
