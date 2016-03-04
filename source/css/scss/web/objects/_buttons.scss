@@ -1,3 +1,132 @@
+/**~
+ *  _buttons.scss
+~**/
+
+
+/** Base button **/
+.#{$css-prefix}button {
+    background: transparent;
+    border: {
+        color: transparent;
+        radius: 0;
+        style: solid;
+        width: 0;
+    }
+    color: $lynn-blue;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font;
+    //
+    position: relative;
+    text-decoration: none;
+    white-space: normal;
+
+    /* Elements */
+    &__icon {
+        padding: $space $space-half;
+    }
+
+    &__text {}
+}
+
+/** Button colors **/
+%partial-button--blue {
+    background-color: $lynn-blue;
+    border-color: $lynn-blue;
+    color: $white;
+}
+
+%partial-button--gray {
+    background-color: $white;
+    border-color: $lynn-gray-web-70;
+    color: $lynn-gray-web-70;
+}
+
+%partial-button--white {
+    background-color: $white;
+    border-color: $lynn-blue;
+    color: $lynn-blue;
+}
+
+/** Pill button **/
+%partial-button--pill {
+    border: {
+        radius: 3em;
+        style: solid;
+        width: 2px;
+    }
+    font-weight: $font-weight-bold;
+    padding: $pad $pad-double;
+}
+
+.#{$css-prefix}button--pill {
+    @extend %partial-button--pill;
+    @extend %partial-button--blue;
+
+    &:hover {
+        @extend %partial-button--white;
+    }
+}
+
+.#{$css-prefix}button--pill-gray {
+    @extend %partial-button--pill;
+    @extend %partial-button--gray;
+
+    &:hover {
+        @extend %partial-button--white;
+    }
+}
+
+.#{$css-prefix}button--pill-white {
+    @extend %partial-button--pill;
+    @extend %partial-button--white;
+
+    &:hover {
+        @extend %partial-button--blue;
+    }
+}
+
+/** Global nav button **/
+.#{$css-prefix}button--nav {
+    border: none;
+    font-size: $font-size--em;
+    font-weight: $font-weight-bold;
+    margin: 0 $space;
+    padding: 0;
+
+    @include bp-max($bp-l) {
+        margin: 0;
+    }
+
+    &:hover {
+        color: $lynn-blue-70;
+    }
+
+    .#{$css-prefix}button__icon {
+        @include bp-max($bp-l) {
+            padding: $space;
+        }
+    }
+
+    .#{$css-prefix}button__text {
+        @include bp-max($bp-l) {
+            display: none;
+        }
+    }
+}
+
+
+/** Button group **/
+.#{$css-prefix}button-group {
+    > li {
+        display: inline-block;
+    }
+}
+
+
+
+/** Legacy
+
 .button,
 a.button {
     background: $accent-orange;
@@ -30,3 +159,5 @@ a.button-large {
     font-size: $font-size-l;
     padding: $pad-half $pad-double;
 }
+
+**/

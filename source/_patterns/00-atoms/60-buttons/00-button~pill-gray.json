@@ -1,0 +1,13 @@
+{
+    "button": {
+        "aria": {
+            "popup": false
+        },
+        "icon": {
+            "styleModifier": ""
+        },
+        "styleModifier": "lynn-button--pill-gray",
+        "text": "Button text",
+        "url": "#"
+    }
+}

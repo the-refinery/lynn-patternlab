@@ -1,1 +1,6 @@
-<a href="{{ button.url }}" class="button {{ button.styleModifier }}" itemprop="url">{{ button.text }}</a>
+<a href="{{ button.url }}" class="{{ css-prefix }}button {{ button.styleModifier }}" {{# button.aria.popup }}aria-haspopup="true"{{/ button.aria.popup }} itemprop="url">
+    {{# button.icon.styleModifier }}
+    <span class="{{ css-prefix }}button__icon {{.}}"> </span>
+    {{/ button.icon.styleModifier }}
+    <span class="{{ css-prefix }}button__text">{{ button.text }}</span>
+</a>
