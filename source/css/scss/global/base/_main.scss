@@ -14,7 +14,7 @@
 	padding: 0;
 }
 
-.body {
+.#{$css-prefix}body {
 	@extend %defaultBody;
 
 	-webkit-font-smooting: antialiased;
