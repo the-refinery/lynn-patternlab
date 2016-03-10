@@ -36,6 +36,8 @@
  *      Images
  *          Image containers
  *          Logos
+ *      Navigation
+ *          Breadcrumbs
 **/
 
 /*****************************************************************************\
@@ -89,3 +91,6 @@
 /** Images **/
 @import "scss/web/objects/images";
 @import "scss/web/objects/images-logos";
+
+/** Navigation - Breadcrumbs **/
+@import "scss/web/objects/nav-breadcrumbs";

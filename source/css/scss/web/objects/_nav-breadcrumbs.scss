@@ -1,0 +1,36 @@
+/**~
+ *  _nav-breadcrumbs.scss
+~**/
+
+.#{$css-prefix}breadcrumbs {
+    > li {
+        display: inline-block;
+        font-size: $font-size-s--em;
+        line-height: #{$line-height-most}rem;
+
+        &:after {
+            content: "/";
+            margin: 0 $pad-half;
+        }
+
+        &:last-child::after {
+            content: "";
+            margin: 0;
+        }
+
+        a {
+            color: $lynn-gray;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    > li.active {
+        a {
+            color: $accent-blue;
+        }
+    }
+}
