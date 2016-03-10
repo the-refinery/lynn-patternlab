@@ -1,5 +1,28 @@
 var comments = {
 "comments" : [
+    {
+        "el": ".lynn-button",
+        "title": "Button",
+        "comment": "The default <code>.lynn-button</code> removes all the native button and link styling and is displayed as a simple text link. All button variations are built by appending additional classes to <code>.lynn-button</code>."
+    },
+    {
+        "el": ".lynn-button--pill",
+        "title": "Button - Pill",
+        "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button. This is a blue button with white text, that transforms to a white button with blue text and outline when interacted with."
+    },
+    {
+        "el": ".lynn-button--pill-white",
+        "title": "Button - Pill - White",
+        "comment": "A variant of the pill button that inverts the color scheme to a white background with blue text and outline can be created with the <code>.lynn-button--pill-white</code> class."
+    },
+    {
+        "el": ".lynn-button--pill-gray",
+        "title": "Button - Pill - White",
+        "comment": "Use the <code>.lynn-button--pill-gray</code> class to create a pill button that begins with gray text and outline."
+    },
+
+
+
 	{
         "el": ".hgroup .headline",
         "title": "Headline",
