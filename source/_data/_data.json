@@ -20,6 +20,24 @@
         "url": "#"
     },
 
+    "list": {
+        "styleModifier": "",
+        "items": [
+            {
+                "item": "List item",
+                "styleModifier": ""
+            },
+            {
+                "item": "List item",
+                "styleModifier": ""
+            },
+            {
+                "item": "List item",
+                "styleModifier": ""
+            }
+        ]
+    },
+
     "breadcrumbs": [
         {
             "title": "Home",

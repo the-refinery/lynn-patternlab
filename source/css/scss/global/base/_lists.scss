@@ -1,8 +1,33 @@
+/**~
+ *  _lists.scss - Global
+~**/
+
+/** Default **/
 ol, ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    list-style: {
+        image: none;
+        position: outside;
+        type: none;
+    }
+    margin: 0;
+    padding: 0;
 }
+
+/** Ordered list **/
+.#{$css-prefix}list--ordered {
+    list-style: {
+        image: none;
+        position: outside;
+        type: decimal;
+    }
+    margin-left: $space-and-half;
+}
+
+
+/** Unordered list **/
+
+
+
 
 /* Definition Lists */
 dl {

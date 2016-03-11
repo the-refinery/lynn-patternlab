@@ -1,0 +1,19 @@
+{
+    "list": {
+        "styleModifier": "lynn-list--ordered",
+        "items": [
+            {
+                "item": "Numeric ordered list",
+                "styleModifier": ""
+            },
+            {
+                "item": "List item",
+                "styleModifier": ""
+            },
+            {
+                "item": "List item",
+                "styleModifier": ""
+            }
+        ]
+    }
+}
