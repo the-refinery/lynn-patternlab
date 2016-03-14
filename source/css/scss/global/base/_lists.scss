@@ -25,6 +25,14 @@ ol, ul {
 
 
 /** Unordered list **/
+.#{$css-prefix}list--disc {
+    list-style: {
+        image: none;
+        position: outside;
+        type: disc;
+    }
+    margin-left: $space-and-half;
+}
 
 
 

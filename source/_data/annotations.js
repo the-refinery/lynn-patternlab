@@ -1,25 +1,53 @@
 var comments = {
 "comments" : [
-    {
-        "el": ".lynn-button",
-        "title": "Button",
-        "comment": "The default <code>.lynn-button</code> removes all the native button and link styling and is displayed as a simple text link. All button variations are built by appending additional classes to <code>.lynn-button</code>."
-    },
-    {
-        "el": ".lynn-button--pill",
-        "title": "Button - Pill",
-        "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button. This is a blue button with white text, that transforms to a white button with blue text and outline when interacted with."
-    },
-    {
-        "el": ".lynn-button--pill-white",
-        "title": "Button - Pill - White",
-        "comment": "A variant of the pill button that inverts the color scheme to a white background with blue text and outline can be created with the <code>.lynn-button--pill-white</code> class."
-    },
-    {
-        "el": ".lynn-button--pill-gray",
-        "title": "Button - Pill - White",
-        "comment": "Use the <code>.lynn-button--pill-gray</code> class to create a pill button that begins with gray text and outline."
-    },
+// Atoms
+// * Buttons
+{
+    "el": ".lynn-button",
+    "title": "Button",
+    "comment": "The default <code>.lynn-button</code> removes all the native button and link styling and is displayed as a simple text link. All button variations are built by appending additional classes to <code>.lynn-button</code>."
+},
+{
+    "el": ".lynn-button--pill",
+    "title": "Button - Pill",
+    "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button. This is a blue button with white text, that transforms to a white button with blue text and outline when interacted with."
+},
+{
+    "el": ".lynn-button--pill-white",
+    "title": "Button - Pill - White",
+    "comment": "A variant of the pill button that inverts the color scheme to a white background with blue text and outline can be created with the <code>.lynn-button--pill-white</code> class."
+},
+{
+    "el": ".lynn-button--pill-gray",
+    "title": "Button - Pill - White",
+    "comment": "Use the <code>.lynn-button--pill-gray</code> class to create a pill button that begins with gray text and outline."
+},
+
+// * Lists
+{
+    "el": ".lynn-list--ordered",
+    "title": "List - ordered",
+    "comment": "Use the <code>.lynn-list--ordered</code> class to assign numerical markers to list items in ordered lists not part of a <code>.lynn-text-content</code> container."
+},
+{
+    "el": ".lynn-list--disc",
+    "title": "List - unordered",
+    "comment": "Use the <code>.lynn-list--disc</code> class to assign disc markers to list items in unordered lists not part of a <code>.lynn-text-content</code> container."
+},
+{
+    "el": ".lynn-list--horizontal",
+    "title": "List - horizontal",
+    "comment": "To align a list horizontally in a row from left to right, add the <code>.lynn-list--horizontal</code> class."
+},
+
+// Molecules
+// * Navigation
+{
+    "el": ".lynn-breadcrumbs",
+    "title": "Breadcrumbs",
+    "comment": "The <code>.lynn-breadcrumbs</code> class automatically adds the separator(s) and changes the color of the last item. Breadcrumbs use an <code>ol</code> because the order is important. Since this show be displayed in a row, the <code>.lynn-list--horizontal</code> is used."
+},
+
 
 
 

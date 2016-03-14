@@ -7,6 +7,7 @@
     "bodyClass": "lynn-body",
 
     "navGlobal": true,
+    "navBreadcrumb": true,
 
     "button": {
         "aria": {
@@ -21,35 +22,24 @@
     },
 
     "list": {
-        "styleModifier": "",
         "items": [
             {
-                "item": "List item",
+                "title": "List item",
+                "url": "",
                 "styleModifier": ""
             },
             {
-                "item": "List item",
+                "title": "List item",
+                "url": "",
                 "styleModifier": ""
             },
             {
-                "item": "List item",
+                "title": "List item",
+                "url": "",
                 "styleModifier": ""
             }
         ]
     },
-
-    "breadcrumbs": [
-        {
-            "title": "Home",
-            "url": "#",
-            "styleModifier": ""
-        },
-        {
-            "title": "Level 1",
-            "url": "#",
-            "styleModifier": "active"
-        }
-    ],
 
 
     

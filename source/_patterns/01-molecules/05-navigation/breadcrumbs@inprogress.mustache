@@ -1,9 +1,13 @@
+{{# navBreadcrumb }}
 <nav role="navigation" aria-label="breadcrumbs">
-    <ol class="{{css-prefix}}breadcrumbs" aria-labelledby="breadcrumbs">
-        {{# breadcrumbs }}
+    {{# list }}
+    <ol class="{{css-prefix}}breadcrumbs {{css-prefix}}list--horizontal" aria-labelledby="breadcrumbs">
+        {{# items }}
         <li class="{{ styleModifier }}">
             <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
         </li>
-        {{/ breadcrumbs }}
+        {{/ items }}
     </ol>
+    {{/ list }}
 </nav>
+{{/ navBreadcrumb }}

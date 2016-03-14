@@ -1,6 +1,6 @@
 {
     "list": {
-        "styleModifier": "lynn-list--ordered",
+        "styleModifier": "lynn-list--disc",
         "items": [
             {
                 "title": "List item",

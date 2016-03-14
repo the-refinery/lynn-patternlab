@@ -1,18 +1,18 @@
 {
     "list": {
-        "styleModifier": "lynn-list--ordered",
+        "styleModifier": "lynn-list--horizontal",
         "items": [
             {
                 "title": "List item",
-                "styleModifier": ""
+                "styleModifier": "lynn-list__item"
             },
             {
                 "title": "List item",
-                "styleModifier": ""
+                "styleModifier": "lynn-list__item"
             },
             {
                 "title": "List item",
-                "styleModifier": ""
+                "styleModifier": "lynn-list__item"
             }
         ]
     }

@@ -1,0 +1,24 @@
+{
+    "navBreadcrumb": {
+        "list": {
+            "styleModifier": "",
+            "items": [
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Home",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Level 1",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item active",
+                    "title": "Level 2",
+                    "url": "#"
+                }
+            ]
+        }
+    }
+}

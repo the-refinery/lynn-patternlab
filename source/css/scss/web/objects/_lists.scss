@@ -1,15 +1,11 @@
-ul {
-	&.plain-list {
-		list-style: none;
-		margin-left: 0;
-	}
+/**~
+ *	_lists.scss - Web
+~**/
 
-	&.inline-list li {
+/** Horizontal **/
+.#{$css-prefix}list--horizontal {
+	> .#{$css-prefix}list__item {
 		display: inline-block;
-		margin-right: $space;
-
-		&:last-of-type {
-			margin-right: 0;
-		}
+		vertical-align: middle;
 	}
 }
