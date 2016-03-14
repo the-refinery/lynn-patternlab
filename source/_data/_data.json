@@ -13,11 +13,9 @@
         "aria": {
             "popup": false
         },
-        "icon": {
-            "styleModifier": ""
-        },
+        "icon": false,
         "styleModifier": "",
-        "text": "Button text",
+        "title": "Button text",
         "url": "#"
     },
 

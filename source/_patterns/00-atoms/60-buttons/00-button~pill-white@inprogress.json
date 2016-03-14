@@ -3,11 +3,9 @@
         "aria": {
             "popup": false
         },
-        "icon": {
-            "styleModifier": ""
-        },
+        "icon": false,
         "styleModifier": "lynn-button--pill-white",
-        "text": "Button text",
+        "title": "Button text",
         "url": "#"
     }
 }
