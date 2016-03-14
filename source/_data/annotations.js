@@ -8,6 +8,11 @@ var comments = {
     "comment": "The default <code>.lynn-button</code> removes all the native button and link styling and is displayed as a simple text link. All button variations are built by appending additional classes to <code>.lynn-button</code>."
 },
 {
+    "el": ".lynn-button__icon",
+    "title": "Button - Icon with text",
+    "comment": "Buttons can include an icon along with text. To do so, add a <code>.lynn-button__icon</code> element to the button."
+},
+{
     "el": ".lynn-button--pill",
     "title": "Button - Pill",
     "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button. This is a blue button with white text, that transforms to a white button with blue text and outline when interacted with."
