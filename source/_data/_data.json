@@ -6,7 +6,6 @@
     "htmlClass": "pl",
     "bodyClass": "lynn-body",
 
-    "navGlobal": true,
     "navBreadcrumb": true,
 
     "button": {
@@ -37,6 +36,56 @@
                 "styleModifier": ""
             }
         ]
+    },
+
+    "navGlobal": {
+        "list": {
+            "styleModifier": "lynn-list--horizontal",
+            "items": [
+                {
+                    "title": "Visited pages",
+                    "styleModifier": "lynn-list__item",
+                    "button": {
+                        "aria": {
+                            "popup": true
+                        },
+                        "icon": {
+                            "styleModifier": "fa fa-file fa-lg"
+                        },
+                        "styleModifier": "lynn-button--nav",
+                        "text": "Visited pages"
+                    }
+                },
+                {
+                    "title": "Search",
+                    "styleModifier": "lynn-list__item",
+                    "button": {
+                        "aria": {
+                            "popup": true
+                        },
+                        "icon": {
+                            "styleModifier": "fa fa-search fa-lg"
+                        },
+                        "styleModifier": "lynn-button--nav",
+                        "text": "Search"
+                    }
+                },
+                {
+                    "title": "Menu",
+                    "styleModifier": "lynn-list__item",
+                    "button": {
+                        "aria": {
+                            "popup": true
+                        },
+                        "icon": {
+                            "styleModifier": "fa fa-bars fa-lg"
+                        },
+                        "styleModifier": "lynn-button--nav",
+                        "text": "Menu"
+                    }
+                }
+            ]
+        }
     },
 
 

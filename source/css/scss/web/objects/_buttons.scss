@@ -103,7 +103,7 @@
 
     .#{$css-prefix}button__icon {
         @include bp-max($bp-l) {
-            padding: $space;
+            padding: 0 $space;
         }
     }
 
