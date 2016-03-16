@@ -88,6 +88,11 @@
         }
     },
 
+    "testimonial": {
+        "quote": "<p>\"Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.\"</p>",
+        "citation": "Student Name 'XX, Program title"
+    },
+
 
     
     "bp": {
