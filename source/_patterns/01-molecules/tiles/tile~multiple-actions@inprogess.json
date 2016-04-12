@@ -1,0 +1,30 @@
+{
+    "tile": {
+        "title": "Tile",
+        "description": "Use a tile to create a small group of related items.",
+        "action": [
+            {
+                "button": {
+                    "aria": {
+                        "popup": false
+                    },
+                    "icon": false,
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Button text",
+                    "url": "#"
+                }
+            },
+            {
+                "button": {
+                    "aria": {
+                        "popup": false
+                    },
+                    "icon": false,
+                    "styleModifier": "",
+                    "title": "Button two text",
+                    "url": "#"
+                }
+            }
+        ]
+    }
+}
