@@ -1,3 +1,15 @@
+/**~
+ *  _images.scss
+ *
+~**/
+
+/** Responsive images **/
+%partial-image--responsive {
+    display: block;
+    width: 100%;
+}
+
+
 figure {
 	margin-bottom: $space;
 }
@@ -7,7 +19,7 @@ iframe {
 }
 
 /* Flexible media*/
-img, video, object {
-	max-width: 100%;
+video, object {
+	@extend %partial-image--responsive;
 	height: auto;
 }

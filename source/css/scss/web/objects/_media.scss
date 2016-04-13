@@ -1,0 +1,51 @@
+/**~
+ *  _media.scss
+ *
+ *  Media objects place text and figures next to each other
+~**/
+
+.#{$css-prefix}media {
+    @include flexbox;
+
+    @include bp-max($bp-m) {
+        @include flex-flow(column, nowrap);
+    }
+
+    @include bp-min($bp-m) {
+        @include flex-flow(row, nowrap);
+    }
+
+    &__figure {
+        img {
+            @extend %partial-image--responsive;
+        }
+    }
+
+    &__caption {}
+}
+
+/** Billboard **/
+.#{$css-prefix}media--billboard {
+    align-items: center;
+    text-align: center;
+
+    %partial-media--billboard-flex {
+        @include bp-min($bp-m) {
+            flex: 0 1 50%;
+        }
+    }
+
+    .#{$css-prefix}media__figure {
+        @extend %partial-media--billboard-flex;
+    }
+
+    .#{$css-prefix}media__caption {
+        @extend %partial-media--billboard-flex;
+
+        @include bp-min($bp-m) {
+            margin: auto;
+            width: 70%;
+        }
+    }
+}
+

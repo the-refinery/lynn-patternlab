@@ -18,6 +18,13 @@
         "url": "#"
     },
 
+    "image": {
+        "square": {
+            "source": "http://placehold.it/240x240",
+            "alt": "Square image"
+        }
+    },
+
     "list": {
         "items": [
             {
