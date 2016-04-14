@@ -61,3 +61,18 @@
         width: 70%;
     }
 }
+
+/** Testimonial **/
+.#{$css-prefix}media--testimonial {
+    .#{$css-prefix}media__figure {
+        @include flex(1 1 0);
+
+        @include bp-min($bp-m) {
+            max-width: 400px;
+        }
+    }
+
+    .#{$css-prefix}media__caption {
+        font-size: $font-size-one-and-half--rem;
+    }
+}

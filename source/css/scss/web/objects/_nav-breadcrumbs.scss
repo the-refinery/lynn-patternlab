@@ -4,7 +4,7 @@
 
 .#{$css-prefix}breadcrumbs {
     > .#{$css-prefix}list__item {
-        font-size: $font-size-s--em;
+        font-size: $font-size-three-fourths--em;
         line-height: #{$line-height-most}rem;
 
         &::after {
