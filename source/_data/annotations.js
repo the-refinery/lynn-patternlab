@@ -50,7 +50,31 @@ var comments = {
 {
     "el": ".lynn-breadcrumbs",
     "title": "Breadcrumbs",
-    "comment": "The <code>.lynn-breadcrumbs</code> class automatically adds the separator(s) and changes the color of the last item. Breadcrumbs use an <code>ol</code> because the order is important. Since this show be displayed in a row, the <code>.lynn-list--horizontal</code> is used."
+    "comment": "The <code>.lynn-breadcrumbs</code> class automatically adds the separator(s) and changes the color of the last item. Breadcrumbs use an <code>ol</code> because the order is important. Since this should be displayed in a row, the <code>.lynn-list--horizontal</code> is used."
+},
+
+// * Media
+{
+    "el": ".lynn-media",
+    "title": "Media",
+    "comment": "The media object is used to display text and figures next to each other. A <code>.lynn-media</code> class is wrapped around separate <code>.lynn_media__figure</code> and <code>.lynn-media__caption</code> elements."
+},
+{
+    "el": ".lynn-media-reverse",
+    "title": "Media - Reverse",
+    "comment": "Applying the <code>.lynn-media--reverse</code> class will modify the media object to flip the horizontal display of the figure and caption."
+},
+{
+    "el": ".lynn-media--billboard",
+    "title": "Media - Billboard",
+    "comment": "Applying the <code>.lynn-media--billboard</code> class will modify the media object to equally split the figure and text 50%-50%."
+},
+
+// * Tiles
+{
+    "el": ".lynn-tile",
+    "title": "Tile",
+    "comment": "A group of related items can be presented in a tile with the <code>.lynn-tile</code> class."
 },
 
 
