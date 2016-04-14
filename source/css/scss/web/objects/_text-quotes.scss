@@ -1,0 +1,14 @@
+/**~
+ *  _text-quotes.scss
+~**/
+
+.#{$css-prefix}quote {
+    &__detail {
+        line-height: $line-height-less;
+        padding-bottom: $space;
+    }
+    &__source {
+        font-size: $font-size-three-fourths--em;
+        font-weight: $font-weight-bold;
+    }
+}

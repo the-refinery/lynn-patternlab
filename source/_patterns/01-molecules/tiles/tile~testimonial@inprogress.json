@@ -1,0 +1,10 @@
+{
+    "tile": {
+        "title": false,
+        "description": false,
+        "testimonial": {
+            "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+            "source": "Student Name 'XX, Program title"
+        }
+    }
+}
