@@ -8,6 +8,7 @@
         },
         "styleModifier": "lynn-media--billboard",
         "tile": {
+            "styleModifier": "",
             "title": "Media",
             "description": "Media objects include text and figures next to each other. Text blurbs should be concise and limited in character count.",
             "action": [

@@ -21,7 +21,16 @@
         }
     }
 
-    &__caption {}
+    &__caption {
+        @include flex(1 1 0);
+    }
+}
+
+/** Reverse **/
+.#{$css-prefix}media--reverse {
+    @include bp-min($bp-m) {
+        @include flex-flow(row-reverse, nowrap);
+    }
 }
 
 /** Billboard **/
@@ -31,7 +40,7 @@
 
     %partial-media--billboard-flex {
         @include bp-min($bp-m) {
-            flex: 0 1 50%;
+            @include flex(1 1 50%);
         }
     }
 
@@ -41,11 +50,14 @@
 
     .#{$css-prefix}media__caption {
         @extend %partial-media--billboard-flex;
+    }
 
-        @include bp-min($bp-m) {
-            margin: auto;
-            width: 70%;
+    .#{$css-prefix}tile {
+        @include bp-max($bp-m) {
+            padding: $space-quad 0;
         }
+
+        margin: auto;
+        width: 70%;
     }
 }
-
