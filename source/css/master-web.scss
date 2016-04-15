@@ -16,6 +16,7 @@
  *          Compass
  *      Mixins
  *          Breakpoints
+ *          Flexbox
  *          Layout - sizes
  *      Variables
  *          Globals
@@ -26,22 +27,26 @@
  *          Breakpoints
  *  BASE
  *      Reset
- *      Main
- *      Links
+ *          Main
+ *          Links
+ *      Media
  *  STRUCTURE
  *      Page layout
  *      Navigation main
  *  OBJECTS
  *      Buttons
+ *      Card
  *      Images
  *          Image containers
  *          Logos
  *      Lists
  *          Global
  *          Web
+ *      Media
  *      Navigation
  *          Breadcrumbs
- *      Testimonial
+ *      Text
+ *          Quotes
 **/
 
 /*****************************************************************************\
@@ -53,6 +58,7 @@
 
 /** Mixins **/
 @import "scss/global/mixins/breakpoints";
+@import "scss/web/mixins/flexbox";
 @import "scss/web/mixins/layout-sizes";
 
 /** Variables **/
@@ -75,6 +81,9 @@
 @import "scss/global/base/links";
 @import "scss/web/base/links";
 
+/** Media **/
+@import "scss/global/base/media";
+
 
 /*****************************************************************************\
     STRUCTURE
@@ -92,6 +101,9 @@
 /** Buttons **/
 @import "scss/web/objects/buttons";
 
+/** Cards **/
+@import "scss/web/objects/cards/card";
+
 /** Images **/
 @import "scss/web/objects/images";
 @import "scss/web/objects/images-logos";
@@ -100,8 +112,11 @@
 @import "scss/global/base/lists";
 @import "scss/web/objects/lists";
 
+/** Media **/
+@import "scss/web/objects/media";
+
 /** Navigation - Breadcrumbs **/
 @import "scss/web/objects/nav-breadcrumbs";
 
-/** Testimonial **/
-@import "scss/web/objects/testimonial";
+/** Text **/
+@import "scss/web/objects/text-quotes";
