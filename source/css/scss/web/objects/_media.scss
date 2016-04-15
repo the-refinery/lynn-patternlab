@@ -59,6 +59,22 @@
 
         margin: auto;
         width: 70%;
+
+        &__title {
+            @include bp-min($bp-xl) {
+                font-size: $font-size-two--em;
+            }
+
+            font-size: $font-size-one-and-half--em;
+        }
+
+        &__detail {
+            @include bp-min($bp-xl) {
+                font-size: $font-size-one-and-half--em;
+            }
+
+            padding: $space 0 $space-double;
+        }
     }
 }
 

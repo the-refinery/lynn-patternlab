@@ -6,11 +6,13 @@
 ~**/
 
 // Line height
-$line-height-least: 1;
-$line-height-less:  1.2;
-$line-height-base:  1.8;
-$line-height-more:  2;
-$line-height-most:  3;
+$line-height-least:     .875;
+$line-height-less:      1;
+$line-height-base:      1.2;
+$line-height-more:      1.5;
+$line-height-most:      1.8;
+$line-height-double:    2;
+$line-height-triple:    3;
 
 // Padding (relative size)
 $pad: 1em;
