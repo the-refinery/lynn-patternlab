@@ -1,0 +1,130 @@
+{
+    "colleges": [
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/800x800",
+                    "alt": "Square image"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        }
+    ]
+}
