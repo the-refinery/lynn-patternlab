@@ -1,0 +1,23 @@
+{
+    "button": {
+        "aria": {
+            "popup": false
+        },
+        "icon": false,
+        "styleModifier": "lynn-button--pill",
+        "title": "Button text",
+        "url": "#"
+    },
+    "description": "The CTA tile inverts the element order, displaying the description after the button.",
+    "actions": {
+        "button": {
+            "aria": {
+                "popup": false
+            },
+            "icon": false,
+            "styleModifier": "",
+            "title": "Optional text action",
+            "url": "#"
+        }
+    }
+}

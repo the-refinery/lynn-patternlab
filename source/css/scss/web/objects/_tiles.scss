@@ -1,0 +1,9 @@
+/**~
+ *  _tiles.scss
+~**/
+
+.#{$css-prefix}tile {
+    &__action {
+        margin: $space 0;
+    }
+}

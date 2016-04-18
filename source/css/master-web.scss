@@ -46,6 +46,7 @@
  *          Breadcrumbs
  *      Text
  *          Quotes
+ *      Tiles
 **/
 
 /*****************************************************************************\
@@ -116,3 +117,6 @@
 
 /** Text **/
 @import "scss/web/objects/text-quotes";
+
+/** Tiles **/
+@import "scss/web/objects/tiles";

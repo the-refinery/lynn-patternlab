@@ -2,6 +2,7 @@
     "tile": {
         "title": "Tile",
         "description": "Use a tile to create a small group of related items.",
+        "testimonial": false,
         "action": [
             {
                 "button": false
