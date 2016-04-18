@@ -6,28 +6,39 @@
 ~**/
 
 // Line height
-$line-height-least:     .875;
-$line-height-less:      1;
-$line-height-base:      1.2;
-$line-height-more:      1.5;
-$line-height-most:      1.8;
-$line-height-double:    2;
-$line-height-triple:    3;
+$line-height-eighth:        map-get($sizes, eighth);
+$line-height-quarter:       map-get($sizes, quarter);
+$line-height-half:          map-get($sizes, half);
+$line-height-three-fourths: map-get($sizes, three-fourths);
+$line-height-seven-eighths: map-get($sizes, seven-eighths);
+$line-height:               map-get($sizes, one);
+$line-height-one-and-half:  map-get($sizes, one-and-half);
+$line-height-double:        map-get($sizes, double);
+$line-height-triple:        map-get($sizes, triple);
+$line-height-quadruple:     map-get($sizes, quadruple);
 
-// Padding (relative size)
-$pad: 1em;
-$pad-and-half: $pad*1.5;
-$pad-double: $pad*2;
-$pad-triple: $pad*3;
-$pad-half: $pad/2;
-$pad-quarter: $pad/4;
+$line-height-base: 1.2;
 
-// Space (fixed size)
-$space: 1rem;
-$space-and-half: $space*1.5;
-$space-and-quarter: $space*1.25;
-$space-double: $space*2;
-$space-triple: $space*3;
-$space-quad: $space*4;
-$space-half: $space/2;
-$space-quarter: $space/4;
+// Space (relative)
+$space-eighth--em:        map-get($sizes, eighth) + em;
+$space-quarter--em:       map-get($sizes, quarter) + em;
+$space-half--em:          map-get($sizes, half) + em;
+$space-three-fourths--em: map-get($sizes, three-fourths) + em;
+$space-seven-eighths--em: map-get($sizes, seven-eighths) + em;
+$space--em:               map-get($sizes, one) + em;
+$space-one-and-half--em:  map-get($sizes, one-and-half) + em;
+$space-double--em:        map-get($sizes, double) + em;
+$space-triple--em:        map-get($sizes, triple) + em;
+$space-quadruple--em:     map-get($sizes, quadruple) + em;
+
+// Space (fixed)
+$space-eighth:        map-get($sizes, eighth) + rem;
+$space-quarter:       map-get($sizes, quarter) + rem;
+$space-half:          map-get($sizes, half) + rem;
+$space-three-fourths: map-get($sizes, three-fourths) + rem;
+$space-seven-eighths: map-get($sizes, seven-eighths) + rem;
+$space:               map-get($sizes, one) + rem;
+$space-one-and-half:  map-get($sizes, one-and-half) + rem;
+$space-double:        map-get($sizes, double) + rem;
+$space-triple:        map-get($sizes, triple) + rem;
+$space-quadruple:     map-get($sizes, quadruple) + rem;

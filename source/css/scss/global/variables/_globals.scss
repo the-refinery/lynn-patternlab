@@ -4,5 +4,19 @@
  *  Global variables
 ~**/
 
-/** CSS Prefix - Set to avoid conflicts **/
+// CSS Prefix - Set to avoid conflicts
 $css-prefix: 'lynn-';
+
+// Sizes
+$sizes: (
+    eighth:             .125,
+    quarter:            .25,
+    half:               .5,
+    three-fourths:      .75,
+    seven-eighths:      .875,
+    one:                1,
+    one-and-half:       1.5,
+    double:             2,
+    triple:             3,
+    quadruple:          4
+);

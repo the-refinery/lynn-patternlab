@@ -55,7 +55,7 @@
         width: 2px;
     }
     font-weight: $font-weight-bold;
-    padding: $pad-half $pad-double;
+    padding: $space-half $space-double;
 }
 
 .#{$css-prefix}button--pill {
@@ -121,42 +121,3 @@
         display: inline-block;
     }
 }
-
-
-
-/** Legacy
-
-.button,
-a.button {
-    background: $accent-orange;
-    border: 0;
-    color: $white;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    padding: $pad-quarter $pad;
-    text-align: center;
-
-    @include border-radius(3px);
-    
-    &:active, &:hover, &:focus {
-        background: $secondary-orange;
-        color: $white;
-    }
-}
-
-.button-secondary {
-    background: $secondary-blue;
-
-    &:active, &:hover, &:focus {
-        background: $accent-blue;
-    }
-}
-
-.button-large,
-a.button-large {
-    font-size: $font-size-l;
-    padding: $pad-half $pad-double;
-}
-
-**/

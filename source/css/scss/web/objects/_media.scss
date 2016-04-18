@@ -54,7 +54,7 @@
 
     .#{$css-prefix}tile {
         @include bp-max($bp-m) {
-            padding: $space-quad 0;
+            padding: $space-quadruple 0;
         }
 
         margin: auto;
@@ -62,7 +62,7 @@
 
         &__title {
             @include bp-min($bp-xl) {
-                font-size: $font-size-two--em;
+                font-size: $font-size-double--em;
             }
 
             font-size: $font-size-one-and-half--em;

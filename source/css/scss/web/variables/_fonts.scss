@@ -10,45 +10,38 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 
-/** Base **/
+// Base
 $font-family-base: 'Neue Helvetica W01',Helvetica,Arial,sans-serif;
 $font-size-base: 16px;
 
 
-/** Fonts **/
+// Fonts
 $font: $font-family-base;
 
 
-/** Sizes **/
-$fontsizes: (
-    three-fourths:      .75,
-    seven-eights:       .875,
-    base:               1,
-    one-and-half:       1.5,
-    two:                2,
-);
-
-/** REM - Use for modules on the page **/
-$font-size--rem: map-get($fontsizes, base) + rem;
-$font-size-three-fourths--rem: map-get($fontsizes, three-fourths) + rem;
-$font-size-seven-eights--rem: map-get($fontsizes, seven-eights) + rem;
-$font-size-one-and-half--rem: map-get($fontsizes, one-and-half) + rem;
-$font-size-two--rem: map-get($fontsizes, two) + rem;
-
-/** EM - Use for text elements on the page **/
-$font-size--em: map-get($fontsizes, base) + em;
-$font-size-three-fourths--em: map-get($fontsizes, three-fourths) + em;
-$font-size-seven-eights--em: map-get($fontsizes, seven-eights) + em;
-$font-size-one-and-half--em: map-get($fontsizes, one-and-half) + em;
-$font-size-two--em: map-get($fontsizes, two) + em;
-                        
-/** PX - Fallback **/
-$font-size--px: (map-get($fontsizes, base)  * $font-size-base);
-$font-size-three-fourths--px: (map-get($fontsizes, three-fourths)  * $font-size-base);
-$font-size-seven-eights--px: (map-get($fontsizes, seven-eights)  * $font-size-base);
-$font-size-one-and-half--px: (map-get($fontsizes, one-and-half)  * $font-size-base);
-$font-size-two--px: (map-get($fontsizes, two)  * $font-size-base);
+// REM - Use for modules on the page
+$font-size--rem:                map-get($sizes, one) + rem;
+$font-size-three-fourths--rem:  map-get($sizes, three-fourths) + rem;
+$font-size-seven-eights--rem:   map-get($sizes, seven-eighths) + rem;
+$font-size-one-and-half--rem:   map-get($sizes, one-and-half) + rem;
+$font-size-double--rem:         map-get($sizes, double) + rem;
 
 
-/** Weight **/
+// EM - Use for text elements on the page
+$font-size--em:                 map-get($sizes, one) + em;
+$font-size-three-fourths--em:   map-get($sizes, three-fourths) + em;
+$font-size-seven-eights--em:    map-get($sizes, seven-eighths) + em;
+$font-size-one-and-half--em:    map-get($sizes, one-and-half) + em;
+$font-size-double--em:          map-get($sizes, double) + em;
+
+                  
+// PX - Fallback
+$font-size--px: (map-get($sizes, one) * $font-size-base);
+$font-size-three-fourths--px: (map-get($sizes, three-fourths) * $font-size-base);
+$font-size-seven-eights--px: (map-get($sizes, seven-eighths) * $font-size-base);
+$font-size-one-and-half--px: (map-get($sizes, one-and-half) * $font-size-base);
+$font-size-double--px: (map-get($sizes, double) * $font-size-base);
+
+
+// Weight
 $font-weight-bold:      700;
