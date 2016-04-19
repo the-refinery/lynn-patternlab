@@ -17,3 +17,30 @@
         @include l-width($columns, #{$point});
     }
 }
+
+// Containers
+@each $width in map-keys($widths) {
+    $size: map-get($widths, $width) + rem;
+
+    .#{$css-prefix}l-container--#{$width} {
+        max-width: $size;
+    }
+}
+
+.#{$css-prefix}l-container--fluid {
+    width: 100%;
+}
+
+.#{$css-prefix}l-container--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.#{$css-prefix}l-container--left {
+    margin-right: auto;
+}
+
+.#{$css-prefix}l-container--right {
+    margin-left: auto;
+}
+
