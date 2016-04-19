@@ -1,0 +1,61 @@
+/**~
+ *  _layout-grid.scss
+~**/
+
+.#{$css-prefix}grid {
+    @include flexbox;
+
+    position: relative;
+
+    &--frame {
+        min-height: 100vh;
+        min-width: 100vw;
+        overflow: hidden;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &--vertical {
+        flex-direction: column;
+    }
+
+    &--vertical-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.#{$css-prefix}gi {
+    &--padded {
+        padding-left: $space;
+        padding-right: $space;
+    }
+}
+
+.#{$css-prefix}l-wrap {
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.#{$css-prefix}l-nowrap {
+    @include flex(1 1 auto);
+
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+@each $point in map-keys($layout) {
+
+    $breakpoint: map-get(map-get($layout, $point), 'breakpoint');
+
+    @include bp-min($breakpoint) {
+        .#{$css-prefix}l-nowrap--#{$point} {
+            @include flex(1 1 auto);
+
+            align-items: stretch;
+            flex-wrap: nowrap;
+        }
+    }
+}
