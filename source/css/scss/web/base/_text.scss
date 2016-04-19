@@ -1,0 +1,18 @@
+/**~
+ *  _text.scss
+~**/
+
+// Position helpers
+.#{$css-prefix}text-align {
+    &--center {
+        text-align: center;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}
