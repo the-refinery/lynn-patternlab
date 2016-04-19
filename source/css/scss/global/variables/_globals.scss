@@ -15,8 +15,21 @@ $sizes: (
     three-fourths:      .75,
     seven-eighths:      .875,
     one:                1,
+    one-and-quarter:    1.25,
     one-and-half:       1.5,
     double:             2,
     triple:             3,
     quadruple:          4
+);
+
+// Widths
+$widths: (
+    xxs:    15,
+    xs:     20,
+    s:      30,
+    m:      35,
+    l:      48,
+    xl:     64,
+    xxl:    80,
+    jumbo:  160,
 );

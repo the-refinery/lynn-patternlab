@@ -5,22 +5,14 @@
  *
 ~**/
 
-$breakpoints: (
-    s:      480px,      // 30rem
-    m:      560px,      // 35rem
-    l:      768px,      // 48rem
-    xl:     1024px,     // 64rem
-    xxl:    1280px,     // 80rem
-    jumbo:  2560px,     // 160rem
-);
-
 // Shorthand (single usage)
-$bp-s:      map-get($breakpoints, s);
-$bp-m:      map-get($breakpoints, m);
-$bp-l:      map-get($breakpoints, l);
-$bp-xl:     map-get($breakpoints, xl);
-$bp-xxl:    map-get($breakpoints, xxl);
-$bp-jumbo:  map-get($breakpoints, jumbo);
+$bp-s:      map-get($widths, s) + em;
+$bp-m:      map-get($widths, m) + em;
+$bp-l:      map-get($widths, l) + em;
+$bp-xl:     map-get($widths, xl) + em;
+$bp-xxl:    map-get($widths, xxl) + em;
+$bp-jumbo:  map-get($widths, jumbo) + em;
+
 
 // Max column widths per breakpoint
 $layout: (

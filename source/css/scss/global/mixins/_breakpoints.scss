@@ -10,7 +10,7 @@
 
 @mixin bp-max($point) {
     // Check if the point exists in the breakpoints map
-    @if index(map-values($breakpoints), $point) {
+    @if index(map-values($widths), $point) {
         // If so, subtract 1 to avoid min/max conflict
         @media screen and (max-width: $point - 1px) { @content; }
     }
