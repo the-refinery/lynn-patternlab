@@ -30,8 +30,12 @@
  *          Main
  *          Links
  *      Media
+ *      Spacing
+ *      Text
  *  STRUCTURE
- *      Page layout
+ *      Layout
+ *          Page
+ *          Grid
  *      Navigation main
  *  OBJECTS
  *      Buttons
@@ -84,13 +88,19 @@
 /** Media **/
 @import "scss/global/base/media";
 
+/** Spacing **/
+@import "scss/web/base/spacing";
+
+/** Text **/
+@import "scss/web/base/text";
+
 
 /*****************************************************************************\
     STRUCTURE
 \*****************************************************************************/
 
-/** Page header **/
 @import "scss/web/objects/page-layout";
+@import "scss/web/objects/layout-grid";
 @import "scss/web/objects/nav-global";
 
 

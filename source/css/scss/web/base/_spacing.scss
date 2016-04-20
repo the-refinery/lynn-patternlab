@@ -1,0 +1,77 @@
+/**~
+ *  _spacing.scss
+~**/
+
+$positions: (
+    bottom,
+    left,
+    right,
+    top,
+    horizontal,
+    vertical,
+    around
+);
+
+
+// Margin
+@each $pos in $positions {
+    $sizes: map-merge(("none": 0), $sizes);
+
+    @each $item in map-keys($sizes) {
+        $size: map-get($sizes, $item) + rem;
+    
+        .#{$css-prefix}m-#{$pos}--#{$item} {
+            @if $pos == 'bottom' or $pos == 'vertical' {
+                margin-bottom: $size;
+            }
+
+            @if $pos == 'top' or $pos == 'vertical' {
+                margin-top: $size;
+            }
+
+            @if $pos == 'left' or $pos == 'horizontal' {
+                margin-left: $size;
+            }
+
+            @if $pos == 'right' or $pos == 'horizontal' {
+                margin-right: $size;
+            }
+
+            @if $pos == 'around' {
+                margin: $size;
+            }
+        }
+    }
+}
+
+
+// Padding
+@each $pos in $positions {
+    $sizes: map-merge(("none": 0), $sizes);
+
+    @each $item in map-keys($sizes) {
+        $size: map-get($sizes, $item) + rem;
+    
+        .#{$css-prefix}p-#{$pos}--#{$item} {
+            @if $pos == 'bottom' or $pos == 'vertical' {
+                padding-bottom: $size;
+            }
+
+            @if $pos == 'top' or $pos == 'vertical' {
+                padding-top: $size;
+            }
+
+            @if $pos == 'left' or $pos == 'horizontal' {
+                padding-left: $size;
+            }
+
+            @if $pos == 'right' or $pos == 'horizontal' {
+                padding-right: $size;
+            }
+
+            @if $pos == 'around' {
+                padding: $size;
+            }
+        }
+    }
+}
