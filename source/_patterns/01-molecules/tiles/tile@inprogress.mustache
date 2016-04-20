@@ -1,12 +1,12 @@
 {{# tile }}
 <div class="{{ css-prefix }}tile {{ styleModifier }}">
     {{# title }}
-    <div class="{{ css-prefix }}tile__title {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__title">
         {{ title }}
     </div>
     {{/ title }}
 
-    <div class="{{ css-prefix }}tile__detail {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__detail">
         {{{ description }}}
 
         {{# testimonial }}
@@ -18,7 +18,7 @@
     </div>    
 
     {{# action }}
-    <div class="{{ css-prefix }}tile__action {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__action">
         {{> atoms-button }}
     </div>
     {{/ action }}

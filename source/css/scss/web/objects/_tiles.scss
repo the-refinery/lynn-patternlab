@@ -3,7 +3,26 @@
 ~**/
 
 .#{$css-prefix}tile {
-    &__action {
+    &__action,
+    &__subaction {
         margin: $space 0;
+    }
+}
+
+.#{$css-prefix}tile--cta {
+    margin-bottom: $space-quadruple;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    .#{$css-prefix}tile__action {
+        .#{$css-prefix}button--pill {
+            display: block;
+        }
+    }
+
+    .#{$css-prefix}tile__detail,
+    .#{$css-prefix}tile__subaction {
+        font-size: $font-size-one-and-half--em;
     }
 }

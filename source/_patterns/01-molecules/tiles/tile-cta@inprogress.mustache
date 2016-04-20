@@ -1,15 +1,15 @@
 <div class="{{ css-prefix }}tile {{ styleModifier }}">
-    <div class="{{ css-prefix }}tile__action {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__action">
         {{> atoms-button }}
     </div>
 
-    <div class="{{ css-prefix }}tile__detail {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__detail">
         {{{ description }}}
     </div>
 
-    {{# actions }}
-    <div class="{{ css-prefix }}tile__action {{ styleModifier }}">
+    {{# subaction }}
+    <div class="{{ css-prefix }}tile__subaction">
         {{> atoms-button }}
     </div>
-    {{/ actions }}
+    {{/ subaction }}
 </div>
