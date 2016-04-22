@@ -48,6 +48,7 @@
  *      Media
  *      Navigation
  *          Breadcrumbs
+ *      Panels
  *      Text
  *          Quotes
  *      Tiles
@@ -124,6 +125,9 @@
 
 /** Navigation - Breadcrumbs **/
 @import "scss/web/objects/nav-breadcrumbs";
+
+/** Panels **/
+@import "scss/web/objects/panels";
 
 /** Text **/
 @import "scss/web/objects/text-quotes";

@@ -1,0 +1,18 @@
+/**~
+ *  _panels.scss
+~**/
+
+.#{$css-prefix}panel {
+    &__heading {
+        font-size: $font-size-one-and-half--rem;
+        margin-bottom: $space-quadruple;
+        text-align: center;
+
+        .#{$css-prefix}tile__title {
+            font-size: $font-size-double--em;
+            margin-bottom: $space;
+        }
+    }
+
+    &__content {}
+}

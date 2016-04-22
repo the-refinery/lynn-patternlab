@@ -1,0 +1,24 @@
+{{# panel }}
+<div class="{{ css-prefix }}panel {{ styleModifier }}">
+    {{# heading }}
+    <div class="{{ css-prefix }}panel__heading">
+        {{> molecules-tile }}
+    </div>
+    {{/ heading }}
+    {{# content }}
+    <div class="lynn-panel__content">
+        <div class="lynn-l-container--xl lynn-l-container--center">
+            <div class="{{ css-prefix }}grid {{ css-prefix }}l-wrap">
+                {{# tiles }}
+                <div class="{{ css-prefix }}gi {{ styleModifier }}">
+                    {{# tile }}
+                    {{> molecules-tile-cta }}
+                    {{/ tile }}
+                </div>
+                {{/ tiles }}
+            </div>
+        </div>
+    </div>
+    {{/ content }}
+</div>
+{{/ panel }}
