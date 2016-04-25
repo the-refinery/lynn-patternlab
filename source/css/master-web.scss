@@ -27,8 +27,8 @@
  *          Breakpoints
  *  BASE
  *      Reset
- *          Main
- *          Links
+ *      Main
+ *      Links
  *      Media
  *      Spacing
  *      Text
@@ -82,9 +82,9 @@
 
 /** Reset **/
 @import "scss/web/base/reset";
+
 @import "scss/global/base/main";
 @import "scss/global/base/links";
-@import "scss/web/base/links";
 
 /** Media **/
 @import "scss/global/base/media";

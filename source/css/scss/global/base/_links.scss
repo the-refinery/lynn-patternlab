@@ -1,5 +1,6 @@
 %defaultLink {
     color: $lynn-blue;
+    text-decoration: none;
 
     &:active, &:focus, &:hover {
         color: $lynn-blue-70;
@@ -8,4 +9,8 @@
 
 a {
 	@extend %defaultLink;
+}
+
+a, button {
+    cursor: pointer;
 }
