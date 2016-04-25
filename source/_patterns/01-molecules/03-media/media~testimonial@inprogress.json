@@ -1,10 +1,12 @@
 {
     "media": {
         "styleModifier": "lynn-media--testimonial lynn-media--reverse",
-        "image": {
-            "square": {
-                "source": "http://placehold.it/560x560",
-                "alt": "Photo of person from the quote"
+        "thumbnail": {
+            "image": {
+                "square": {
+                    "source": "http://placehold.it/560x560",
+                    "alt": "Photo of person from the quote"
+                }
             }
         },
         "tile": {

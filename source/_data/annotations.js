@@ -49,6 +49,13 @@ var comments = {
     "comment": "To align a list horizontally in a row from left to right, add the <code>.lynn-list--horizontal</code> class."
 },
 
+// * Images
+{
+    "el": ".lynn-thumbnail",
+    "title": "Thumbnail",
+    "comment": "<p>Wrapping an image within an <code>&lt;a href=\"\"&gt;&lt;/a&gt;</code> link object will create a clickable image. The <code>.lynn-thumbnail</code> class has no direct affect on the visual presentation, but could useful in more advanced use cases.</p><p>The grid and layout classes should be used to help display the thumbnail object.</p>"
+},
+
 // * Buttons
 {
     "el": ".lynn-button",

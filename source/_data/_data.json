@@ -6,6 +6,8 @@
     "htmlClass": "pl",
     "bodyClass": "lynn-body",
 
+    "url": "#",
+
     "navBreadcrumb": true,
 
     "content": "<p>This is sample body content. It can standalone on a page or be within more specific module.",

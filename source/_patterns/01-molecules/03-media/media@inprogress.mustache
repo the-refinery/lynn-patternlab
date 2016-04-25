@@ -1,7 +1,12 @@
 {{# media }}
 <div class="{{ css-prefix }}media {{ styleModifier }}">
     <div class="{{ css-prefix }}media__figure">
+        {{# thumbnail }}
+        {{> atoms-thumbnail }}
+        {{/ thumbnail }}
+        {{^ thumbnail }}
         {{> atoms-square }}
+        {{/ thumbnail }}
     </div>
     <div class="{{ css-prefix }}media__caption">
         {{> molecules-tile }}
