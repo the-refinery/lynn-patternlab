@@ -1,9 +1,16 @@
 {{# tile }}
 <div class="{{ css-prefix }}tile {{ styleModifier }}">
     {{# title }}
+    {{^ titleLink }}
     <div class="{{ css-prefix }}tile__title">
         {{ title }}
     </div>
+    {{/ titleLink }}
+    {{# titleLink }}
+    <a href="{{ url }}" class="{{ css-prefix }}tile__title">
+        {{ title }}
+    </a>
+    {{/ titleLink }}
     {{/ title }}
 
     <div class="{{ css-prefix }}tile__detail">

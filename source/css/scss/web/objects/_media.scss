@@ -64,16 +64,12 @@
             @include bp-min($bp-xl) {
                 font-size: $font-size-double--em;
             }
-
-            font-size: $font-size-one-and-half--em;
         }
 
         &__detail {
             @include bp-min($bp-xl) {
                 font-size: $font-size-one-and-half--em;
             }
-
-            margin: $space 0 $space-double;
         }
     }
 }
@@ -88,7 +84,7 @@
         }
     }
 
-    .#{$css-prefix}media__caption {
+    .#{$css-prefix}quote {
         font-size: $font-size-one-and-half--rem;
     }
 }

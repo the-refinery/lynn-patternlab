@@ -3,6 +3,14 @@
 ~**/
 
 .#{$css-prefix}tile {
+    &__title {
+        font-size: $font-size-one-and-half--em;
+    }
+
+    &__detail {
+        margin: $space 0 $space-double;
+    }
+
     &__action,
     &__subaction {
         margin: $space 0;
