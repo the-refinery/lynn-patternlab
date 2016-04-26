@@ -3,9 +3,11 @@
 ~**/
 
 .#{$css-prefix}card {
+    margin: auto;
+    
     &__figure {
         margin-bottom: $space-double;
-        
+
         img {
             @extend %partial-image--responsive;
         }
