@@ -1,0 +1,23 @@
+{{# card }}
+<div class="{{ css-prefix }}card {{ styleModifier }}" {{# schema }}itemscope="{{ itemscope }}" itemtype="{{ itemtype }}" itemprop="{{ itemprop }}"{{/ schema }}>
+    <div class="{{ css-prefix }}card-content">
+        <div class="{{ css-prefix }}card__figure">
+            {{# thumbnail }}
+            {{> atoms-thumbnail }}
+            {{/ thumbnail }}
+            {{^ thumbnail }}
+            {{> atoms-square }}
+            {{/ thumbnail }}
+        </div>
+        <div class="{{ css-prefix }}card__caption">
+            {{> molecules-tile }}
+
+            {{# type.length }}
+
+            {{# isProgram }}{{> molecules-tile-program }}{{/ isProgram }}
+
+            {{/ type.length }}
+        </div>
+    </div>
+</div>
+{{/ card }}

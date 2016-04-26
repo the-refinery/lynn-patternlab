@@ -1,0 +1,17 @@
+{{# tile }}
+<div class="{{ css-prefix }}tile {{ styleModifier }}">
+    <div class="{{ css-prefix }}tile__title">
+        {{ title }}
+    </div>
+
+    <div class="{{ css-prefix }}tile__detail">
+        {{{ description }}}
+    </div>    
+
+    {{# action }}
+    <div class="{{ css-prefix }}tile__action">
+        {{> atoms-button }}
+    </div>
+    {{/ action }}
+</div>
+{{/ tile }}

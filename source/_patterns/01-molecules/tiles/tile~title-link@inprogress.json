@@ -1,5 +1,8 @@
 {
     "tile": {
+        "title": "Tile - Title link",
+        "description": "Use a tile to create a small group of related items.",
+        "testimonial": false,
         "titleLink": true
     }
 }

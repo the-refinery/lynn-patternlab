@@ -1,0 +1,16 @@
+/**~
+ *  _cards.scss
+~**/
+
+.#{$css-prefix}card {
+    &__figure {
+        margin-bottom: $space-double;
+        
+        img {
+            @extend %partial-image--responsive;
+        }
+    }
+
+    &__caption {
+    }
+}

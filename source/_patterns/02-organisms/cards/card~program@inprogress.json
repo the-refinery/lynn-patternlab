@@ -1,0 +1,31 @@
+{
+    "card": {
+        "styleModifier": "lynn-l-container--xs",
+        "type": {
+            "isProgram": true
+        },
+        "tile": {
+            "title": "Degree program",
+            "description": "A degree program tile directs users to available degree types of a shared name",
+            "styleModifier": "lynn-tile--program",
+            "testimonial": false
+        },
+        "action": [
+            {
+                "button": {
+                    "title": "Bachelor's"
+                }
+            },
+            {
+                "button": {
+                    "title": "iLynn"
+                }
+            },
+            {
+                "button": {
+                    "title": "Master's"
+                }
+            }
+        ]
+    }
+}
