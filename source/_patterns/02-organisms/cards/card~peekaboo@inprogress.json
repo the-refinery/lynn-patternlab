@@ -1,0 +1,22 @@
+{
+    "card": {
+        "styleModifier": "lynn-card--peekaboo lynn-l-container--xs",
+        "tile": {
+            "styleModifier": "",
+            "title": "Card peekaboo",
+            "description": "The peekaboo card shows only the title, hiding the descriptive text until the user interacts with the card.",
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "aria": {
+                        "popup": false
+                    },
+                    "icon": false,
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Button text",
+                    "url": "#"
+                }
+            }
+        }
+    }
+}

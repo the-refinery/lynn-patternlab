@@ -4,7 +4,11 @@
 
 .#{$css-prefix}card {
     margin: auto;
-    
+
+    &-content {
+        position: relative;
+    }
+
     &__figure {
         margin-bottom: $space-double;
 
@@ -12,7 +16,66 @@
             @extend %partial-image--responsive;
         }
     }
+}
 
-    &__caption {
+%ph-card-rollover {
+    .#{$css-prefix}card-content {
+        overflow: hidden;
+    }
+
+    .#{$css-prefix}card__figure {
+        margin: 0;
+    }
+
+    .#{$css-prefix}card__caption {
+        @include flexbox;
+
+        align-items: center;
+        background-color: rgba($white, .9);
+        height: 100%;
+        position: absolute;
+        top: 100%;
+        transition: all 0.7s ease 0s;
+        width: 100%;
+    }
+
+    &:hover {
+        .#{$css-prefix}card__caption { 
+            height: 100%;
+            top: 0;
+        }
+    }
+}
+
+.#{$css-prefix}card--peekaboo {
+    @extend %ph-card-rollover;
+
+    .#{$css-prefix}card__caption {
+        height: $space-quadruple;
+        top: calc(100% - #{$space-quadruple});
+    }
+
+    .#{$css-prefix}tile {
+        @extend %ph-tile-center-padded;
+    }
+
+    .#{$css-prefix}tile__action,
+    .#{$css-prefix}tile__detail {
+        display: none;
+    }
+
+    &:hover {
+        .#{$css-prefix}tile__action,
+        .#{$css-prefix}tile__detail {
+            display: block;
+        }
+    }
+}
+
+.#{$css-prefix}card--shade {
+    @extend %ph-card-rollover;
+
+    .#{$css-prefix}tile {
+        @extend %ph-tile-center-padded;
     }
 }
