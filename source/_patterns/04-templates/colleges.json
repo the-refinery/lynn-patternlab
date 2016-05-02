@@ -1,4 +1,26 @@
 {
+    "navBreadcrumb": {
+        "list": {
+            "styleModifier": "",
+            "items": [
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Home",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Level 1",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item active",
+                    "title": "Level 2",
+                    "url": "#"
+                }
+            ]
+        }
+    },
     "colleges": [
         {
             "image": {
@@ -126,5 +148,81 @@
                 }
             }
         }
-    ]
+    ],
+
+    "panel": {
+        "styleModifier": "lynn-m-vertical--quadruple",
+        "heading": {
+            "styleModifier": "lynn-l-container--xl lynn-l-container--center",
+            "tile": {
+                "title": "Take the next step",
+                "description": "Get started on your future today",
+                "testimonial": false
+            }
+        },
+        "content": {
+            "styleModifier": "",
+            "tiles": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-3",
+                    "tile": {
+                        "styleModifier": "lynn-tile--cta lynn-l-container--xxs",
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill",
+                            "title": "Apply to Lynn",
+                            "url": "#"
+                        },
+                        "description": "Complete your application and secure your spot."
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-3",
+                    "tile": {
+                        "styleModifier": "lynn-tile--cta lynn-l-container--xxs",
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill",
+                            "title": "Schedule a visit",
+                            "url": "#"
+                        },
+                        "description": "Pictures tell only part of the story. Come see for yourself.",
+                        "subaction": {
+                            "button": {
+                                "aria": {
+                                    "popup": false
+                                },
+                                "icon": false,
+                                "styleModifier": "",
+                                "title": "Take a virtual tour",
+                                "url": "#"
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-3",
+                    "tile": {
+                        "styleModifier": "lynn-tile--cta lynn-l-container--xxs",
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill",
+                            "title": "Request info",
+                            "url": "#"
+                        },
+                        "description": "How would you like to hear from us?"
+                    }
+                }
+            ]
+        }
+    }
 }
