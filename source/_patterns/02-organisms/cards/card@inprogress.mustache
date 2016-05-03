@@ -10,13 +10,16 @@
             {{/ thumbnail }}
         </div>
         <div class="{{ css-prefix }}card__caption">
+            {{^ type }}
             {{> molecules-tile }}
+            {{/ type }}
 
-            {{# type.length }}
+            {{# type }}
 
+            {{# isNews }}{{> molecules-tile-news-event }}{{/ isNews }}
             {{# isProgram }}{{> molecules-tile-program }}{{/ isProgram }}
 
-            {{/ type.length }}
+            {{/ type }}
         </div>
     </div>
 </div>

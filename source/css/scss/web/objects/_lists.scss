@@ -1,11 +1,32 @@
 /**~
- *	_lists.scss - Web
+ *  _lists.scss - Web
 ~**/
 
 /** Horizontal **/
 .#{$css-prefix}list--horizontal {
-	> .#{$css-prefix}list__item {
-		display: inline-block;
-		vertical-align: middle;
-	}
+    > .#{$css-prefix}list__item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+/** Dividers **/
+.#{$css-prefix}has-dividers {
+    &--bottom {}
+    &--top {}
+
+    &--left {
+        > .#{$css-prefix}list__item:before {
+            content: "|";
+            margin: 0 $space-half;
+        }
+    }
+
+    &--right {
+        > .#{$css-prefix}list__item:after {
+            content: "|";
+            margin: 0 $space-half;
+        }
+    }
 }

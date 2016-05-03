@@ -39,7 +39,7 @@
  *      Navigation main
  *  OBJECTS
  *      Buttons
- *      Cards
+
  *      Images
  *          Image containers
  *          Logos
@@ -52,7 +52,10 @@
  *      Panels
  *      Text
  *          Quotes
- *      Tiles
+ *      MOLECULES
+ *          Tiles
+ *      ORGANISMS
+ *          Cards
 **/
 
 /*****************************************************************************\
@@ -113,9 +116,6 @@
 /** Buttons **/
 @import "scss/web/objects/buttons";
 
-/** Cards **/
-@import "scss/web/objects/cards";
-
 /** Images **/
 @import "scss/web/objects/images";
 @import "scss/web/objects/images-logos";
@@ -136,5 +136,12 @@
 /** Text **/
 @import "scss/web/objects/text-quotes";
 
-/** Tiles **/
+
+/** MOLECULES **/
+// Tiles
 @import "scss/web/objects/tiles";
+
+
+/** ORGANISMS **/
+// Cards
+@import "scss/web/objects/cards";

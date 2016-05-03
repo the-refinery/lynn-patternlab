@@ -79,3 +79,87 @@
         @extend %ph-tile-center-padded;
     }
 }
+
+
+
+/** News and Events **/
+%ph-card-news-event-rollover {
+    .#{$css-prefix}card__caption {
+        align-items: flex-start;
+    }
+
+    .#{$css-prefix}tile--news-event {
+        @include flexbox;
+
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .#{$css-prefix}meta {
+        @include flex(1 1 0);
+
+        margin-bottom: 0;
+        max-width: 100px;
+    }
+
+    .#{$css-prefix}container {
+        @include flex(1 1 0);
+
+        padding: $space-quarter $space-half;
+        text-align: left;
+    }
+
+    .#{$css-prefix}datestamp {
+        @include flexbox;
+        
+        align-items: center;
+        // height: $space-quadruple;
+        justify-content: center;
+        padding: $space-one-and-half $space-quarter;
+    }
+
+    .#{$css-prefix}tile__title {
+        font-size: $font-size--em;
+        font-weight: $font-weight-bold;
+    }
+
+    &:hover {
+        .#{$css-prefix}tile--news-event {
+            align-items: flex-start;
+        }
+
+        .#{$css-prefix}container {
+            padding: {
+                bottom: $space-one-and-half;
+                top: $space-one-and-half;
+            }
+        }
+    }
+}
+
+.#{$css-prefix}card--event.#{$css-prefix}card--peekaboo {
+    .#{$css-prefix}date-time-published {
+            display: block;
+            height: $space-quadruple;
+            padding: $space-quarter;
+
+            background-color: $lynn-blue;
+            color: $white;
+            padding: $space 0;
+        }
+}
+
+
+.#{$css-prefix}card--peekaboo {
+    @extend %ph-card-news-event-rollover;
+
+    
+
+    
+
+    
+
+
+}

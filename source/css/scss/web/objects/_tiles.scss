@@ -44,13 +44,21 @@
 
 
 .#{$css-prefix}tile--news-event {
-    .#{$css-prefix}tile__meta {
-        line-height: $line-height-double;
+    .#{$css-prefix}meta {
         margin-bottom: $space-quarter;
-        
-        > time {
-            font-weight: $font-weight-bold;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .#{$css-prefix}datestamp {
+        display: inline;
+        font-weight: $font-weight-bold;
+        vertical-align: middle;
+    }
+
+    .#{$css-prefix}list--horizontal {
+        display: inline;
     }
 }
 

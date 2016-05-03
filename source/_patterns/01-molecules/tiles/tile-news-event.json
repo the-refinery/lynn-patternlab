@@ -1,8 +1,8 @@
 {
     "tile": {
         "categories": [
-            "Category",
-            "Category 2"
+            {"category": "Category"},
+            {"category": "Category 2"}
         ],
         "styleModifier": "lynn-tile--news-event"
     }

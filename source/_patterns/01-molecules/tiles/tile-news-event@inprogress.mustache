@@ -1,24 +1,30 @@
 {{# tile }}
 <div class="{{ css-prefix }}tile {{ styleModifier }}">
-    <div class="{{ css-prefix }}tile__meta">
+    <div class="{{ css-prefix }}meta">
         {{> atoms-date-digits }}
-        {{# categories }}
-            | {{.}}
-        {{/ categories }}
+        {{# categories.0}}
+        <ul class="{{ css-prefix }}list--horizontal {{ css-prefix }}has-dividers--left">
+            {{#categories}}
+            <li class="{{ css-prefix }}list__item">{{ category }}</li>
+            {{/categories}}
+        </ul>
+        {{/ categories.0}}
     </div>
 
-    <a href="{{ url }}" class="{{ css-prefix }}tile__title">
-        {{ title }}
-    </a>
+    <div class="{{ css-prefix }}container">
+        <a href="{{ url }}" class="{{ css-prefix }}tile__title">
+            {{ title }}
+        </a>
 
-    <div class="{{ css-prefix }}tile__detail">
-        {{{ description }}}
-    </div>    
+        <div class="{{ css-prefix }}tile__detail">
+            {{{ description }}}
+        </div>    
 
-    {{# action }}
-    <div class="{{ css-prefix }}tile__action">
-        {{> atoms-button }}
+        {{# action }}
+        <div class="{{ css-prefix }}tile__action">
+            {{> atoms-button }}
+        </div>
+        {{/ action }}
     </div>
-    {{/ action }}
 </div>
 {{/ tile }}
