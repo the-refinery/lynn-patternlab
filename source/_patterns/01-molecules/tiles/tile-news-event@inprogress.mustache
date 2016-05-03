@@ -2,6 +2,9 @@
 <div class="{{ css-prefix }}tile {{ styleModifier }}">
     <div class="{{ css-prefix }}tile__meta">
         {{> atoms-date-digits }}
+        {{# categories }}
+            | {{.}}
+        {{/ categories }}
     </div>
 
     <a href="{{ url }}" class="{{ css-prefix }}tile__title">

@@ -43,6 +43,18 @@
 }
 
 
+.#{$css-prefix}tile--news-event {
+    .#{$css-prefix}tile__meta {
+        line-height: $line-height-double;
+        margin-bottom: $space-quarter;
+        
+        > time {
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+
 .#{$css-prefix}tile--program {
     .#{$css-prefix}tile__action {
         margin: $space-half 0;
