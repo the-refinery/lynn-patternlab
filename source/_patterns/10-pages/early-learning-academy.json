@@ -1,0 +1,449 @@
+{
+    "banner": [
+        {
+            "card": {
+                "styleModifier": "l-pos-tl overlay",
+                "schema": {
+                    "itemprop": "",
+                    "itemtype": ""
+                },
+                "hasImage": {
+                    "landscape": true
+                },
+                "hasContact": false,
+                "description": "",
+                "dateline": {
+                    "hasTime": true
+                },
+                "action": {
+                    "isButton": true
+                },
+                "hasExpand": false
+            },
+            "picture": {
+                "src": "../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_480x300.jpg",
+                "srcset": "../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_480x300.jpg 480w,
+                    ../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_560x350.jpg 560w,
+                    ../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_768x480.jpg 768w,
+                    ../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_1024x640.jpg 1024w,
+                    ../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_1280x800.jpg 1280w,
+                    ../../images/pages/early-learning-academy/ABCMouse_20160427_051_web_2560x1600.jpg 2560w",
+                "sizes": "100vw",
+                "alt": "Lynn Early Learning Academy"
+            },
+            "headline" : {
+                "islink": false,
+                "text": "Lynn Early Learning Academy"
+            },
+            "subhead": {
+                "visible": true,
+                "text": "<p>Prepare young learners for kindergarten (and have FUN!)</p><p>Technology, tools and tutors for families and pre-school teachers</p>"
+            },
+            "button": {
+                "text": "RSVP",
+                "url": "#"
+            }
+        }
+    ],
+    "navBreadcrumb": {
+        "list": {
+            "styleModifier": "",
+            "items": [
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Home",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item",
+                    "title": "Level 1",
+                    "url": "#"
+                },
+                {
+                    "styleModifier": "lynn-list__item active",
+                    "title": "Level 2",
+                    "url": "#"
+                }
+            ]
+        }
+    },
+    "panels": {
+        "intro": {
+            "styleModifier": "lynn-m-vertical--quadruple"
+        }
+    },
+    "testimonials": [
+        {
+            "media": {
+                "styleModifier": "lynn-l-container--xl lynn-l-container--center lynn-media--testimonial lynn-media--reverse",
+                "thumbnail": {
+                    "image": {
+                        "square": {
+                            "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_055_web_560x560.jpg",
+                            "alt": "Corinne Muller"
+                        }
+                    }
+                },
+                "tile": {
+                    "title": false,
+                    "description": false,
+                    "styleModifier": "lynn-p-horizontal--quadruple",
+                    "testimonial": {
+                        "styleModifier": "",
+                        "quote": "<p>\"Preparing your child for kindergarten can be challenging, but you don't have to do it alone. Our program provides families and pre-school teachers with tools to appraise your child's achievements and develop a foundation for language, learning and social skills.\"</p>",
+                        "source": "Corinne Muller, Lynn Early Learning Academy tutor"
+                    }
+                }
+            }
+        },
+        {}
+    ],
+    "billboards": [
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_061_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "title": "How does Lynn Early Learning Academy work?",
+                    "description": "Your monthly subscription combines award-winning ABC Mouse learning content with instructional segments tailored for preschool children ages <span style=\"white-space: nowrap\">3 to 6</span>.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Read more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_052_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "title": "So, what is ABC Mouse, anyway?",
+                    "description": "ABCmouse.com is the most comprehensive early learning online resource. Establish a foundation of knowledge and build confidence with support from your child's Lynn Early Learning tutor.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_022_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "title": "LanguaMetrics",
+                    "description": "Assess your child's speaking and listening abilities with a highly interactive educational program that will help them see their speaking and reading mistakes to improve more rapidly.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_024_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "title": "Character Counts",
+                    "description": "Lynn Early Learning Academy’s character education puppets provide engaging videos that help children understand what good character means at this young age.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_025_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard lynn-media--reverse",
+                "tile": {
+                    "title": "Learning moments",
+                    "description": "Looking for fun and engaging crafts you can create with your child? Look no further! Our videos turn everyday tasks into fun learning moments.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Watch video"
+                }
+            }
+        },
+        {
+            "image": {
+                "square": {
+                    "source": "../../images/pages/early-learning-academy/ABCMouse_20160427_039_web_800x800.jpg"
+                }
+            },
+            "media": {
+                "styleModifier": "lynn-media--billboard",
+                "tile": {
+                    "title": "LELA assessment",
+                    "description": "Lynn Early Learning tutors provide quick and simple assessment tools that make it easy to differentiate your child’s learning needs. Our tutors support and guide you as you prepare your child for kindergarten.",
+                    "styleModifier": false
+                }
+            },
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Learn more"
+                }
+            }
+        }
+    ],
+
+    "puppets": [
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_019_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Toby the Trustworthy Turkey",
+                    "description": "\"I'm here to teach you why telling the truth, following the rules, and not taking things that don't belong to you are all ways to become trustworthy.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Toby",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_018_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Rocky the Respectful Rat",
+                    "description": "\"I'm here to teach you why being kind to friends and family, using good manners, and listening to adults are all ways to become rrrrrespectful.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Rocky",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_017_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Rosie the Responsible Raven",
+                    "description": "\"I'm here to teach you why always trying your best, doing what you’re supposed to be doing, and helping family and friends are all ways to become responsible.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Rosie",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_020_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Frankie the Fair Fox",
+                    "description": "\"I'm here to teach you why following the rules, sharing with family and friends, and not blaming others for your wrong doings are all ways to treat people fairly.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Frankie",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_015_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Cara the Caring Cow",
+                    "description": "\"I'm here to teach you why it's important to say please and thank you, to be kind to others, and show love for your family and friends.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Cara",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "card": {
+                "styleModifier": "lynn-card--peekaboo",
+                "image": {
+                    "square": {
+                        "source": "../../images/pages/early-learning-academy/ABCMouse_20160226_023_web_560x560.jpg"
+                    }
+                },
+                "tile": {
+                    "styleModifier": "",
+                    "title": "Conner the Citizen Crocodile",
+                    "description": "\"I'm Connor the Citizen Crocodile and I'm here to teach you how cooperating with family and friends, respecting people in charge, and obeying the rules are all ways to be a good citizen.\"",
+                    "testimonial": false,
+                    "action": {
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill-white",
+                            "title": "Meet Conner",
+                            "url": "#"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    
+    "panel": {
+        "styleModifier": "lynn-m-vertical--quadruple",
+        "heading": {
+            "styleModifier": "lynn-l-container-l lynn-l-container--center",
+            "tile": {
+                "title": "Take the next step",
+                "description": "Get started on your child's future today",
+                "testimonial": false
+            }
+        },
+        "content": {
+            "styleModifier": "",
+            "tiles": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-2",
+                    "tile": {
+                        "styleModifier": "lynn-tile--cta lynn-l-container--xxs",
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill",
+                            "title": "Request info",
+                            "url": "#"
+                        },
+                        "description": "How would you like to hear from us?"
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-2",
+                    "tile": {
+                        "styleModifier": "lynn-tile--cta lynn-l-container--xxs",
+                        "button": {
+                            "aria": {
+                                "popup": false
+                            },
+                            "icon": false,
+                            "styleModifier": "lynn-button--pill",
+                            "title": "Subscribe",
+                            "url": "#"
+                        },
+                        "description": "Sign up for your $19.95 monthly subscription."
+                    }
+                }
+            ]
+        }
+    }
+}
