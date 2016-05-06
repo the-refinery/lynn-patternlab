@@ -10,7 +10,10 @@
 
         .#{$css-prefix}tile__title {
             font-size: $font-size-double--em;
-            margin-bottom: $space;
+        }
+
+        .#{$css-prefix}tile__detail {
+            line-height: $line-height-double;
         }
     }
 

@@ -6,16 +6,17 @@
 ~**/
 
 // Line height
-$line-height-eighth:        map-get($sizes, eighth);
-$line-height-quarter:       map-get($sizes, quarter);
-$line-height-half:          map-get($sizes, half);
-$line-height-three-fourths: map-get($sizes, three-fourths);
-$line-height-seven-eighths: map-get($sizes, seven-eighths);
-$line-height:               map-get($sizes, one);
-$line-height-one-and-half:  map-get($sizes, one-and-half);
-$line-height-double:        map-get($sizes, double);
-$line-height-triple:        map-get($sizes, triple);
-$line-height-quadruple:     map-get($sizes, quadruple);
+$line-height-eighth:            map-get($sizes, eighth);
+$line-height-quarter:           map-get($sizes, quarter);
+$line-height-half:              map-get($sizes, half);
+$line-height-three-fourths:     map-get($sizes, three-fourths);
+$line-height-seven-eighths:     map-get($sizes, seven-eighths);
+$line-height:                   map-get($sizes, one);
+$line-height-one-and-quarter:   map-get($sizes, one-and-quarter);
+$line-height-one-and-half:      map-get($sizes, one-and-half);
+$line-height-double:            map-get($sizes, double);
+$line-height-triple:            map-get($sizes, triple);
+$line-height-quadruple:         map-get($sizes, quadruple);
 
 $line-height-base: 1.2;
 

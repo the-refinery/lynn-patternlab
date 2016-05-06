@@ -33,11 +33,11 @@
             },
             "headline" : {
                 "islink": false,
-                "text": "Lynn Early Learning Academy"
+                "text": "Prepare young learners for kindergarten (and have FUN!)"
             },
             "subhead": {
                 "visible": true,
-                "text": "<p>Prepare young learners for kindergarten (and have FUN!)</p><p>Technology, tools and tutors for families and pre-school teachers</p>"
+                "text": "<p>Technology, tools and tutors for families and pre-school teachers</p>"
             },
             "button": {
                 "text": "RSVP",
@@ -108,7 +108,7 @@
             "media": {
                 "styleModifier": "lynn-media--billboard lynn-media--reverse",
                 "tile": {
-                    "title": "How does Lynn Early Learning Academy work?",
+                    "title": "How does it work?",
                     "description": "Your monthly subscription combines award-winning ABC Mouse learning content with instructional segments tailored for preschool children ages <span style=\"white-space: nowrap\">3 to 6</span>.",
                     "styleModifier": false
                 }
