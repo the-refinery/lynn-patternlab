@@ -75,7 +75,7 @@
     "testimonials": [
         {
             "media": {
-                "styleModifier": "lynn-l-container--xl lynn-l-container--center lynn-media--testimonial lynn-media--reverse",
+                "styleModifier": "lynn-l-container--xl lynn-l-container--center lynn-media--testimonial",
                 "thumbnail": {
                     "image": {
                         "square": {
