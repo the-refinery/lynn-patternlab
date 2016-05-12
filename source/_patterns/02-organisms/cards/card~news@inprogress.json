@@ -1,0 +1,19 @@
+{
+    "card": {
+        "thumbnail": true,
+        "styleModifier": "lynn-l-container--xs",
+        "type": {
+            "isNews": true
+        },
+        "tile": {
+            "categories": [
+                {"category": "Category"},
+                {"category": "Category 2"}
+            ],
+            "styleModifier": "lynn-tile--news-event",
+            "title": "News card",
+            "description": "A basic news card displays a photo, publication date, title and brief description.",
+            "testimonial": false
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "card": {
+        "thumbnail": true,
+        "styleModifier": "lynn-card--news lynn-card--peekaboo lynn-l-container--xs",
+        "type": {
+            "isNews": true
+        },
+        "tile": {
+            "categories": false,
+            "styleModifier": "lynn-tile--news-event",
+            "title": "News card - peekaboo",
+            "description": "A basic news card displays a photo, publication date, title and brief description.",
+            "testimonial": false,
+            "action": {
+                "button": {
+                    "aria": {
+                        "popup": false
+                    },
+                    "icon": false,
+                    "styleModifier": "lynn-button--pill-white",
+                    "title": "Read more",
+                    "url": "#"
+                }
+            },
+            "datetime": {
+                "styleModifier": "lynn-datestamp",
+                "itemprop": "",
+                "iso": "2016-10-27T13:20:30-05:00",
+                "month": {
+                    "digit": "10"
+                },
+                "day": {
+                    "digit": "27"
+                },
+                "year": {
+                    "short": "16"
+                }
+            }
+        }
+    }
+}
