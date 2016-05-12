@@ -140,26 +140,20 @@
 }
 
 .#{$css-prefix}card--event.#{$css-prefix}card--peekaboo {
-    .#{$css-prefix}date-time-published {
-            display: block;
-            height: $space-quadruple;
-            padding: $space-quarter;
+    .#{$css-prefix}datestamp {
+        @include flexbox;
+        background-color: $lynn-blue;
+        color: $white;
+        flex-flow: column;
+        height: $space-quadruple;
+    }
 
-            background-color: $lynn-blue;
-            color: $white;
-            padding: $space 0;
-        }
+    .#{$css-prefix}time {
+        font-weight: normal;
+    }
 }
 
 
 .#{$css-prefix}card--peekaboo {
     @extend %ph-card-news-event-rollover;
-
-    
-
-    
-
-    
-
-
 }

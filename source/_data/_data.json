@@ -29,6 +29,12 @@
         "year": {
             "long": "2016",
             "short": "16"
+        },
+        "time": {
+            "styleModifier": "lynn-time",
+            "hour": "1",
+            "minute": "20",
+            "ampm": "p.m."
         }
     },
 

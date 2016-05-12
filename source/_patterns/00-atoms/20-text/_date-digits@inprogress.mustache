@@ -1,3 +1,8 @@
 {{# datetime }}
-<time datetime="{{ iso }}" itemprop="{{ itemprop }}" class="{{ styleModifier }}">{{ month.digit }}/{{ day.digit }}/{{ year.short }}</time>
+<time datetime="{{ iso }}" itemprop="{{ itemprop }}" class="{{ styleModifier }}">
+    {{ month.digit }}/{{ day.digit }}/{{ year.short }}
+    {{# time }}
+    <span class="{{ styleModifier }}">{{ hour }}:{{ minute }} {{ ampm }}</span>
+    {{/ time }}
+</time>
 {{/ datetime }}
