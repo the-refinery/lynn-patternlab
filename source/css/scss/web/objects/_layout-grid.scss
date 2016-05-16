@@ -28,8 +28,8 @@
 
 .#{$css-prefix}gi {
     &--padded {
-        padding-left: $space;
-        padding-right: $space;
+        padding-left: $space-half;
+        padding-right: $space-half;
     }
 }
 

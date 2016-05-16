@@ -86,6 +86,14 @@
 %ph-card-news-event-rollover {
     .#{$css-prefix}card__caption {
         align-items: flex-start;
+
+        @include bp-min($bp-m) {
+            font-size: $font-size-three-fourths--em;
+        }
+
+        @include bp-min($bp-xl) {
+            font-size: $font-size--em;
+        }
     }
 
     .#{$css-prefix}tile--news-event {
@@ -105,7 +113,7 @@
     }
 
     .#{$css-prefix}container {
-        @include flex(1 1 0);
+        @include flex(2 1 0);
 
         padding: $space-quarter $space-half;
         text-align: left;

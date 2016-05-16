@@ -1,0 +1,288 @@
+{
+    "panel": {
+        "styleModifier": "lynn-m-vertical--quadruple",
+        "heading": {
+            "styleModifier": "lynn-l-container--xl lynn-l-container--center",
+            "tile": {
+                "title": "What's happening at Lynn",
+                "description": "",
+                "testimonial": false
+            }
+        },
+        "content": {
+            "grid": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--news lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "News card - peekaboo",
+                            "description": "A basic news card displays a photo, publication date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Read more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--event lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "Event card - peekaboo",
+                            "description": "A basic event card displays a photo, event date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Learn more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                },
+                                "time": {
+                                    "styleModifier": "lynn-time",
+                                    "hour": "1",
+                                    "minute": "20",
+                                    "ampm": "p.m."
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--news lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "News card - peekaboo",
+                            "description": "A basic news card displays a photo, publication date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Read more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--event lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "Event card - peekaboo",
+                            "description": "A basic event card displays a photo, event date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Learn more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                },
+                                "time": {
+                                    "styleModifier": "lynn-time",
+                                    "hour": "1",
+                                    "minute": "20",
+                                    "ampm": "p.m."
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--news lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "News card - peekaboo",
+                            "description": "A basic news card displays a photo, publication date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Read more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--event lynn-card--peekaboo lynn-l-container--xs",
+                        "type": {
+                            "isNews": true
+                        },
+                        "tile": {
+                            "categories": false,
+                            "styleModifier": "lynn-tile--news-event",
+                            "title": "Event card - peekaboo",
+                            "description": "A basic event card displays a photo, event date, title and brief description.",
+                            "testimonial": false,
+                            "action": {
+                                "button": {
+                                    "aria": {
+                                        "popup": false
+                                    },
+                                    "icon": false,
+                                    "styleModifier": "lynn-button",
+                                    "title": "Learn more",
+                                    "url": "#"
+                                }
+                            },
+                            "datetime": {
+                                "styleModifier": "lynn-datestamp",
+                                "itemprop": "",
+                                "iso": "2016-10-27T13:20:30-05:00",
+                                "month": {
+                                    "digit": "10"
+                                },
+                                "day": {
+                                    "digit": "27"
+                                },
+                                "year": {
+                                    "short": "16"
+                                },
+                                "time": {
+                                    "styleModifier": "lynn-time",
+                                    "hour": "1",
+                                    "minute": "20",
+                                    "ampm": "p.m."
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "subsection": "<p class=\"lynn-text-align--center\"><a href=\"#\" class=\"lynn-button\">Load more</a> | <a href=\"#\" class=\"lynn-button\">View all</a></p>"
+        }
+    }
+}

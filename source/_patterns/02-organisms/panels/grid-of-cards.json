@@ -1,0 +1,26 @@
+{
+    "panel": {
+        "content": {
+            "grid": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--quadruple  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3"
+                }
+            ]
+        }
+    }
+}
