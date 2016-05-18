@@ -147,12 +147,15 @@
     "card": {
         "styleModifier": "lynn-l-container--xs",
         "thumbnail": true,
-        "tile": {
-            "title": "Card title",
-            "titleLink": true,
-            "description": "The card description should be a short blurb",
+        "caption": {
             "styleModifier": "",
-            "testimonial": false
+            "tile": {
+                "title": "Card title",
+                "titleLink": true,
+                "description": "The card description should be a short blurb",
+                "styleModifier": "",
+                "testimonial": false
+            }
         }
     },
 

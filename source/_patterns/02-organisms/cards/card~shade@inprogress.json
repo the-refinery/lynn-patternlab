@@ -1,20 +1,23 @@
 {
     "card": {
         "styleModifier": "lynn-card--shade lynn-l-container--xs",
-        "tile": {
+        "caption": {
             "styleModifier": "",
-            "title": "Card shade",
-            "description": "The card shade object hides the descriptive text until the user interacts with the card.",
-            "testimonial": false,
-            "action": {
-                "button": {
-                    "aria": {
-                        "popup": false
-                    },
-                    "icon": false,
-                    "styleModifier": "lynn-button--pill-white",
-                    "title": "Button text",
-                    "url": "#"
+            "tile": {
+                "styleModifier": "",
+                "title": "Card shade",
+                "description": "The card shade object hides the descriptive text until the user interacts with the card.",
+                "testimonial": false,
+                "action": {
+                    "button": {
+                        "aria": {
+                            "popup": false
+                        },
+                        "icon": false,
+                        "styleModifier": "lynn-button--pill-white",
+                        "title": "Button text",
+                        "url": "#"
+                    }
                 }
             }
         }

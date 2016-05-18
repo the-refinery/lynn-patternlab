@@ -166,6 +166,7 @@
 %ph-card-news-event-rollover {
     .#{$css-prefix}card__caption {
         align-items: flex-start;
+        height: 100%;
 
         @include bp-min($bp-m) {
             font-size: $font-size-three-fourths--em;
@@ -203,7 +204,6 @@
         @include flexbox;
         
         align-items: center;
-        // height: $space-quadruple;
         justify-content: center;
         padding: $space-one-and-half $space-quarter;
     }
@@ -227,7 +227,13 @@
     }
 }
 
+.#{$css-prefix}card--news.#{$css-prefix}card--peekaboo {
+    @extend %ph-card-news-event-rollover;
+}
+
 .#{$css-prefix}card--event.#{$css-prefix}card--peekaboo {
+    @extend %ph-card-news-event-rollover;
+
     .#{$css-prefix}datestamp {
         @include flexbox;
         background-color: $lynn-blue;
@@ -239,9 +245,4 @@
     .#{$css-prefix}time {
         font-weight: normal;
     }
-}
-
-
-.#{$css-prefix}card--peekaboo {
-    @extend %ph-card-news-event-rollover;
 }

@@ -5,41 +5,44 @@
         "type": {
             "isNews": true
         },
-        "tile": {
-            "categories": false,
-            "styleModifier": "lynn-tile--news-event",
-            "title": "Event card - peekaboo",
-            "description": "A basic event card displays a photo, event date, title and brief description.",
-            "testimonial": false,
-            "action": {
-                "button": {
-                    "aria": {
-                        "popup": false
+        "caption": {
+            "styleModifier": "",
+            "tile": {
+                "categories": false,
+                "styleModifier": "lynn-tile--news-event",
+                "title": "Event card - peekaboo",
+                "description": "A basic event card displays a photo, event date, title and brief description.",
+                "testimonial": false,
+                "action": {
+                    "button": {
+                        "aria": {
+                            "popup": false
+                        },
+                        "icon": false,
+                        "styleModifier": "lynn-button--pill-white",
+                        "title": "Learn more",
+                        "url": "#"
+                    }
+                },
+                "datetime": {
+                    "styleModifier": "lynn-datestamp",
+                    "itemprop": "",
+                    "iso": "2016-10-27T13:20:30-05:00",
+                    "month": {
+                        "digit": "10"
                     },
-                    "icon": false,
-                    "styleModifier": "lynn-button--pill-white",
-                    "title": "Learn more",
-                    "url": "#"
-                }
-            },
-            "datetime": {
-                "styleModifier": "lynn-datestamp",
-                "itemprop": "",
-                "iso": "2016-10-27T13:20:30-05:00",
-                "month": {
-                    "digit": "10"
-                },
-                "day": {
-                    "digit": "27"
-                },
-                "year": {
-                    "short": "16"
-                },
-                "time": {
-                    "styleModifier": "lynn-time",
-                    "hour": "1",
-                    "minute": "20",
-                    "ampm": "p.m."
+                    "day": {
+                        "digit": "27"
+                    },
+                    "year": {
+                        "short": "16"
+                    },
+                    "time": {
+                        "styleModifier": "lynn-time",
+                        "hour": "1",
+                        "minute": "20",
+                        "ampm": "p.m."
+                    }
                 }
             }
         }

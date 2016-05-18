@@ -5,32 +5,35 @@
         "type": {
             "isNews": true
         },
-        "tile": {
-            "categories": [
-                {"category": "Category"},
-                {"category": "Category 2"}
-            ],
-            "styleModifier": "lynn-tile--news-event",
-            "title": "News card",
-            "description": "A basic news card displays a photo, publication date, title and brief description.",
-            "testimonial": false,
-            "datetime": {
-                "styleModifier": "",
-                "itemprop": "",
-                "iso": "2016-10-27T13:20:30-05:00",
-                "month": {
-                    "long": "October",
-                    "short": "Oct.",
-                    "digit": "10"
-                },
-                "day": {
-                    "long": "Thursday",
-                    "short": "Thurs.",
-                    "digit": "27"
-                },
-                "year": {
-                    "long": "2016",
-                    "short": "16"
+        "caption": {
+            "styleModifier": "",
+            "tile": {
+                "categories": [
+                    {"category": "Category"},
+                    {"category": "Category 2"}
+                ],
+                "styleModifier": "lynn-tile--news-event",
+                "title": "News card",
+                "description": "A basic news card displays a photo, publication date, title and brief description.",
+                "testimonial": false,
+                "datetime": {
+                    "styleModifier": "",
+                    "itemprop": "",
+                    "iso": "2016-10-27T13:20:30-05:00",
+                    "month": {
+                        "long": "October",
+                        "short": "Oct.",
+                        "digit": "10"
+                    },
+                    "day": {
+                        "long": "Thursday",
+                        "short": "Thurs.",
+                        "digit": "27"
+                    },
+                    "year": {
+                        "long": "2016",
+                        "short": "16"
+                    }
                 }
             }
         }
