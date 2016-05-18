@@ -20,21 +20,23 @@ $font: $font-family-base;
 
 
 // REM - Use for modules on the page
-$font-size--rem:                map-get($sizes, one) + rem;
-$font-size-three-fourths--rem:  map-get($sizes, three-fourths) + rem;
-$font-size-seven-eights--rem:   map-get($sizes, seven-eighths) + rem;
+$font-size--rem:                    map-get($sizes, one) + rem;
+$font-size-three-fourths--rem:      map-get($sizes, three-fourths) + rem;
+$font-size-seven-eights--rem:       map-get($sizes, seven-eighths) + rem;
 $font-size-one-and-quarter--rem:    map-get($sizes, one-and-quarter) + rem;
-$font-size-one-and-half--rem:   map-get($sizes, one-and-half) + rem;
-$font-size-double--rem:         map-get($sizes, double) + rem;
+$font-size-one-and-half--rem:       map-get($sizes, one-and-half) + rem;
+$font-size-double--rem:             map-get($sizes, double) + rem;
+$font-size-triple--rem:             map-get($sizes, triple) + rem;
 
 
 // EM - Use for text elements on the page
-$font-size--em:                 map-get($sizes, one) + em;
-$font-size-three-fourths--em:   map-get($sizes, three-fourths) + em;
-$font-size-seven-eights--em:    map-get($sizes, seven-eighths) + em;
-$font-size-one-and-quarter--em:    map-get($sizes, one-and-quarter) + em;
-$font-size-one-and-half--em:    map-get($sizes, one-and-half) + em;
-$font-size-double--em:          map-get($sizes, double) + em;
+$font-size--em:                     map-get($sizes, one) + em;
+$font-size-three-fourths--em:       map-get($sizes, three-fourths) + em;
+$font-size-seven-eights--em:        map-get($sizes, seven-eighths) + em;
+$font-size-one-and-quarter--em:     map-get($sizes, one-and-quarter) + em;
+$font-size-one-and-half--em:        map-get($sizes, one-and-half) + em;
+$font-size-double--em:              map-get($sizes, double) + em;
+$font-size-triple--em:              map-get($sizes, triple) + em;
 
                   
 // PX - Fallback
@@ -44,6 +46,7 @@ $font-size-seven-eights--px: (map-get($sizes, seven-eighths) * $font-size-base);
 $font-size-one-and-quarter--px: (map-get($sizes, one-and-quarter) * $font-size-base);
 $font-size-one-and-half--px: (map-get($sizes, one-and-half) * $font-size-base);
 $font-size-double--px: (map-get($sizes, double) * $font-size-base);
+$font-size-triple--px: (map-get($sizes, triple) * $font-size-base);
 
 
 // Weight

@@ -16,3 +16,12 @@
         text-align: right;
     }
 }
+
+
+// Size helpers
+.#{$css-prefix}text-size {
+    &--base {
+        font-size: $font-size--rem;
+
+    }
+}

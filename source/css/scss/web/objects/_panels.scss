@@ -4,18 +4,40 @@
 
 .#{$css-prefix}panel {
     &__heading {
-        font-size: $font-size-one-and-half--rem;
         margin-bottom: $space-quadruple;
         text-align: center;
 
         .#{$css-prefix}tile__title {
-            font-size: $font-size-double--em;
+            font-size: $font-size-triple--em;
         }
 
         .#{$css-prefix}tile__detail {
+            font-size: $font-size-one-and-half--em;
             line-height: $line-height-double;
         }
     }
 
     &__content {}
+}
+
+.#{$css-prefix}panel--photostream {
+    .#{$css-prefix}gi {
+        &:nth-child(3n+1) {
+            .#{$css-prefix}card__caption {
+                @extend %ph-card__caption--blue;
+            }
+        }
+
+        &:nth-child(3n+2) {
+            .#{$css-prefix}card__caption {
+                @extend %ph-card__caption--orange;
+            }
+        }
+
+        &:nth-child(3n+3) {
+            .#{$css-prefix}card__caption {
+                @extend %ph-card__caption--green;
+            }
+        }
+    }
 }

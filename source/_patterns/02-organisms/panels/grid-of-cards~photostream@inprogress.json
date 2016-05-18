@@ -1,0 +1,294 @@
+{
+    "panel": {
+        "styleModifier": "lynn-panel--photostream lynn-m-vertical--quadruple",
+        "heading": {
+            "styleModifier": "lynn-l-container--xl lynn-l-container--center",
+            "tile": {
+                "title": "We are Lynn",
+                "description": "",
+                "testimonial": false,
+                "action": {
+                    "button": {
+                        "title": "Submit a photo",
+                        "styleModifier": "lynn-button--pill-white"
+                    }
+                }
+            }
+        },
+        "content": {
+            "grid": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-vertical--half  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2 lynn-l-size-l--1-of-3",
+                    "card": {
+                        "thumbnail": true,
+                        "styleModifier": "lynn-card--shade-arrow lynn-l-container--xs",
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "categories": false,
+                                "styleModifier": "",
+                                "title": false,
+                                "testimonial": {
+                                    "quote": "Student or professor quote about the vast and varied opportunities at Lynn. Something for everyone.",
+                                    "source": "Student Name 'XX, Program title"
+                                },
+                                "action": [
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-facebook fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-twitter fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    },
+                                    {
+                                        "button": {
+                                            "icon": {
+                                                "styleModifier": "lynn-button__icon fa fa-instagram fa-2x"
+                                            },
+                                            "title": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "subsection": "<p class=\"lynn-text-align--center lynn-p-top--quadruple\"><a href=\"#\" class=\"lynn-button\">Load more</a></p>"
+        }
+    }
+}

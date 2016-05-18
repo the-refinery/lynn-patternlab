@@ -9,7 +9,8 @@
             {{> atoms-square }}
             {{/ thumbnail }}
         </div>
-        <div class="{{ css-prefix }}card__caption">
+        {{# caption }}
+        <div class="{{ css-prefix }}card__caption {{ styleModifier }}">
             {{^ type }}
             {{> molecules-tile }}
             {{/ type }}
@@ -21,6 +22,7 @@
 
             {{/ type }}
         </div>
+        {{/ caption }}
     </div>
 </div>
 {{/ card }}

@@ -80,6 +80,86 @@
     }
 }
 
+.#{$css-prefix}card--shade-arrow {
+    @extend %ph-card-rollover;
+
+    .#{$css-prefix}card__caption {
+
+        &:before {
+            border-bottom: $space-quarter solid;
+            color: rgba($lynn-gray-web, .3);
+            content: "\F077";
+            display: inline;
+            font-family: FontAwesome;
+            font-size: $font-size-triple--rem;
+            height: $space-one-and-half;
+            line-height: $line-height;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            top: -#{$space-one-and-half};
+            width: 100%;
+        }
+
+        &--blue {
+            @extend %ph-card__caption--blue;
+        }
+
+        &--green {
+            @extend %ph-card__caption--green;
+        }
+
+        &--orange {
+            @extend %ph-card__caption--orange;
+        }
+    }
+
+    .#{$css-prefix}tile {
+        @extend %ph-tile-center-padded;
+    }
+}
+
+%ph-card__caption--blue {
+    background-color: rgba($accent-blue, .9);
+    color: $white;
+
+    &:before {
+        color: rgba($accent-blue, .9);
+    }
+
+    .#{$css-prefix}button {
+        color: $white;
+    }
+}
+
+%ph-card__caption--green {
+    background-color: rgba($accent-green, .9);
+    color: $white;
+
+    &:before {
+        color: rgba($accent-green, .9);
+    }
+
+    .#{$css-prefix}button {
+        color: $white;
+    }
+}
+
+%ph-card__caption--orange {
+    background-color: rgba($accent-orange, .9);
+    color: $white;
+
+    &:before {
+        color: rgba($accent-orange, .9);
+    }
+
+    .#{$css-prefix}button {
+        color: $white;
+    }
+}
+
+
+
 
 
 /** News and Events **/
