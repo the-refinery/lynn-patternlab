@@ -29,26 +29,32 @@
 }
 
 /** Button colors **/
-%partial-button--blue {
+%ph-button--pill-blue {
     background-color: $lynn-blue;
     border-color: $lynn-blue;
     color: $white;
 }
 
-%partial-button--gray {
-    background-color: $white;
+%ph-button--pill-gray {
+    background-color: $lynn-gray-web-70;
     border-color: $lynn-gray-web-70;
-    color: $lynn-gray-web-70;
+    color: $white;
 }
 
-%partial-button--white {
-    background-color: $white;
+%ph-button--outline-blue {
+    background-color: transparent;
     border-color: $lynn-blue;
     color: $lynn-blue;
 }
 
+%ph-button--outline-gray {
+    background-color: transparent;
+    border-color: $lynn-gray-web-70;
+    color: $lynn-gray-web-70;
+}
+
 /** Pill button **/
-%partial-button--pill {
+%ph-button--pill {
     border: {
         radius: 3em;
         style: solid;
@@ -60,29 +66,29 @@
 }
 
 .#{$css-prefix}button--pill {
-    @extend %partial-button--pill;
-    @extend %partial-button--blue;
+    @extend %ph-button--pill;
+    @extend %ph-button--pill-blue;
 
     &:hover {
-        @extend %partial-button--white;
+        @extend %ph-button--outline-blue;
     }
 }
 
-.#{$css-prefix}button--pill-gray {
-    @extend %partial-button--pill;
-    @extend %partial-button--gray;
+.#{$css-prefix}button--outline {
+    @extend %ph-button--pill;
+    @extend %ph-button--outline-blue;
 
     &:hover {
-        @extend %partial-button--white;
+        @extend %ph-button--pill-blue;
     }
 }
 
-.#{$css-prefix}button--pill-white {
-    @extend %partial-button--pill;
-    @extend %partial-button--white;
+.#{$css-prefix}button--outline-gray {
+    @extend %ph-button--pill;
+    @extend %ph-button--outline-gray;
 
     &:hover {
-        @extend %partial-button--blue;
+        @extend %ph-button--outline-blue;
     }
 }
 

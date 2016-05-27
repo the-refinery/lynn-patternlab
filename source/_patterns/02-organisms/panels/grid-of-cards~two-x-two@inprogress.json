@@ -34,7 +34,7 @@
                                             "popup": false
                                         },
                                         "icon": false,
-                                        "styleModifier": "lynn-button--pill-white",
+                                        "styleModifier": "lynn-button--outline",
                                         "title": "Button text",
                                         "url": "#"
                                     }
@@ -66,7 +66,7 @@
                                             "popup": false
                                         },
                                         "icon": false,
-                                        "styleModifier": "lynn-button--pill-white",
+                                        "styleModifier": "lynn-button--outline",
                                         "title": "Button text",
                                         "url": "#"
                                     }
@@ -98,7 +98,7 @@
                                             "popup": false
                                         },
                                         "icon": false,
-                                        "styleModifier": "lynn-button--pill-white",
+                                        "styleModifier": "lynn-button--outline",
                                         "title": "Button text",
                                         "url": "#"
                                     }
@@ -130,7 +130,7 @@
                                             "popup": false
                                         },
                                         "icon": false,
-                                        "styleModifier": "lynn-button--pill-white",
+                                        "styleModifier": "lynn-button--outline",
                                         "title": "Button text",
                                         "url": "#"
                                     }

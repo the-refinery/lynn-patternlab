@@ -137,7 +137,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Read more"
                 }
             }
@@ -159,7 +159,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Learn more"
                 }
             }
@@ -181,7 +181,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Learn more"
                 }
             }
@@ -203,7 +203,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Learn more"
                 }
             }
@@ -225,7 +225,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Watch video"
                 }
             }
@@ -247,7 +247,7 @@
             "testimonial": false,
             "action": {
                 "button": {
-                    "styleModifier": "lynn-button--pill-white",
+                    "styleModifier": "lynn-button--outline",
                     "title": "Learn more"
                 }
             }
@@ -274,7 +274,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Toby",
                             "url": "#"
                         }
@@ -301,7 +301,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Rocky",
                             "url": "#"
                         }
@@ -328,7 +328,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Rosie",
                             "url": "#"
                         }
@@ -355,7 +355,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Frankie",
                             "url": "#"
                         }
@@ -382,7 +382,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Cara",
                             "url": "#"
                         }
@@ -409,7 +409,7 @@
                                 "popup": false
                             },
                             "icon": false,
-                            "styleModifier": "lynn-button--pill-white",
+                            "styleModifier": "lynn-button--outline",
                             "title": "Meet Conner",
                             "url": "#"
                         }
