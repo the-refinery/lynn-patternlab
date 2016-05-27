@@ -56,6 +56,7 @@
  *          Tiles
  *      ORGANISMS
  *          Cards
+ *      Themes
 **/
 
 /*****************************************************************************\
@@ -145,3 +146,6 @@
 /** ORGANISMS **/
 // Cards
 @import "scss/web/objects/cards";
+
+/** THEMES **/
+@import "scss/web/objects/themes";
