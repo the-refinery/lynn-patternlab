@@ -75,6 +75,14 @@ $animate-quick: 0.2s;
 	}
 }
 
+.demo .lynn-gi {
+	background-color: rgb(239, 239, 240);
+	border: 1px solid rgb(208, 209, 210);
+	text-align: center;
+	margin-bottom: $sg-pad-half;
+	padding: 1em !important;
+}
+
 //Demo box for animation
 .demo-animate {
 	background: #ddd;
