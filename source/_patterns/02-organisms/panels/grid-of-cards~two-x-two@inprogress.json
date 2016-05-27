@@ -1,0 +1,145 @@
+{
+    "panel": {
+        "styleModifier": "lynn-m-vertical--quadruple",
+        "heading": {
+            "styleModifier": "lynn-l-container--xl lynn-l-container--center",
+            "tile": {
+                "title": "Grid of cards - 2x2",
+                "description": "",
+                "testimonial": false
+            }
+        },
+        "content": {
+            "grid": [
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--double  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2",
+                    "card": {
+                        "styleModifier": "lynn-card--peekaboo",
+                        "image": {
+                            "square": {
+                                "source": "http://placehold.it/560x560",
+                                "alt": "Square image"
+                            }
+                        },
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "styleModifier": "",
+                                "title": "Card peekaboo",
+                                "description": "The peekaboo card shows only the title, hiding the descriptive text until the user interacts with the card.",
+                                "testimonial": false,
+                                "action": {
+                                    "button": {
+                                        "aria": {
+                                            "popup": false
+                                        },
+                                        "icon": false,
+                                        "styleModifier": "lynn-button--pill-white",
+                                        "title": "Button text",
+                                        "url": "#"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--double  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2",
+                    "card": {
+                        "styleModifier": "lynn-card--peekaboo",
+                        "image": {
+                            "square": {
+                                "source": "http://placehold.it/560x560",
+                                "alt": "Square image"
+                            }
+                        },
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "styleModifier": "",
+                                "title": "Card peekaboo",
+                                "description": "The peekaboo card shows only the title, hiding the descriptive text until the user interacts with the card.",
+                                "testimonial": false,
+                                "action": {
+                                    "button": {
+                                        "aria": {
+                                            "popup": false
+                                        },
+                                        "icon": false,
+                                        "styleModifier": "lynn-button--pill-white",
+                                        "title": "Button text",
+                                        "url": "#"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--double  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2",
+                    "card": {
+                        "styleModifier": "lynn-card--peekaboo",
+                        "image": {
+                            "square": {
+                                "source": "http://placehold.it/560x560",
+                                "alt": "Square image"
+                            }
+                        },
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "styleModifier": "",
+                                "title": "Card peekaboo",
+                                "description": "The peekaboo card shows only the title, hiding the descriptive text until the user interacts with the card.",
+                                "testimonial": false,
+                                "action": {
+                                    "button": {
+                                        "aria": {
+                                            "popup": false
+                                        },
+                                        "icon": false,
+                                        "styleModifier": "lynn-button--pill-white",
+                                        "title": "Button text",
+                                        "url": "#"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "styleModifier": "lynn-gi--padded lynn-p-bottom--double  lynn-l-size--1-of-1 lynn-l-size-m--1-of-2",
+                    "card": {
+                        "styleModifier": "lynn-card--peekaboo",
+                        "image": {
+                            "square": {
+                                "source": "http://placehold.it/560x560",
+                                "alt": "Square image"
+                            }
+                        },
+                        "caption": {
+                            "styleModifier": "",
+                            "tile": {
+                                "styleModifier": "",
+                                "title": "Card peekaboo",
+                                "description": "The peekaboo card shows only the title, hiding the descriptive text until the user interacts with the card.",
+                                "testimonial": false,
+                                "action": {
+                                    "button": {
+                                        "aria": {
+                                            "popup": false
+                                        },
+                                        "icon": false,
+                                        "styleModifier": "lynn-button--pill-white",
+                                        "title": "Button text",
+                                        "url": "#"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
