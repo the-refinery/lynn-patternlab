@@ -10,7 +10,7 @@
                 "action": {
                     "button": {
                         "title": "Submit a photo",
-                        "styleModifier": "lynn-button--pill-white"
+                        "styleModifier": "lynn-button--outline"
                     }
                 }
             }
