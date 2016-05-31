@@ -1,0 +1,60 @@
+/**~
+ *  _themes.scss
+ *
+ *  Themes apply a combination of colors to elements
+ *
+~**/
+
+%ph-theme--gray-10 {
+    background-color: $lynn-gray-web-10;
+}
+
+%ph-theme--gray-20 {
+    background-color: $lynn-gray-web-20;
+}
+
+%ph-theme--gray-30 {
+    background-color: $lynn-gray-web-30;
+}
+
+%ph-theme--gray-40 {
+    background-color: $lynn-gray-web-40;
+}
+
+%ph-theme--blue {
+    background-color: $secondary-blue;
+}
+
+%ph-theme--green {
+    background-color: $secondary-green;
+}
+
+%ph-theme--orange {
+    background-color: $secondary-orange;
+}
+
+.#{$css-prefix}theme {
+    &--gray-10 {
+        @extend %ph-theme--gray-10;
+    }
+
+    &--gray-20 {
+        @extend %ph-theme--gray-20;
+    }
+
+    &--gray-30 {
+        @extend %ph-theme--gray-30;
+    }
+
+    &--blue {
+        @extend %ph-theme--blue;
+    }
+
+    &--orange {
+        @extend %ph-theme--orange;
+    }
+
+    &--green {
+        @extend %ph-theme--green;
+    }
+}
