@@ -18,7 +18,7 @@ $line-height-double:            map-get($sizes, double);
 $line-height-triple:            map-get($sizes, triple);
 $line-height-quadruple:         map-get($sizes, quadruple);
 
-$line-height-base: 1.2;
+$line-height-base: $line-height-one-and-quarter;
 
 // Space (relative)
 $space-eighth--em:        map-get($sizes, eighth) + em;

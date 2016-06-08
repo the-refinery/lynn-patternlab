@@ -21,12 +21,22 @@
             content: "|";
             margin: 0 $space-half;
         }
+
+        > .#{$css-prefix}list__item:first-child:before {
+            content: "";
+            margin: 0;
+        }
     }
 
     &--right {
         > .#{$css-prefix}list__item:after {
             content: "|";
             margin: 0 $space-half;
+        }
+
+        > .#{$css-prefix}list__item:last-child:after {
+            content: "";
+            margin: 0;
         }
     }
 }

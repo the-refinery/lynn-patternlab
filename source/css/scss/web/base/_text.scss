@@ -17,11 +17,71 @@
     }
 }
 
+@each $point in map-keys($layout) {
+
+    $breakpoint: map-get(map-get($layout, $point), 'breakpoint');
+
+    @include bp-min($breakpoint) {
+        .#{$css-prefix}text-align-#{$point} {
+            &--center {
+                text-align: center;
+            }
+
+            &--left {
+                text-align: left;
+            }
+
+            &--right {
+                text-align: right;
+            }
+        }
+    }
+
+    @include bp-max($breakpoint) {
+        .#{$css-prefix}text-align-#{$point}-max {
+            &--center {
+                text-align: center;
+            }
+
+            &--left {
+                text-align: left;
+            }
+
+            &--right {
+                text-align: right;
+            }
+        }
+    }
+}
+
 
 // Size helpers
 .#{$css-prefix}text-size {
     &--base {
         font-size: $font-size--rem;
+    }
 
+    &--three-fourths {
+        font-size: $font-size-three-fourths--em;
+    }
+
+    &--seven-eighths {
+        font-size: $font-size-seven-eighths--em;
+    }
+
+    &--one-and-quarter {
+        font-size: $font-size-one-and-quarter--em;
+    }
+
+    &--one-and-half {
+        font-size: $font-size-one-and-half--em;
+    }
+
+    &--double {
+        font-size: $font-size-double--em;
+    }
+
+    &--triple {
+        font-size: $font-size-triple--em;
     }
 }

@@ -20,6 +20,32 @@
     &__content {}
 }
 
+
+.#{$css-prefix}panel--footer {
+    a {
+        color: $lynn-gray-web;
+
+        &:hover {
+            color: $lynn-blue;
+        }
+    }
+
+    .#{$css-prefix}footer {
+        &__main {
+            .#{$css-prefix}list--vertical {
+                .#{$css-prefix}list__item {
+                    line-height: $line-height-double;
+                }
+            }
+        }
+
+        &__sub {
+            font-size: $font-size-seven-eighths--rem;
+        }
+    }
+}
+
+
 .#{$css-prefix}panel--photostream {
     .#{$css-prefix}gi {
         &:nth-child(3n+1) {
