@@ -184,5 +184,136 @@
             "title": "School of Aeronautics",
             "description": "Your opportunities and options are sky high."
         }
-    ]
+    ],
+
+    "footer": {
+        "resources": {
+            "list": {
+                "styleModifier": "lynn-list--vertical lynn-m-bottom--quadruple",
+                "items": [
+                    {
+                        "title": "Current students",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Incoming students",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Faculty & staff",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Parents",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Alumni",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Partners",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Media",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    }
+                ]
+            }
+        },
+        "menu": {
+            "list": {
+                "styleModifier": "lynn-list--vertical lynn-text-size--one-and-quarter lynn-m-bottom--quadruple",
+                "items": [
+                    {
+                        "title": "About Lynn",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Academics",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Admission & Aid",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Student Life",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Athletics",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "News & Events",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Giving",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    }
+                ]
+            }
+        },
+        "menu-secondary": {
+            "list": {
+                "styleModifier": "lynn-list--vertical lynn-m-bottom--quadruple",
+                "items": [
+                    {
+                        "title": "Contact the University",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "University Policies",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Employment opportunities",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Emergency contact",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    }
+                ]
+            }
+        },
+        "terms": {
+            "list": {
+                "styleModifier": "lynn-list--horizontal lynn-has-dividers--right",
+                "items": [
+                    {
+                        "title": "Terms of use",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    },
+                    {
+                        "title": "Privacy statement",
+                        "url": "#",
+                        "styleModifier": "lynn-list__item"
+                    }
+                ]
+            }
+        }
+    }
 }

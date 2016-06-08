@@ -1,0 +1,46 @@
+{{# footer }}
+<footer class="lynn-panel--footer lynn-p-vertical--quadruple lynn-p-horizontal--one lynn-theme--gray-20 lynn-text-align--center lynn-text-align-s--left">
+    <div class="lynn-panel__content">
+        <div class="lynn-l-container--xl lynn-l-container--center">
+            <div class="lynn-footer__main lynn-grid lynn-grid--reverse lynn-l-wrap">
+                <div class="lynn-gi lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-s--1-of-2 lynn-l-size-l--1-of-4">
+                    {{# resources }}
+                    <p><b>Resources for:</b></p>
+                    {{> atoms-unordered }}
+                    {{/ resources }}
+                </div>
+                
+                <div class="lynn-gi lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-s--1-of-2 lynn-l-size-l--1-of-4">
+                    {{# menu }}{{> atoms-unordered }}{{/ menu }}
+                    {{# menu-secondary }}{{> atoms-unordered }}{{/ menu-secondary }}
+                </div>
+                
+                <div class="lynn-gi lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-2">
+                    <div class="lynn-m-bottom">
+                        <address>
+                            Lynn University<br />
+                            3601 N. Military Trail, Boca Raton, FL 33431
+                        </address>
+                        <ul class="lynn-list--horizontal lynn-has-dividers--right">
+                            <li class="lynn-list__item"><span style="white-space: nowrap;">+1 561-237-70004</span></li>
+                            <li class="lynn-list__item"><span style="white-space: nowrap;">1-800-994-LYNN</span></li>
+                        </ul>
+                    </div>
+                    <div class="lynn-m-bottom--quadruple">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lynn-footer__sub lynn-grid lynn-l-wrap">
+                <div class="lynn-gi lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-2">
+                    {{> molecules-copyright }}
+                </div>
+                <div class="lynn-gi lynn-gi--padded lynn-l-size--1-of-1 lynn-l-size-l--1-of-2">
+                    {{# terms }}{{> atoms-unordered }}{{/ terms }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+{{/ footer }}
