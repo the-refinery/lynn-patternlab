@@ -1,7 +1,10 @@
 {{# list }}
 <ol class="{{ styleModifier }}">
 	{{# items }}
-	<li class="{{ styleModifier }}">{{ title }}</li>
+	<li class="{{ styleModifier }}">
+        {{^ url }}{{ title }}{{/ url }}
+        {{# url }}<a href="{{ url }}">{{ title }}</a>{{/ url }}   
+    </li>
 	{{/ items }}
 </ol>
 {{/ list }}
