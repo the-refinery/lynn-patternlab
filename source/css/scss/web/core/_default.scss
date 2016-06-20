@@ -1,0 +1,18 @@
+/**~
+ *  scss/web/core/_default.scss
+~**/
+
+sub, sup {
+    font-size: $font-size-three-fourths--em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -#{$space-quarter--em};
+}
+
+sup {
+    top: -#{$space-half--em};
+}
