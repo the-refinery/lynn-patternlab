@@ -2,6 +2,10 @@
  *  scss/web/core/_default.scss
 ~**/
 
+small {
+    font-size: $font-size-three-fourths--em;
+}
+
 sub, sup {
     font-size: $font-size-three-fourths--em;
     line-height: 0;
