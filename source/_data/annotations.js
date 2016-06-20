@@ -48,6 +48,16 @@ var comments = {
     "title": "List - horizontal",
     "comment": "To align a list horizontally in a row from left to right, add the <code>.lynn-list--horizontal</code> class."
 },
+{
+    "el": ".lynn-list--horizontal.lynn-has-dividers--right",
+    "title": "List - horizontal - dividers",
+    "comment": "<p>Dividers can be added to a horizontal list by adding either the class <code>.lynn-has-dividers--left</code> or <code>.lynn-has-dividers--right</code> to <code>&lt;ul class=\"lynn-list--horizontal\"&gt;</p>"
+},
+{
+    "el": ".lynn-list--horizontal.lynn-has-dividers--left",
+    "title": "List - horizontal - dividers",
+    "comment": "<p>Dividers can be added to a horizontal list by adding either the class <code>.lynn-has-dividers--left</code> or <code>.lynn-has-dividers--right</code> to <code>&lt;ul class=\"lynn-list--horizontal\"&gt;</p>"
+},
 
 // * Images
 {
@@ -68,21 +78,15 @@ var comments = {
     "comment": "Buttons can include an icon along with text. To do so, add a <code>.lynn-button__icon</code> element to the button."
 },
 {
+    "el": ".lynn-button--outline",
+    "title": "Button - Outline",
+    "comment": "Wrap a button in a pill-shaped border with the <code>.lynn-button--outline</code> class."
+},
+{
     "el": ".lynn-button--pill",
     "title": "Button - Pill",
-    "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button. This is a blue button with white text, that transforms to a white button with blue text and outline when interacted with."
+    "comment": "Add the <code>.lynn-button--pill</code> class to create the default pill button&mdash;blue button with white text."
 },
-{
-    "el": ".lynn-button--pill-white",
-    "title": "Button - Pill - White",
-    "comment": "A variant of the pill button that inverts the color scheme to a white background with blue text and outline can be created with the <code>.lynn-button--pill-white</code> class."
-},
-{
-    "el": ".lynn-button--pill-gray",
-    "title": "Button - Pill - White",
-    "comment": "Use the <code>.lynn-button--pill-gray</code> class to create a pill button that begins with gray text and outline."
-},
-
 
 
 

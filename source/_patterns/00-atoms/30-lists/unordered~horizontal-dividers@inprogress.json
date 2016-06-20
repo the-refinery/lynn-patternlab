@@ -1,0 +1,19 @@
+{
+    "list": {
+        "styleModifier": "lynn-list--horizontal lynn-has-dividers--right",
+        "items": [
+            {
+                "title": "List item",
+                "styleModifier": "lynn-list__item"
+            },
+            {
+                "title": "List item",
+                "styleModifier": "lynn-list__item"
+            },
+            {
+                "title": "List item",
+                "styleModifier": "lynn-list__item"
+            }
+        ]
+    }
+}

@@ -1,10 +1,11 @@
 /**~
  *  master-web.scss
  *
- *  The master stylesheet for the web site. This file will likely be rather 
- *  large as it contains all layout and style settings for every element. This 
- *  should be used for development purposes. Smaller and lighter stylesheets 
- *  should be developed with selected elements for productions.
+ *  The master stylesheet for the web site. This file will likely be 
+ *  rather large as it contains all layout and style settings for 
+ *  every element. This should be used for development purposes. 
+ *  Smaller and lighter stylesheets should be developed with selected 
+ *  elements for productions.
  *
 ~**/
 
@@ -15,18 +16,23 @@
  *      Add-ons
  *          Compass
  *      Mixins
- *          Breakpoints
- *          Flexbox
- *          Layout - sizes
+ *          Global
+ *              Breakpoints
+ *          Web
+ *              Flexbox
+ *              Layout - sizes
  *      Variables
- *          Globals
- *          Colors
- *          Spacing
- *          Fonts
- *          Font sizes
- *          Breakpoints
+ *          Global
+ *              Globals
+ *              Colors
+ *              Spacing
+ *          Web
+ *              Fonts
+ *              Breakpoints
+ *  CORE
+ *      RESET
+ *      DEFAULT
  *  BASE
- *      Reset
  *      Main
  *      Links
  *      Media
@@ -59,34 +65,52 @@
  *      Themes
 **/
 
-/*****************************************************************************\
+/********************************************************************\
     TOOLS
-\*****************************************************************************/
+\********************************************************************/
 
 /** Add-ons **/
 @import "compass";
 
+
+
 /** Mixins **/
+// Global
 @import "scss/global/mixins/breakpoints";
+
+// Web
 @import "scss/web/mixins/flexbox";
 @import "scss/web/mixins/layout-sizes";
 
+
+
 /** Variables **/
+// Global
 @import "scss/global/variables/globals";
 @import "scss/global/variables/colors";
 @import "scss/global/variables/spacing";
 
+// Web
 @import "scss/web/variables/fonts";
 @import "scss/web/variables/breakpoints";
 
 
 
-/*****************************************************************************\
-    BASE
-\*****************************************************************************/
+/********************************************************************\
+    CORE
+\********************************************************************/
 
-/** Reset **/
-@import "scss/web/base/reset";
+/** RESET **/
+@import "scss/web/core/reset";
+
+
+
+/** DEAFULT **/
+@import "scss/web/core/default";
+
+/********************************************************************\
+    BASE
+\********************************************************************/
 
 @import "scss/global/base/main";
 @import "scss/global/base/links";
