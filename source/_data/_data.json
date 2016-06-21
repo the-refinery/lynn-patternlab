@@ -75,7 +75,7 @@
         ]
     },
 
-    "navGlobal": {
+    "navHeader": {
         "list": {
             "styleModifier": "lynn-list--horizontal",
             "items": [
