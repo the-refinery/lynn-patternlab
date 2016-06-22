@@ -75,6 +75,10 @@
         ]
     },
 
+    "pageHeader": {
+        "styleModifier": "lynn-l-pos-fixed lynn-l-container--fluid lynn-p-around--one"
+    },
+
     "navHeader": {
         "list": {
             "styleModifier": "lynn-list--horizontal",

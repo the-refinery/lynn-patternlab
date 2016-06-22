@@ -2,9 +2,20 @@
  *  _nav-global.scss
 ~**/
 
-##{$css-prefix}navGlobal {
-    padding: $space-half 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+##{$css-prefix}nav-header {
+    display: block;
+    margin: auto;
+    
+    
+    @include bp-max($bp-s) {
+        padding: $space-one-and-half 0;
+        text-align: center;
+    }
+
+    @include bp-min($bp-s) {
+        padding: $space-half 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }

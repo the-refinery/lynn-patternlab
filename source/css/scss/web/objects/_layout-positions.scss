@@ -1,0 +1,20 @@
+/**~
+ *  _layout-grid.scss
+~**/
+
+
+.#{$css-prefix}l-pos-absolute {
+    position: absolute;
+}
+
+.#{$css-prefix}l-pos-fixed {
+    position: fixed;
+}
+
+.#{$css-prefix}l-pos-relative {
+    position: relative;
+}
+
+.#{$css-prefix}l-pos-static {
+    position: static;
+}

@@ -40,8 +40,10 @@
  *      Text
  *  STRUCTURE
  *      Layout
- *          Page
  *          Grid
+ *          Positions
+ *          Page
+ *          Header
  *      Navigation main
  *  OBJECTS
  *      Buttons
@@ -129,8 +131,10 @@
     STRUCTURE
 \*****************************************************************************/
 
-@import "scss/web/objects/page-layout";
 @import "scss/web/objects/layout-grid";
+@import "scss/web/objects/layout-positions";
+@import "scss/web/objects/page-layout";
+@import "scss/web/objects/page-header";
 @import "scss/web/objects/nav-global";
 
 

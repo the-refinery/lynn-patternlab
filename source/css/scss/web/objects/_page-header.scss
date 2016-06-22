@@ -1,0 +1,16 @@
+/**~
+ *  _page-header.scss
+~**/
+
+.#{$css-prefix}page-header {
+    background-color: $white;
+    z-index: 999;
+
+    .#{$css-prefix}logo {
+        display: block;
+        
+        @include bp-max($bp-s) {
+            margin: auto;
+        }
+    }
+}
